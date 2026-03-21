@@ -1,0 +1,65 @@
+[
+  {
+    "id": "news_005",
+    "parsed_time": "2026-03-18 00:00:00",
+    "title": "Larijani's warning to US, Israel before his killing",
+    "event_type": "核心事件",
+    "reasoning": "标题中的'before his killing'表明该警告发生在遇害事件之前，是事件链的起始背景。"
+  },
+  {
+    "id": "news_008",
+    "parsed_time": "2025-08-06 02:27:00",
+    "title": "Canny political survivor Larijani seals comeback with top security post",
+    "event_type": "无关噪声",
+    "reasoning": "SBERT 判定为噪声，且时间早于核心事件，属于人物履历背景，不参与本次遇害事件的因果时序重构。"
+  },
+  {
+    "id": "news_009",
+    "parsed_time": "2019-02-20 21:26:25",
+    "title": "习近平会见伊朗伊斯兰议会议长拉里贾尼",
+    "event_type": "无关噪声",
+    "reasoning": "SBERT 判定为噪声，且时间最早，属于人物履历背景，不参与本次遇害事件的因果时序重构。"
+  },
+  {
+    "id": "news_003",
+    "parsed_time": "2026-03-18 00:00:00",
+    "title": "Iran war: New head Khamenei vows to avenge Larijani killing",
+    "event_type": "核心事件",
+    "reasoning": "标题提及'avenge Larijani killing'，表明遇害事件已经发生，属于事件发生后的即时反应。"
+  },
+  {
+    "id": "news_002",
+    "parsed_time": "2026-03-18 00:00:00",
+    "title": "Killing of Larijani will not destabilise Iranian political system: Minister",
+    "event_type": "核心事件",
+    "reasoning": "标题提及'Killing of Larijani'，表明遇害事件已经发生，属于事件发生后的即时反应。"
+  },
+  {
+    "id": "news_006",
+    "parsed_time": "2026-03-18 05:41:42",
+    "title": "伊朗总统证实拉里贾尼已遇难并发表悼词",
+    "event_type": "核心事件",
+    "reasoning": "标题明确'证实...已遇难'，表明遇害事实已被官方确认，时间晚于事件发生及初步反应。"
+  },
+  {
+    "id": "news_001",
+    "parsed_time": "2026-03-18 13:19:34",
+    "title": "Iranian security chief Ali Larijani killed in air strike",
+    "event_type": "核心事件",
+    "reasoning": "标题描述遇害细节'killed in air strike'，发布时间较晚，通常代表事件发生后的详细报道或确认。"
+  },
+  {
+    "id": "news_004",
+    "parsed_time": "2026-03-18 13:19:34",
+    "title": "Death of Ali Larijani deepens crisis at heart of Iran's leadership",
+    "event_type": "核心事件",
+    "reasoning": "标题分析死亡带来的影响'deepens crisis'，属于事件发生后的深度分析报道，时间同 news_001。"
+  },
+  {
+    "id": "news_007",
+    "parsed_time": "2026-03-18 17:22:54",
+    "title": "拉里贾尼遇害细节曝光：在女儿家中遭空袭身亡！伊朗发射集束弹头导弹，报复以方暗杀行动，以色列上空疑似导弹碎片密如雨下",
+    "event_type": "核心事件",
+    "reasoning": "标题包含'细节曝光'及具体的报复行动描述，时间最晚，属于事件全貌披露及后续连锁反应的总结性报道。"
+  }
+]

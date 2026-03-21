@@ -1,0 +1,83 @@
+[
+  {
+    "id": "news_001",
+    "title": "Iranian security chief Ali Larijani killed in air strike",
+    "raw_time": "2 day ago",
+    "source": "BBC",
+    "true_order": 1,
+    "is_noise": false,
+    "url": "https://www.bbc.com/news/articles/c24deezq6meo"
+  },
+  {
+    "id": "news_002",
+    "title": "Killing of Larijani will not destabilise Iranian political system: Minister",
+    "raw_time": "2026-03-18 00:00:00",
+    "source": "Al Jazeera",
+    "true_order": 2,
+    "is_noise": false,
+    "url": "https://www.aljazeera.com/news/2026/3/19/killing-of-larijani-will-not-destabilise-iranian-political-system-minister"
+  },
+  {
+    "id": "news_003",
+    "title": "Iran war: New head Khamenei vows to avenge Larijani killing",
+    "raw_time": "Published 03/18/2026 | last updated 17 hours ago",
+    "source": "DW",
+    "true_order": 3,
+    "is_noise": false,
+    "url": "https://www.dw.com/en/iran-war-new-head-khamenei-vows-to-avenge-larijani-killing/live-76402968"
+  },
+  {
+    "id": "news_004",
+    "title": "Death of Ali Larijani deepens crisis at heart of Iran's leadership",
+    "raw_time": "2 day ago",
+    "source": "BBC",
+    "true_order": 4,
+    "is_noise": false,
+    "url": "https://www.bbc.com/news/articles/cgqgxqekp89o"
+  },
+  {
+    "id": "news_005",
+    "title": "Larijani’s warning to US, Israel before his killing",
+    "raw_time": "2026-03-18 00:00:00",
+    "source": "Al Jazeera",
+    "true_order": 0,
+    "is_noise": false,
+    "url": "https://www.aljazeera.com/video/newsfeed/2026/3/18/larijanis-warning-to-us-israel-before-his-killing"
+  },
+  {
+    "id": "news_006",
+    "title": "伊朗总统证实拉里贾尼已遇难并发表悼词",
+    "raw_time": "2026年03月18日 05:41:42",
+    "source": "央视新闻",
+    "true_order": 2,
+    "is_noise": false,
+    "url": "https://news.cctv.com/2026/03/18/ARTIPmfGeDgXKgmg7wpGQ7Ng260318.shtml"
+  },
+  {
+    "id": "news_007",
+    "title": "拉里贾尼遇害细节曝光：在女儿家中遭空袭身亡！伊朗发射集束弹头导弹，报复以方暗杀行动，以色列上空疑似导弹碎片密如雨下",
+    "raw_time": "2026-03-18 17:22:54",
+    "source": "每日经济新闻",
+    "true_order": 5,
+    "is_noise": false,
+    "url": "https://www.nbd.com.cn/articles/2026-03-18/4297614.html"
+  },
+  {
+    "id": "news_008",
+    "title": "Canny political survivor Larijani seals comeback with top security post",
+    "raw_time": "Aug 5, 2025, 19:27 GMT+1",
+    "source": "Iran International",
+    "true_order": -1,
+    "is_noise": true,
+    "url": "https://www.iranintl.com/en/202508052119"
+  },
+  {
+    "id": "news_009",
+    "title": "习近平会见伊朗伊斯兰议会议长拉里贾尼",
+    "raw_time": "2019-02-20 21:26:25",
+    "source": "新华社",
+    "true_order": -1,
+    "is_noise": true,
+    "url": "https://news.ifeng.com/c/7kSAQT4UYrH"
+  }
+]
