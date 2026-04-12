@@ -1,0 +1,89 @@
+{
+  "config": {
+    "table_v1": "parser_newsdata_com",
+    "table_v2": "parser_newsdata",
+    "sample_size": 1200,
+    "strata_mode": "language_parse_mode",
+    "strata_on": "both",
+    "seed": 42,
+    "day_tolerance": 1,
+    "gold_mode": "balanced",
+    "max_rows": 0
+  },
+  "dataset": {
+    "v1_count": 49130,
+    "v2_count": 49130,
+    "overlap_count": 49130,
+    "standard_timestamp_mismatch_count": 0,
+    "sampled_count": 1200
+  },
+  "overall_v1": {
+    "sample_count": 1200,
+    "evaluable_count": 256,
+    "evaluable_coverage": 0.2133,
+    "exact_accuracy": 0.9531,
+    "relaxed_accuracy": 0.9531,
+    "day_tolerance": 1,
+    "gold_mode": "balanced",
+    "pseudo_pattern_distribution": {
+      "search_dates": 231,
+      "relative_day": 5,
+      "zh_ymd": 4,
+      "year_context": 4,
+      "en_month_only": 3,
+      "zh_month_only": 2,
+      "relative_year": 2,
+      "zh_md": 2,
+      "en_my": 2,
+      "zh_half": 1
+    },
+    "pseudo_confidence_distribution": {
+      "low": 240,
+      "high": 8,
+      "medium": 8
+    }
+  },
+  "overall_v2": {
+    "sample_count": 1200,
+    "evaluable_count": 256,
+    "evaluable_coverage": 0.2133,
+    "exact_accuracy": 0.9805,
+    "relaxed_accuracy": 0.9805,
+    "day_tolerance": 1,
+    "gold_mode": "balanced",
+    "pseudo_pattern_distribution": {
+      "search_dates": 231,
+      "relative_day": 5,
+      "zh_ymd": 4,
+      "year_context": 4,
+      "en_month_only": 3,
+      "zh_month_only": 2,
+      "relative_year": 2,
+      "zh_md": 2,
+      "en_my": 2,
+      "zh_half": 1
+    },
+    "pseudo_confidence_distribution": {
+      "low": 240,
+      "high": 8,
+      "medium": 8
+    }
+  },
+  "overall_delta": {
+    "exact_accuracy_delta_v2_minus_v1": 0.0274,
+    "relaxed_accuracy_delta_v2_minus_v1": 0.0274,
+    "evaluable_coverage_delta_v2_minus_v1": 0.0
+  },
+  "head_to_head": {
+    "exact": {
+      "v2_better": 10,
+      "v1_better": 3,
+      "tie": 243
+    },
+    "relaxed": {
+      "v2_better": 10,
+      "v1_better": 3,
+      "tie": 243
+    }
+  }
+}

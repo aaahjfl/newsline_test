@@ -1,0 +1,1201 @@
+id,lang,parse_mode,title,standard_timestamp,event_timestamp,pseudo_time,pseudo_granularity,pseudo_source_text,pseudo_pattern,pseudo_confidence,is_evaluable,is_exact,is_relaxed
+gdelt_b4fee75e,af,fallback_like,Ukraine drones strike deep in Russian territory on eve of new talks,2025-06-02 10:00:00,2025-06-02 10:00:00,,,,,,0,0,0
+gdelt_03f65f45,af,fallback_like,US chess grandmaster Daniel Naroditsky dies at 29,2025-10-21 14:30:00,2025-10-21 14:30:00,,,,,,0,0,0
+gdelt_05be4fc0,ru,parsed_like,Выборы в Гонконге : баллотироваться могут только  патриоты  – DW – 07 . 12 . 2025,2025-12-07 18:15:00,2025-12-07 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d6d00a5e,ru,parsed_like,Олимпиада - 2036 : есть ли шанс у Катара принимать Игры ? – DW – 03 . 08 . 2025,2025-08-03 16:15:00,2025-08-03 00:00:00,2036-01-01 00:00:00,year,2036,search_dates,low,1,0,0
+gdelt_4dee7b0e,ru,parsed_like,Cаммит ШОС принял итоговую декларацию без упоминания Украины – DW – 01 . 09 . 2025,2025-09-02 01:30:00,2025-09-01 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_454eccd9,ru,parsed_like,Сирийская криминальная семья из Штутгарта покинула Германию – DW – 21 . 10 . 2025,2025-10-21 13:00:00,2025-10-21 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_3e0c20bb,ru,parsed_like,Як набрати людей до Бундесверу ? Що радять експерти – DW – 10 . 11 . 2025,2025-11-11 03:30:00,2025-11-10 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_27b6a9ed,ru,parsed_like,Шторм в Скандинавии : в Швеции погибли три человека – DW – 28 . 12 . 2025,2025-12-28 21:45:00,2025-12-28 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d63b3c50,ru,parsed_like,Спецпосланника США Кита Келлога наградили орденом в Украине – DW – 24 . 08 . 2025,2025-08-24 23:15:00,2025-08-24 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_1d414439,ru,parsed_like,"ЕС импортировал СПГ из России на 4 , 48 млрд евро – DW – 18 . 08 . 2025",2025-08-19 00:15:00,2025-08-18 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_c1d6f03c,ru,parsed_like,Число прошений об убежище в ЕС сократилось на треть – DW – 18 . 08 . 2025,2025-08-19 00:15:00,2025-08-18 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d6afdd93,ru,parsed_like,Пользователи в РФ пожаловались на сбои в WhatsApp и Telegram – DW – 11 . 08 . 2025,2025-08-12 00:15:00,2025-08-11 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_feb67b00,ru,parsed_like,В РФ можно оказаться  экстремистом  из - за группового чата ? – DW – 11 . 08 . 2025,2025-08-12 00:15:00,2025-08-11 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_9df641e9,ru,parsed_like,Глава МИД ФРГ : Украине крайне важны гарантии безопасности – DW – 07 . 01 . 2026,2026-01-08 04:45:00,2026-01-07 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_1989a073,ru,parsed_like,В американской системе  Золотой купол  будет 4 уровня защиты – DW – 13 . 08 . 2025,2025-08-13 14:00:00,2025-08-13 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_a9dad6dd,ru,parsed_like,Мерц : Пошлины США серьезно ударят по немецкому экспорту – DW – 13 . 07 . 2025,2025-07-14 03:45:00,2025-07-13 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_7579553c,ru,parsed_like,На Курской АЭС после атаки БПЛА произошел пожар – DW – 24 . 08 . 2025,2025-08-24 18:15:00,2025-08-24 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_07792648,ru,parsed_like,Латвия заблокировала еще 10 сайтов с российской пропагандой – DW – 04 . 08 . 2025,2025-08-04 20:45:00,2025-08-04 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_07219a13,ru,parsed_like,"Торговая сделка ЕС - США : не похищение , а грабеж Европы ? – DW – 28 . 07 . 2025",2025-07-28 23:45:00,2025-07-28 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_1a79183b,ru,parsed_like,Аккаунт  Луизы Розовой  с критикой Путина оказался фейковым – DW – 11 . 08 . 2025,2025-08-11 19:15:00,2025-08-11 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_3d005e31,ru,parsed_like,FT : Зеленский 24 февраля объявит о выборах и референдуме,2026-02-11 18:30:00,2024-02-01 00:00:00,,,,,,0,0,0
+gdelt_3faf3888,ru,parsed_like,Известный немецкий дирижер получил в Кремле орден Дружбы – DW – 05 . 11 . 2025,2025-11-05 22:00:00,2025-11-05 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_90798749,ru,parsed_like,Подписан меморандум РФ и КНР о строительстве  Силы Сибири 2  – DW – 02 . 09 . 2025,2025-09-02 16:15:00,2025-09-02 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_ab8fd08e,ru,parsed_like,В Сумах российские дроны поразили жилой дом и АЗС – DW – 25 . 08 . 2025,2025-08-25 18:45:00,2025-08-25 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_05047301,uk,fallback_like,Чому вбивство міграційною поліцією молодої жінки у США сколихнуло всю країну,2026-01-08 22:00:00,2026-01-08 22:00:00,,,,,,0,0,0
+gdelt_990618d9,uk,fallback_like,"РФ атакувала Кривий Ріг , Херсон і Запоріжжя , є поранені",2026-02-17 06:00:00,2026-02-17 06:00:00,,,,,,0,0,0
+gdelt_34e8bde2,uk,fallback_like,Німеччина про  шолом пам  яті : Україні слід послухати МОК,2026-02-11 22:30:00,2026-02-11 22:30:00,,,,,,0,0,0
+gdelt_c37b993b,uk,fallback_like,Як у Білорусі страчують засуджених і що відбувається з їхніми родинами,2025-11-23 12:30:00,2025-11-23 12:30:00,,,,,,0,0,0
+gdelt_b39cad64,uk,fallback_like,Виїжджати чи залишитися ? Наступ росіян змусив українців на Сході вирішувати,2025-09-14 21:15:00,2025-09-14 21:15:00,,,,,,0,0,0
+gdelt_c0bfbf25,uk,fallback_like,Вночі Росія била по українських теплоелектростанціях,2026-02-03 16:15:00,2026-02-03 16:15:00,,,,,,0,0,0
+gdelt_94dd0d9f,uk,fallback_like,"Після аварії , яка вбила моїх друзів , мене паралізувало - але врятував танець",2026-03-23 02:45:00,2026-03-23 02:45:00,,,,,,0,0,0
+gdelt_6c9da714,uk,fallback_like,У ЄП відмовилися ратифікувати торговельну угоду зі США,2026-01-19 08:45:00,2026-01-19 08:45:00,,,,,,0,0,0
+gdelt_3a834087,uk,fallback_like,"Чоловік надіслав родині посилку з вибухівкою : дружина загинула , діти – поранені",2026-03-25 02:45:00,2026-03-25 02:45:00,,,,,,0,0,0
+gdelt_72fbec08,uk,fallback_like,Секрети ідеального схуднення : як спалювати жир і зберігати м  язи,2025-08-11 19:45:00,2025-08-11 19:45:00,,,,,,0,0,0
+gdelt_a09437a6,uk,fallback_like,Генштаб підтвердив ураження низки об  єктів у РФ,2026-02-16 01:30:00,2026-02-16 01:30:00,,,,,,0,0,0
+gdelt_46c367c6,uk,fallback_like,ВМС України знищили російський Ка - 27 над Чорним морем,2026-03-05 23:45:00,2026-03-05 23:45:00,,,,,,0,0,0
+gdelt_024d73c2,es,fallback_like,"Determinación de China para salvaguardar derechos legítimos es inquebrantable , dice vice primer ministro",2025-09-16 08:45:00,2025-09-16 08:45:00,,,,,,0,0,0
+gdelt_3c7e73da,es,fallback_like,Especial : Capital de Ecuador celebra fiestas de fundación con desfiles y actividades culturales,2025-11-24 12:45:00,2025-11-24 12:45:00,,,,,,0,0,0
+gdelt_9f4e117a,es,fallback_like,China publica plan de acción para impulsar el consumo en mayor medida,2025-11-26 20:15:00,2025-11-26 20:15:00,,,,,,0,0,0
+gdelt_7dd478bb,es,fallback_like,Administración Trump publica expedientes sobre asesinato de Martin Luther King Jr . ,2025-07-22 08:45:00,2025-07-22 08:45:00,,,,,,0,0,0
+gdelt_67650e70,es,fallback_like,"Empieza el 4 festival de pesca de invierno del lago Hasuhai en Hohhot , Mongolia Interior",2026-01-11 13:45:00,2026-01-11 13:45:00,,,,,,0,0,0
+gdelt_3b26453f,es,fallback_like,  Descartada  acción militar de EE . UU . en México,2026-01-13 01:15:00,2026-01-13 01:15:00,,,,,,0,0,0
+gdelt_4ff849c4,es,fallback_like,"Coalición gobernante de Japón aseguraría mayoría de escaños en la Cámara Baja , según sondeo de NHK",2026-02-08 22:15:00,2026-02-08 22:15:00,,,,,,0,0,0
+gdelt_7d28d697,es,fallback_like,Costa Rica celebra elecciones presidenciales,2026-02-01 17:00:00,2026-02-01 17:00:00,,,,,,0,0,0
+gdelt_26b9d6dc,es,fallback_like,"Ejército iraní promete hundir  buques enemigos  que entren al Golfo , según medios",2026-03-08 08:45:00,2026-03-08 08:45:00,,,,,,0,0,0
+gdelt_23906473,es,fallback_like,Yacimiento petrolífero de Tarim registra generación solar de más de 2 . 000 millones de kWh,2025-12-28 22:30:00,2025-12-28 22:30:00,,,,,,0,0,0
+gdelt_8e11fa55,es,fallback_like,17 Desfile y Concurso de Alebrijes Monumentales en la Ciudad de México,2025-10-19 17:00:00,2025-10-19 17:00:00,,,,,,0,0,0
+gdelt_252ba282,es,fallback_like,Gobierno chino propone creación de organización de cooperación global en IA,2025-07-27 08:15:00,2025-07-27 08:15:00,,,,,,0,0,0
+gdelt_85750060,es,fallback_like,Inversión en activos fijos de China registra crecimiento estable en primer semestre,2025-07-15 16:30:00,2025-07-15 16:30:00,,,,,,0,0,0
+gdelt_7f0f061a,es,fallback_like,"Exposición de mascotas en Lanzhou , Gansu | Spanish . xinhuanet . com",2026-03-28 18:15:00,2026-03-28 18:15:00,,,,,,0,0,0
+gdelt_e30b12e9,es,fallback_like,Acuerdo arancelario entre EE . UU . y Canadá sigue siendo esquivo tras reunión entre Trump y Carney,2025-10-08 14:30:00,2025-10-08 14:30:00,,,,,,0,0,0
+gdelt_63968841,es,fallback_like,"Trump fue informado sobre opciones para realizar ataques militares en Irán , según The New York Times",2026-01-11 13:45:00,2026-01-11 13:45:00,,,,,,0,0,0
+gdelt_0f1cfd6c,es,fallback_like,Vista aérea de las ruinas de Heicheng en la región autónoma de Mongolia Interior,2025-10-31 12:45:00,2025-10-31 12:45:00,,,,,,0,0,0
+gdelt_af04fe46,es,fallback_like,Publicarán artículo de Xi sobre firme promoción de apertura de alto nivel,2025-07-15 21:15:00,2025-07-15 21:15:00,,,,,,0,0,0
+gdelt_cbe16cec,es,fallback_like,Turismo en noreste de Brasil se dispara con impulso de China y destaca atractivo regional,2026-03-28 18:15:00,2026-03-28 18:15:00,,,,,,0,0,0
+gdelt_2e938366,es,fallback_like,Órgano legislativo nacional de China celebra segunda reunión plenaria,2026-03-10 11:30:00,2026-03-10 11:30:00,,,,,,0,0,0
+gdelt_8dad6525,es,fallback_like,Principal grupo de supervivientes de bomba atómica critica impulso de primera ministra japonesa para revisar principios antinucleares,2025-11-21 00:00:00,2025-11-21 00:00:00,,,,,,0,0,0
+gdelt_1e5f9da9,es,fallback_like,"Altos del Golán son reconocidos internacionalmente como territorio sirio ocupado , dice representante chino ante ONU",2025-12-30 18:45:00,2025-12-30 18:45:00,,,,,,0,0,0
+gdelt_d06f39b3,es,fallback_like,Falta de electricidad paraliza ciudad yemení de Adén tras agotarse reservas de combustible,2025-10-21 09:45:00,2025-10-21 09:45:00,,,,,,0,0,0
+gdelt_6d6a34d3,es,fallback_like,China experimentará lluvias y descenso de temperatura durante regreso masivo de vacaciones por Día Nacional,2025-10-08 14:30:00,2025-10-08 14:30:00,,,,,,0,0,0
+gdelt_ec44940e,es,fallback_like,Crean competencia de IA para impulsar colaboración tecnológica China - ASEAN,2025-07-20 15:15:00,2025-07-20 15:15:00,,,,,,0,0,0
+gdelt_e8042729,es,fallback_like,"Exposición de experiencia digital inmersiva con elementos culturales chinos en Sídney , Australia",2026-02-11 12:30:00,2026-02-11 12:30:00,,,,,,0,0,0
+gdelt_861e0dd0,es,fallback_like,Mesa redonda sobre derechos humanos entre China y América Latina destaca cooperación para la gobernanza global,2025-07-27 17:15:00,2025-07-27 17:15:00,,,,,,0,0,0
+gdelt_da0d022d,es,fallback_like,Papa pide alto al fuego en Medio Oriente y retomar diálogo,2026-03-15 22:15:00,2026-03-15 22:15:00,,,,,,0,0,0
+gdelt_492c70b5,es,fallback_like,Comentario : Se necesitan esfuerzos conjuntos para garantizar estabilidad y sostenibilidad de los vínculos económicos China - EE . UU . ,2026-03-15 20:00:00,2026-03-15 20:00:00,,,,,,0,0,0
+gdelt_1a078487,es,fallback_like,Ballet Nacional de China realiza presentación en Brasilia | Spanish . xinhuanet . com,2025-10-08 14:30:00,2025-10-08 14:30:00,,,,,,0,0,0
+gdelt_1025f3af,es,fallback_like,China presenta brazo robótico de 7 funciones para aguas profundas de fabricación nacional,2025-07-07 09:15:00,2025-07-07 09:15:00,,,,,,0,0,0
+gdelt_f9567ab2,es,fallback_like,China presenta nuevas regulaciones sobre compartición de datos gubernamentales,2025-06-04 08:00:00,2025-06-04 08:00:00,,,,,,0,0,0
+gdelt_5878c604,en,fallback_like,Four journalists on trial over Istanbul protest coverage acquitted,2025-11-28 01:45:00,2025-11-28 01:45:00,,,,,,0,0,0
+gdelt_71300e00,en,fallback_like,COP30 host urges unity as summit heads for final showdown over fossil fuels,2025-11-22 04:15:00,2025-11-22 04:15:00,,,,,,0,0,0
+gdelt_1f488804,en,fallback_like,US Senate fails to advance war powers measure to rein in Trump Iran war | Donald Trump News,2026-03-05 08:30:00,2026-03-05 08:30:00,,,,,,0,0,0
+gdelt_5a35d99b,en,fallback_like,Trump dumps a pile of MLK files . Why not the Epstein files ? ,2025-07-23 05:30:00,2025-07-23 05:30:00,,,,,,0,0,0
+gdelt_278c26f6,en,fallback_like,Shawn Huang on outcome - based work arrangements,2026-03-03 12:15:00,2026-03-03 12:15:00,,,,,,0,0,0
+gdelt_946847dd,en,fallback_like,How Brazil won the 1962 World Cup : With Garrincha coming to the fore after Pele injury,2025-07-13 14:30:00,2025-07-13 14:30:00,1962-01-01 00:00:00,year,the 1962,search_dates,low,1,0,0
+gdelt_6c4a676e,en,fallback_like,Australian writer festival boss resigns after Palestinian author barred,2026-01-13 12:15:00,2026-01-13 12:15:00,,,,,,0,0,0
+gdelt_b11de72f,en,fallback_like,Qatar Airways sells entire Cathay Pacific stake for US$897 million,2025-11-06 08:15:00,2025-11-06 08:15:00,,,,,,0,0,0
+gdelt_f78d1bb6,en,fallback_like,Read Abrego Garcia Court Filing - The New York Times,2025-07-03 11:45:00,2025-07-03 11:45:00,,,,,,0,0,0
+gdelt_8e7604fd,en,fallback_like,"US negotiators head to New Delhi , rekindling hopes of trade deal",2025-12-09 21:45:00,2025-12-09 21:45:00,,,,,,0,0,0
+gdelt_3f0d8d93,en,fallback_like,Why Viktor Gyokeres is a useful  small - game  player – and why that is important,2026-03-04 15:45:00,2026-03-04 15:45:00,,,,,,0,0,0
+gdelt_9076ac55,en,fallback_like,Israeli forces kill 21 aid seekers as Gaza starvation death toll rises,2025-08-09 23:45:00,2025-08-09 23:45:00,,,,,,0,0,0
+gdelt_8aa86c4f,en,fallback_like,US plan to attack Nigeria : Donald Trump say Christians dey face persecution for Nigeria - na true e tok ? ,2025-11-06 17:30:00,2025-11-06 17:30:00,,,,,,0,0,0
+gdelt_51ba398b,en,fallback_like,Posthumous Oxford degree awarded to Māori woman,2025-09-29 17:30:00,2025-09-29 17:30:00,,,,,,0,0,0
+gdelt_67ea84d5,en,fallback_like,"Netanyahu , Trump discuss forced transfer of Palestinians out of Gaza",2025-07-08 18:45:00,2025-07-08 18:45:00,,,,,,0,0,0
+gdelt_fc8122ee,en,fallback_like,Airlines cancel Venezuela flights amid US warnings and military buildup,2025-11-23 11:45:00,2025-11-23 11:45:00,,,,,,0,0,0
+gdelt_1c0c5b20,en,fallback_like,University students facing course  cold spot as enrolments fall,2025-12-16 12:30:00,2025-12-16 12:30:00,,,,,,0,0,0
+gdelt_ee078c2c,en,fallback_like,Trump to  draw down  700 immigration agents in Minnesota,2026-02-05 00:45:00,2026-02-05 00:45:00,,,,,,0,0,0
+gdelt_f75060f8,en,fallback_like,China - Japan diplomatic row : What driving Beijing anger - and why this time is different,2025-11-18 18:30:00,2025-11-18 18:30:00,,,,,,0,0,0
+gdelt_4271b90e,en,fallback_like,China new K visa could attract Indian tech talent amid tightening of US immigration,2025-10-17 15:15:00,2025-10-17 15:15:00,,,,,,0,0,0
+gdelt_d05e1210,en,fallback_like,Read the Justice Dept . Interview With Ghislaine Maxwell,2025-08-23 08:30:00,2025-08-23 08:30:00,,,,,,0,0,0
+gdelt_5ed3e5c4,en,fallback_like,Trump : Greenland agreement  a deal everyone is happy with  ,2026-01-22 06:30:00,2026-01-22 06:30:00,,,,,,0,0,0
+gdelt_3f4f9fd5,en,fallback_like,"Millions of Ukrainians deprived of heat , power this winter amid the war",2026-02-23 13:00:00,2026-02-23 13:00:00,,,,,,0,0,0
+gdelt_b484f8e5,en,fallback_like,Migrant sex offender released from prison in error arrested,2025-10-26 19:30:00,2025-10-26 19:30:00,,,,,,0,0,0
+gdelt_94329af3,en,fallback_like,Nepal : Rapper - turned - politician poised to become next PM,2026-03-10 15:30:00,2026-03-10 15:30:00,,,,,,0,0,0
+gdelt_690c8aea,en,fallback_like,M1 fully reopened after lorry crash caused fire,2025-11-04 15:30:00,2025-11-04 15:30:00,,,,,,0,0,0
+gdelt_f968f269,en,fallback_like,Ricky Hatton dead : Boxing champion Ricky Hatton found dead aged 46 - latest updates,2025-09-14 21:00:00,2025-09-14 21:00:00,,,,,,0,0,0
+gdelt_d8e8e173,en,fallback_like,Japan envoy in Beijing to ease tensions as China repeats call for Takaichi to retract Taiwan remarks,2025-11-18 22:30:00,2025-11-18 22:30:00,,,,,,0,0,0
+gdelt_5553ae97,en,fallback_like,Vote for Your Favorite ( and Least Favorite ) Red Carpet Looks from the Oscars,2026-03-16 09:30:00,2026-03-16 09:30:00,,,,,,0,0,0
+gdelt_7f44f4d0,en,fallback_like,Iran war : US military aircraft crash in Kuwait,2026-03-02 16:45:00,2026-03-02 16:45:00,,,,,,0,0,0
+gdelt_15ab0eca,en,fallback_like,"Singapore authorities looking into illegal online sale of weight loss patches , slimming drugs",2025-09-08 14:15:00,2025-09-08 14:15:00,,,,,,0,0,0
+gdelt_58d9ce3c,en,fallback_like,Indonesia unveils economic stimulus package worth almost US$1 billion,2025-09-16 10:30:00,2025-09-16 10:30:00,,,,,,0,0,0
+gdelt_0c4939aa,en,fallback_like,Death toll in Indonesia school collapse rises to 10,2025-10-03 21:45:00,2025-10-03 21:45:00,,,,,,0,0,0
+gdelt_7b926c1b,en,fallback_like,Nvidia says no  backdoor in chips as China questions security,2025-08-01 12:45:00,2025-08-01 12:45:00,,,,,,0,0,0
+gdelt_9cb272e9,en,fallback_like,"Kyiv allies push for quick use of frozen Russian assets , US still reviewing missiles for Ukraine : Rutte",2025-10-25 04:15:00,2025-10-25 04:15:00,,,,,,0,0,0
+gdelt_682f8035,en,fallback_like,Eight killed in explosion near Red Fort in India Delhi,2025-11-11 15:45:00,2025-11-11 15:45:00,,,,,,0,0,0
+gdelt_19e7214b,en,fallback_like,Starvation is killing my nieces and I cannot do anything to save them,2025-07-20 02:30:00,2025-07-20 02:30:00,,,,,,0,0,0
+gdelt_52460908,en,fallback_like,India wants a seat at the global chip table - what standing in its way ? ,2026-01-29 12:00:00,2026-01-29 12:00:00,,,,,,0,0,0
+gdelt_dd17c6bf,en,fallback_like,"Row Z : Sheikh Brendan , the politicisation of headwear and Sweden being  Spursy  ",2026-02-24 15:00:00,2026-02-24 15:00:00,,,,,,0,0,0
+gdelt_7b28e1ea,en,fallback_like,"Art therapy gains ground in Singapore hospitals , but lack of regulation raises concerns",2026-01-06 13:00:00,2026-01-06 13:00:00,,,,,,0,0,0
+gdelt_52cbd257,en,fallback_like,Tories invoke Thatcher legacy in search of a comeback,2025-10-06 03:30:00,2025-10-06 03:30:00,,,,,,0,0,0
+gdelt_ff1364b5,en,fallback_like,St Helens fire : Man arrested on suspicion of double murder,2025-07-20 19:30:00,2025-07-20 19:30:00,,,,,,0,0,0
+gdelt_c2c8cf2a,en,fallback_like,Australia ABC to pay further penalty to reporter fired over Gaza post | Israel - Palestine conflict News,2025-09-24 18:00:00,2025-09-24 18:00:00,,,,,,0,0,0
+gdelt_9aa03a01,en,fallback_like,Mikaela Shiffrin starts slalom season with her 102nd World Cup victory,2025-11-15 22:45:00,2025-11-15 22:45:00,,,,,,0,0,0
+gdelt_fa813c9c,en,fallback_like,  Vape bin to be placed across Singapore ; no penalties for surrendering devices,2025-07-25 23:45:00,2025-07-25 23:45:00,,,,,,0,0,0
+gdelt_b3309ff9,en,fallback_like,Saudi Arabia steps up efforts to woo Asian travellers in push to become global tourism hub,2025-11-13 11:00:00,2025-11-13 11:00:00,,,,,,0,0,0
+gdelt_37a1d2bf,en,fallback_like,LIVE : Israel attacks on Gaza kill dozens as hunger - related deaths rise | Israel - Palestine conflict News,2025-08-02 22:30:00,2025-08-02 22:30:00,,,,,,0,0,0
+gdelt_671ebba7,en,fallback_like,"Cyberattack on European airports caused by ransomware , EU finds",2025-09-23 00:15:00,2025-09-23 00:15:00,,,,,,0,0,0
+gdelt_36505bb1,en,fallback_like,Oscar - winning actress Diane Keaton dies aged 79,2025-10-12 05:45:00,2025-10-12 05:45:00,,,,,,0,0,0
+gdelt_5f9145f8,en,fallback_like,"India and Israel pledge to boost cooperation on trade , defence",2026-02-27 04:00:00,2026-02-27 04:00:00,,,,,,0,0,0
+gdelt_dab2d104,en,fallback_like,"As Florida and Florida State football sputter , which coaching job is better ? ",2025-11-25 21:15:00,2025-11-25 21:15:00,,,,,,0,0,0
+gdelt_d228391e,en,fallback_like,"LIVE : Israel kills 51 in Gaza , 10 more Palestinians starve to death | Israel - Palestine conflict News",2025-08-28 02:30:00,2025-08-28 02:30:00,,,,,,0,0,0
+gdelt_662d9737,en,fallback_like,Commentary : Singapore best defence against Nipah virus isnt temperature screening at the airport,2026-02-27 06:45:00,2026-02-27 06:45:00,,,,,,0,0,0
+gdelt_e44b8b50,en,fallback_like,VR headset  life - changing  for visually impaired football fan,2026-03-09 07:00:00,2026-03-09 07:00:00,,,,,,0,0,0
+gdelt_a7355a8e,en,fallback_like,Russian tanker struck off Turkiye as Ukraine targets  shadow fleet  | Russia - Ukraine war News,2025-12-02 23:45:00,2025-12-02 23:45:00,,,,,,0,0,0
+gdelt_e3dadeda,en,fallback_like,US House passes spending bill to end longest govt shutdown in history | Donald Trump News,2025-11-13 10:00:00,2025-11-13 10:00:00,,,,,,0,0,0
+gdelt_9bfb7d0d,en,fallback_like,Sulawesi Is the Island That Keeps Earth Most Ancient Secrets Alive,2025-10-26 04:30:00,2025-10-26 04:30:00,,,,,,0,0,0
+gdelt_8d2a34fe,en,fallback_like,Will Evo Morales sink the left hopes in Bolivia presidential race ? | Evo Morales News,2025-08-14 23:00:00,2025-08-14 23:00:00,,,,,,0,0,0
+gdelt_55339c20,en,fallback_like,"Camp Mystic buildings were removed from flood map , US media reports",2025-07-14 00:30:00,2025-07-14 00:30:00,,,,,,0,0,0
+gdelt_35d1043b,en,fallback_like,Commentary : Gaza ceasefire talks collapse – what does that mean for the humanitarian catastrophe ? ,2025-07-26 06:45:00,2025-07-26 06:45:00,,,,,,0,0,0
+gdelt_c6f0ba94,en,fallback_like,Hosepipe ban in Youlgreave met with  delight  from locals,2025-06-02 14:45:00,2025-06-02 14:45:00,,,,,,0,0,0
+gdelt_c0d5bae9,en,fallback_like,British Sign Language : Hospital staff asked deaf couple what an interpreter is,2025-11-23 09:30:00,2025-11-23 09:30:00,,,,,,0,0,0
+gdelt_23caebcb,en,fallback_like,"Poland intercepts Russian aircraft over Baltic , reports multiple airspace breaches from Belarus",2025-12-26 04:45:00,2025-12-26 04:45:00,,,,,,0,0,0
+gdelt_122d7afb,en,fallback_like,Shropshire boy turns rescue ponies into prize winners . ,2025-08-04 14:30:00,2025-08-04 14:30:00,,,,,,0,0,0
+gdelt_2b4826be,en,fallback_like,Lord Peter Mandelson says he never saw any girls when visiting sex offender Jeffrey Epstein properties,2026-01-11 19:15:00,2026-01-11 19:15:00,,,,,,0,0,0
+gdelt_3bae4d44,en,fallback_like,"Melissa leaves 50 dead , toll expected to rise in Jamaica , Haiti",2025-11-01 13:45:00,2025-11-01 13:45:00,,,,,,0,0,0
+gdelt_f4b0e6df,en,fallback_like,"England to name Morgan Rogers as No 10 against Serbia , Jude Bellingham on bench",2025-11-14 21:15:00,2025-11-14 21:15:00,,,,,,0,0,0
+gdelt_3e48712f,en,fallback_like,"President Trump pardons Darryl Strawberry , calling the former Mets legend to share the news",2025-11-08 07:45:00,2025-11-08 07:45:00,,,,,,0,0,0
+gdelt_a4ee3b47,en,fallback_like,Chinese EV maker Nio rebounds from losses over GIC lawsuit,2025-10-17 17:30:00,2025-10-17 17:30:00,,,,,,0,0,0
+gdelt_e8d0d56a,en,fallback_like,Why weather forecasters often get it wrong,2025-08-06 08:15:00,2025-08-06 08:15:00,,,,,,0,0,0
+gdelt_18bdcc8b,en,fallback_like,Trump kicks off Asia tour with ASEAN summit,2025-10-30 12:45:00,2025-10-30 12:45:00,,,,,,0,0,0
+gdelt_963f3a18,en,fallback_like,"Israel to send team to Gaza talks despite Hamas demands , PM says",2025-07-06 08:15:00,2025-07-06 08:15:00,,,,,,0,0,0
+gdelt_9512023f,en,fallback_like,China expands economic footprint in turbulent South Sudan,2026-02-24 19:45:00,2026-02-24 19:45:00,,,,,,0,0,0
+gdelt_e89cffe2,en,fallback_like,Crashed prison drone uncovered Nottingham drug - dealing network,2026-03-05 01:45:00,2026-03-05 01:45:00,,,,,,0,0,0
+gdelt_b6af1f5c,en,fallback_like,Europe lacks coordination as Russia  prepares for war with NATO : Experts | Russia - Ukraine war News,2025-10-27 21:00:00,2025-10-27 21:00:00,,,,,,0,0,0
+gdelt_ceab3b87,en,fallback_like,What to expect at the upcoming ASEAN summit in Malaysia,2025-10-22 14:15:00,2025-10-22 14:15:00,,,,,,0,0,0
+gdelt_61a34352,en,fallback_like,Wuthering Heights : Margot Robbie and Jacob Elordi film splits critics,2026-02-10 20:45:00,2026-02-10 20:45:00,,,,,,0,0,0
+gdelt_d78093ee,en,fallback_like,"Tottenham left - wing options assessed : Simons , Kolo Muani , Johnson , Richarlison and more",2025-09-04 13:30:00,2025-09-04 13:30:00,,,,,,0,0,0
+gdelt_04627e7a,en,fallback_like,The bust files : How NFL teams break young quarterbacks,2025-09-05 03:00:00,2025-09-05 03:00:00,,,,,,0,0,0
+gdelt_2d191624,en,fallback_like,ByteDance mass food poisoning : Catering company pleads guilty,2025-07-02 17:15:00,2025-07-02 17:15:00,,,,,,0,0,0
+gdelt_d17edf18,en,fallback_like,Romania becomes second Nato country to report Russian drones in airspace,2025-09-14 21:30:00,2025-09-14 21:30:00,,,,,,0,0,0
+gdelt_67dd730e,en,fallback_like,Money Talks - How to diversify your investment portfolio,2025-11-04 08:00:00,2025-11-04 08:00:00,,,,,,0,0,0
+gdelt_f9be4454,en,fallback_like,  It detective work : Finding and counting Singapore otters,2026-02-20 17:30:00,2026-02-20 17:30:00,,,,,,0,0,0
+gdelt_84df0bc1,en,fallback_like,Trump says US will end support for Iraq if al - Maliki reinstated as PM,2026-01-28 10:15:00,2026-01-28 10:15:00,,,,,,0,0,0
+gdelt_2be1dcd2,en,fallback_like,Young Peruvians clash with police in anti - government protests,2025-09-29 20:00:00,2025-09-29 20:00:00,,,,,,0,0,0
+gdelt_72c63d27,en,fallback_like,Trump administration pauses immigrant visa processing for 75 countries,2026-01-15 03:00:00,2026-01-15 03:00:00,,,,,,0,0,0
+gdelt_a9b4899e,en,fallback_like,US senator plans trip to Taiwan as Trump interest in island cools : Report | Politics News,2025-07-31 12:15:00,2025-07-31 12:15:00,,,,,,0,0,0
+gdelt_3d9ea9ec,en,fallback_like,Keir Starmer vows to push ahead with cuts to jury trials despite backlash,2026-01-29 02:15:00,2026-01-29 02:15:00,,,,,,0,0,0
+gdelt_b140a6da,en,fallback_like,"For Team united states , these Winter Olympics have not gone according to plan",2026-02-17 06:45:00,2026-02-17 06:45:00,,,,,,0,0,0
+gdelt_01299d87,en,fallback_like,Natalie McNally : Memorial for Lurgan woman at Everton stadium,2025-08-25 17:00:00,2025-08-25 17:00:00,,,,,,0,0,0
+gdelt_6698cd6c,en,fallback_like,Indonesia detects traces of radiation at clove farm as probe expands,2025-10-14 16:30:00,2025-10-14 16:30:00,,,,,,0,0,0
+gdelt_c34886d8,en,fallback_like,Indonesian accused of murdering his wife in Singapore hotel brought back to crime scene,2025-12-04 00:15:00,2025-12-04 00:15:00,,,,,,0,0,0
+gdelt_4554f831,en,fallback_like,"Maid worked illegally as part - time cleaner for 12 years , gets jail",2026-02-05 12:15:00,2026-02-05 12:15:00,,,,,,0,0,0
+gdelt_c61e5b80,en,fallback_like,First nurse to give Covid jab recognised by Coventry University,2025-12-08 16:15:00,2025-12-08 16:15:00,,,,,,0,0,0
+gdelt_29d3b020,en,fallback_like,"Life in the Michigan - Ohio State rivalry borderlands , from beatosu to goblu",2025-11-29 21:00:00,2025-11-29 21:00:00,,,,,,0,0,0
+gdelt_f3d0ed6a,en,fallback_like,What lessons can community care apartments have for the new Age Well Neighbourhoods initiative ? ,2025-08-26 07:00:00,2025-08-26 07:00:00,,,,,,0,0,0
+gdelt_74a87529,en,fallback_like,Kenyan man charged with duping people to fight for Russia in Ukraine war,2026-02-27 06:15:00,2026-02-27 06:15:00,,,,,,0,0,0
+gdelt_f8ed59b8,en,fallback_like,"Shane Christie , Billy Guyton and the brain injuries behind two rugby deaths",2025-09-28 14:30:00,2025-09-28 14:30:00,,,,,,0,0,0
+gdelt_edf6e471,en,fallback_like,Iran war : US and Iran at odds over peace talks,2026-03-24 14:00:00,2026-03-24 14:00:00,,,,,,0,0,0
+gdelt_4d591cd1,en,fallback_like,"Ex - Nigerian minister went on  excessive  spending sprees , court hears",2026-01-29 04:45:00,2026-01-29 04:45:00,,,,,,0,0,0
+gdelt_920ad2e9,en,fallback_like,Work It - Hard truths about entrepreneurship : What passion doesnt prepare you for,2025-08-04 08:15:00,2025-08-04 08:15:00,,,,,,0,0,0
+gdelt_3eb0db12,en,fallback_like,Soaring gold prices push Singapore buyers towards bars and coins over jewellery,2026-01-05 13:45:00,2026-01-05 13:45:00,,,,,,0,0,0
+gdelt_d24ae5eb,en,fallback_like,SBS Transit halves time needed to replace tracks at 13 NEL stations,2025-11-16 22:45:00,2025-11-16 22:45:00,,,,,,0,0,0
+gdelt_cf20fb15,en,fallback_like,Why Leeds United pre - season tour of Germany will be behind closed doors ( again ) ,2025-07-17 14:00:00,2025-07-17 14:00:00,,,,,,0,0,0
+gdelt_00358407,en,fallback_like,The dying art of the Philippine jeepney,2026-01-23 10:00:00,2026-01-23 10:00:00,,,,,,0,0,0
+gdelt_e9a8933f,en,fallback_like,Belfast : Rent prices growing faster than any other united kingdom city,2026-03-24 16:00:00,2026-03-24 16:00:00,,,,,,0,0,0
+gdelt_7f39ac86,en,fallback_like,Iran designates EU armies  terrorist group in retaliatory move | Military News,2026-02-01 18:15:00,2026-02-01 18:15:00,,,,,,0,0,0
+gdelt_bee7d1e2,en,fallback_like,Maxim De Cuyper gives Brighton three quality left - backs – and a headache,2025-07-11 15:00:00,2025-07-11 15:00:00,,,,,,0,0,0
+gdelt_077d9430,en,fallback_like,Free Nnamdi Kanu protest in Abuja : Omoyele Sowore lead protest for release of Ipob leader by Tinubu government,2025-10-20 19:45:00,2025-10-20 19:45:00,,,,,,0,0,0
+gdelt_2c0289c2,en,fallback_like,Fact check : Could Trump trade tariffs pay off the US deficit ? | Donald Trump News,2025-07-24 22:30:00,2025-07-24 22:30:00,,,,,,0,0,0
+gdelt_8daf5ed2,en,fallback_like,He created Grand Theft Auto . Now he back with a novel about an AI that hijacks your mind,2025-12-14 09:15:00,2025-12-14 09:15:00,,,,,,0,0,0
+gdelt_781f9a06,en,fallback_like,"Commentary : What happens to climate action when the US retreats , Europe stumbles and China hesitates ? ",2025-08-29 06:45:00,2025-08-29 06:45:00,,,,,,0,0,0
+gdelt_5cdc1c9e,en,fallback_like,Ireland launches data protection probe into Grok deepfakes,2026-02-17 11:45:00,2026-02-17 11:45:00,,,,,,0,0,0
+gdelt_167c29bb,en,fallback_like,WEF : Is Greenland the wake - up call Europe needed ? ,2026-01-21 16:15:00,2026-01-21 16:15:00,,,,,,0,0,0
+gdelt_5d4880b7,en,fallback_like,"Miguel Cabrera on Justin Verlander , Team Venezuela and the state of the Tigers",2026-02-24 03:45:00,2026-02-24 03:45:00,,,,,,0,0,0
+gdelt_dd2151b0,en,fallback_like,Lessons From  Never Mamdani  and  Never Cuomo  Voters in the New York Mayor Race,2025-09-19 19:15:00,2025-09-19 19:15:00,,,,,,0,0,0
+gdelt_1ecba476,en,fallback_like,Why have BBC bosses resigned over a Trump speech edit ? ,2025-11-11 01:45:00,2025-11-11 01:45:00,,,,,,0,0,0
+gdelt_21b8ed77,en,fallback_like,This Indonesian fashion brand makes  farm - to - closet  batik clothes,2025-11-29 14:15:00,2025-11-29 14:15:00,,,,,,0,0,0
+gdelt_bdec19e0,en,fallback_like,Typhoon Kajiki batters Vietnam coastal provinces,2025-08-25 21:45:00,2025-08-25 21:45:00,,,,,,0,0,0
+gdelt_1b198f8e,en,fallback_like,The Italian people made us smile in Gaza,2025-09-29 00:00:00,2025-09-29 00:00:00,,,,,,0,0,0
+gdelt_cfe24f2e,en,fallback_like,LIVE : Nigeria confirms US strikes on ISIL targets in its northwest,2025-12-27 00:15:00,2025-12-27 00:15:00,,,,,,0,0,0
+gdelt_30f01ece,en,fallback_like,Dont rely on Medicaid ? Tax bill will drive up costs to your healthcare too | Tax News,2025-07-05 06:15:00,2025-07-05 06:15:00,,,,,,0,0,0
+gdelt_322851a4,en,fallback_like,LIVE : Israel Gaza City occupation plan condemned as 4 more die of hunger | Israel - Palestine conflict News,2025-08-09 14:45:00,2025-08-09 14:45:00,,,,,,0,0,0
+gdelt_b9a786d2,en,fallback_like,Russia welcomes Trump revised US security strategy | Russia - Ukraine war News,2025-12-08 06:30:00,2025-12-08 06:30:00,,,,,,0,0,0
+gdelt_d61af574,en,fallback_like,  Colonial - era classism : Residents decry demolitions in Nigeria Makoko | Poverty and Development News,2026-02-12 17:30:00,2026-02-12 17:30:00,,,,,,0,0,0
+gdelt_3fde6b96,en,fallback_like,"Early screen exposure linked to slower decision - making , higher anxiety in children : Study",2026-01-05 18:45:00,2026-01-05 18:45:00,,,,,,0,0,0
+gdelt_6732557b,en,fallback_like,Safety work completed on fifth of Wale tall buildings since Grenfell disaster,2026-03-02 02:30:00,2026-03-02 02:30:00,,,,,,0,0,0
+gdelt_ce32033c,en,fallback_like,Trump accuses banks of discriminating against his supporters,2025-08-06 03:15:00,2025-08-06 03:15:00,,,,,,0,0,0
+gdelt_ecd12629,en,fallback_like,MAS appoints new chief sustainability officer,2025-09-29 16:00:00,2025-09-29 16:00:00,,,,,,0,0,0
+gdelt_a54bf68b,en,fallback_like,"Leeds 3 - 2 Paderborn : Stach first appearance , Farke faces his son and absentees",2025-07-27 00:30:00,2025-07-27 00:30:00,,,,,,0,0,0
+gdelt_52981944,en,fallback_like,Iran war live : Tehran says Trump peace talk claims are  fake new | US - Israel war on Iran News,2026-03-24 15:00:00,2026-03-24 15:00:00,,,,,,0,0,0
+gdelt_d239b32c,en,fallback_like,Thousands honour Ozzy Osbourne at united kingdom hometown funeral procession,2025-07-31 09:15:00,2025-07-31 09:15:00,,,,,,0,0,0
+gdelt_4e7135bc,en,fallback_like,"Russia - Ukraine war : List of key events , day 1 , 443",2026-02-06 12:45:00,2026-02-06 12:45:00,,,,,,0,0,0
+gdelt_79dbf80d,en,fallback_like,Tony Pulis column :  Everyone follows fashion  - is the Premier League better now than 10 or 20 years ago ? ,2025-12-08 06:45:00,2025-12-08 06:45:00,,,,,,0,0,0
+gdelt_9bdefe44,en,fallback_like,"India biggest GST overhaul in 8 years targets cost of living relief , but sparks revenue concerns",2025-09-03 17:15:00,2025-09-03 17:15:00,,,,,,0,0,0
+gdelt_fd1d5552,en,fallback_like,How China Raced Ahead of the U . S . on Nuclear Power,2025-10-23 11:30:00,2025-10-23 11:30:00,,,,,,0,0,0
+gdelt_91e5888e,en,fallback_like,Faith Odhiambo resign : Why President of law society of Kenya resign from President William Ruto panel,2025-10-07 18:45:00,2025-10-07 18:45:00,,,,,,0,0,0
+gdelt_ab10830e,en,fallback_like,"Britain Got Talent golden buzzer  surreal , says farmer choir",2026-03-25 00:30:00,2026-03-25 00:30:00,,,,,,0,0,0
+gdelt_ca2726af,en,fallback_like,Malaysia national carmaker Proton opens country first electric vehicle plant,2025-09-04 22:00:00,2025-09-04 22:00:00,,,,,,0,0,0
+gdelt_b04fc437,en,fallback_like,Five men lynched in Guatemala after allegations of theft after quake,2025-07-12 15:45:00,2025-07-12 15:45:00,,,,,,0,0,0
+gdelt_2f685af7,en,fallback_like,India orders airlines to check fuel switches on Boeing jets,2025-07-15 01:00:00,2025-07-15 01:00:00,,,,,,0,0,0
+gdelt_60157250,en,fallback_like,LIVE : Israel kills over 20 in Gaza amid rising starvation deaths | Israel - Palestine conflict News,2025-08-03 18:15:00,2025-08-03 18:15:00,,,,,,0,0,0
+gdelt_5738d3e1,en,fallback_like,Exclusive - Wikipedia operator taps former US Ambassador to Chile for CEO role,2025-12-10 12:45:00,2025-12-10 12:45:00,,,,,,0,0,0
+gdelt_18e8fa16,en,fallback_like,"Resident support , compensation will be key to VERS success , experts say",2025-08-11 13:30:00,2025-08-11 13:30:00,,,,,,0,0,0
+gdelt_843d1b30,en,fallback_like,Epstein victims claim  cover up  as Maxwell moved to low security prison | Crime News,2025-08-02 12:45:00,2025-08-02 12:45:00,,,,,,0,0,0
+gdelt_08062fd6,en,fallback_like,"The making of Taty Castellanos , the  X - factor  forward driving West Ham survival bid",2026-03-07 20:00:00,2026-03-07 20:00:00,,,,,,0,0,0
+gdelt_e5a38252,en,fallback_like,Mali 0 Senegal 1 – An unconvincing win ? Ndiaye best game so far ? What was Bissouma thinking ? ,2026-01-10 22:00:00,2026-01-10 22:00:00,,,,,,0,0,0
+gdelt_d7a840be,en,fallback_like,Cocaine lab found on property of Bolivia former drug czar,2025-09-25 23:15:00,2025-09-25 23:15:00,,,,,,0,0,0
+gdelt_5922f067,en,fallback_like,"US warship arrives in Trinidad and Tobago , near Venezuela",2025-10-27 02:15:00,2025-10-27 02:15:00,,,,,,0,0,0
+gdelt_e5c6b33e,en,fallback_like,"LIVE : Israel advances plan to seize Gaza City , kills 81 in  fierce  attacks | Israel - Palestine conflict News",2025-08-21 05:00:00,2025-08-21 05:00:00,,,,,,0,0,0
+gdelt_55916f5d,en,fallback_like,Six Nations talking points : England discipline proves costly as France claim title,2026-03-16 16:30:00,2026-03-16 16:30:00,,,,,,0,0,0
+gdelt_02a8216f,en,fallback_like,Brazil Tightens Bolsonaro House Arrest Amid Escape Concerns,2025-09-01 07:00:00,2025-09-01 07:00:00,,,,,,0,0,0
+gdelt_1bee13b4,en,fallback_like,Iran warns of  zero restraint  amid heightened gas and oil attacks,2026-03-20 03:45:00,2026-03-20 03:45:00,,,,,,0,0,0
+gdelt_f62bcebd,en,fallback_like,LIVE : Israel launches wave of air strikes on Gaza killing 22 including kids | Israel - Palestine conflict News,2025-11-23 04:15:00,2025-11-23 04:15:00,,,,,,0,0,0
+gdelt_16f084f6,en,fallback_like,Commanders - Vikings takeaways : J . J . McCarthy sparks Minnesota offense in big win over Washington,2025-12-08 07:00:00,2025-12-08 07:00:00,,,,,,0,0,0
+gdelt_58cb6227,en,fallback_like,UK flights disrupted after air traffic control  technical issue  | Aviation News,2025-07-31 02:30:00,2025-07-31 02:30:00,,,,,,0,0,0
+gdelt_1a64422e,en,fallback_like,Rob Jetten sworn in as youngest - ever Dutch prime minister,2026-02-23 20:15:00,2026-02-23 20:15:00,,,,,,0,0,0
+gdelt_0c061bbe,en,fallback_like,LIVE : Four Palestinians killed in Gaza as Trump launches  Board of Peace  | Donald Trump News,2026-01-23 06:30:00,2026-01-23 06:30:00,,,,,,0,0,0
+gdelt_816f3595,en,fallback_like,Man who set fire to Pennsylvania governor mansion sentenced to 25 to 50 years in prison,2025-10-15 02:15:00,2025-10-15 02:15:00,,,,,,0,0,0
+gdelt_1bd388a6,en,fallback_like,"LIVE : Israel kills 40 people in Gaza since dawn , child dies of malnutrition | Israel - Palestine conflict News",2025-09-29 01:00:00,2025-09-29 01:00:00,,,,,,0,0,0
+gdelt_c8bcd981,en,fallback_like,17 companies named Verified Leading Social Enterprises,2026-01-09 01:15:00,2026-01-09 01:15:00,,,,,,0,0,0
+gdelt_5c566c4e,en,fallback_like,BBC says broadcast of racial slur at Baftas was  genuine mistake  ,2026-03-06 21:00:00,2026-03-06 21:00:00,,,,,,0,0,0
+gdelt_6c7e9383,en,fallback_like,Departing Coventry priest calls out  entitled  parishioners in poem,2025-07-15 14:45:00,2025-07-15 14:45:00,,,,,,0,0,0
+gdelt_bdaab981,en,fallback_like,Rashida Tlaib introduces US Congress resolution to recognise Gaza genocide,2025-11-15 05:45:00,2025-11-15 05:45:00,,,,,,0,0,0
+gdelt_5367a86f,en,fallback_like,Singapore contributing S$1m to public fundraising efforts for humanitarian aid to Gaza,2025-12-20 23:00:00,2025-12-20 23:00:00,,,,,,0,0,0
+gdelt_d239022a,en,fallback_like,"Japan ruling coalition likely to lose upper house majority , exit poll shows",2025-07-20 21:00:00,2025-07-20 21:00:00,,,,,,0,0,0
+gdelt_33a4082a,en,fallback_like,At least 23 people killed in nightclub fire in India Goa | News,2025-12-07 12:15:00,2025-12-07 12:15:00,,,,,,0,0,0
+gdelt_deb5c0f5,en,fallback_like,"At a Small School in the Bronx , Classical Music Thrives",2025-07-06 03:30:00,2025-07-06 03:30:00,,,,,,0,0,0
+gdelt_e0c533d6,en,fallback_like,Environmental groups to launch more projects to drive home green message,2025-12-17 03:15:00,2025-12-17 03:15:00,,,,,,0,0,0
+gdelt_b8886ea4,en,fallback_like,John Caldwell : Man accused of attempted murder has charges withdrawn,2026-02-17 22:45:00,2026-02-17 22:45:00,,,,,,0,0,0
+gdelt_5e149d14,en,fallback_like,Four foreigners nabbed for possessing housebreaking tools after Rail Corridor manhunt,2025-08-10 11:00:00,2025-08-10 11:00:00,,,,,,0,0,0
+gdelt_b8b06f7f,en,fallback_like,NATO ramping up defence capabilities in Arctic region amid strains with US,2026-03-31 00:30:00,2026-03-31 00:30:00,,,,,,0,0,0
+gdelt_9efbbe9f,en,fallback_like,Four injured in explosion at US air base in Japan,2025-06-09 17:15:00,2025-06-09 17:15:00,,,,,,0,0,0
+gdelt_4a157564,en,fallback_like,Jorgen Strand Larsen : Wolves reject £50m bid from Newcastle for Norway striker,2025-08-26 06:00:00,2025-08-26 06:00:00,,,,,,0,0,0
+gdelt_2528c7d7,en,fallback_like,Indonesia earsplitting sound horeg trucks leave communities divided,2025-09-24 14:15:00,2025-09-24 14:15:00,,,,,,0,0,0
+gdelt_262bab77,en,fallback_like,"Trump has no basis to deploy troops to Chicago , Democratic leader Jeffries says",2025-08-25 06:00:00,2025-08-25 06:00:00,,,,,,0,0,0
+gdelt_a83eb722,en,fallback_like,Snowy day as Japan votes in snap election,2026-02-09 10:30:00,2026-02-09 10:30:00,,,,,,0,0,0
+gdelt_8a560400,en,fallback_like,Yvette Cooper warns  Cold War peace dividend has gone  as united kingdom accuses Russia of killing Alexei Navalny,2026-02-15 18:15:00,2026-02-15 18:15:00,,,,,,0,0,0
+gdelt_a56c7311,en,fallback_like,Crash investigators find  black boxe from UPS plane crash that killed at least 9,2025-11-06 06:15:00,2025-11-06 06:15:00,,,,,,0,0,0
+gdelt_a09f9d1b,en,fallback_like,Man guilty of raping doctor and carrying out indecent act in dock,2025-10-15 03:15:00,2025-10-15 03:15:00,,,,,,0,0,0
+gdelt_b65872a4,en,fallback_like,Premium Bonds : Unclaimed prizes from NS & I draws pass £100m,2025-08-05 10:45:00,2025-08-05 10:45:00,,,,,,0,0,0
+gdelt_14ff7509,en,fallback_like,Japan finance minister says US Treasury Bessent shares concerns about weak yen,2026-01-13 14:45:00,2026-01-13 14:45:00,,,,,,0,0,0
+gdelt_fe516e8b,en,fallback_like,From fear to friendship : Seniors find confidence through horses,2025-08-07 13:45:00,2025-08-07 13:45:00,,,,,,0,0,0
+gdelt_fbd064d1,en,fallback_like,They Witness Deaths on the Tracks and Then Struggle to Get Help,2025-12-08 10:15:00,2025-12-08 10:15:00,,,,,,0,0,0
+gdelt_26b8c1fd,en,fallback_like,"LIVE : Gaza struggles for clean water , Hamas says ceasefire  meaningles | News",2026-02-08 04:45:00,2026-02-08 04:45:00,,,,,,0,0,0
+gdelt_1799760b,en,fallback_like,Scotland fans spend thousands to realise World Cup dream,2025-12-10 09:45:00,2025-12-10 09:45:00,,,,,,0,0,0
+gdelt_9d3c0f39,en,fallback_like,Beyond pressure : What is the Trump administration endgame in Cuba ? | Donald Trump News,2026-02-12 06:00:00,2026-02-12 06:00:00,,,,,,0,0,0
+gdelt_84950d08,en,fallback_like,Bangladesh vows democratic renewal on first anniversary of Hasina overthrow,2025-08-06 16:00:00,2025-08-06 16:00:00,,,,,,0,0,0
+gdelt_2b045415,en,fallback_like,What in the Thai - Cambodia peace agreement and can it hold ? | Border Disputes News,2025-10-27 20:45:00,2025-10-27 20:45:00,,,,,,0,0,0
+gdelt_60531b2a,en,fallback_like,Cristiano Ronaldo told  nobody makes decisions beyond their club  by Saudi league after Al Nassr absence,2026-02-07 14:30:00,2026-02-07 14:30:00,,,,,,0,0,0
+gdelt_4a803d62,en,fallback_like,"Victim commissioner Baroness Helen Newlove dies , aged 63",2025-11-13 02:30:00,2025-11-13 02:30:00,,,,,,0,0,0
+gdelt_4a0799b7,en,fallback_like,Jurgen Klopp : Mohamed Salah set completely new standards for professional footballers,2026-03-28 18:30:00,2026-03-28 18:30:00,,,,,,0,0,0
+gdelt_d139ea35,en,fallback_like,Matthew McConaughey on starring with his family in film about California deadliest wildfire,2025-09-25 09:30:00,2025-09-25 09:30:00,,,,,,0,0,0
+gdelt_af4e6610,en,fallback_like,"Amazon targets as many as 30 , 000 corporate job cuts , sources say",2025-10-28 10:00:00,2025-10-28 10:00:00,,,,,,0,0,0
+gdelt_368e1220,en,fallback_like,Sanctioned oil tankers have left Venezuela : Analysts,2026-01-11 06:00:00,2026-01-11 06:00:00,,,,,,0,0,0
+gdelt_a4c7beea,en,fallback_like,Reform - led Kent council calls for more overseas social care visas,2025-07-15 21:45:00,2025-07-15 21:45:00,,,,,,0,0,0
+gdelt_4722231c,en,fallback_like,The Seahawk offense is humming . Can they sustain it without a reliable running game ? ,2025-10-14 20:00:00,2025-10-14 20:00:00,,,,,,0,0,0
+gdelt_6c839ccf,en,fallback_like,Cole Palmer celebration trademark : Have others done the same ? Will it become more common ? ,2025-11-18 14:15:00,2025-11-18 14:15:00,,,,,,0,0,0
+gdelt_b4a65ce8,en,fallback_like,"Cars in Hanau in Germany found smeared with swastikas in blood , police say",2025-11-06 20:00:00,2025-11-06 20:00:00,,,,,,0,0,0
+gdelt_60e3620c,en,fallback_like,You thought Scotland would flunk their big World Cup chance ? You havent met this Scotland team,2025-11-19 22:30:00,2025-11-19 22:30:00,,,,,,0,0,0
+gdelt_1d82d554,en,fallback_like,Singapore Nuclear Research and Safety Institute to receive S$66m grant,2025-07-12 12:45:00,2025-07-12 12:45:00,,,,,,0,0,0
+gdelt_ad095f63,en,fallback_like,Why is Taiwan holding a  Great Recall  vote ? | Elections News,2025-07-25 12:45:00,2025-07-25 12:45:00,,,,,,0,0,0
+gdelt_d65adb11,en,fallback_like,UK judge finds BHP Group liable in Brazil worst environmental disaster | Environment News,2025-11-14 20:45:00,2025-11-14 20:45:00,,,,,,0,0,0
+gdelt_268db7a3,en,fallback_like,"Multiple dead , missing as blast rocks US explosives plant",2025-10-11 08:30:00,2025-10-11 08:30:00,,,,,,0,0,0
+gdelt_13675f5f,en,fallback_like,Three people killed and three arrested in Illingworth crash,2026-03-19 17:30:00,2026-03-19 17:30:00,,,,,,0,0,0
+gdelt_fde67fa0,en,fallback_like,"Protests erupt in Bangladesh after fighter jet crashes into school , killing several children",2025-07-22 21:15:00,2025-07-22 21:15:00,,,,,,0,0,0
+gdelt_d2a3561a,en,fallback_like,"Dundalk , County Louth : Tributes paid to five people who died in crash",2025-11-17 18:45:00,2025-11-17 18:45:00,,,,,,0,0,0
+gdelt_05a7a6f8,en,fallback_like,The US - Israel war on Iran is shaped by religion as much as strategy,2026-03-18 00:30:00,2026-03-18 00:30:00,,,,,,0,0,0
+gdelt_24c6a1a0,en,fallback_like,"In Armenia , a bitter dispute escalates between PM Pashinyan and the Church | Politics News",2025-07-08 18:45:00,2025-07-08 18:45:00,,,,,,0,0,0
+gdelt_5ba109f6,en,fallback_like,New task force to review support for people with disabilities and mental health conditions in legal system,2026-01-08 19:45:00,2026-01-08 19:45:00,,,,,,0,0,0
+gdelt_404e6297,en,fallback_like,Death toll from Indonesia school collapse rises to 54,2025-10-06 16:15:00,2025-10-06 16:15:00,,,,,,0,0,0
+gdelt_9eb87141,en,fallback_like,LIVE : Israel pounds Gaza as forced starvation kills 10 more Palestinians | Gaza News,2025-07-24 00:45:00,2025-07-24 00:45:00,,,,,,0,0,0
+gdelt_bdc1a031,en,fallback_like,Jimmy Lai : Hong Kong pro - democracy tycoon gets 20 year jail under national security law,2026-02-09 20:00:00,2026-02-09 20:00:00,,,,,,0,0,0
+gdelt_bc07bddb,en,fallback_like,Lisburn Road : Man critical after two vehicle collision,2026-03-23 21:30:00,2026-03-23 21:30:00,,,,,,0,0,0
+gdelt_5340bf16,en,fallback_like,Cambridge surgeon warn parents of skin cancer risks to children,2025-07-30 01:00:00,2025-07-30 01:00:00,,,,,,0,0,0
+gdelt_9ca6fabc,en,fallback_like,How will Ukraine attack on Russian bombers affect the war ? | Russia - Ukraine war News,2025-06-02 23:45:00,2025-06-02 23:45:00,,,,,,0,0,0
+gdelt_16d349c2,en,fallback_like,"Israel Gaza plan risks  another calamity , UN official warns",2025-08-11 07:30:00,2025-08-11 07:30:00,,,,,,0,0,0
+gdelt_3fb97289,en,fallback_like,Rob Reiner : Six classic movies from the  big - hearted geniu director,2025-12-15 21:15:00,2025-12-15 21:15:00,,,,,,0,0,0
+gdelt_9402d126,en,fallback_like,How an Indian temple town is at the centre of hundreds of alleged murders,2025-07-23 00:00:00,2025-07-23 00:00:00,,,,,,0,0,0
+gdelt_00bcffa5,en,fallback_like,Commentary : The bigger story behind Modi China trip,2025-08-30 07:30:00,2025-08-30 07:30:00,,,,,,0,0,0
+gdelt_989c5092,en,fallback_like,Carney tells Tumbler Ridge residents that Canadians  will always be with you  following mass shooting,2026-02-14 14:45:00,2026-02-14 14:45:00,,,,,,0,0,0
+gdelt_673c78c8,en,fallback_like,Ex - Nigeria oil minister Diezani Alison - Madueke stands trial in united kingdom on bribery charges,2026-01-28 03:15:00,2026-01-28 03:15:00,,,,,,0,0,0
+gdelt_b1bb5d7e,en,fallback_like,Llandudno hotel cant expand as council cant afford wall repairs,2026-01-22 06:30:00,2026-01-22 06:30:00,,,,,,0,0,0
+gdelt_6f45793f,en,fallback_like,Iran rains missiles onto Israel and mocks Trump talk of joint control of strait,2026-03-24 21:15:00,2026-03-24 21:15:00,,,,,,0,0,0
+gdelt_a54008d5,en,fallback_like,"AMD turns to AI startups to inform chip , software design",2025-06-13 19:00:00,2025-06-13 19:00:00,,,,,,0,0,0
+gdelt_d876c504,en,fallback_like,Australia to send hundreds to Nauru in $1 . 6bn migrant resettlement deal,2025-09-04 14:15:00,2025-09-04 14:15:00,,,,,,0,0,0
+gdelt_be3ba5aa,en,fallback_like,"Arab , Muslim leaders urge review of Israel ties after Qatar attack",2025-09-16 11:15:00,2025-09-16 11:15:00,,,,,,0,0,0
+gdelt_3c57933c,en,fallback_like,Israel approves illegal settlement plan that would split occupied West Bank,2025-08-21 00:00:00,2025-08-21 00:00:00,,,,,,0,0,0
+gdelt_49ea3eda,en,fallback_like,"Trump - Albanese G7 meeting in limbo as ties sour over Israeli sanctions , AUKUS pact",2025-06-13 15:45:00,2025-06-13 15:45:00,,,,,,0,0,0
+gdelt_74132f45,en,fallback_like,Singapore only full marathon keeps growing in popularity . But can it ever be great ? ,2025-12-09 06:45:00,2025-12-09 06:45:00,,,,,,0,0,0
+gdelt_548ac6df,en,fallback_like,"Mandel Mailbag : Nick Saban future , Penn State pressure , top non - SEC / Big Ten games",2025-07-16 18:15:00,2025-07-16 18:15:00,,,,,,0,0,0
+gdelt_16c61a1e,en,fallback_like,Wolves in talks to sign Ladislav Krejci from Girona,2025-08-22 02:15:00,2025-08-22 02:15:00,,,,,,0,0,0
+gdelt_e1f2d2e3,en,fallback_like,Domestic abuse : united kingdom first as QUB student nurses to be trained in spotting signs,2025-11-12 08:45:00,2025-11-12 08:45:00,,,,,,0,0,0
+gdelt_d33ea4d1,en,fallback_like,"Woman , 40 , accused of repeated sexual offences against boy aged below 16 in parked car , other locations",2026-03-02 20:00:00,2026-03-02 20:00:00,,,,,,0,0,0
+gdelt_17b9a1e4,en,fallback_like,"Brazil Lula says Maduro should face trial in Venezuela , not US | Nicolas Maduro News",2026-02-21 13:00:00,2026-02-21 13:00:00,,,,,,0,0,0
+gdelt_7abaaf77,en,fallback_like,See How Home Insurance Premiums Are Changing Near You,2025-11-19 14:45:00,2025-11-19 14:45:00,,,,,,0,0,0
+gdelt_161e4fdd,en,fallback_like,Israel ramps up Lebanon strikes as Hezbollah vows to defend itself,2025-11-06 22:30:00,2025-11-06 22:30:00,,,,,,0,0,0
+gdelt_133517dd,en,fallback_like,Supreme Court judge appointed new chair of Sheku Bayoh inquiry,2026-01-15 03:00:00,2026-01-15 03:00:00,,,,,,0,0,0
+gdelt_e4157c70,en,fallback_like,Fireworks and first - footing : What on in Edinburgh for Hogmanay ? ,2025-12-28 22:30:00,2025-12-28 22:30:00,,,,,,0,0,0
+gdelt_ba3e4c16,en,fallback_like,South Korea investigators seek to arrest former President Yoon again,2025-07-06 19:00:00,2025-07-06 19:00:00,,,,,,0,0,0
+gdelt_c4510f0e,en,fallback_like,"Country pavilions showcase art , culture , food and souvenirs at COP30 in Brazil Belem",2025-11-18 00:45:00,2025-11-18 00:45:00,,,,,,0,0,0
+gdelt_cf791bd1,en,fallback_like,"Eight die in Gaza as storm brings extreme cold , collapses buildings",2026-01-13 20:30:00,2026-01-13 20:30:00,,,,,,0,0,0
+gdelt_3d4b88b7,en,fallback_like,4 in 10 lower - income families on ComLink+ lack regular jobs ; more face family violence concerns : MSF report,2025-12-16 14:00:00,2025-12-16 14:00:00,,,,,,0,0,0
+gdelt_1602668a,en,fallback_like,Syria fighting live : SDF says it thwarts attacks on Kobani as truce teeters | ISIL / ISIS News,2026-01-20 20:15:00,2026-01-20 20:15:00,,,,,,0,0,0
+gdelt_c633ca98,en,fallback_like,What Guess AI model in Vogue means for beauty standards,2025-07-27 08:45:00,2025-07-27 08:45:00,,,,,,0,0,0
+gdelt_1f788b11,en,fallback_like,"Ukraine drone attacks kill three in Russia , cause fire at oil refinery",2025-08-02 22:30:00,2025-08-02 22:30:00,,,,,,0,0,0
+gdelt_4819a737,en,fallback_like,Kurdish PKK militants burn weapons in Iraq to launch disarmament,2025-07-12 04:00:00,2025-07-12 04:00:00,,,,,,0,0,0
+gdelt_1ada99fa,en,fallback_like,Women League Cup final : Chelsea block out noise to win yet another trophy,2026-03-16 04:30:00,2026-03-16 04:30:00,,,,,,0,0,0
+gdelt_e8447802,en,fallback_like,"Two dead , eight in critical condition after shooting at Brown University in US",2025-12-14 10:45:00,2025-12-14 10:45:00,,,,,,0,0,0
+gdelt_1aab6279,en,fallback_like,China smaller manufacturers look to catch the automation wave,2025-12-14 11:45:00,2025-12-14 11:45:00,,,,,,0,0,0
+gdelt_5b2eab39,en,fallback_like,Why Mercede engine loophole dispute suddenly has eight F1 cars at risk,2026-02-12 20:30:00,2026-02-12 20:30:00,,,,,,0,0,0
+gdelt_9da476d0,en,fallback_like,Ranking the Big Ten 18 head coaching jobs : Which schools are best set up for success ? ,2025-11-05 21:00:00,2025-11-05 21:00:00,,,,,,0,0,0
+gdelt_2f0cea48,en,fallback_like,Trump economic adviser Miran gets Senate nod to join Fed board,2025-09-16 09:15:00,2025-09-16 09:15:00,,,,,,0,0,0
+gdelt_de2673dd,en,fallback_like,Myanmar election delivers walkover win for military - backed political party,2026-01-31 14:30:00,2026-01-31 14:30:00,,,,,,0,0,0
+gdelt_5f54a8f9,en,fallback_like,Iran war : What is happening on day 32 of US - Israel attacks ? ,2026-03-31 18:15:00,2026-03-31 18:15:00,,,,,,0,0,0
+gdelt_e1c1272a,en,fallback_like,LIVE : Israel keeps pummeling Gaza as four more Palestinians starve to death | Israel - Palestine conflict News,2025-08-14 23:00:00,2025-08-14 23:00:00,,,,,,0,0,0
+gdelt_e8087a8a,en,fallback_like,Tottenham complete loan signing of Joao Palhinha from Bayern Munich,2025-08-04 05:00:00,2025-08-04 05:00:00,,,,,,0,0,0
+gdelt_0f445510,en,fallback_like,What weve learned ( so far ) from watching the World Baseball Classic,2026-03-12 19:00:00,2026-03-12 19:00:00,,,,,,0,0,0
+gdelt_f1d44749,en,fallback_like,Minister  confident  issues over Hillsborough Law can be resolved,2026-01-18 22:15:00,2026-01-18 22:15:00,,,,,,0,0,0
+gdelt_201e7109,en,fallback_like,Doctors see surge in respiratory cases as haze persists over parts of Singapore,2026-02-10 06:30:00,2026-02-10 06:30:00,,,,,,0,0,0
+gdelt_a3c8e97d,en,fallback_like,"Death toll from Texas floods rises to 82 , dozens still missing",2025-07-07 15:00:00,2025-07-07 15:00:00,,,,,,0,0,0
+gdelt_ffcb48c3,en,fallback_like,Why the Texas Ranger Nolan Ryan bloody jersey giveaway presented a challenge,2026-02-18 20:30:00,2026-02-18 20:30:00,,,,,,0,0,0
+gdelt_e3ed4c1c,en,fallback_like,Grand jury declines to indict man for throwing sandwich at US agents,2025-08-28 06:00:00,2025-08-28 06:00:00,,,,,,0,0,0
+gdelt_dc2cfff2,en,fallback_like,How Africa gets shortchanged in trade with Europe,2026-03-23 23:15:00,2026-03-23 23:15:00,,,,,,0,0,0
+gdelt_cc4a303a,en,fallback_like,"Boxing : Oleksandr Usyk , Daniel Dubois , Fabio Wardley - What next for heavyweight division ? ",2025-06-08 21:00:00,2025-06-08 21:00:00,,,,,,0,0,0
+gdelt_7beef050,en,fallback_like,"Tetesi za Soka Ulaya Jumatatu : Rashford , Beto , Endrick , Dumfries",2026-02-02 12:30:00,2026-02-02 12:30:00,,,,,,0,0,0
+gdelt_658414af,en,fallback_like,Commuters urged to plan alternative routes ahead of scheduled 3 - month Circle Line disruption,2026-01-13 11:45:00,2026-01-13 11:45:00,,,,,,0,0,0
+gdelt_4fa6348e,en,fallback_like,"Thailand votes in general election , historic referendum on constitution",2026-02-16 18:45:00,2026-02-16 18:45:00,,,,,,0,0,0
+gdelt_7af4ca15,en,fallback_like,Cast announced for new BBC legal drama Counsels set in Glasgow,2025-09-02 01:30:00,2025-09-02 01:30:00,,,,,,0,0,0
+gdelt_5c935c9b,en,fallback_like,Read the Charges Against Tyler Robinson,2025-09-17 03:15:00,2025-09-17 03:15:00,,,,,,0,0,0
+gdelt_676ead6c,en,fallback_like,"Ethiopian troops  executed  aid workers in Tigray conflict , MSF official says",2025-07-15 14:30:00,2025-07-15 14:30:00,,,,,,0,0,0
+gdelt_9aadb7dc,en,fallback_like,"Coupang data breach : US VP expressed hope probe will not cause tension , says South Korean PM",2026-01-24 21:45:00,2026-01-24 21:45:00,,,,,,0,0,0
+gdelt_3312d401,en,fallback_like,US tariffs pose new threat to South Korea booming K - beauty industry,2025-10-07 19:30:00,2025-10-07 19:30:00,,,,,,0,0,0
+gdelt_fb99ec27,en,fallback_like,"Constance Marten spent months at  torture  church , friend tells BBC",2025-07-15 15:45:00,2025-07-15 15:45:00,,,,,,0,0,0
+gdelt_7532704b,en,fallback_like,Newy : Kidnap suspects released in suspected fraud case,2025-09-28 19:30:00,2025-09-28 19:30:00,,,,,,0,0,0
+gdelt_b2b3f94b,en,fallback_like,Wrexham : Biker footage sought as man dies in crash,2025-08-25 04:00:00,2025-08-25 04:00:00,,,,,,0,0,0
+gdelt_7bd52081,en,fallback_like,Iran says no country can deprive it of enrichment rights,2026-02-19 18:45:00,2026-02-19 18:45:00,,,,,,0,0,0
+gdelt_1c7bfd80,en,fallback_like,Living amid bombings in Iran : How fear impacts mental health,2026-03-15 20:00:00,2026-03-15 20:00:00,,,,,,0,0,0
+gdelt_038b3307,en,fallback_like,Iran protests LIVE : Tehran says Trump encouraging political destabilisation | Protests News,2026-01-14 12:15:00,2026-01-14 12:15:00,,,,,,0,0,0
+gdelt_b308503e,en,fallback_like,"US Congress releases Epstein estate photos featuring Trump , Clinton",2025-12-13 05:30:00,2025-12-13 05:30:00,,,,,,0,0,0
+gdelt_f2791e7e,en,fallback_like,Mark DeRosa on managing Team united states :  It would be 100 percent yes to do it again  ,2026-03-18 21:45:00,2026-03-18 21:45:00,,,,,,0,0,0
+gdelt_db4393ad,en,fallback_like,"Mosques attacked , children racially abused as hard right rises in united kingdom | Racism News",2026-02-26 19:00:00,2026-02-26 19:00:00,,,,,,0,0,0
+gdelt_27324044,en,fallback_like,UK MPs dig up decade - old tweets to demand rights activist lose citizenship,2025-12-29 22:30:00,2025-12-29 22:30:00,,,,,,0,0,0
+gdelt_1cb671bd,en,fallback_like,Spike in complaints against Leicestershire county councillors,2025-12-28 16:15:00,2025-12-28 16:15:00,,,,,,0,0,0
+gdelt_d1b1e869,en,fallback_like,Iran war : What happening on day 24 of US - Israel attacks ? | US - Israel war on Iran News,2026-03-23 20:00:00,2026-03-23 20:00:00,,,,,,0,0,0
+gdelt_52fca4ae,en,fallback_like,Colour and caution as banned kite - flying festival returns to Pakistan,2026-02-09 01:00:00,2026-02-09 01:00:00,,,,,,0,0,0
+gdelt_c5607f2d,en,fallback_like,"Maid gets jail for hitting 7 - month - old baby repeatedly , leaving bruise",2025-08-26 19:45:00,2025-08-26 19:45:00,,,,,,0,0,0
+gdelt_33b8ef99,en,fallback_like,  Eating disorder myths made it harder for me to graduate  ,2025-10-26 18:15:00,2025-10-26 18:15:00,,,,,,0,0,0
+gdelt_88779f01,en,fallback_like,Donald Trump MRI test results released by White House doctor,2025-12-02 07:00:00,2025-12-02 07:00:00,,,,,,0,0,0
+gdelt_1aeeeac6,en,fallback_like,"Singapore , South Korea to work towards upgrading free trade agreement",2026-03-02 14:30:00,2026-03-02 14:30:00,,,,,,0,0,0
+gdelt_5ea786c3,en,fallback_like,France Macron calls for  immediate and coordinated action  to rebalance China - EU ties,2025-12-17 22:30:00,2025-12-17 22:30:00,,,,,,0,0,0
+gdelt_902f6b1d,en,fallback_like,From rental flats to community leaders : Meet the youths giving back to their neighbourhoods,2025-12-08 16:15:00,2025-12-08 16:15:00,,,,,,0,0,0
+gdelt_6f3b8679,en,fallback_like,Israel urges retraction of Gaza famine report as UN Security Council warns of  man - made crisis  ,2025-08-28 03:15:00,2025-08-28 03:15:00,,,,,,0,0,0
+gdelt_3d63124d,en,fallback_like,Stories on Momenta filing for Hong Kong IPO withdrawn,2025-12-03 21:15:00,2025-12-03 21:15:00,,,,,,0,0,0
+gdelt_ab239f72,en,fallback_like,Trump says BRICS nations to get 10 % tariff  pretty soon  ,2025-07-09 06:00:00,2025-07-09 06:00:00,,,,,,0,0,0
+gdelt_d3b49eb4,en,fallback_like,Iran : EU envoys summoned over IRGC terrorist designation,2026-02-03 00:30:00,2026-02-03 00:30:00,,,,,,0,0,0
+gdelt_76394c5f,en,fallback_like,Man dies after fall at Oasis Wembley concert,2025-08-04 02:00:00,2025-08-04 02:00:00,,,,,,0,0,0
+gdelt_ef019184,en,fallback_like,  No one will support it : Ukraine soldiers react to US peace plan,2025-11-24 19:30:00,2025-11-24 19:30:00,,,,,,0,0,0
+gdelt_fe8efc2a,en,fallback_like,Trail hunting ban moves closer as government consultation begins,2026-03-26 23:30:00,2026-03-26 23:30:00,,,,,,0,0,0
+gdelt_ce9c174c,en,fallback_like,Rare mangroves from Timor - Leste to be planted in Singapore Bay East Garden,2025-10-22 01:30:00,2025-10-22 01:30:00,,,,,,0,0,0
+gdelt_02d6bf37,en,fallback_like,The man behind the Premier League longest throw : Meet Michael Kayode,2026-03-06 13:45:00,2026-03-06 13:45:00,,,,,,0,0,0
+gdelt_d8020667,en,fallback_like,Palestinian doctors graduate in ruins of Gaza destroyed al - Shifa Hospital | Israel - Palestine conflict News,2025-12-26 19:15:00,2025-12-26 19:15:00,,,,,,0,0,0
+gdelt_74ffd910,en,fallback_like,Japan censures  extremely inappropriate  remarks by Chinese envoy as Taiwan furore escalates,2025-11-10 20:30:00,2025-11-10 20:30:00,,,,,,0,0,0
+gdelt_289caed5,en,fallback_like,Drug trafficker on Singapore death row granted clemency,2025-08-15 22:15:00,2025-08-15 22:15:00,,,,,,0,0,0
+gdelt_345065d8,en,fallback_like,"Third armed robbery suspect killed in Kedah police shootout , linked to US$1 . 4 million crime spree",2025-07-06 11:30:00,2025-07-06 11:30:00,,,,,,0,0,0
+gdelt_6702b08a,en,fallback_like,Tuam : Full excavation of mass baby grave due to begin,2025-07-14 14:15:00,2025-07-14 14:15:00,,,,,,0,0,0
+gdelt_2d558e6f,en,fallback_like,Mother admits to killing children in New Zealand  suitcase murder  ,2025-09-12 18:15:00,2025-09-12 18:15:00,,,,,,0,0,0
+gdelt_2a1bb2f3,en,fallback_like,Mariners vs . Blue Jays live updates : Toronto scores first in ALCS Game 6,2025-10-20 09:00:00,2025-10-20 09:00:00,,,,,,0,0,0
+gdelt_3ca10398,en,fallback_like,Trump crackdown on EVs hits home in the Battery Belt,2025-10-12 14:45:00,2025-10-12 14:45:00,,,,,,0,0,0
+gdelt_69f1705a,en,fallback_like,Clippers fans arent normally ones for booing . That changing,2025-12-20 02:00:00,2025-12-20 02:00:00,,,,,,0,0,0
+gdelt_6de8ddd6,en,fallback_like,"  Aircon weather  in Singapore : What behind the rainy , cool week ? ",2026-02-20 21:45:00,2026-02-20 21:45:00,,,,,,0,0,0
+gdelt_ec1b291e,en,fallback_like,US VP Vance defends comments on wishing wife would convert to Christianity,2025-11-02 01:00:00,2025-11-02 01:00:00,,,,,,0,0,0
+gdelt_5220cd01,en,fallback_like,Why some home - based F & B businesses choose to enter Singapore tough restaurant scene,2025-07-22 07:00:00,2025-07-22 07:00:00,,,,,,0,0,0
+gdelt_85e18578,en,fallback_like,Bank of America reaches settlement in Epstein lawsuit,2026-03-29 00:30:00,2026-03-29 00:30:00,,,,,,0,0,0
+gdelt_4f682be5,en,fallback_like,"Brandon Ingram doesnt need to prove himself with Raptors , but he might do it anyway",2025-10-22 19:00:00,2025-10-22 19:00:00,,,,,,0,0,0
+gdelt_f708e562,en,fallback_like,What happens when you take too much caffeine,2026-01-28 09:15:00,2026-01-28 09:15:00,,,,,,0,0,0
+gdelt_66d8211d,en,fallback_like,Swindon explosion : Crews remain at Groundwell Industrial Estate,2025-09-25 16:15:00,2025-09-25 16:15:00,,,,,,0,0,0
+gdelt_c5391453,en,fallback_like,"Singapore cannot alter course of Israel - Hamas war , but can help in tangible ways : Vivian Balakrishnan",2025-11-06 22:15:00,2025-11-06 22:15:00,,,,,,0,0,0
+gdelt_bee186d5,en,fallback_like,The Singaporean shoemaker who crafts bespoke shoes under his own label,2025-08-20 15:45:00,2025-08-20 15:45:00,,,,,,0,0,0
+gdelt_617aa933,en,fallback_like,Cycle Around Japan - Shimanami : Life on the Islands,2026-01-18 08:30:00,2026-01-18 08:30:00,,,,,,0,0,0
+gdelt_138203a7,en,fallback_like,Inside Three Longterm Relationships With A . I . Chatbots,2025-11-06 21:15:00,2025-11-06 21:15:00,,,,,,0,0,0
+gdelt_245fd094,en,fallback_like,LIVE : Israel bombs family home in Gaza with children among 11 killed | Israel - Palestine conflict News,2025-09-25 15:45:00,2025-09-25 15:45:00,,,,,,0,0,0
+gdelt_f70beeac,en,fallback_like,US auto suppliers say immediate action needed on China rare earths restrictions,2025-06-05 12:45:00,2025-06-05 12:45:00,,,,,,0,0,0
+gdelt_6b94f953,en,fallback_like,Global airlines race to fix A320 jets after Airbus recall,2025-11-29 21:45:00,2025-11-29 21:45:00,,,,,,0,0,0
+gdelt_10e44206,en,fallback_like,"Sudan civil war : Children among 13 killed after drone hits home in el - Obeid city , medics say",2026-01-06 21:45:00,2026-01-06 21:45:00,,,,,,0,0,0
+gdelt_013ee242,en,fallback_like,"Test all babies for rare genetic disease SMA , parents urge",2025-11-30 09:15:00,2025-11-30 09:15:00,,,,,,0,0,0
+gdelt_82af4dcc,en,fallback_like,Commentary : Did anyone really win the Great Eastern - OCBC standoff ? ,2025-07-12 06:45:00,2025-07-12 06:45:00,,,,,,0,0,0
+gdelt_330ea12f,en,fallback_like,"Record - breaking powerlifter in Shepshed , 74 , returns to the gym",2025-10-15 13:30:00,2025-10-15 13:30:00,,,,,,0,0,0
+gdelt_f83509b9,en,fallback_like,Lukewarm response to UI Boustead REIT debut on SGX,2026-03-12 22:15:00,2026-03-12 22:15:00,,,,,,0,0,0
+gdelt_65e8eafb,en,fallback_like,How the Bondi Beach Shooting Unfolded : Maps and Videos,2025-12-15 03:30:00,2025-12-15 03:30:00,,,,,,0,0,0
+gdelt_3eb3e9aa,en,fallback_like,"Syrian president Sharaa expected to visit Washington , US envoy says",2025-11-02 03:30:00,2025-11-02 03:30:00,,,,,,0,0,0
+gdelt_ac9fadc4,en,fallback_like,"Indonesia is Southeast Asia top rice producer , but fall in farmer numbers threatens viability",2025-08-04 15:00:00,2025-08-04 15:00:00,,,,,,0,0,0
+gdelt_d6da5df9,en,fallback_like,2025 Heisman Trophy odds : Julian Sayin joins Ty Simpson and Fernando Mendoza as favorites,2025-10-21 00:00:00,2025-10-21 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_a6fc75d3,en,fallback_like,Woman linked to fake SAF bulk order scams charged in court,2025-09-17 13:00:00,2025-09-17 13:00:00,,,,,,0,0,0
+gdelt_da7e2e33,en,fallback_like,Will the US - China  framework  agreement defuse trade tension ? | Business and Economy,2025-06-12 01:15:00,2025-06-12 01:15:00,,,,,,0,0,0
+gdelt_03b720b8,en,fallback_like,Thailand Queen Mother Sirikit dies at 93,2025-10-25 22:15:00,2025-10-25 22:15:00,,,,,,0,0,0
+gdelt_1d758e7b,en,fallback_like,Ex - Nasa scientist John Burford jailed over £1m investment fraud,2025-09-08 23:30:00,2025-09-08 23:30:00,,,,,,0,0,0
+gdelt_3a019b13,en,fallback_like,Live : Global Sumud Flotilla reports explosions as drones fly overhead | Israel - Palestine conflict News,2025-09-24 10:45:00,2025-09-24 10:45:00,,,,,,0,0,0
+gdelt_d4939aba,en,fallback_like,China Xi urges efforts to maintain social stability in Xinjiang,2025-09-24 21:00:00,2025-09-24 21:00:00,,,,,,0,0,0
+gdelt_0db6ab74,en,fallback_like,Operators running enrichment programmes see enrolment increase for holiday courses,2025-06-09 23:30:00,2025-06-09 23:30:00,,,,,,0,0,0
+gdelt_901bd972,en,fallback_like,Real Madrid Ballon dOr boycott is a story of politics and paranoia,2025-09-23 06:00:00,2025-09-23 06:00:00,,,,,,0,0,0
+gdelt_e3615dfd,en,fallback_like,Call for probe into  possible market abuse  in Budget run - up,2025-11-30 23:00:00,2025-11-30 23:00:00,,,,,,0,0,0
+gdelt_d7239c01,en,fallback_like,"For Javier Tebas , hosting La Liga match in Miami doesnt betray tradition .  It defends it  ",2025-10-11 19:00:00,2025-10-11 19:00:00,,,,,,0,0,0
+gdelt_39983004,en,fallback_like,"Meet the Singaporean Lego collector with over 6 , 000 Minifigures",2025-09-26 16:15:00,2025-09-26 16:15:00,,,,,,0,0,0
+gdelt_a7bf5c87,en,fallback_like,"Chelsea handed suspended transfer ban , £10m fine for breaching Premier League rules",2026-03-16 22:30:00,2026-03-16 22:30:00,,,,,,0,0,0
+gdelt_31b7f261,en,fallback_like,Real Madrid v Atletico Madrid is bigger than ever and at times it has been toxic,2025-09-26 13:15:00,2025-09-26 13:15:00,,,,,,0,0,0
+gdelt_101c467a,en,fallback_like,Rescue operation ends after deadly landfill collapse in Indonesia,2026-03-10 13:45:00,2026-03-10 13:45:00,,,,,,0,0,0
+gdelt_786228a6,en,fallback_like,New York mass shooter blamed NFL for his brain injuries : Mayor,2025-07-30 03:15:00,2025-07-30 03:15:00,,,,,,0,0,0
+gdelt_8e6c82f6,en,fallback_like,"Reform united kingdom councillors obstructed by officials , Nigel Farage says",2025-07-20 21:45:00,2025-07-20 21:45:00,,,,,,0,0,0
+gdelt_0f5778b8,en,fallback_like,Johnny Vegas creates artwork for Stoke - on - Trent ceramics showcase,2025-09-01 14:45:00,2025-09-01 14:45:00,,,,,,0,0,0
+gdelt_8b9cab2f,en,fallback_like,LIVE : Palestinians in Gaza wait for Israel to fulfill aid promise | Israel - Palestine conflict News,2025-10-15 18:30:00,2025-10-15 18:30:00,,,,,,0,0,0
+gdelt_51f05273,en,fallback_like,LIVE : Israel kills dozens of Palestinians as Gaza war draws global outcry | Israel - Palestine conflict News,2025-09-28 02:00:00,2025-09-28 02:00:00,,,,,,0,0,0
+gdelt_60b9c611,en,fallback_like,It is time to give Africans a stake in African growth,2025-11-11 01:45:00,2025-11-11 01:45:00,,,,,,0,0,0
+gdelt_2837b598,en,fallback_like,  Missiles explode right above you : Chinese citizens stranded amid Iran war share harrowing experiences,2026-03-02 20:00:00,2026-03-02 20:00:00,,,,,,0,0,0
+gdelt_8a0ff770,en,fallback_like,Alarms raised as Trump CDC cuts number of suggested vaccines for children | Health News,2026-01-06 11:30:00,2026-01-06 11:30:00,,,,,,0,0,0
+gdelt_da28682b,en,fallback_like,European troops arrive in Greenland as talks with US hit wall over future,2026-01-16 01:30:00,2026-01-16 01:30:00,,,,,,0,0,0
+gdelt_9eb6e498,en,fallback_like,"Crew member killed after projectile hits tanker off Oman , manager says",2026-03-02 05:15:00,2026-03-02 05:15:00,,,,,,0,0,0
+gdelt_f24f3cc9,en,fallback_like,Addicted : The global drug war like youve never seen it,2025-07-19 09:30:00,2025-07-19 09:30:00,,,,,,0,0,0
+gdelt_3c3d9824,en,fallback_like,Trump to attend signing of Thailand - Cambodia  peace deal : Malaysia foreign minister,2025-10-14 14:45:00,2025-10-14 14:45:00,,,,,,0,0,0
+gdelt_5bd7bba6,en,fallback_like,Menopause : Alternative to HRT for hot flushes now on NHS,2026-03-11 21:30:00,2026-03-11 21:30:00,,,,,,0,0,0
+gdelt_3f02691e,en,fallback_like,Employment agent who submitted work permit application for underage maid gets jail,2026-03-24 17:00:00,2026-03-24 17:00:00,,,,,,0,0,0
+gdelt_44aa5e45,en,fallback_like,Stephen Miller : The aide driving Donald Trump most controversial policies,2026-02-09 09:15:00,2026-02-09 09:15:00,,,,,,0,0,0
+gdelt_a0f44c7a,en,fallback_like,Sewage pollution crackdown and lower bills in major water shake - up,2026-02-03 21:30:00,2026-02-03 21:30:00,,,,,,0,0,0
+gdelt_09765d45,en,fallback_like,Somalis rally against Israel world - first recognition of Somaliland | Protests News,2025-12-30 21:00:00,2025-12-30 21:00:00,,,,,,0,0,0
+gdelt_4593b1d6,en,fallback_like,"Tottenham Hotspur 3 Slavia Prague 0 : Last - 16 hopes boosted , emotional Son homecoming",2025-12-10 10:45:00,2025-12-10 10:45:00,,,,,,0,0,0
+gdelt_8231b893,en,fallback_like,Knicks cant waste this rare opportunity to make a run at the ring,2025-10-23 19:15:00,2025-10-23 19:15:00,,,,,,0,0,0
+gdelt_a0d38849,en,fallback_like,Live : Israel launches  wave  of air strikes on Gaza as truce teeters | Benjamin Netanyahu News,2025-10-20 05:45:00,2025-10-20 05:45:00,,,,,,0,0,0
+gdelt_6025e0e0,en,fallback_like,Iran urges UN to respond to Trump  reckles threats over protests | Donald Trump News,2026-01-03 12:30:00,2026-01-03 12:30:00,,,,,,0,0,0
+gdelt_67db87af,en,fallback_like,Trump says signature on birthday note to Jeffrey Epstein is not his,2025-09-10 11:15:00,2025-09-10 11:15:00,,,,,,0,0,0
+gdelt_3e0cee29,en,fallback_like,Germany : Afghanistan consulates pose threat to refugees,2026-02-01 17:00:00,2026-02-01 17:00:00,,,,,,0,0,0
+gdelt_2aab0dd8,en,fallback_like,Women Aid NI : Emergency alert test may cause  distress and fear  ,2025-09-07 18:00:00,2025-09-07 18:00:00,,,,,,0,0,0
+gdelt_95592dd4,en,fallback_like,Hillary Clinton accuses Trump administration of Epstein files cover - up in BBC interview,2026-02-17 08:45:00,2026-02-17 08:45:00,,,,,,0,0,0
+gdelt_0ec7589f,en,fallback_like,"Singapore , Australia and Japan join countries suspending post to US",2025-08-26 12:15:00,2025-08-26 12:15:00,,,,,,0,0,0
+gdelt_b7d9226b,en,fallback_like,"Switzerland Sydney Schertenleib , an Instagram DM and why Barca wasted no time signing her",2025-07-06 13:45:00,2025-07-06 13:45:00,,,,,,0,0,0
+gdelt_565e3493,en,fallback_like,Treason trial begins for South Sudan VP Machar as  unity government  breaks | Politics News,2025-09-22 19:15:00,2025-09-22 19:15:00,,,,,,0,0,0
+gdelt_4db2f7c0,en,fallback_like,Utah uses 43 - point first half to deal Colorado its largest loss under Deion Sanders,2025-10-26 15:00:00,2025-10-26 15:00:00,,,,,,0,0,0
+gdelt_b3b7fcf3,en,fallback_like,"Singapore art groups look overseas to grow global presence , develop talent",2025-11-17 16:00:00,2025-11-17 16:00:00,,,,,,0,0,0
+gdelt_88b8b3f4,en,fallback_like,"Israel kills nuclear scientists , strikes sites in Iran : Who did it target ? ",2025-06-13 22:15:00,2025-06-13 22:15:00,,,,,,0,0,0
+gdelt_7751188b,en,fallback_like,Man from Sarawak syndicate jailed for harvesting Singapore bank accounts for illegal use,2025-12-12 17:45:00,2025-12-12 17:45:00,,,,,,0,0,0
+gdelt_586c527c,en,fallback_like,Hereford athlete Dan Pembroke criticises  strange  world championships,2025-10-07 15:15:00,2025-10-07 15:15:00,,,,,,0,0,0
+gdelt_569b4cf9,en,fallback_like,"Thailand new cannabis rules fuel black market , but some support crackdown",2025-09-02 16:00:00,2025-09-02 16:00:00,,,,,,0,0,0
+gdelt_0920ae3a,en,fallback_like,Man charged with sending envelope containing pork to Al - Istiqamah Mosque mosque in Serangoon,2025-09-27 10:15:00,2025-09-27 10:15:00,,,,,,0,0,0
+gdelt_4b153f03,en,fallback_like,"Djibouti lifts presidential age limit , paving way for sixth Guelleh term",2025-10-27 03:00:00,2025-10-27 03:00:00,,,,,,0,0,0
+gdelt_9bb855f4,en,fallback_like,  Our friend was killed on A19 road he fought to make safer  ,2025-10-22 15:15:00,2025-10-22 15:15:00,,,,,,0,0,0
+gdelt_8082d324,en,fallback_like,Harrogate gets North Yorkshire first tiger crossing,2026-03-25 00:30:00,2026-03-25 00:30:00,,,,,,0,0,0
+gdelt_6c869d66,en,fallback_like,Trump says Venezuela to turn over 30 to 50 million barrels of oil to US,2026-01-07 23:45:00,2026-01-07 23:45:00,,,,,,0,0,0
+gdelt_1b306f4e,en,fallback_like,"US$263m crypto theft case : Singaporean Malone Lam due in US court , judge to decide if trial proceeds",2025-11-19 00:45:00,2025-11-19 00:45:00,,,,,,0,0,0
+gdelt_6cba63b1,en,fallback_like,Thieves ram into Markfield shop with telehandler in ATM theft,2025-11-24 20:45:00,2025-11-24 20:45:00,,,,,,0,0,0
+gdelt_894398eb,en,fallback_like,Three dead after fire in elderly ward at Hamburg hospital,2025-06-01 21:45:00,2025-06-01 21:45:00,,,,,,0,0,0
+gdelt_f9f369a4,en,fallback_like,Police launch search for missing drug detection dog in Aberdeenshire,2026-03-11 22:30:00,2026-03-11 22:30:00,,,,,,0,0,0
+gdelt_c6e00bbc,en,fallback_like,LIVE : Four Palestinians killed in Gaza as Trump launches  Board of Peace  | Donald Trump News,2026-01-23 06:30:00,2026-01-23 06:30:00,,,,,,0,0,0
+gdelt_9c16945b,en,fallback_like,Katy Perry and Orlando Bloom split six years after engagement,2025-07-04 13:30:00,2025-07-04 13:30:00,,,,,,0,0,0
+gdelt_d136891a,en,fallback_like,"Russia - Ukraine war : List of key events , day 1 , 393",2025-12-18 12:45:00,2025-12-18 12:45:00,,,,,,0,0,0
+gdelt_81ba53d6,en,fallback_like,South Korea to consider setting up US$3 . 1 billion foundry to grow local chip sector,2025-12-10 18:00:00,2025-12-10 18:00:00,,,,,,0,0,0
+gdelt_0a6ececd,en,fallback_like,WHO condemns Israeli raid on Gaza residence and warehouse attack,2025-07-22 15:45:00,2025-07-22 15:45:00,,,,,,0,0,0
+gdelt_2d5062db,en,fallback_like,Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News,2025-07-03 08:45:00,2025-07-03 08:45:00,,,,,,0,0,0
+gdelt_65a6e74f,en,fallback_like,Florida State beat Alabama then collapsed again . So what wrong this time ? ,2025-10-29 19:45:00,2025-10-29 19:45:00,,,,,,0,0,0
+gdelt_4548340d,en,fallback_like,"Dolores Huerta , sexual violence survivors speak out against Cesar Chavez",2026-03-19 09:45:00,2026-03-19 09:45:00,,,,,,0,0,0
+gdelt_e27b6238,en,fallback_like,Minorities hail renewed space as Pope Leo visits Turkiye,2025-11-29 22:45:00,2025-11-29 22:45:00,,,,,,0,0,0
+gdelt_676391ba,en,fallback_like,"Iran warned not to escalate after united kingdom , Germany and France impose sanctions",2025-09-28 10:30:00,2025-09-28 10:30:00,,,,,,0,0,0
+gdelt_0e94f6dc,en,fallback_like,Malaysia exploring nuclear power options to meet growing energy demand,2025-07-25 13:30:00,2025-07-25 13:30:00,,,,,,0,0,0
+gdelt_2abaf904,en,fallback_like,National Gallery Singapore accredited as Healing Arts Centre of Excellence,2025-12-09 00:15:00,2025-12-09 00:15:00,,,,,,0,0,0
+gdelt_e8e40472,en,fallback_like,Singapore Grand Prix : Lando Norris - Oscar Piastri incident  threatens to derail harmony despite McLaren remarkable achievement  ,2025-10-06 07:45:00,2025-10-06 07:45:00,,,,,,0,0,0
+gdelt_a99da69e,en,fallback_like,Thousands rally in N Macedonia ahead of trial over deadly nightclub fire,2025-11-16 10:45:00,2025-11-16 10:45:00,,,,,,0,0,0
+gdelt_870fbdf3,en,fallback_like,What is India politically contentious Sanchar Saathi cyber safety app ? ,2025-12-03 10:45:00,2025-12-03 10:45:00,,,,,,0,0,0
+gdelt_7abb31c9,en,fallback_like,"  Hero  who disarmed Bondi gunman recovering after surgery , family says",2025-12-15 15:15:00,2025-12-15 15:15:00,,,,,,0,0,0
+gdelt_aa56faeb,en,fallback_like,"LIVE : Israel to occupy Gaza City , displacing tens of thousands amid famine | Gaza News",2025-08-09 00:15:00,2025-08-09 00:15:00,,,,,,0,0,0
+gdelt_ec98cbac,en,fallback_like,Cardiff tourist tax to be used for big events  like Oasis gigs  ,2025-12-03 08:45:00,2025-12-03 08:45:00,,,,,,0,0,0
+gdelt_c7a9a0e4,en,fallback_like,Rina Gonoi : Japanese ex - soldier reaches final settlements in sex abuse case,2026-01-26 15:15:00,2026-01-26 15:15:00,,,,,,0,0,0
+gdelt_2d648d25,en,fallback_like,Police Ombudsman : Officer broke ethics code over  scumbag  comment,2026-02-03 22:15:00,2026-02-03 22:15:00,,,,,,0,0,0
+gdelt_965e121a,en,fallback_like,Egypt unveils Grand Egyptian Museum dedicated to its ancient civilisation,2025-11-02 01:15:00,2025-11-02 01:15:00,,,,,,0,0,0
+gdelt_e0ed8145,en,fallback_like,Singapore traffic police pilot new breathalyser with accurate results that can be used as evidence in court,2025-09-21 12:30:00,2025-09-21 12:30:00,,,,,,0,0,0
+gdelt_49fe638e,en,fallback_like,Syria says Israeli attack on Deraa causes  significant  losses | Syria War News,2025-06-04 08:45:00,2025-06-04 08:45:00,,,,,,0,0,0
+gdelt_630ed751,en,fallback_like,Stepaside holiday park plans on hold over water quality concerns,2025-07-03 22:15:00,2025-07-03 22:15:00,,,,,,0,0,0
+gdelt_110c9b7e,en,fallback_like,Rare  alien - like  sea creature found in Devon waters,2026-02-08 17:15:00,2026-02-08 17:15:00,,,,,,0,0,0
+gdelt_aa3049ce,en,fallback_like,Next reports Christmas rush but warns of slowdown ahead,2026-01-06 18:45:00,2026-01-06 18:45:00,,,,,,0,0,0
+gdelt_009fd66e,en,fallback_like,Philippines says working with Washington to obtain oil from US - sanctioned countries,2026-03-25 10:15:00,2026-03-25 10:15:00,,,,,,0,0,0
+gdelt_cb38dc51,en,fallback_like,Second shooting in Minneapolis immigration crackdown heaps pressure on Trump,2026-01-26 09:45:00,2026-01-26 09:45:00,,,,,,0,0,0
+gdelt_d1ed48eb,en,fallback_like,US halts assistance to Somalia over claims WFP food aid was illegally seized,2026-01-08 19:30:00,2026-01-08 19:30:00,,,,,,0,0,0
+gdelt_4c92010f,en,fallback_like,Milton Keynes man being sentenced for murdering wife in hot tub,2026-03-24 06:15:00,2026-03-24 06:15:00,,,,,,0,0,0
+gdelt_8e3eb757,en,fallback_like,China space aircraft carrier : superweapon or propaganda ? ,2026-02-02 14:45:00,2026-02-02 14:45:00,,,,,,0,0,0
+gdelt_a857921f,en,fallback_like,Interest rate cut offers hope to Canada sluggish housing market | Housing,2025-09-27 05:45:00,2025-09-27 05:45:00,,,,,,0,0,0
+gdelt_1b728666,en,fallback_like,Commentary : Overeating and drinking this festive season ? Your liver may feel it first,2025-12-23 06:45:00,2025-12-23 06:45:00,,,,,,0,0,0
+gdelt_814f440c,en,fallback_like,Oil prices drop more than 5 % after Trump sends peace plan,2026-03-25 10:15:00,2026-03-25 10:15:00,,,,,,0,0,0
+gdelt_f32b5181,en,fallback_like,The self - taught artist behind giant flower installations in Singapore,2026-02-23 13:00:00,2026-02-23 13:00:00,,,,,,0,0,0
+gdelt_7ada0a7f,en,fallback_like,Hunger and bullets : Palestinians recall Rafah aid massacre horror,2025-06-04 14:15:00,2025-06-04 14:15:00,,,,,,0,0,0
+gdelt_3085ef1e,en,fallback_like,Astronomers witness birth of solar system for first time,2025-07-17 03:30:00,2025-07-17 03:30:00,,,,,,0,0,0
+gdelt_753f673d,en,fallback_like,"No Ramadan joy , respite for families in Gaza City destroyed by Israel",2026-02-20 21:15:00,2026-02-20 21:15:00,,,,,,0,0,0
+gdelt_c5dd0562,en,fallback_like,"Farewell Mohamed Salah , a player who meant more",2026-03-25 19:15:00,2026-03-25 19:15:00,,,,,,0,0,0
+gdelt_78e470de,en,fallback_like,Embattled Milei faces critical midterm elections in Argentina,2025-10-27 01:30:00,2025-10-27 01:30:00,,,,,,0,0,0
+gdelt_9f7c9c77,en,fallback_like,Algeria bill seeks to criminalise French colonial rule : What to know,2025-12-21 20:00:00,2025-12-21 20:00:00,,,,,,0,0,0
+gdelt_7fcb5830,en,fallback_like,Woody Allen pays glowing tribute to Diane Keaton,2025-10-13 23:00:00,2025-10-13 23:00:00,,,,,,0,0,0
+gdelt_9d2ba7b9,en,fallback_like,Israel security cabinet approves rules to increase control over West Bank,2026-02-09 08:45:00,2026-02-09 08:45:00,,,,,,0,0,0
+gdelt_7391dfc1,en,fallback_like,"LIVE : Israel - induced starvation grows in Gaza , more children die | Israel - Palestine conflict News",2025-07-23 00:00:00,2025-07-23 00:00:00,,,,,,0,0,0
+gdelt_d7e44cca,en,fallback_like,Seven charged with Newport Commercial Road disorder after unrest,2025-08-03 23:15:00,2025-08-03 23:15:00,,,,,,0,0,0
+gdelt_31a703b2,en,fallback_like,"LIVE : Child among 2 killed as Israeli air raids , drones target Gaza | Conflict News",2025-11-10 20:45:00,2025-11-10 20:45:00,,,,,,0,0,0
+gdelt_4a95c6f1,en,fallback_like,"Easy online access to active mobility device parts driving illegal modifications , say industry players",2025-09-09 13:00:00,2025-09-09 13:00:00,,,,,,0,0,0
+gdelt_a453ed8c,en,fallback_like,Hegseth says US - South Korea alliance focused on North Korea but  flexibility  needed,2025-11-04 15:30:00,2025-11-04 15:30:00,,,,,,0,0,0
+gdelt_940b75a8,en,fallback_like,Ukrainian delegation heads to US for peace talks after lead negotiator exit,2025-11-29 23:00:00,2025-11-29 23:00:00,,,,,,0,0,0
+gdelt_4370d30d,en,fallback_like,Billion - dollar money laundering case : MAS slaps 9 financial institutions with S$27 . 45 million in penalties,2025-07-04 18:15:00,2025-07-04 18:15:00,,,,,,0,0,0
+gdelt_f04cd255,en,fallback_like,West Midlands Police chief vows to continue knife crime crackdown,2025-11-23 16:30:00,2025-11-23 16:30:00,,,,,,0,0,0
+gdelt_dde6c229,en,fallback_like,"Russia - Ukraine war : List of key events , day 1 , 296",2025-09-12 15:15:00,2025-09-12 15:15:00,,,,,,0,0,0
+gdelt_757ae9a0,en,fallback_like,Wicked : For Good premiere : Stars on the yellow carpet at Universal Studios Singapore,2025-11-17 17:30:00,2025-11-17 17:30:00,,,,,,0,0,0
+gdelt_9e949f7d,en,fallback_like,Irish League odyssey for European football groundhoppers,2025-06-09 14:15:00,2025-06-09 14:15:00,,,,,,0,0,0
+gdelt_d559c395,en,fallback_like,LIVE : Israel kills dozens of Palestinians as Gaza war draws global outcry | Israel - Palestine conflict News,2025-09-28 02:00:00,2025-09-28 02:00:00,,,,,,0,0,0
+gdelt_002497f0,en,fallback_like,Murali Pillai on Electronic Conveyancing and Other Matters Bill,2025-10-15 15:15:00,2025-10-15 15:15:00,,,,,,0,0,0
+gdelt_76e18bff,en,fallback_like,Philippine Marcos says China  misinterpreted  his comments on Taiwan,2025-08-11 15:30:00,2025-08-11 15:30:00,,,,,,0,0,0
+gdelt_7006226f,en,fallback_like,"Iran live news : Trump under fire from Democrats , Israel pounds Lebanon | Israel - Iran conflict News",2026-03-04 18:45:00,2026-03-04 18:45:00,,,,,,0,0,0
+gdelt_51f9655e,en,fallback_like,Six Indonesian men arrested for unlawful entry into Singapore,2025-12-21 20:00:00,2025-12-21 20:00:00,,,,,,0,0,0
+gdelt_a7d80df4,en,fallback_like,State coroner finds no foul play in death of Indian singer Zubeen Garg,2026-03-26 00:30:00,2026-03-26 00:30:00,,,,,,0,0,0
+gdelt_e2539410,en,fallback_like,"David Yong from Netflix Super Rich in Korea accused of fresh offences , says he will contest all charges",2026-03-16 12:30:00,2026-03-16 12:30:00,,,,,,0,0,0
+gdelt_ece2814b,en,fallback_like,Creeslough : Jessica Gallagher sister says families  in the dark  three years on,2025-09-07 22:45:00,2025-09-07 22:45:00,,,,,,0,0,0
+gdelt_fec8badf,en,fallback_like,Hong Kong Harbour Protection Group Disbands Over Reclamation Law,2025-08-02 01:45:00,2025-08-02 01:45:00,,,,,,0,0,0
+gdelt_7e853e8e,en,fallback_like,US partially evacuates embassy in Lebanon amid rising Iran tensions,2026-02-24 03:45:00,2026-02-24 03:45:00,,,,,,0,0,0
+gdelt_b59b6218,en,fallback_like,Ukraine Zelenskyy says latest phone call with Trump his most productive yet,2025-07-06 04:15:00,2025-07-06 04:15:00,,,,,,0,0,0
+gdelt_ac95abf8,en,fallback_like,Russian drone attack on bus in Ukraine kills at least 12,2026-02-02 02:45:00,2026-02-02 02:45:00,,,,,,0,0,0
+gdelt_acba4ed7,en,fallback_like,Has Hollywood golden boy Timothée Chalamet lost his shine ? ,2026-03-10 09:15:00,2026-03-10 09:15:00,,,,,,0,0,0
+gdelt_532da5d7,en,fallback_like,"Spygate cost Bill Belichick a Hall of Fame honor , but it cant hurt his legacy",2026-01-29 19:15:00,2026-01-29 19:15:00,,,,,,0,0,0
+gdelt_c780bec3,en,fallback_like,"LIVE : Israel kills 62 today as Gaza aid seekers ,  safe zone attacked | Israel - Palestine conflict News",2025-09-07 03:45:00,2025-09-07 03:45:00,2025-09-07 00:00:00,day,today,relative_day,medium,1,1,1
+gdelt_b8cc8c17,en,fallback_like,Singapore telcos targets of UNC3886 cyberattack ; no customer data stolen and attack contained,2026-02-09 13:15:00,2026-02-09 13:15:00,,,,,,0,0,0
+gdelt_41b6b7ef,en,fallback_like,Inside Malaysia last match factory,2025-12-08 17:45:00,2025-12-08 17:45:00,,,,,,0,0,0
+gdelt_2154401e,en,fallback_like,MH370 : Search for long - missing Malaysia Airlines fight to resume,2025-12-03 14:15:00,2025-12-03 14:15:00,,,,,,0,0,0
+gdelt_6ec1e0db,en,fallback_like,"Russian strikes trigger Ukraine power cuts , prompt Poland to scramble jets",2025-12-23 19:00:00,2025-12-23 19:00:00,,,,,,0,0,0
+gdelt_c93addd9,en,fallback_like,Tan See Leng on studying viability of nuclear energy,2025-11-06 13:00:00,2025-11-06 13:00:00,,,,,,0,0,0
+gdelt_f69f8ee1,en,fallback_like,China eyes new frontiers in push for space leadership,2026-03-03 21:45:00,2026-03-03 21:45:00,,,,,,0,0,0
+gdelt_f1c6348e,en,fallback_like,US ends tariff exemption for delivery packages valued at $800 or less,2025-08-29 12:00:00,2025-08-29 12:00:00,,,,,,0,0,0
+gdelt_835b46cc,en,fallback_like,Pet food business Bossipaws under police probe over alleged SkillsFuture scam,2025-12-24 17:15:00,2025-12-24 17:15:00,,,,,,0,0,0
+gdelt_24d1c57d,en,fallback_like,Read the appeals court ruling on Trump tariffs . ,2025-08-30 08:15:00,2025-08-30 08:15:00,,,,,,0,0,0
+gdelt_5b088851,en,fallback_like,Wolverhampton sound system fundraiser for Hurricane Melissa,2025-11-17 01:45:00,2025-11-17 01:45:00,,,,,,0,0,0
+gdelt_7951c200,en,fallback_like,"From small rooms to luxury villas , a look at retirement homes in Southeast Asia",2026-01-06 10:45:00,2026-01-06 10:45:00,,,,,,0,0,0
+gdelt_5735114c,en,fallback_like,Police confirm human remains found are woman who went missing in Leicester,2025-12-16 21:45:00,2025-12-16 21:45:00,,,,,,0,0,0
+gdelt_4d72a148,en,fallback_like,Arsenal women :  No excuse to not win WSL title says Steph Catley,2025-09-02 23:15:00,2025-09-02 23:15:00,,,,,,0,0,0
+gdelt_394da48b,en,fallback_like,MPs discuss meritocracy and jobs for fresh graduates on day 2 of President Address debate,2025-09-23 21:30:00,2025-09-23 21:30:00,,,,,,0,0,0
+gdelt_094cc32a,en,fallback_like,Singapore working to list etomidate as illegal drug ; one - third of vapes seized found to contain it,2025-07-20 16:15:00,2025-07-20 16:15:00,,,,,,0,0,0
+gdelt_11c9b231,en,fallback_like,"Cowboys vs . Commanders live updates : NFL Christmas game score , prediction , odds and latest",2025-12-26 01:00:00,2025-12-26 01:00:00,,,,,,0,0,0
+gdelt_5ed6c31c,en,fallback_like,"Hong Kong fire : Death toll rises to 83 , with scores missing",2025-11-28 06:30:00,2025-11-28 06:30:00,,,,,,0,0,0
+gdelt_b996a828,en,fallback_like,Malaysia export sector feeling the strain as US tariff deadline nears,2025-07-17 12:00:00,2025-07-17 12:00:00,,,,,,0,0,0
+gdelt_eee87e33,en,fallback_like,Fire at Havana oil refinery as Cuba fuel crisis deepens | Humanitarian Crises News,2026-02-14 12:45:00,2026-02-14 12:45:00,,,,,,0,0,0
+gdelt_1c932334,en,fallback_like,Trump administration doubles down on military action in Latin America | Donald Trump News,2026-03-06 04:00:00,2026-03-06 04:00:00,,,,,,0,0,0
+gdelt_b1ddb4ef,en,fallback_like,Youth award winners keeping Singapore cultural traditions alive,2026-03-19 03:30:00,2026-03-19 03:30:00,,,,,,0,0,0
+gdelt_a1c79bce,en,fallback_like,"Main trial begins in landmark US addiction case against Meta , YouTube",2026-02-10 05:30:00,2026-02-10 05:30:00,,,,,,0,0,0
+gdelt_f5a18dce,en,fallback_like,"Death toll in Thai - Cambodia clashes rises to 16 as 120 , 000 flee border area",2025-07-25 14:30:00,2025-07-25 14:30:00,,,,,,0,0,0
+gdelt_e0875593,en,fallback_like,F1 mailbag : Could Max Verstappen have won in Brazil with a Hail Mary strategy ? ,2025-11-12 19:00:00,2025-11-12 19:00:00,,,,,,0,0,0
+gdelt_4b99e737,en,fallback_like,Highfield villagers  punished  by Tesco Express pricing,2025-10-07 16:45:00,2025-10-07 16:45:00,,,,,,0,0,0
+gdelt_95f1d019,en,fallback_like,MPs push for change on Palestine Action but minister stands firm,2025-09-09 05:30:00,2025-09-09 05:30:00,,,,,,0,0,0
+gdelt_c117ea65,en,fallback_like,How have Premier League teams spent this summer ? Upgrading their attacks,2025-08-14 14:30:00,2025-08-14 14:30:00,,,,,,0,0,0
+gdelt_9c14f7ad,en,fallback_like,Restive Indian state orders curfew after fresh violence,2025-06-08 16:15:00,2025-06-08 16:15:00,,,,,,0,0,0
+gdelt_5e83978d,en,fallback_like,Floods hit Sri Lanka capital as cyclone death toll rises to 159,2025-11-30 14:15:00,2025-11-30 14:15:00,,,,,,0,0,0
+gdelt_39633aa5,en,fallback_like,Netanyahu in court for graft trial appearance,2025-10-15 19:00:00,2025-10-15 19:00:00,,,,,,0,0,0
+gdelt_ff4e4720,en,fallback_like,"CDL Kwek Leng Beng , Sherman Kwek announce 3 . 9 % profit growth in 1H marked by boardroom tussle",2025-08-13 13:45:00,2025-08-13 13:45:00,,,,,,0,0,0
+gdelt_ca779c3e,fr,fallback_like,Le Parlement ukrainien met en place un groupe de travail sur les élections - Xinhua,2025-12-23 00:00:00,2025-12-23 00:00:00,,,,,,0,0,0
+gdelt_0282205c,fr,fallback_like,Le dirigeant suprême de la RPDC supervise un exercice de lancement de missiles hypersoniques ( KCNA ) - Xinhua,2026-01-05 11:30:00,2026-01-05 11:30:00,,,,,,0,0,0
+gdelt_db089a6a,fr,fallback_like,"Larmée américaine a détruit 42 navires de la marine iranienne au cours des trois derniers jours , selon Trump - Xinhua",2026-03-08 18:45:00,2026-03-08 18:45:00,,,,,,0,0,0
+gdelt_f9da68a4,fr,fallback_like,Lambassadeur du Danemark aux Etats - Unis dément les propos de lenvoyé spécial américain pour le Groenland - Xinhua,2026-01-13 03:00:00,2026-01-13 03:00:00,,,,,,0,0,0
+gdelt_dfc77d0a,fr,fallback_like,Le plus haut gradé américain annonce le déploiement de troupes supplémentaires et davions de combat au Moyen - Orient - Xinhua,2026-03-03 11:45:00,2026-03-03 11:45:00,,,,,,0,0,0
+gdelt_20dffa3f,fr,fallback_like,RPDC : décès à 97 ans de lancien haut responsable Kim Yong Nam - Xinhua,2025-11-04 15:30:00,2025-11-04 15:30:00,,,,,,0,0,0
+gdelt_e1f7bd67,fr,fallback_like,Le poste - frontière de Rafah ne doit pas être considéré comme un passage pour déplacer les Palestiniens ( MAE égyptien ) - Xinhua,2025-09-07 09:30:00,2025-09-07 09:30:00,,,,,,0,0,0
+gdelt_7faa6191,fr,fallback_like,Chine : lorgane législatif national conclut une session de son comité permanent - Xinhua,2025-12-28 14:30:00,2025-12-28 14:30:00,,,,,,0,0,0
+gdelt_4264c2c9,fr,fallback_like,La Chine souhaite la stabilité en Iran ( porte - parole ) - Xinhua,2026-01-12 17:45:00,2026-01-12 17:45:00,,,,,,0,0,0
+gdelt_35822b1f,fr,fallback_like,Le Danemark annonce des investissements record dans le secteur spatial pour renforcer lautonomie de lEurope - Xinhua,2025-10-21 12:15:00,2025-10-21 12:15:00,,,,,,0,0,0
+gdelt_e73d2dea,fr,fallback_like,"Malgré le  shutdown , Trump ordonne au Pentagone de payer les militaires - Xinhua",2025-10-12 13:15:00,2025-10-12 13:15:00,,,,,,0,0,0
+gdelt_cc975cf9,fr,fallback_like,Xi Jinping : la Chine accorde toujours une grande importance aux relations sino - vietnamiennes - Xinhua,2026-02-04 22:30:00,2026-02-04 22:30:00,,,,,,0,0,0
+gdelt_999e0c85,fr,fallback_like,"Indonésie : 15 morts et 19 blessés dans un accident de bus dans la ville de Semarang , dans l  île de Java - Xinhua",2025-12-22 13:30:00,2025-12-22 13:30:00,,,,,,0,0,0
+gdelt_8948e15d,fr,fallback_like,75 % des Japonais désapprouvent les frappes américano - israéliennes en Iran ( sondage ) - Xinhua,2026-03-15 18:00:00,2026-03-15 18:00:00,,,,,,0,0,0
+gdelt_0e91fe12,fr,fallback_like,La Pologne ne rejoindra pas le Conseil de la paix pour le moment ( PM ) - Xinhua,2026-02-12 09:00:00,2026-02-12 09:00:00,,,,,,0,0,0
+gdelt_a4b2cf0a,fr,fallback_like,Un indice révèle lamélioration de l  économie maritime chinoise - Xinhua,2025-06-09 11:00:00,2025-06-09 11:00:00,,,,,,0,0,0
+gdelt_4b06abf0,fr,fallback_like,Le Parlement européen reporte lapprobation de laccord commercial UE - Etats - Unis après les menaces tarifaires de Trump liées au Groenland - Xinhua,2026-01-22 08:30:00,2026-01-22 08:30:00,,,,,,0,0,0
+gdelt_f60d1b5f,fr,fallback_like,Les envoyés cambodgien et thaïlandais sexpriment lors dune réunion de lONU sur les affrontements frontaliers - Xinhua,2025-07-27 10:15:00,2025-07-27 10:15:00,,,,,,0,0,0
+gdelt_247ac04f,fr,fallback_like,Russie : un enquêteur qualifie d  actes de terrorisme  les effondrements de ponts - Xinhua,2025-06-02 10:15:00,2025-06-02 10:15:00,,,,,,0,0,0
+gdelt_8742095d,fr,fallback_like,La Chine rejette les accusations américaines concernant la COVID - 19 et souligne son engagement envers lOMS et le multilatéralisme - Xinhua,2026-01-27 10:30:00,2026-01-27 10:30:00,,,,,,0,0,0
+gdelt_289bf2a0,fr,fallback_like,Etats - Unis : 4 morts et 5 blessés dans le chavirage dun bateau au large du sud de la Californie - Xinhua,2025-11-16 09:30:00,2025-11-16 09:30:00,,,,,,0,0,0
+gdelt_e6cbe7f5,fr,fallback_like,Organisation dune réunion consacrée à la formation dun solide vivier de talents culturels en Chine - Xinhua,2025-12-21 09:45:00,2025-12-21 09:45:00,,,,,,0,0,0
+gdelt_c4c62669,fr,fallback_like,La COP30 transforme une enclave amazonienne en un haut lieu mondial de la lutte contre le changement climatique - Xinhua,2025-11-17 11:30:00,2025-11-17 11:30:00,,,,,,0,0,0
+gdelt_9d995a55,fr,fallback_like,Chine : le métro de Guangzhou accepte les cartes bancaires internationales sans contact - Xinhua,2025-10-13 13:30:00,2025-10-13 13:30:00,,,,,,0,0,0
+gdelt_a4fe315a,fr,fallback_like,Mexique : 62 morts dans les violences après la mort du baron de la drogue El Mencho - Xinhua,2026-02-24 22:45:00,2026-02-24 22:45:00,,,,,,0,0,0
+gdelt_b0c2052d,fr,fallback_like,Les Etats - Unis vont cesser de percevoir certains droits de douane suite à la décision de la Cour suprême - Xinhua,2026-02-24 18:15:00,2026-02-24 18:15:00,,,,,,0,0,0
+gdelt_61c6f31d,fr,fallback_like,Xi Jinping visite un parc dinnovation en technologies de linformation à Beijing - Xinhua,2026-02-09 14:00:00,2026-02-09 14:00:00,,,,,,0,0,0
+gdelt_dbc34292,fr,fallback_like,LIran condamne la décision de lArgentine de qualifier la Force al - Qods de groupe terroriste - Xinhua,2026-01-21 11:15:00,2026-01-21 11:15:00,,,,,,0,0,0
+gdelt_83ba137a,fr,fallback_like,Trump affirme que lIran est en train de négocier avec les Etats - Unis - Xinhua,2026-02-01 13:15:00,2026-02-01 13:15:00,,,,,,0,0,0
+gdelt_b4105437,fr,fallback_like,Trois scientifiques remportent le prix Nobel de physique pour leur découverte des phénomènes quantiques macroscopiques - Xinhua,2025-10-08 10:30:00,2025-10-08 10:30:00,,,,,,0,0,0
+gdelt_eb14b128,fr,fallback_like,EAU : un incendie signalé dans la zone pétrolière après la chute de débris provenant dune interception - Xinhua,2026-03-09 13:45:00,2026-03-09 13:45:00,,,,,,0,0,0
+gdelt_d1f056e6,fr,fallback_like,Xi Jinping insiste sur la prise en charge des personnes âgées et des enfants - Xinhua,2026-02-11 14:45:00,2026-02-11 14:45:00,,,,,,0,0,0
+gdelt_952ab67b,fr,fallback_like,Le ministère chinois des AE met en garde contre la remise en cause par le Japon de lordre international daprès - guerre - Xinhua,2026-02-15 10:00:00,2026-02-15 10:00:00,,,,,,0,0,0
+gdelt_80335b25,fr,fallback_like,La publication par Donald Trump dune image suggérant le contrôle des Etats - Unis sur le Groenland est irrespectueuse ( PM groenlandais ) - Xinhua,2026-01-21 11:15:00,2026-01-21 11:15:00,,,,,,0,0,0
+gdelt_ef936da8,fr,fallback_like,Le secrétaire général de lONU exhorte lIran à faire preuve de retenue et à rétablir les communications dans le pays ( porte - parole ) - Xinhua,2026-01-12 08:15:00,2026-01-12 08:15:00,,,,,,0,0,0
+gdelt_a208e18f,fr,fallback_like,La Chine est prête à apporter de nouvelles contributions à la gouvernance marine mondiale ( ministre des AE ) - Xinhua,2026-03-26 11:00:00,2026-03-26 11:00:00,,,,,,0,0,0
+gdelt_8436e4a8,fr,fallback_like,Reform united kingdom se retire dun documentaire de la BBC après une polémique sur le montage de propos de Trump ( BBC ) - Xinhua,2025-11-13 08:00:00,2025-11-13 08:00:00,,,,,,0,0,0
+gdelt_30bf5c6a,fr,fallback_like,Le ministre allemand de la Défense rejette toute implication militaire dans le détroit dOrmuz - Xinhua,2026-03-16 22:45:00,2026-03-16 22:45:00,,,,,,0,0,0
+gdelt_d8d40f34,fr,fallback_like,Etats - Unis : une juge fédérale soutient Harvard dans le procès contre le gel de certains de ses financements par ladministration Trump - Xinhua,2025-09-04 11:15:00,2025-09-04 11:15:00,,,,,,0,0,0
+gdelt_fa67ddf4,fr,fallback_like,Le Sri Lanka entend développer un système dinfrastructures de qualité de niveau international pour stimuler ses exportations ( ministre ) - Xinhua,2025-09-30 20:15:00,2025-09-30 20:15:00,,,,,,0,0,0
+gdelt_8bc3c9a2,fr,fallback_like,La nouvelle technologie nucléaire russe va stimuler les secteurs civils ( Poutine ) - Xinhua,2025-11-06 17:45:00,2025-11-06 17:45:00,,,,,,0,0,0
+gdelt_85544ac8,fr,fallback_like,Le commandement central américain annonce la destruction dun  porte - drones  iranien alors que les frappes sintensifient - Xinhua,2026-03-06 17:30:00,2026-03-06 17:30:00,,,,,,0,0,0
+gdelt_4e1618e4,zh-cn,fallback_like,首届环贵州公园省自行车赛第一赛段德克玛蒙邱天慧获男女职业组冠军 - 新华网,2025-10-21 18:00:00,2025-10-21 18:00:00,,,,,,0,0,0
+gdelt_dc7945e2,zh-cn,fallback_like,兰州 ： 桃树坪棚户区换了模样 - 新华网,2025-11-10 13:00:00,2025-11-10 13:00:00,,,,,,0,0,0
+gdelt_4a9c2161,zh-cn,fallback_like,琼海美丽乡村  盛装  迎盛会 - 新华网,2026-03-23 00:15:00,2026-03-23 00:15:00,,,,,,0,0,0
+gdelt_f616ee4d,zh-cn,fallback_like,聚焦高质量发展｜贵州黔南 ： 产业提质逐  新绿 - 新华网,2025-07-04 19:45:00,2025-07-04 19:45:00,,,,,,0,0,0
+gdelt_bab5bb55,zh-cn,fallback_like,六盘水10万袋  维C黄金  闯马来 - 新华网,2025-11-06 14:00:00,2025-11-06 14:00:00,,,,,,0,0,0
+gdelt_5275e69e,zh-cn,fallback_like,长三角地区首个国家级国土空间规划落地 _ 新华网江苏频道,2025-12-15 12:30:00,2025-12-15 12:30:00,,,,,,0,0,0
+gdelt_e10bbc9d,zh-cn,fallback_like,渭源 优育良种 铺就产业致富路 - 新华网,2025-07-21 13:00:00,2025-07-21 13:00:00,,,,,,0,0,0
+gdelt_e47c080a,zh-cn,fallback_like,  牛羊进家门 ， 日子有奔头 ！ 定西市残联为残疾儿童家庭发放良种牛羊助养殖增收 - 新华网,2025-07-15 14:00:00,2025-07-15 14:00:00,,,,,,0,0,0
+gdelt_98ecde62,zh-cn,fallback_like,新华鲜报|别样中秋 家国月圆 - 新华网,2025-10-07 13:00:00,2025-10-07 13:00:00,,,,,,0,0,0
+gdelt_8df44e66,zh-cn,fallback_like,从荒地到粮仓 ： 福建南安高标准农田早稻迎来丰收 - 新华网,2025-07-20 19:15:00,2025-07-20 19:15:00,,,,,,0,0,0
+gdelt_b7e50fd3,zh-cn,fallback_like,  村超  踢起来 ， 榕江好起来 ！- 新华网,2025-07-27 18:15:00,2025-07-27 18:15:00,,,,,,0,0,0
+gdelt_481f4aa0,zh-cn,fallback_like,苏州 ： 多措并举打造就业友好型城市 _ 新华网江苏频道,2025-06-09 12:45:00,2025-06-09 12:45:00,,,,,,0,0,0
+gdelt_51b3a581,zh-cn,fallback_like,义乌李祖村 ： 创客汇聚 、 跨境贸易兴起 ， 乡村产业转型迈出新步伐 - 新华网,2026-01-06 11:30:00,2026-01-06 11:30:00,,,,,,0,0,0
+gdelt_81528ca5,zh-cn,fallback_like,技术经理人 专利堆里挖  金矿 - 新华网,2026-01-12 17:15:00,2026-01-12 17:15:00,,,,,,0,0,0
+gdelt_1891a746,zh-cn,fallback_like,为古老中医装上智慧大脑 - 新华网河南频道,2026-01-05 08:30:00,2026-01-05 08:30:00,,,,,,0,0,0
+gdelt_d0459a24,zh-cn,fallback_like,春节长假结束反而更累 ？ 专家支招如何调适身心 - 新华网,2026-02-23 20:45:00,2026-02-23 20:45:00,,,,,,0,0,0
+gdelt_54d25185,zh-cn,fallback_like,辽宁开原 ： 三方联动织密  舌尖上的安全防线 - 新华网辽宁频道,2025-12-14 14:00:00,2025-12-14 14:00:00,,,,,,0,0,0
+gdelt_46c4877a,zh-cn,fallback_like,伊拉克举行国民议会选举 - 新华网,2025-11-12 07:00:00,2025-11-12 07:00:00,,,,,,0,0,0
+gdelt_50d2d5cd,zh-cn,fallback_like,张掖市提升质效多点突破打造优质营商环境 - 新华网,2025-11-30 15:00:00,2025-11-30 15:00:00,,,,,,0,0,0
+gdelt_648a49d6,zh-cn,fallback_like,拍案 · 关注交通安全｜骑好  小电驴 ， 这些规则您都清楚吗 ？- 新华网,2025-12-08 11:15:00,2025-12-08 11:15:00,,,,,,0,0,0
+gdelt_5eb0034a,zh-cn,fallback_like,浙江龙泉开展专项活动护航群众平安喜乐过节 - 新华网,2026-02-08 17:45:00,2026-02-08 17:45:00,,,,,,0,0,0
+gdelt_9e8cd97b,zh-cn,fallback_like,全国建成执法办案管理中心3266个 - 新华网,2025-11-17 15:00:00,2025-11-17 15:00:00,,,,,,0,0,0
+gdelt_19d78fbe,zh-cn,fallback_like,中国羽毛球公开赛 ： 国羽提前锁定四冠 - 新华网,2025-07-27 10:15:00,2025-07-27 10:15:00,,,,,,0,0,0
+gdelt_28b7ca3f,zh-cn,fallback_like,月光洒在哨位上 - 新华网,2025-10-07 13:00:00,2025-10-07 13:00:00,,,,,,0,0,0
+gdelt_2befae29,zh-cn,fallback_like,中国生物制药  得福组合  再发布新临床数据 _ 新华网江苏频道,2025-06-03 00:00:00,2025-06-03 00:00:00,,,,,,0,0,0
+gdelt_45a50762,zh-cn,fallback_like,凤冈 ： 打通人才通道 让优质医疗惠及基层 - 新华网,2026-03-26 18:30:00,2026-03-26 18:30:00,,,,,,0,0,0
+gdelt_7365aa61,zh-cn,fallback_like,江苏 ： 让  买买买  意愿转化成经济新增长极 _ 新华网江苏频道,2025-09-04 09:00:00,2025-09-04 09:00:00,,,,,,0,0,0
+gdelt_ca655271,zh-cn,fallback_like,忠诚村队夺得第三届贵州  村超  总冠军 - 新华网,2025-08-10 09:45:00,2025-08-10 09:45:00,,,,,,0,0,0
+gdelt_2c3fab63,zh-cn,fallback_like,第三届东坡文化国际论坛在澄迈县开幕 - 新华网,2025-11-09 11:30:00,2025-11-09 11:30:00,,,,,,0,0,0
+gdelt_ce35b21c,zh-cn,fallback_like,伊朗战争期间 ， 民航客机如何维持飞行 ？ - BBC News 中文,2026-03-18 16:15:00,2026-03-18 16:15:00,,,,,,0,0,0
+gdelt_40326d4d,zh-cn,fallback_like,美育润古城 绍兴美术馆开馆 - 新华网,2026-02-10 21:45:00,2026-02-10 21:45:00,,,,,,0,0,0
+gdelt_14737463,zh-cn,fallback_like,浙江积极开展  中华慈善日  活动 - 新华网,2025-09-25 10:30:00,2025-09-25 10:30:00,,,,,,0,0,0
+gdelt_7b3a47de,zh-cn,fallback_like,伊朗 ： 若发电站遭袭将全面关闭霍尔木兹海峡 - 新华网,2026-03-23 00:45:00,2026-03-23 00:45:00,,,,,,0,0,0
+gdelt_7902ed3a,zh-cn,fallback_like,欧洲领导人 ： 欧洲和乌克兰的安全利益必须得到保护 - 新华网,2025-08-10 08:45:00,2025-08-10 08:45:00,,,,,,0,0,0
+gdelt_62510253,zh-cn,fallback_like,深化药械改革 各地在行动丨监管改革激发产业活力 中国医药创新生态全面升级 - 新华网,2026-02-11 14:45:00,2026-02-11 14:45:00,,,,,,0,0,0
+gdelt_9f70d944,zh-cn,fallback_like,刘宁到开封顺河回族区禹王台区鼓楼区调研 - 新华网河南频道,2025-11-13 10:45:00,2025-11-13 10:45:00,,,,,,0,0,0
+gdelt_88ccf128,zh-cn,fallback_like,河北滦河上游国家级自然保护区项目建设见实效 - 新华网河北频道 - 新华网,2025-10-15 12:30:00,2025-10-15 12:30:00,,,,,,0,0,0
+gdelt_7b735c55,zh-cn,fallback_like,委内瑞拉 ： 关于马杜罗被捕及美国  接管  该国计划 ， 我们目前已知什么 ？ ,2026-01-04 20:30:00,2026-01-04 20:30:00,,,,,,0,0,0
+gdelt_1415c0cd,zh-cn,fallback_like,三亚海棠区暑期旅游旺季产品推介与特色活动发布会召开 - 新华网,2025-07-06 14:30:00,2025-07-06 14:30:00,,,,,,0,0,0
+gdelt_3dd82f40,zh-cn,fallback_like,  工匠  变  大师  浙江武义  技能带头人  享受高层次人才待遇 - 新华网,2025-12-01 14:15:00,2025-12-01 14:15:00,,,,,,0,0,0
+gdelt_f3cdaaf9,zh-cn,fallback_like,云南省将开展保护鸟类专项行动 _ 新华网,2025-09-15 12:30:00,2025-09-15 12:30:00,,,,,,0,0,0
+gdelt_7c5c9475,zh-cn,fallback_like,书局 、 印局 、 无界 解锁敦煌文化新地标 - 新华网,2025-10-12 21:00:00,2025-10-12 21:00:00,,,,,,0,0,0
+gdelt_74bdde2e,zh-cn,fallback_like,降低对中国依赖性 ： 欧澳达成自贸协定 确保原材料供应,2026-03-24 20:00:00,2026-03-24 20:00:00,,,,,,0,0,0
+gdelt_e27c4ee4,zh-cn,fallback_like,历史与未来的回响 盘州原创话剧 《 三线日记 》 贵阳开演 - 新华网,2025-11-05 18:45:00,2025-11-05 18:45:00,,,,,,0,0,0
+gdelt_aa426f55,zh-cn,fallback_like,养老金融跨越发展暖心守护银发岁月 - 新华网,2025-08-13 23:15:00,2025-08-13 23:15:00,,,,,,0,0,0
+gdelt_cb127243,zh-cn,fallback_like,邱吉尔的鸭嘴兽死亡之谜是如何解开的 - BBC News 中文,2025-08-04 16:00:00,2025-08-04 16:00:00,,,,,,0,0,0
+gdelt_054d1934,zh-cn,fallback_like,墨西哥中部火车与大客车相撞致8死45伤 - 新华网,2025-09-09 03:15:00,2025-09-09 03:15:00,,,,,,0,0,0
+gdelt_fb6926b1,zh-cn,fallback_like,福建漳浦 ： 一颗荔枝背后的支农故事 - 新华网,2025-07-06 23:00:00,2025-07-06 23:00:00,,,,,,0,0,0
+gdelt_e0e86e73,zh-cn,fallback_like,五个新场景看  热力十足  的夏日经济 - 新华网,2025-07-29 10:15:00,2025-07-29 10:15:00,,,,,,0,0,0
+gdelt_a7df179d,zh-cn,fallback_like,中央经济工作会议激励云南省广大干部群众坚定信心鼓足干劲 _ 新华网,2025-12-14 14:00:00,2025-12-14 14:00:00,,,,,,0,0,0
+gdelt_730b2cc4,zh-cn,fallback_like,细水长流之下 ， 村超  布局之中 - 新华网,2025-06-08 19:30:00,2025-06-08 19:30:00,,,,,,0,0,0
+gdelt_8b977f55,zh-cn,fallback_like,办好一件提案 解决一类问题 - 新华网,2026-01-05 11:30:00,2026-01-05 11:30:00,,,,,,0,0,0
+gdelt_017d9704,zh-cn,fallback_like,雄安抗战印记 ： 遇见  官大妈 - 新华网河北频道 - 新华网,2025-09-14 14:00:00,2025-09-14 14:00:00,,,,,,0,0,0
+gdelt_6a1e3421,zh-cn,fallback_like,厦门 ： 春节假期传统文化  圈粉  海内外游客 - 新华网,2026-02-22 12:30:00,2026-02-22 12:30:00,,,,,,0,0,0
+gdelt_5788f1d4,zh-cn,fallback_like,墨西哥两周内确认第二例螺旋蝇蛆病例 - 新华网,2025-10-07 15:15:00,2025-10-07 15:15:00,,,,,,0,0,0
+gdelt_dd41d036,zh-cn,fallback_like,文化新观察|今年春晚 ， 听障人也同频欢笑 - 新华网,2026-02-19 13:00:00,2026-02-19 13:00:00,2026-01-01 00:00:00,year,今年,relative_year,medium,1,1,1
+gdelt_74e2fbf0,zh-cn,fallback_like,国际可持续水产养殖大会在榕举行 - 新华网,2026-03-19 14:15:00,2026-03-19 14:15:00,,,,,,0,0,0
+gdelt_fa9146e5,zh-cn,fallback_like,伦敦手机盗窃激增 警匪大战融入全新技术手段 - BBC News 中文,2025-10-28 12:15:00,2025-10-28 12:15:00,,,,,,0,0,0
+gdelt_f4c4ad1c,zh-cn,fallback_like,如通苏湖城际铁路苏州北站至苏州东站段开工 _ 新华网江苏频道,2025-12-30 11:15:00,2025-12-30 11:15:00,,,,,,0,0,0
+gdelt_7c3c6d7a,zh-cn,fallback_like,中国援老挝远程教育工程附带物资交付仪式在万象举行 - 新华网,2026-01-26 09:45:00,2026-01-26 09:45:00,,,,,,0,0,0
+gdelt_9db8d291,zh-cn,fallback_like,新疗法让细菌与病毒组成抗癌  战队 - 新华网,2025-08-18 21:00:00,2025-08-18 21:00:00,,,,,,0,0,0
+gdelt_dafd25f2,zh-cn,fallback_like,豆粕 、 玉米系列期权在大商所挂牌交易 - 新华网辽宁频道,2026-02-01 16:15:00,2026-02-01 16:15:00,,,,,,0,0,0
+gdelt_d75ababa,zh-cn,fallback_like,湖南通报8起违反中央八项规定精神问题 - 新华网,2026-02-10 09:45:00,2026-02-10 09:45:00,,,,,,0,0,0
+gdelt_a06df2cf,zh-cn,fallback_like,正以惊人速度扩张的中国海军会主宰海洋吗 ？ - BBC News 中文,2025-09-01 13:45:00,2025-09-01 13:45:00,,,,,,0,0,0
+gdelt_ea628506,zh-cn,fallback_like,追风高原上 竞逐青草旁 - 新华网,2025-07-29 12:00:00,2025-07-29 12:00:00,,,,,,0,0,0
+gdelt_b0154756,zh-cn,fallback_like,龙岩 ： 招商  三转变  撬动  矿业+  新增长 - 新华网,2025-12-22 19:00:00,2025-12-22 19:00:00,,,,,,0,0,0
+gdelt_430168c0,zh-cn,fallback_like,王凯到南阳市调研生态保护 、 抗旱保秋工作 - 新华网河南频道,2025-08-05 12:00:00,2025-08-05 12:00:00,,,,,,0,0,0
+gdelt_8f0a93c0,zh-cn,fallback_like,  云花  寄春来  颜值  变  产值 _ 新华网,2026-02-23 10:30:00,2026-02-23 10:30:00,,,,,,0,0,0
+gdelt_429dcd61,zh-cn,fallback_like,甘肃省全面提升12345热线服务质效 - 新华网,2025-11-24 11:15:00,2025-11-24 11:15:00,,,,,,0,0,0
+gdelt_51365c1a,zh-cn,fallback_like,格鲁吉亚前国防部长因涉嫌组织策划政变被逮捕 - 新华网,2025-12-28 15:00:00,2025-12-28 15:00:00,,,,,,0,0,0
+gdelt_800f7554,zh-cn,fallback_like,热门专业迎来  回炉  大学生 - 新华网河南频道,2025-08-20 08:15:00,2025-08-20 08:15:00,,,,,,0,0,0
+gdelt_8e7fd1d0,zh-cn,fallback_like,廉毅敏 ： 集思广益谋良策 凝心聚力促发展 - 新华网,2025-09-25 10:30:00,2025-09-25 10:30:00,,,,,,0,0,0
+gdelt_079768cb,zh-cn,fallback_like,滇超联赛玉溪开赛 燃动高原足球梦 _ 新华网,2025-11-30 11:15:00,2025-11-30 11:15:00,,,,,,0,0,0
+gdelt_74ac56e3,zh-cn,fallback_like,海南 ： 为幼儿打造  游戏乐园 - 新华网,2025-06-02 00:00:00,2025-06-02 00:00:00,,,,,,0,0,0
+gdelt_64ab2952,zh-cn,fallback_like,新华全媒头条|  广货  何以行天下 ？ 解码从  中国制造  向  中国创造  转型的广东样本 - 新华网,2026-02-02 14:15:00,2026-02-02 14:15:00,,,,,,0,0,0
+gdelt_c399409d,zh-cn,fallback_like,义乌  走播  众生相 ： 寻找创业新光的普通人 - 新华网,2025-11-16 13:00:00,2025-11-16 13:00:00,,,,,,0,0,0
+gdelt_c679c0fd,zh-cn,fallback_like,瞭望 | 外来入侵物种为何难治 - 新华网,2025-07-29 12:45:00,2025-07-29 12:45:00,,,,,,0,0,0
+gdelt_e9b8d7ca,zh-cn,fallback_like,  中国冲击  来了 德国该怎么办 ？ ,2026-02-15 17:30:00,2026-02-15 17:30:00,,,,,,0,0,0
+gdelt_7848bfb8,zh-cn,fallback_like,  绿牌车  停着还能赚钱 江苏车网互动试点展现未来巨大潜力 _ 新华网江苏频道,2025-10-06 13:00:00,2025-10-06 13:00:00,,,,,,0,0,0
+gdelt_d3ba4105,zh-cn,fallback_like,科学与健康|运动是良医 ！ 中医健身可以这么练 - 新华网,2026-01-22 13:15:00,2026-01-22 13:15:00,,,,,,0,0,0
+gdelt_3098b401,zh-cn,fallback_like,广东多措并举防御台风  韦帕 - 新华网,2025-07-20 18:30:00,2025-07-20 18:30:00,,,,,,0,0,0
+gdelt_f630f5b8,zh-cn,fallback_like,理财公司扩大代销  朋友圈 - 新华网,2025-11-13 11:00:00,2025-11-13 11:00:00,,,,,,0,0,0
+gdelt_93fd3450,hr,parsed_like,Crna Gora : Crkva čuva ratnog zločinca Pavla Đurišića – DW – 10 . 8 . 2025 . ,2025-08-10 18:45:00,2025-08-10 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_28fc7303,hr,parsed_like,Kako raznolikost prehrane jača našu crijevnu floru – DW – 13 . 07 . 2025,2025-07-13 18:30:00,2025-07-13 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_be01bb8f,hr,parsed_like,Rasizam na tržištu nekretnina u Njemačkoj – DW – 28 . 12 . 2025,2025-12-28 22:00:00,2025-12-28 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_a435be60,hr,parsed_like, „ Lažna dihotomija Bosne  – kako se proizvodi podela – DW – 30 . 9 . 2025 . ,2025-09-30 16:15:00,2025-09-30 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_0667e692,hr,parsed_like,Srebrenica : Hiljadu godina robije i oni koji su se izvukli – DW – 07 . 07 . 2025,2025-07-08 19:00:00,2025-07-07 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_7be872ed,hr,parsed_like,Njemačka i Japan žele se zajedno naoružavati,2026-03-24 20:00:00,2026-09-01 00:00:00,,,,,,0,0,0
+gdelt_b5c26c9e,hr,parsed_like,FAZ : Vučić potrošio sav kredit koji mu je EU dao,2026-02-04 18:45:00,2026-01-29 00:00:00,,,,,,0,0,0
+gdelt_acd42e8a,hr,parsed_like,Svetski dan žena : Kako do ravnopravnosti u radnom životu,2026-03-08 09:30:00,2026-03-08 00:00:00,,,,,,0,0,0
+gdelt_c8585a0f,hr,parsed_like,7 milijuna prosvjednika protiv  kralja  Trumpa – DW – 19 . 10 . 2025,2025-10-19 17:15:00,2025-10-19 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_19711c50,hr,parsed_like,Zašto strani ulagači bježe s juga Srbije ? – DW – 16 . 11 . 2025,2025-11-16 18:15:00,2025-11-16 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_c163b2e6,hr,parsed_like,Može li biti mira u Ukrajini bez Europljana ? – DW – 13 . 08 . 2025,2025-08-13 22:00:00,2025-08-13 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_b290a681,ko,fallback_like,锻造  投资江苏  金招牌 ， 打造高水平对外开放新高地 _ 新华网江苏频道,2026-01-06 09:45:00,2026-01-06 09:45:00,,,,,,0,0,0
+gdelt_38487a9f,ko,fallback_like,北方冷意加深南方频刷气温新低 台风  风神  将影响华南沿海 - 新华网,2025-10-19 16:00:00,2025-10-19 16:00:00,,,,,,0,0,0
+gdelt_bedf90d0,ko,fallback_like,卖全球通路更宽 买全球体验更佳 - 新华网,2025-09-28 12:45:00,2025-09-28 12:45:00,,,,,,0,0,0
+gdelt_4acc7be8,ko,fallback_like, 《 科学 》 杂志发表我国科研新成果 为精准医学提供新工具 - 新华网,2026-01-02 21:45:00,2026-01-02 21:45:00,,,,,,0,0,0
+gdelt_15002cad,ko,fallback_like,AI가 바꾼 제작 공식 ... 中 숏드라마 판도 재편 - Xinhua,2026-03-26 11:00:00,2026-03-26 11:00:00,,,,,,0,0,0
+gdelt_6a06cd62,ko,fallback_like,"  시원한 물총싸움 어때 ? 中 산둥성 , 다양한 콘텐츠로 여름철 관광객 사로잡아 - Xinhua",2025-09-07 15:45:00,2025-09-07 15:45:00,,,,,,0,0,0
+gdelt_9df34b9f,ko,fallback_like,中 세 번째 중대 건설 프로젝트 목록 발표 ... 56조원 이상 지원할 것 - Xinhua,2025-07-04 11:00:00,2025-07-04 11:00:00,,,,,,0,0,0
+gdelt_87640139,ko,fallback_like,2025武夷山茶叶产销对接会举办 成交茶叶15万公斤 - 新华网,2025-11-17 20:15:00,2025-11-17 20:15:00,,,,,,0,0,0
+gdelt_583c4b18,ko,fallback_like,GDP 3경원 육박 ... 글로벌 관점에서 바라본 2025년 中 경제 성과 - Xinhua,2026-02-09 16:00:00,2026-02-09 16:00:00,,,,,,0,0,0
+gdelt_bc71d855,ko,fallback_like,绍兴市越城区  精康融合行动  助力精神障碍患者重拾生活信心 - 新华网,2025-12-08 22:15:00,2025-12-08 22:15:00,,,,,,0,0,0
+gdelt_8734a5a6,ko,fallback_like,中 - 아세안 엑스포에 대거 등장한 AI 응용 사례 ... 미래 기대감  UP - Xinhua,2025-09-21 14:15:00,2025-09-21 14:15:00,,,,,,0,0,0
+gdelt_8bd56b0a,ko,fallback_like,外地职工春节后返厦最高可领450元 - 新华网,2026-01-27 13:15:00,2026-01-27 13:15:00,,,,,,0,0,0
+gdelt_71b0d721,ko,fallback_like,推动更多科技成果走向生产线 - 新华网,2026-03-27 13:30:00,2026-03-27 13:30:00,,,,,,0,0,0
+gdelt_b06b7f9b,ko,fallback_like,探访海南三沙永兴岛 赵述岛  海上公交 - 新华网,2026-03-23 00:15:00,2026-03-23 00:15:00,,,,,,0,0,0
+gdelt_67610dc0,ko,fallback_like,전통 춤에서 스트리트댄스까지 ... 中에서 펼쳐진 로봇  춤 대결 - Xinhua,2025-08-05 14:15:00,2025-08-05 14:15:00,,,,,,0,0,0
+gdelt_220c2081,ko,fallback_like,世界举重锦标赛落幕 福建省再添一位世界冠军 - 新华网,2025-10-13 15:30:00,2025-10-13 15:30:00,,,,,,0,0,0
+gdelt_c2308253,ko,fallback_like,권기식 한중도시우호협회장  민간 교류와 상호 신뢰로 한 · 중 미래 열어야  - Xinhua,2026-03-24 10:00:00,2026-03-24 10:00:00,,,,,,0,0,0
+gdelt_07d96da4,ko,fallback_like,甘肃省风能太阳能可开发量居全国前列 - 新华网,2025-12-21 14:00:00,2025-12-21 14:00:00,,,,,,0,0,0
+gdelt_dcf1c888,ko,fallback_like,693家 ！ 杭州总部企业数量再创新高 - 新华网,2026-02-26 10:45:00,2026-02-26 10:45:00,,,,,,0,0,0
+gdelt_16066f09,ko,fallback_like,南方电网都匀供电局  多看一眼  阻断220千伏重大隐患 - 新华网,2025-10-20 18:45:00,2025-10-20 18:45:00,,,,,,0,0,0
+gdelt_922d01bc,ko,fallback_like,"中 신장 ( 新疆 ) 톈산국제공항 , 새 터미널 개장 후 이용객 급증 - Xinhua",2025-07-22 12:15:00,2025-07-22 12:15:00,,,,,,0,0,0
+gdelt_5c484a7c,ko,fallback_like,中 지난해 가전제품 · 통신기기 소매판매액 모두 210조원 넘어 - Xinhua,2026-01-22 08:30:00,2026-01-22 08:30:00,,,,,,0,0,0
+gdelt_1d3f35de,ko,fallback_like,REITs市场迎政策新指引 支持扩容扩募与资产创新 - 新华网,2025-09-22 12:00:00,2025-09-22 12:00:00,,,,,,0,0,0
+gdelt_10149827,ko,fallback_like,首批柬埔寨榴莲飞入河南 - 新华网河南频道,2025-08-10 09:45:00,2025-08-10 09:45:00,,,,,,0,0,0
+gdelt_0d5024e3,ko,fallback_like,超七成民众支持加沙全面停火 以色列再爆发大规模示威 - 新华网,2025-07-14 00:30:00,2025-07-14 00:30:00,,,,,,0,0,0
+gdelt_64e1425e,ko,fallback_like,未上市先评级 ESG重塑企业市值管理逻辑 - 新华网,2025-11-17 10:30:00,2025-11-17 10:30:00,,,,,,0,0,0
+gdelt_52d1e2b7,ko,fallback_like,"자판기에서 나오는 책 ... 中 홍콩 , 스마트 기술로 북 크로싱 열기  UP - Xinhua",2026-02-10 11:15:00,2026-02-10 11:15:00,,,,,,0,0,0
+gdelt_08701fb7,ko,fallback_like,勇做数字蓝海  弄潮儿 - 新华网辽宁频道,2025-09-07 16:45:00,2025-09-07 16:45:00,,,,,,0,0,0
+gdelt_fc01ccf3,ko,fallback_like,中共江苏省委十四届十次全会召开 _ 新华网江苏频道,2025-11-30 10:30:00,2025-11-30 10:30:00,,,,,,0,0,0
+gdelt_3fecd544,ko,fallback_like,我国285家仲裁委员会累计办理仲裁案件500多万件 - 新华网,2025-09-30 11:15:00,2025-09-30 11:15:00,,,,,,0,0,0
+gdelt_61795038,ko,fallback_like,浙派名师千里赴滇送教 _ 新华网,2025-09-28 18:30:00,2025-09-28 18:30:00,,,,,,0,0,0
+gdelt_342d7b8c,ko,fallback_like,国开新型政策性金融工具投放近1900亿元 - 新华网,2025-10-21 11:30:00,2025-10-21 11:30:00,,,,,,0,0,0
+gdelt_c4920298,ko,fallback_like,云南腾药亮相2025腾冲科学家论坛 - 新华网,2025-12-07 15:00:00,2025-12-07 15:00:00,,,,,,0,0,0
+gdelt_2e4cce78,ko,fallback_like,诸暨村村都有法治审查员 - 新华网,2025-09-08 14:30:00,2025-09-08 14:30:00,,,,,,0,0,0
+gdelt_e535d1f5,ko,fallback_like,海南省首次记录到白领翡翠 - 新华网,2025-09-28 12:15:00,2025-09-28 12:15:00,,,,,,0,0,0
+gdelt_5a341a17,ko,fallback_like,广播剧 《 三毛之父  张乐平 》 上线 - 新华网,2025-09-05 19:00:00,2025-09-05 19:00:00,,,,,,0,0,0
+gdelt_c0124ac4,ko,fallback_like,单板滑雪 大跳台世界杯 ： 苏翊鸣夺冠 - 新华网,2025-12-07 11:15:00,2025-12-07 11:15:00,,,,,,0,0,0
+gdelt_68a8d7d5,ko,fallback_like,福州 ： 垃圾综合治理助力城市绿色发展 - 新华网,2025-09-14 19:45:00,2025-09-14 19:45:00,,,,,,0,0,0
+gdelt_98e44a51,ko,fallback_like,期待春晚  硅基舞团  加速舞进现实 - 新华网,2026-02-17 13:45:00,2026-02-17 13:45:00,,,,,,0,0,0
+gdelt_457faaaa,ko,fallback_like,"中 허베이 , 올림픽 시설 활용해  빙설 경제  박차 ... 산업 클러스터 생산액 3조원 넘어 - Xinhua",2025-12-14 10:00:00,2025-12-14 10:00:00,,,,,,0,0,0
+gdelt_f60c3a23,ko,fallback_like,海南省率先出台 《 生态环境监测条例 》 省级配套制度 - 新华网,2026-01-14 13:15:00,2026-01-14 13:15:00,,,,,,0,0,0
+gdelt_f6b1014e,ko,fallback_like,"中 프리미엄 자동차  훙치 , 이스라엘서 신형 전기차 모델  E - HS5  출시 - Xinhua",2026-01-14 12:30:00,2026-01-14 12:30:00,,,,,,0,0,0
+gdelt_2e6f491c,ko,fallback_like,減肥 ： 印度廉價仿製藥或將重塑全球市場格局 - BBC News 中文,2026-03-19 14:30:00,2026-03-19 14:30:00,,,,,,0,0,0
+gdelt_43f5b46f,ko,fallback_like,云南省交通部门全力筑牢汛期安全防线 _ 新华网,2025-07-04 13:15:00,2025-07-04 13:15:00,,,,,,0,0,0
+gdelt_80deca48,ko,fallback_like,"자오러지 中 전인대 상무위원장 , 뉴질랜드 공식 친선 방문 - Xinhua",2025-11-23 09:15:00,2025-11-23 09:15:00,,,,,,0,0,0
+gdelt_2c08940a,ko,fallback_like,云南展台唱响  旅居云南 · 体育旅居  主旋律 _ 新华网,2025-09-15 12:30:00,2025-09-15 12:30:00,,,,,,0,0,0
+gdelt_eb05abb2,ko,fallback_like, 【 新数据 新亮点 】 定西高质量发展迈出坚实步伐 - 新华网,2025-10-31 10:30:00,2025-10-31 10:30:00,,,,,,0,0,0
+gdelt_0ac3fcfe,ko,fallback_like,孩子刷手機停不下來 ？ 別慌 ， 試試這五個方法 - BBC News 中文,2026-03-27 17:30:00,2026-03-27 17:30:00,,,,,,0,0,0
+gdelt_81138566,ko,fallback_like,甘津鲁教育协作帮扶开启  云端共育  新模式 - 新华网,2026-01-22 12:00:00,2026-01-22 12:00:00,,,,,,0,0,0
+gdelt_e959e72b,ko,fallback_like,省直青年人才公寓第二批次配租工作启动 - 新华网河南频道,2025-07-13 09:00:00,2025-07-13 09:00:00,,,,,,0,0,0
+gdelt_9be42bed,ko,fallback_like,研究 ： 全面应用公交车自动驾驶可缩短候车时间,2026-01-18 18:15:00,2026-01-18 18:15:00,,,,,,0,0,0
+gdelt_a6a00cd4,ko,fallback_like,浙江庆元加快培育荒野茶品牌 - 新华网,2025-08-24 12:45:00,2025-08-24 12:45:00,,,,,,0,0,0
+gdelt_521d841b,ko,fallback_like,福建顺昌 ： 高龄津贴  免申即享  暖人心 - 新华网,2026-03-24 13:00:00,2026-03-24 13:00:00,,,,,,0,0,0
+gdelt_1f887bd8,ko,fallback_like,  全网最忙五人组  背后藏了什么  鬼 ？- 新华网,2025-12-08 12:30:00,2025-12-08 12:30:00,,,,,,0,0,0
+gdelt_f0aa5f99,ko,fallback_like,역귀성에서 자동차 여행까지 ... 中 춘절 인구 이동 新 풍속도 - Xinhua,2026-02-25 13:45:00,2026-02-25 13:45:00,,,,,,0,0,0
+gdelt_fe8171ed,ko,fallback_like,中 신장 ( 新疆 ) 1~11월 수출입총액 전년比 14 . 1 % 증가 ... 지난해 규모 넘어서 - Xinhua,2025-12-21 09:45:00,2025-12-21 09:45:00,,,,,,0,0,0
+gdelt_634dc2a3,ko,fallback_like,理学名城绽新韵 - 新华网,2025-10-13 15:30:00,2025-10-13 15:30:00,,,,,,0,0,0
+gdelt_2a37552b,ko,fallback_like,지정학 불안 속 中 - 유럽 화물열차  순항 중 ... 아시아 · 유럽 교역 든든한 버팀목 - Xinhua,2026-03-18 17:00:00,2026-03-18 17:00:00,,,,,,0,0,0
+gdelt_7c684120,ko,fallback_like,元旦假期福建省跨区域出行量创新高 - 新华网,2026-01-05 13:45:00,2026-01-05 13:45:00,,,,,,0,0,0
+gdelt_f3fdb7c0,ko,fallback_like,  潜入  万米深海 感受海洋  心跳 - 新华网河南频道,2026-01-22 10:45:00,2026-01-22 10:45:00,,,,,,0,0,0
+gdelt_2d38ae5c,fa,fallback_like,کشته شدن پرستار ۳۷ ساله به دست آیس ؛ فرماندار کالیفرنیا خواستار کناره‌گیری وزیر امنیت داخلی شد,2026-01-26 00:30:00,2026-01-26 00:30:00,,,,,,0,0,0
+gdelt_c2d27ae8,fa,fallback_like,مدیرکل آژانس به ایران : نمی‌شود بگویید که عضو ان‌پی‌تی هستیم اما به تعهدات خود عمل نمی‌کنیم,2025-11-05 21:00:00,2025-11-05 21:00:00,,,,,,0,0,0
+gdelt_109bf8f4,fa,fallback_like,کاخ سفید دستور یک فرمانده ارشد برای حمله دوم به بازماندگان یک قایق ونزوئلایی را تایید کرد,2025-12-02 09:45:00,2025-12-02 09:45:00,,,,,,0,0,0
+gdelt_7cb0ef6a,fa,fallback_like,گزارش‌ها از کشته شدن سیف الاسلام ، پسر معمر قذافی و سرکوب‌گر اعتراضات لیبی,2026-02-04 06:15:00,2026-02-04 06:15:00,,,,,,0,0,0
+gdelt_b97a1658,fa,fallback_like,سفر شگفت‌انگیز یک ستاره ؛ صلاح چگونه « پادشاه مصر » شد ؟ ,2025-08-24 22:00:00,2025-08-24 22:00:00,,,,,,0,0,0
+gdelt_98d0a63e,fa,fallback_like,پاپ لئو شدیدترین انتقاد خود از ترامپ را مطرح کرد,2025-11-06 09:15:00,2025-11-06 09:15:00,,,,,,0,0,0
+gdelt_e83eaf78,fa,fallback_like,آیا دولت ترامپ آمریکای لاتین را « حیاط خلوت » ‌ ایالات متحده می‌داند ؟ ,2025-07-06 22:00:00,2025-07-06 22:00:00,,,,,,0,0,0
+gdelt_85092b1b,fa,fallback_like,بولسنارو به علت سکسکه تحت درمان قرار گرفت,2025-12-29 11:00:00,2025-12-29 11:00:00,,,,,,0,0,0
+gdelt_1a39dd82,fa,fallback_like,ماجرای اولین زنی که از انگلیس به لیگ حرفه‌ای فوتبال عربستان رفت : خیلی‌ها را رنجاندم,2025-10-13 10:00:00,2025-10-13 10:00:00,,,,,,0,0,0
+gdelt_b16b7810,fa,fallback_like,هنگام وقوع زلزله چه باید کرد ؟ - BBC News فارسی,2025-09-01 17:15:00,2025-09-01 17:15:00,,,,,,0,0,0
+gdelt_e350b991,fa,fallback_like,کاست ، نامزد راست افراطی ، برنده انتخابات ریاست جمهوری شیلی شد,2025-12-16 00:30:00,2025-12-16 00:30:00,,,,,,0,0,0
+gdelt_79165783,fa,fallback_like,چرا دعوا بر سر نقشه حوزه‌های انتخاباتی در آمریکا تا این حد بالا گرفته است ؟ ,2025-08-25 17:00:00,2025-08-25 17:00:00,,,,,,0,0,0
+gdelt_05bf7e01,fa,fallback_like,حملات پهپادی به اقلیم کردستان عراق ، توقف فعالیت میدان نفتی سرسنگ,2025-07-15 18:30:00,2025-07-15 18:30:00,,,,,,0,0,0
+gdelt_9584820f,fa,fallback_like,مهم‌ترین موارد اختلاف در طرح صلح ترامپ برای غزه چیست ؟ ,2025-10-08 07:00:00,2025-10-08 07:00:00,,,,,,0,0,0
+gdelt_abfa7f71,fa,fallback_like,استقبال روسیه از راهبرد جدید امنیت ملی آمریکا : تا حد زیادی مطابق دیدگاه‌های ماست,2025-12-07 22:45:00,2025-12-07 22:45:00,,,,,,0,0,0
+gdelt_253e5ef0,fa,fallback_like,سرقت مسلحانه از موزه لوور پاریس – DW – ۱۴۰۴ / ۷ / ۲۷,2025-10-19 20:45:00,2025-10-19 20:45:00,,,,,,0,0,0
+gdelt_9b03ba90,fa,fallback_like,عباس عراقچی : توافق قاهره برای همکاری با آژانس بین‌المللی انرژی اتمی دیگر موضوعیت ندارد,2025-10-05 22:15:00,2025-10-05 22:15:00,,,,,,0,0,0
+gdelt_829990bd,fa,fallback_like,آنتونی گوترش هشدار داد که مبادا اعماق دریاها به هرج و مرجی شبیه غرب وحشی دچار شوند,2025-06-10 07:15:00,2025-06-10 07:15:00,,,,,,0,0,0
+gdelt_e0472d3e,sq,parsed_like,Përse bëhet fjalë në samitin e klimës në Brazil ? – DW – 10 / 11 / 2025,2025-11-10 16:15:00,2025-11-10 00:00:00,2025-01-01 00:00:00,year,10 / 11 / 2025,search_dates,low,1,1,1
+gdelt_9f7694d0,sq,parsed_like,Po tani ? BE kërkon mënyra të reja për të mbështetur Ukrainën – DW – 01 / 09 / 2025,2025-09-01 15:15:00,2025-09-01 00:00:00,2025-01-01 00:00:00,year,01 / 09 / 2025,search_dates,low,1,1,1
+gdelt_f9cbe1e2,sq,parsed_like,Merreni seriozisht ! Thirrja e Guterres për liderët botërorë – DW – 30 / 12 / 2025,2025-12-30 18:45:00,2025-12-30 00:00:00,2025-01-01 00:00:00,year,30 / 12 / 2025,search_dates,low,1,1,1
+gdelt_366aa813,sq,parsed_like,A do ti ndalojë Gjermania rrjetet sociale për fëmijët ? ,2026-02-17 19:30:00,2026-02-15 00:00:00,,,,,,0,0,0
+gdelt_991eb90c,sq,parsed_like,Studentë nga bota drejt Europës ? Gara për talentet globale – DW – 20 / 10 / 2025,2025-10-20 14:30:00,2025-10-20 00:00:00,2025-01-01 00:00:00,year,20 / 10 / 2025,search_dates,low,1,1,1
+gdelt_4a5e5882,sw,parsed_like,Waasi wa AFC / M23 wasema wako tayari kuondoka Uvira – DW – 16 . 12 . 2025,2025-12-16 20:15:00,2025-12-16 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d6254a38,sw,parsed_like,Mkuu wa Wahouthi Yemen auawa katika shambulizi la Israel – DW – 31 . 08 . 2025,2025-08-31 20:00:00,2025-08-31 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_6d5a5e37,sw,parsed_like,Wafghanistani walio hatarini waisihi Ujerumani kuwapa visa – DW – 02 . 09 . 2025,2025-09-02 20:30:00,2025-09-02 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_f95ba5dd,sw,parsed_like,Zelensky yuko Vilnius kushiriki mkutano wa NATO – DW – 02 . 06 . 2025,2025-06-02 20:00:00,2025-06-02 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_dbb81173,sw,parsed_like,Israel yafanya mashambulizi ya anga katika bandari Yemen – DW – 07 . 07 . 2025,2025-07-07 12:45:00,2025-07-07 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_c305a571,sw,parsed_like,Urusi : Nchi za Magharibi zimekataa diplomasia kumaliza mzozo – DW – 27 . 07 . 2025,2025-07-27 20:45:00,2025-07-27 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_b9e879c4,sw,parsed_like,Raila Odinga azikwa nyumbani Bondo baada ya ibada ya mazishi – DW – 19 . 10 . 2025,2025-10-19 23:45:00,2025-10-19 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_abc0e0b9,sw,parsed_like,Karibu watu 20 wafa maji baada ya boti kuzama – DW – 13 . 08 . 2025,2025-08-14 01:30:00,2025-08-13 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_f0547089,sw,parsed_like,Maelfu ya raia wa Sudan wakimbia machafuko ya El Fasher – DW – 03 . 11 . 2025,2025-11-03 20:15:00,2025-11-03 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_6c3ba66e,sw,parsed_like,Amnesty International : GHF yatumika kuwauwa Wapalestina – DW – 04 . 07 . 2025,2025-07-04 11:30:00,2025-07-04 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_84115474,sw,parsed_like,Wakimbizi wa Kongo watamani kurudi makwao – DW – 12 . 01 . 2026,2026-01-12 19:45:00,2026-01-12 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_6635460e,sw,parsed_like,Gwaride la jeshi la wanamaji wa Urusi laahirishwa ghafla – DW – 27 . 07 . 2025,2025-07-28 01:45:00,2025-07-27 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_25e7afe8,sw,parsed_like,Iran yathibitisha kurejea kwenye meza ya mazungumzo – DW – 21 . 07 . 2025,2025-07-21 13:00:00,2025-07-21 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_70278b4c,sw,parsed_like,Ukosefu wa maji Dar es Salaam watia wasiwasi – DW – 15 . 12 . 2025,2025-12-16 00:30:00,2025-12-15 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_b24a87e5,sw,parsed_like,Urusi yapongeza mkakati mpya wa usalama wa Marekani – DW – 07 . 12 . 2025,2025-12-07 21:30:00,2025-12-07 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_64b908de,sw,parsed_like,Chama cha upinzani Uturuki chaitisha maandamano Istanbul – DW – 08 . 09 . 2025,2025-09-08 11:00:00,2025-09-08 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_db7d77d7,ko,parsed_like,二连浩特口岸2025年出入境流量攀历史新高 - 新华网,2026-01-05 22:45:00,2025-12-31 00:00:00,,,,,,0,0,0
+gdelt_965e2d84,ko,parsed_like,前三季度甘肃交通投资增速全国第一 - 新华网,2025-11-12 12:30:00,2025-09-30 00:00:00,,,,,,0,0,0
+gdelt_ae5550f6,ko,parsed_like,"中 시 주석 , SCO 환영 연회 열어 ... 각국 발전과 번영 촉진하는 SCO 책임 더욱 막중 - Xinhua",2025-09-01 15:15:00,2025-09-01 00:00:00,,,,,,0,0,0
+gdelt_a1859356,zh-cn,parsed_like,聚焦大湾区｜活力大湾区 春节年味足 - 新华网,2026-02-15 13:15:00,2026-02-01 00:00:00,,,,,,0,0,0
+gdelt_8d2f3578,zh-cn,parsed_like,德语媒体 ： 特朗普斗不过李嘉图 – DW – 2025年11月5日,2025-11-06 00:00:00,2025-11-05 00:00:00,2025-11-05 00:00:00,day,2025年11月5日,zh_ymd,high,1,1,1
+gdelt_0bcdfc2a,zh-cn,parsed_like,2025福建旅游交易会在泉州举行 - 新华网,2025-12-15 11:45:00,2025-12-15 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d1cb7e64,zh-cn,parsed_like,酷玩演唱会上出轨被  抓包  科技公司CEO丑闻曝光后辞职 – DW – 2025年7月20日,2025-07-20 17:45:00,2025-07-20 00:00:00,2025-07-20 00:00:00,day,2025年7月20日,zh_ymd,high,1,1,1
+gdelt_8878afd9,zh-cn,parsed_like,李强赴里约金砖峰会 习近平首度缺席 – DW – 2025年7月2日,2025-07-02 23:30:00,2025-07-02 00:00:00,2025-07-02 00:00:00,day,2025年7月2日,zh_ymd,high,1,1,1
+gdelt_496cc2e7,zh-cn,parsed_like,贵州省矿业产业2026高峰论坛在贵阳举行 - 新华网,2026-01-22 10:45:00,2026-01-22 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_ce349f4f,zh-cn,parsed_like,美国联邦司法部开始调查美联储主席鲍威尔 – DW – 2026年1月12日,2026-01-12 19:00:00,2026-01-12 00:00:00,2026-01-12 00:00:00,day,2026年1月12日,zh_ymd,high,1,1,1
+gdelt_55d35b66,zh-cn,parsed_like,新春走基层丨老庙会新玩法 ， 非遗如何圈粉年轻人 ？- 新华网,2026-02-26 17:00:00,2026-02-01 00:00:00,,,,,,0,0,0
+gdelt_9640bee1,zh-cn,parsed_like,桨板成为杭州青年的  夏日新宠 - 新华网,2025-08-10 13:15:00,2025-08-01 00:00:00,,,,,,0,0,0
+gdelt_699f952b,zh-cn,parsed_like,  燕赵春早 河北省文学艺术界2026年文艺人才成果展演  举行 - 新华网河北频道 - 新华网,2026-02-09 12:30:00,2026-02-09 00:00:00,2026-01-01 00:00:00,year,2026年,search_dates,low,1,1,1
+gdelt_8eadb64c,zh-cn,parsed_like,翰墨传情连两岸 青春执笔绘同心 新区杯 · 海峡两岸好文章青少年采风交流活动侧记 - 新华网,2025-07-03 13:00:00,2025-07-01 00:00:00,,,,,,0,0,0
+gdelt_73ed9748,zh-cn,parsed_like,中国军舰在红海瞄准德国飞机 柏林召见中国大使抗议 – DW – 2025年7月8日,2025-07-08 20:30:00,2025-07-08 00:00:00,2025-07-08 00:00:00,day,2025年7月8日,zh_ymd,high,1,1,1
+gdelt_728024c8,zh-cn,parsed_like,四中全会精神在基层丨五百年婺剧  出海记 - 新华网,2025-12-21 09:15:00,2025-12-01 00:00:00,,,,,,0,0,0
+gdelt_f26121f7,zh-cn,parsed_like,媒体 ： 特朗普施压泽连斯基割地换终战 – DW – 2025年10月20日,2025-10-20 18:45:00,2025-10-20 00:00:00,2025-10-20 00:00:00,day,2025年10月20日,zh_ymd,high,1,1,1
+gdelt_03bf280c,zh-cn,parsed_like,美洲之盾峰会 ： 中国已在拉美经营多年 ， 特朗普能为美国重新争取空间吗 ？ ,2026-03-08 13:00:00,2026-03-01 00:00:00,,,,,,0,0,0
+gdelt_dcc467fe,zh-cn,parsed_like,2025年国家网络安全宣传周贵州地区活动启动 - 新华网,2025-09-16 10:30:00,2025-09-16 00:00:00,2025-01-01 00:00:00,year,2025年,search_dates,low,1,1,1
+gdelt_4e647b22,zh-cn,parsed_like,物流运行稳中有进 ， 物流总额保持增长 透视前7个月我国物流发展 - 新华网,2025-09-01 11:45:00,2025-02-01 11:45:00,,,,,,0,0,0
+gdelt_20e0f8f3,zh-cn,parsed_like,书香润童心 丽江市少年儿童图书馆开馆 _ 新华网,2025-12-28 20:30:00,2025-12-01 00:00:00,,,,,,0,0,0
+gdelt_613ef332,zh-cn,parsed_like,2025债市半年观察 ： 扩容提速与高波动并行 - 新华网,2025-07-07 11:45:00,2025-07-07 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_aaecfda2,zh-cn,parsed_like,2025富龙山地车嘉年华开幕 - 新华网河北频道 - 新华网,2025-08-17 20:30:00,2025-08-17 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_ce6767de,zh-cn,parsed_like,2025贵商发展大会暨粤企入黔产业合作对接会即将举办 - 新华网,2025-10-31 12:45:00,2025-10-31 00:00:00,,,,,,0,0,0
+gdelt_f24cc527,zh-cn,parsed_like,第二届澳门国际短片节9月启幕 - 新华网,2025-08-20 11:00:00,2025-09-01 00:00:00,2025-09-01 00:00:00,month,9月,zh_month_only,low,1,1,1
+gdelt_60f5565e,zh-cn,parsed_like,8月20日夜间至24日白天云南省大部将出现持续强降雨 _ 新华网,2025-08-20 12:30:00,2025-08-20 00:00:00,2025-08-20 00:00:00,day,8月20日,zh_md,high,1,1,1
+gdelt_c9d94b85,zh-cn,parsed_like,"2025 , 中国制造赢了吗 ？ – DW – 2025年12月29日",2025-12-30 01:30:00,2025-12-30 00:00:00,2025-12-29 00:00:00,day,2025年12月29日,zh_ymd,high,1,0,1
+gdelt_cf1ff905,zh-cn,parsed_like,俄罗斯最大炼油厂遭到无人机袭击后起火 – DW – 2025年9月14日,2025-09-14 21:45:00,2025-09-14 00:00:00,2025-09-14 00:00:00,day,2025年9月14日,zh_ymd,high,1,1,1
+gdelt_bd85f835,zh-cn,parsed_like, 《 中老铁路发展报告 （ 2025 ）》 在昆发布 _ 新华网,2025-12-22 12:00:00,2025-12-22 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_077f5210,zh-cn,parsed_like,长江江豚分布范围持续扩大 - 新华网,2026-01-05 22:45:00,2026-01-01 00:00:00,,,,,,0,0,0
+gdelt_234bba11,zh-cn,parsed_like,特朗普称未能找到合适时间会晤金正恩 – DW – 2025年10月29日,2025-10-29 20:00:00,2025-10-29 00:00:00,2025-10-29 00:00:00,day,2025年10月29日,zh_ymd,high,1,1,1
+gdelt_54a41f9d,en,parsed_like,A day in the life on the NATO maneuvres,2026-02-15 20:30:00,2026-02-16 20:30:00,,,,,,0,0,0
+gdelt_409f4a5a,en,parsed_like,Glasgow School of Sport confirmed to close in 2029,2026-03-27 19:15:00,2029-01-01 00:00:00,2029-01-01 00:00:00,year,in 2029,year_context,low,1,1,1
+gdelt_7544d2b5,en,parsed_like,"US Open 2025 live updates : Semifinals latest with Djokovic , Alcaraz and Sinner in action today",2025-09-06 02:45:00,2025-09-06 00:00:00,2025-09-06 00:00:00,day,today,relative_day,medium,1,1,1
+gdelt_c6396f07,en,parsed_like,Singapore National Day Parade 2025 | Highlights,2025-08-11 10:45:00,2025-08-11 00:00:00,2025-01-01 00:00:00,year,2025 |,search_dates,low,1,1,1
+gdelt_46854027,en,parsed_like,Illinois First Congressional District Primary 2026 : Live Election Results,2026-03-18 08:30:00,2026-03-18 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_584a2dc2,en,parsed_like,LIVE : Over 600 starving Palestinians killed in 5 weeks at GHF sites in Gaza | Israel - Palestine conflict News,2025-07-02 23:30:00,2025-05-28 23:30:00,,,,,,0,0,0
+gdelt_be7742ee,en,parsed_like,Germany : Klingbeil in Washington for talks with Bessent – DW – 08 / 04 / 2025,2025-08-04 17:00:00,2025-08-04 00:00:00,2025-01-01 00:00:00,year,08 / 04 / 2025,search_dates,low,1,1,1
+gdelt_a8d248fa,en,parsed_like,Trump v  Obamacare : US health costs set to soar for millions in 2026,2025-12-31 11:30:00,2026-01-01 00:00:00,2026-01-01 00:00:00,year,in 2026,year_context,low,1,1,1
+gdelt_6aafd6d3,en,parsed_like,"Japan factory declines slow in May but tariff worries persist , PMI shows",2025-06-02 09:00:00,2025-05-31 00:00:00,2025-05-01 00:00:00,month,in May,en_month_only,low,1,1,1
+gdelt_8ad3ae5a,en,parsed_like,"Committee of Supply 2026 debate , Day 1 : Poh Li San on meeting Singapore climate goals",2026-02-26 16:30:00,2026-02-26 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_a0e45865,en,parsed_like,Families shocked Swiss ski bar was not inspected for years before deadly fire,2026-01-07 19:45:00,2026-01-01 00:00:00,,,,,,0,0,0
+gdelt_9a59d7e7,en,parsed_like,"Commentary : 2025 , the year of tariffs and AI",2025-12-31 06:45:00,2025-12-31 00:00:00,,,,,,0,0,0
+gdelt_627a6587,en,parsed_like,From Iraq to Gaza : Tony Blair next diplomatic mission – DW – 10 / 04 / 2025,2025-10-06 23:30:00,2025-10-04 00:00:00,2025-01-01 00:00:00,year,10 / 04 / 2025,search_dates,low,1,1,1
+gdelt_7a45f318,en,parsed_like,UK : Social media people smugglers to face jail – DW – 08 / 03 / 2025,2025-08-04 04:00:00,2025-08-03 00:00:00,2025-01-01 00:00:00,year,08 / 03 / 2025,search_dates,low,1,1,1
+gdelt_d6d137b6,en,parsed_like,Bibby Stockholm one year on : The legacy of the asylum barge,2026-02-01 17:00:00,2025-02-01 17:00:00,,,,,,0,0,0
+gdelt_a0201aaa,en,parsed_like,"LIVE : Israel kills nearly 100 people in Gaza in 24 hours , halts aid | Israel - Palestine conflict News",2025-06-05 05:00:00,2025-06-04 05:00:00,,,,,,0,0,0
+gdelt_5f3305cf,en,parsed_like,Harry Kane - the Unstoppable – DW – 30 . 10 . 2025,2025-10-31 02:30:00,2025-10-30 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_6483637a,en,parsed_like,"Modi , Putin and other world leaders arrive for SCO summit – DW – 08 / 31 / 2025",2025-08-31 12:00:00,2025-08-31 00:00:00,2025-01-01 00:00:00,year,08 / 31 / 2025,search_dates,low,1,1,1
+gdelt_c932edf3,en,parsed_like,"HDB to launch 19 , 600 BTO flats in 2026 , including more than 4 , 000 shorter waiting time units",2026-01-08 13:00:00,2026-01-08 00:00:00,2026-01-01 00:00:00,year,in 2026,year_context,low,1,1,1
+gdelt_83c1cea3,en,parsed_like,"Bethlehem celebrates Christmas again , two years after Gaza war silenced festivities",2025-12-24 12:15:00,2023-12-24 12:15:00,,,,,,0,0,0
+gdelt_4e7390a7,en,parsed_like,Germany Merz in Israel : Solidarity amid Gaza criticism – DW – 12 / 07 / 2025,2025-12-08 05:45:00,2025-12-07 00:00:00,2025-01-01 00:00:00,year,12 / 07 / 2025,search_dates,low,1,1,1
+gdelt_586ede18,en,parsed_like,7 July bombings : Olympics joy turned into a barbaric loss of life,2025-07-07 14:30:00,2025-07-07 00:00:00,2025-07-01 00:00:00,month,7 July,search_dates,low,1,1,1
+gdelt_48a40862,en,parsed_like,UK borrowing costs hit 27 - year high adding to pressure on Reeves,2025-09-02 20:30:00,2027-09-01 00:00:00,,,,,,0,0,0
+gdelt_42a0bd92,en,parsed_like,Singapore National Day Parade 2025 | Highlights,2025-08-12 18:30:00,2025-08-12 00:00:00,2025-01-01 00:00:00,year,2025 |,search_dates,low,1,1,1
+gdelt_2595263c,en,parsed_like,"Puerto Rico vs . Italy live updates : World Baseball Classic 2026 start time , how to watch and lineups",2026-03-15 02:00:00,2026-03-15 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_cf7675c8,en,parsed_like,The Ashes 2025 - 26 : Jacob Bethell comes of age with Sydney century against Australia,2026-01-07 20:30:00,2025-12-31 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_377a9953,en,parsed_like,Benin foiled coup : How it unfolded and what we know | Explainer News,2025-12-08 21:00:00,2025-12-03 00:00:00,,,,,,0,0,0
+gdelt_5b71cc29,en,parsed_like,Switzerland : Voters reject climate tax in referendum – DW – 11 / 30 / 2025,2025-12-01 03:00:00,2025-11-30 00:00:00,2025-01-01 00:00:00,year,11 / 30 / 2025,search_dates,low,1,1,1
+gdelt_257068c9,en,parsed_like,"Zubeen Garg death probe : Investigations may take up to 3 months , says Singapore Police Force",2025-10-17 22:45:00,2025-07-17 22:45:00,,,,,,0,0,0
+gdelt_d65120c7,en,parsed_like,Freshman Koa Peat elevates Arizona past Purdue to end 25 - year Final Four drought,2026-03-29 15:45:00,2025-03-01 00:00:00,,,,,,0,0,0
+gdelt_9bf07653,en,parsed_like,"Wimbledon 2025 : Jannik Sinner and Carlos Alcaraz on rivalry , each other and what future could hold",2025-07-14 21:00:00,2025-07-14 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_db7c1415,en,parsed_like,What US $3B deal with Venezuela means for world oil trade – DW – 01 / 07 / 2026,2026-01-07 23:45:00,2026-01-07 00:00:00,2026-01-01 00:00:00,year,01 / 07 / 2026,search_dates,low,1,1,1
+gdelt_c5bddc50,en,parsed_like,Navy beats Army for second year in a row with clutch Blake Horvath plays,2025-12-14 13:00:00,2025-12-01 00:00:00,,,,,,0,0,0
+gdelt_359364a6,en,parsed_like,Former French president Sarkozy granted release from prison after three weeks,2025-11-10 22:45:00,2025-10-20 22:45:00,,,,,,0,0,0
+gdelt_371fe270,en,parsed_like,"US : 4 killed , 10 injured in birthday party shooting – DW – 11 / 30 / 2025",2025-11-30 15:00:00,2025-11-30 00:00:00,2025-01-01 00:00:00,year,11 / 30 / 2025,search_dates,low,1,1,1
+gdelt_3e123188,en,parsed_like,Thailand accuses Cambodia of violating hours - old ceasefire,2025-07-29 14:45:00,2025-07-01 00:00:00,,,,,,0,0,0
+gdelt_d50dbb7c,en,parsed_like,"Committee of Supply 2026 debate , Day 4 : Patrick Tay on review of Employment Act and unemployment support",2026-03-03 15:15:00,2026-03-03 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_8d271d58,en,parsed_like,Morocco targets $10 billion AI contribution to GDP by 2030,2026-01-13 14:15:00,2030-12-31 00:00:00,2030-01-01 00:00:00,year,by 2030,year_context,low,1,1,1
+gdelt_4ffb6a3d,en,parsed_like,"US will impose additional 100 % tariff on Chinese imports from November , Trump says",2025-10-11 07:00:00,2025-11-01 00:00:00,,,,,,0,0,0
+gdelt_d0213cf9,en,parsed_like,"USMNT to face Ecuador , Australia in October World Cup tune - ups",2025-07-15 08:45:00,2025-10-01 00:00:00,2025-10-01 00:00:00,month,in October,en_month_only,low,1,1,1
+gdelt_aafe5279,en,parsed_like,Europe win Ryder Cup : Why stirring Sunday fightback cannot hide US Ryder Cup shortcomings,2025-09-30 10:00:00,2025-09-28 00:00:00,,,,,,0,0,0
+gdelt_daee9ebc,en,parsed_like,"Blue Jackets Sunday Gathering : Rostislav Klesla , franchise first pick , nearly landed elsewhere",2025-10-20 00:30:00,2025-10-19 00:00:00,,,,,,0,0,0
+gdelt_98567426,en,parsed_like,Germany updates : Merz seeks to win over investors – DW – 07 / 21 / 2025,2025-07-21 18:30:00,2025-07-21 00:00:00,2025-01-01 00:00:00,year,07 / 21 / 2025,search_dates,low,1,1,1
+gdelt_ad03cceb,en,parsed_like,Stirling Council £1 . 16m boost after property disposal,2026-03-10 22:00:00,2026-03-10 21:44:00,,,,,,0,0,0
+gdelt_51e616fe,en,parsed_like,"Less job switching , especially by those in their 20s , suggests growing caution among workers , says MOM",2025-11-28 11:15:00,2025-11-28 11:14:40,,,,,,0,0,0
+gdelt_1f3a6754,en,parsed_like,Bundestag inquiry on Germany COVID - 19 response to conclude – DW – 12 / 28 / 2025,2025-12-29 05:15:00,2025-12-28 00:00:00,2025-01-01 00:00:00,year,12 / 28 / 2025,search_dates,low,1,1,1
+gdelt_ee60d94c,en,parsed_like,White House launches tracker to call out  media offender – DW – 11 / 30 / 2025,2025-11-30 11:30:00,2025-11-30 00:00:00,2025-01-01 00:00:00,year,11 / 30 / 2025,search_dates,low,1,1,1
+gdelt_3844ae63,en,parsed_like,A first look at the Singapore Airshow 2026,2026-02-08 15:30:00,2026-02-08 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_554d6b18,en,parsed_like,"Sembawang Park Beach graded  good , safe for water activities after two years of  fair  grading",2026-01-29 12:15:00,2024-01-29 12:15:00,,,,,,0,0,0
+gdelt_41dcde93,en,parsed_like,At least 15 starve to death in 24 hours in Gaza as Israel continues attacks,2025-07-23 09:45:00,2025-07-22 09:45:00,,,,,,0,0,0
+gdelt_67ad8c90,en,parsed_like,"Wimbledon 2025 live updates : Day 3 latest with rain delays as Alcaraz , Sinner and Keys in action",2025-07-02 18:45:00,2025-07-02 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_341a82af,en,parsed_like,Premier League Darts 2026 results : Luke Littler spoils Welsh party with win in Cardiff,2026-03-06 09:45:00,2026-03-06 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_5726eaca,en,parsed_like,"Vikings vs . Cowboys score , live updates : Minnesota ties game via McCarthy  Griddy  TD on NFL  Sunday Night Football  ",2025-12-15 10:45:00,2025-12-14 00:00:00,,,,,,0,0,0
+gdelt_045b4285,en,parsed_like,Peter Gerhardsson is Euro 2025 most eccentric manager . Can he extend Sweden stay by beating England ? ,2025-07-17 13:45:00,2025-07-17 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_cb0ea88b,en,parsed_like,1 in 5 lorries still without speed limiters ahead of Jan 1 deadline,2025-12-19 23:45:00,2026-01-01 00:00:00,2025-01-01 00:00:00,day,of Jan 1,search_dates,low,1,0,0
+gdelt_9b7c0bd8,en,parsed_like,Barricade jumper who rushed at Ariana Grande at Singapore event given 9 day jail for public nuisance,2025-11-17 16:00:00,2025-11-08 16:00:00,,,,,,0,0,0
+gdelt_270cace4,en,parsed_like,Chargers shut down Steelers for third straight win : Live updates and reaction from NFL  Sunday Night Football  ,2025-11-10 13:00:00,2025-11-09 00:00:00,,,,,,0,0,0
+gdelt_4f596a96,en,parsed_like,Trump tariffs : Asia braces for another year of Trump tariff turmoil,2026-02-26 08:15:00,2026-02-01 00:00:00,,,,,,0,0,0
+gdelt_0f5584fb,en,parsed_like,India and Canada aim to conclude free trade deal by end - 2026,2026-03-02 22:15:00,2026-03-02 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_1171befd,en,parsed_like,Israeli police block Catholic cardinal from Jerusalem Holy Sepulchre on Palm Sunday,2026-03-30 04:45:00,2026-03-29 00:00:00,,,,,,0,0,0
+gdelt_a0c2ca8c,en,parsed_like,"Cambridgeshire Send charity  supported 8 , 000 people  in  August",2025-09-10 15:30:00,2025-08-31 00:00:00,2025-08-01 00:00:00,month,in  August,en_month_only,low,1,1,1
+gdelt_542c7ebc,en,parsed_like,Trump turns crypto king but at what cost ? – DW – 09 / 15 / 2025,2025-09-15 19:30:00,2025-09-15 00:00:00,2025-01-01 00:00:00,year,09 / 15 / 2025,search_dates,low,1,1,1
+gdelt_c7abff9a,en,parsed_like,"US firms in China most pessimistic since 1999 , survey says",2025-09-10 15:45:00,1999-01-01 00:00:00,1999-01-01 00:00:00,year,since 1999,year_context,low,1,1,1
+gdelt_270c8a9c,en,parsed_like,Germany updates : Welfare payments up by €4 billion last year – DW – 08 / 03 / 2025,2025-08-03 16:45:00,2024-08-03 16:45:00,2024-01-01 00:00:00,year,last year,relative_year,medium,1,1,1
+gdelt_b875143d,en,parsed_like,Afrima Awards 2026 : Burna Boy and Rema win as Nigerian stars dominate,2026-01-12 17:45:00,2026-01-12 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_f914c056,en,parsed_like,1 in 3 preschool educators does not have formal training in child protection : Study,2025-11-26 23:30:00,2025-01-03 00:00:00,,,,,,0,0,0
+gdelt_d8c8cff2,en,parsed_like,Permanent employment at record high ; labour force participation rate falls for 4th straight year : MOM,2025-11-28 11:15:00,2025-04-01 00:00:00,,,,,,0,0,0
+gdelt_8f4db85c,en,parsed_like,First New V - Level subjects announced from 2027,2026-03-10 09:15:00,2027-01-01 00:00:00,2027-01-01 00:00:00,year,from 2027,year_context,low,1,1,1
+gdelt_1fe528ee,en,parsed_like,2025 World Series MVP odds : History says Shohei Ohtani is not a lock to win,2025-10-24 19:15:00,2025-10-24 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_fa4a0dd2,en,parsed_like,Weak password allowed hackers to sink a 158 - year - old company,2025-07-21 15:30:00,2025-07-01 00:00:00,,,,,,0,0,0
+gdelt_03bef242,en,parsed_like,"The top 12 storylines for the 2026 MLB season : Skubal three - peat try , a looming lockout threat and more",2026-03-25 22:30:00,2026-03-25 00:00:00,2026-01-01 00:00:00,year,the 2026,search_dates,low,1,1,1
+gdelt_a7365974,en,parsed_like,Moldova resounding  ye to Europe and  no  to Russia – DW – 09 / 29 / 2025,2025-09-29 23:45:00,2025-09-29 00:00:00,2025-01-01 00:00:00,year,09 / 29 / 2025,search_dates,low,1,1,1
+gdelt_52453746,en,parsed_like,Trump says he will head to the Middle East on Sunday after Israel - Hamas hostage deal,2025-10-10 08:15:00,2025-10-12 00:00:00,,,,,,0,0,0
+gdelt_88fc03a6,en,parsed_like,Glasgow School of Sport closure could be pushed back to 2029,2026-01-20 02:45:00,2029-01-01 00:00:00,2029-01-01 00:00:00,year,2029,search_dates,low,1,1,1
+gdelt_8bb41563,en,parsed_like,South African radio host accused of recruiting for Russia – DW – 12 / 01 / 2025,2025-12-02 02:30:00,2025-12-01 00:00:00,2025-01-01 00:00:00,year,12 / 01 / 2025,search_dates,low,1,1,1
+gdelt_7f3cf3d1,en,parsed_like,Singapore Tonight - Thu 9 Oct 2025,2025-10-10 09:30:00,2025-10-09 00:00:00,2025-10-01 00:00:00,month,Oct 2025,en_my,high,1,1,1
+gdelt_61b8d592,en,parsed_like,Son Heung - min : Woman who blackmailed Tottenham star gets four year jail,2025-12-08 17:00:00,2025-12-01 00:00:00,,,,,,0,0,0
+gdelt_35687901,en,parsed_like,One Black Friday 2025 free - agent deal for every MLB team,2025-11-25 20:15:00,2025-11-25 00:00:00,2025-01-01 00:00:00,year,Friday 2025,search_dates,low,1,1,1
+gdelt_107f1b06,en,parsed_like,Budget 2026 debate : Kenneth Poon on strengthening Singapore social foundation,2026-02-24 18:15:00,2026-02-24 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_48e03e20,en,parsed_like,"Longer alcohol trading hours , new establishments among moves in pilot to revitalise Singapore River",2025-08-07 23:15:00,2025-08-01 00:00:00,,,,,,0,0,0
+gdelt_f693d648,en,parsed_like,  Six Iswap attacks on military bases for Borno in one week  - Wetin dey fuel am ? ,2026-03-10 01:45:00,2026-03-17 01:45:00,,,,,,0,0,0
+gdelt_8b5d61f7,en,parsed_like,"36 Hours in Dresden , Germany : Things to Do and See",2025-12-04 19:30:00,2025-12-03 07:30:00,,,,,,0,0,0
+gdelt_238c32d7,en,parsed_like,India : Can the opposition Congress party bounce back ? – DW – 11 / 17 / 2025,2025-11-18 00:15:00,2025-11-17 00:00:00,2025-01-01 00:00:00,year,11 / 17 / 2025,search_dates,low,1,1,1
+gdelt_eaed4335,en,parsed_like,"Is women volleyball the SEC next big sport ? How Kentucky , Texas A & M broke through",2025-12-21 20:15:00,2025-12-01 00:00:00,,,,,,0,0,0
+gdelt_1edf30c0,de,parsed_like,Israel - Iran - Krieg :  Erhebliche Zweifel  an Rechtmigkeit – DW – 06 . 07 . 2025,2025-07-06 22:15:00,2025-07-06 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_bdfbc996,de,parsed_like,Zschäpe im Aussteigerprogramm für Rechtsextreme aufgenommen – DW – 25 . 08 . 2025,2025-08-25 17:00:00,2025-08-25 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_e8a19be4,de,parsed_like,Chicago stellt sich gegen Trump :  Wir wollen keine Panzer  – DW – 31 . 08 . 2025,2025-08-31 20:45:00,2025-08-31 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_21d49418,de,parsed_like,Gaza - Friedensplan : Was kommt nach dem Gipfel in Ägypten ? – DW – 14 . 10 . 2025,2025-10-15 03:15:00,2025-10-14 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_1a6aa496,de,parsed_like,"Europa versucht , Huawei und China auszuschließen – DW – 20 . 11 . 2025",2025-11-20 19:00:00,2025-11-20 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_4846fba8,de,parsed_like,Die ungleichen Warenströme zwischen Afrika und Europa,2026-03-23 21:00:00,2026-03-17 00:00:00,,,,,,0,0,0
+gdelt_47c99b29,de,parsed_like,Trump bekräftigt Waffenruhe zwischen Israel und der Hamas – DW – 29 . 10 . 2025,2025-10-29 19:00:00,2025-10-29 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_8b265e9c,de,parsed_like,Wie weit reicht Afrikas neue Putsch - Welle ? – DW – 16 . 12 . 2025,2025-12-16 14:30:00,2025-12-16 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_266c2a6b,de,parsed_like,Russland : De - facto - Abtreibungsverbot durch die Hintertür ? – DW – 21 . 09 . 2025,2025-09-21 18:45:00,2025-09-21 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_74b56494,de,parsed_like,China will Angriff auf Taiwan simuliert haben – DW – 27 . 10 . 2025,2025-10-27 20:15:00,2025-10-27 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_32b12161,de,parsed_like,Nach gescheiterter Regierungsbildung : Kosovo am Scheideweg – DW – 30 . 10 . 2025,2025-10-31 02:30:00,2025-10-30 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_c44c85fe,de,parsed_like,Russland greift vor dem Winter das Gasnetz der Ukraine an – DW – 14 . 10 . 2025,2025-10-15 03:15:00,2025-10-14 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_69dde2e4,de,parsed_like,Wahl in Polen : Rechtskonservativer Nawrocki wird Präsident – DW – 02 . 06 . 2025,2025-06-02 19:15:00,2025-06-02 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_f3514c00,de,parsed_like,Kein Strom : Firmen in Berlin erwarten Millionen - Schäden – DW – 04 . 01 . 2026,2026-01-04 22:00:00,2026-01-04 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_82931044,mk,parsed_like,"Србија : Вучиќ ги одврза своите насилници , а ЕУ молчи – DW – 19 . 08 . 2025",2025-08-19 18:45:00,2025-08-19 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_a1c47bf5,mk,parsed_like,Најмалку 26 загинати бегалци во бродоломи кај Лампедуза – DW – 14 . 08 . 2025,2025-08-14 15:30:00,2025-08-14 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_9d25dceb,mk,parsed_like,Дали Украина ќе добие ракети „ Томахавк  од САД ? – DW – 13 . 10 . 2025,2025-10-13 16:30:00,2025-10-13 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_64caa1e7,mk,parsed_like,Напад во Сиднеј : Татко и син идентификувани како напаѓачи – DW – 15 . 12 . 2025,2025-12-15 17:00:00,2025-12-15 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d2584f2e,mk,parsed_like,Прислушување или јавна тајна – DW – 3 . 09 . 2025,2025-09-03 16:00:00,2025-09-03 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_8e6df2e1,es,parsed_like,Japón acusa a China de actos hostiles contra su fuerza aérea – DW – 07 / 12 / 2025,2025-12-07 14:45:00,2025-12-07 00:00:00,2025-01-01 00:00:00,year,07 / 12 / 2025,search_dates,low,1,1,1
+gdelt_63ab45a1,es,parsed_like,La pelvis sufrió cambios clave para poder caminar erguidos – DW – 02 / 09 / 2025,2025-09-03 02:15:00,2025-09-02 00:00:00,2025-01-01 00:00:00,year,02 / 09 / 2025,search_dates,low,1,1,1
+gdelt_bfebe34d,es,parsed_like,Asesinato de Patrice Lumumba regresa a los tribunales belgas,2026-01-25 18:15:00,2026-01-01 00:00:00,,,,,,0,0,0
+gdelt_d2103283,es,parsed_like,Colombia anuncia captura de supuesto capo de mafia italiana – DW – 10 / 08 / 2025,2025-08-10 13:15:00,2025-08-10 00:00:00,2025-01-01 00:00:00,year,10 / 08 / 2025,search_dates,low,1,1,1
+gdelt_137acdf0,es,parsed_like,Argentina : millares exigen justicia por triple feminicidio – DW – 28 / 09 / 2025,2025-09-28 12:15:00,2025-09-28 00:00:00,2025-01-01 00:00:00,year,28 / 09 / 2025,search_dates,low,1,1,1
+gdelt_ce04fcb7,es,parsed_like,Abaten a cabecilla de disidencias de las FARC en Colombia – DW – 25 / 08 / 2025,2025-08-25 12:15:00,2025-08-25 00:00:00,2025-01-01 00:00:00,year,25 / 08 / 2025,search_dates,low,1,1,1
+gdelt_fe583b45,es,parsed_like,Premier chino insta a realizar esfuerzos para impulsar desarrollo y mejorar bienestar de población,2026-02-03 12:15:00,2026-02-01 00:00:00,,,,,,0,0,0
+gdelt_21b65d4e,es,parsed_like,Marchan en Brasil para pedir amnistía para Bolsonaro – DW – 08 / 10 / 2025,2025-10-08 09:15:00,2025-10-08 00:00:00,2025-01-01 00:00:00,year,08 / 10 / 2025,search_dates,low,1,1,1
+gdelt_46671182,es,parsed_like,Londres anuncia visita de Estado de Trump en Septiembre – DW – 14 / 07 / 2025,2025-07-14 09:00:00,2025-07-14 00:00:00,2025-01-01 00:00:00,year,14 / 07 / 2025,search_dates,low,1,1,1
+gdelt_d43063e8,es,parsed_like,"Aviación civil de China reporta aumento de 7 , 7 por ciento en viajes durante Fiesta de la Primavera",2026-02-25 10:15:00,2026-07-07 00:00:00,,,,,,0,0,0
+gdelt_473d93db,es,parsed_like,Rusia declara  extremista  al grupo de punk Pussy Riot – DW – 15 / 12 / 2025,2025-12-15 21:15:00,2025-12-15 00:00:00,2025-01-01 00:00:00,year,15 / 12 / 2025,search_dates,low,1,1,1
+gdelt_5641f47e,es,parsed_like,30 años de paz : Guatemala sigue en conflicto con el pasado – DW – 16 / 12 / 2025,2025-12-17 01:15:00,2025-12-16 00:00:00,2025-01-01 00:00:00,year,16 / 12 / 2025,search_dates,low,1,1,1
+gdelt_e023294d,es,parsed_like,Relevo de la Antorcha de los Juegos Mundiales 2025 en Chengdu | Spanish . xinhuanet . com,2025-07-27 12:45:00,2025-07-27 00:00:00,2025-01-01 00:00:00,year,2025 en,search_dates,low,1,1,1
+gdelt_1be77964,es,parsed_like,China acusa a EE . UU . de  doble moral  por nuevos aranceles – DW – 12 / 10 / 2025,2025-10-12 12:15:00,2025-10-12 00:00:00,2025-01-01 00:00:00,year,12 / 10 / 2025,search_dates,low,1,1,1
+gdelt_34d7ce15,es,parsed_like,EE . UU . insta a Camboya y Tailandia a reducir tensiones – DW – 28 / 07 / 2025,2025-07-28 12:45:00,2025-07-28 00:00:00,2025-01-01 00:00:00,year,28 / 07 / 2025,search_dates,low,1,1,1
+gdelt_4ee433c4,es,parsed_like,Rubio y Witkoff se reunirán con delegación de Ucrania – DW – 30 / 11 / 2025,2025-11-30 08:30:00,2025-11-30 00:00:00,2025-01-01 00:00:00,year,30 / 11 / 2025,search_dates,low,1,1,1
+gdelt_39f52ffe,es,parsed_like,EE . UU . busca mayor cooperación en defensa con R . Dominicana – DW – 24 / 08 / 2025,2025-08-24 13:15:00,2025-08-24 00:00:00,2025-01-01 00:00:00,year,24 / 08 / 2025,search_dates,low,1,1,1
+gdelt_ba78a08c,es,parsed_like,China y UE buscan cooperación más profunda y respuesta conjunta a desafíos globales,2025-07-03 09:45:00,2025-07-01 00:00:00,,,,,,0,0,0
+gdelt_196bdbb4,es,parsed_like,"Gala del Año Nuevo chino en Praia , Cabo Verde | Spanish . xinhuanet . com",2026-02-16 11:30:00,2026-02-01 00:00:00,,,,,,0,0,0
+gdelt_34d71ebc,es,parsed_like,Huracán espacial : tormenta magnética que afectó radios y GPS – DW – 13 / 08 / 2025,2025-08-14 01:00:00,2025-08-13 00:00:00,2025-01-01 00:00:00,year,13 / 08 / 2025,search_dates,low,1,1,1
+gdelt_0088fe6c,es,parsed_like,ONG reporta 12 muertos por bombardeo sobre clínica en Sudán – DW – 01 / 09 / 2025,2025-09-01 08:00:00,2025-09-01 00:00:00,2025-01-01 00:00:00,year,01 / 09 / 2025,search_dates,low,1,1,1
+gdelt_8758a625,es,parsed_like,Premier chino se muestra dispuesto a colaborar con Canadá para mejorar relaciones bilaterales,2025-09-24 19:15:00,2025-09-01 00:00:00,,,,,,0,0,0
+gdelt_96c157cb,es,parsed_like,Milei y el desafío de controlar la SIDE en Argentina – DW – 08 / 01 / 2026,2026-01-09 03:15:00,2026-01-08 00:00:00,2026-01-01 00:00:00,year,08 / 01 / 2026,search_dates,low,1,1,1
+gdelt_ec5f7d29,es,parsed_like,Macron : Francia se opondrá a pacto entre la UE y el Mercosur – DW – 08 / 01 / 2026,2026-01-09 05:30:00,2026-01-08 00:00:00,2026-01-01 00:00:00,year,08 / 01 / 2026,search_dates,low,1,1,1
+gdelt_c85fa0d6,es,parsed_like,China da a conocer regulaciones sobre elección de organizaciones del Partido dentro de fuerzas armadas,2026-01-26 10:15:00,2026-01-01 00:00:00,,,,,,0,0,0
+gdelt_9d94732b,es,parsed_like,Cuba confirma muerte de 32 militares de la isla en Venezuela – DW – 05 / 01 / 2026,2026-01-05 12:45:00,2026-01-05 00:00:00,2026-01-01 00:00:00,year,05 / 01 / 2026,search_dates,low,1,1,1
+gdelt_5ec24ded,es,parsed_like,Comercio exterior de China aumenta 4 % en primeros nueve meses de 2025,2025-10-13 20:45:00,2025-10-13 00:00:00,,,,,,0,0,0
+gdelt_09efb0dc,es,parsed_like,Alemania hace su apuesta por la inteligencia artificial – DW – 05 / 10 / 2025,2025-10-06 02:15:00,2025-10-05 00:00:00,2025-01-01 00:00:00,year,05 / 10 / 2025,search_dates,low,1,1,1
+gdelt_4c61178b,es,parsed_like,Trinidad y Tobago alista masiva deportación de venezolanos – DW – 28 / 10 / 2025,2025-10-29 06:15:00,2025-10-28 00:00:00,2025-01-01 00:00:00,year,28 / 10 / 2025,search_dates,low,1,1,1
+gdelt_5db62d7a,es,parsed_like,Argentina : Milei party loses key vote in Buenos Aires – DW – 09 / 08 / 2025,2025-09-08 13:30:00,2025-08-09 00:00:00,2025-01-01 00:00:00,year,09 / 08 / 2025,search_dates,low,1,1,1
+gdelt_f2555de0,es,parsed_like,Matan a investigador de Fiscalía en un operativo en Colombia – DW – 20 / 07 / 2025,2025-07-20 10:45:00,2025-07-20 00:00:00,2025-01-01 00:00:00,year,20 / 07 / 2025,search_dates,low,1,1,1
+gdelt_5bb2a8cd,es,parsed_like,Fiscalía de Guatemala pide retirar inmunidad al presidente – DW – 30 / 10 / 2025,2025-10-30 10:45:00,2025-10-30 00:00:00,2025-01-01 00:00:00,year,30 / 10 / 2025,search_dates,low,1,1,1
+gdelt_f0dbcda0,es,parsed_like,Guterres condena detención de funcionarios de ONU en Yemen – DW – 01 / 09 / 2025,2025-09-01 09:45:00,2025-09-01 00:00:00,2025-01-01 00:00:00,year,01 / 09 / 2025,search_dates,low,1,1,1
+gdelt_97c44e52,es,parsed_like,Mueren al menos 18 personas en hundimiento de barco de migrantes frente a costa sur de Grecia,2025-12-07 09:15:00,2025-12-01 00:00:00,,,,,,0,0,0
+gdelt_17948fa6,es,parsed_like,"Transnistria , el portal estratégico de Rusia hacia Europa – DW – 29 / 09 / 2025",2025-09-29 23:15:00,2025-09-29 00:00:00,2025-01-01 00:00:00,year,29 / 09 / 2025,search_dates,low,1,1,1
+gdelt_ebf10613,es,parsed_like,China registra 142 millones de viajes de turismo doméstico durante feriado del Año Nuevo,2026-01-04 20:00:00,2026-01-01 00:00:00,,,,,,0,0,0
+gdelt_370eca9b,tr,parsed_like,ABDnin Venezuela operasyonunda 32 Kübalı öldü – DW – 05 . 01 . 2026,2026-01-05 16:45:00,2026-01-05 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_f281adc5,tr,parsed_like,80 yıllık tehlike : İkinci Dünya Savaşı bombaları – DW – 07 . 06 . 2025,2025-06-08 15:45:00,2025-06-07 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_3eb2e8d2,tr,parsed_like,Orman yangınları : Enerji hatları alarm mı veriyor ? – DW – 03 . 07 . 2025,2025-07-04 03:45:00,2025-07-03 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d0799b5a,tr,parsed_like,Hangi ülkeler resmi tatilleri azaltmak istiyor ? – DW – 07 . 09 . 2025,2025-09-07 15:15:00,2025-09-07 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d1bb6be7,tr,parsed_like,"Sistem yapboza döndü : 1 , 47 milyon çocuk örgün eğitim dışında – DW – 26 . 11 . 2025",2025-11-27 06:00:00,2025-11-26 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_a44f2307,tr,parsed_like,Venezuela sivillere askeri eğitim veriyor – DW – 21 . 09 . 2025,2025-09-21 17:45:00,2025-09-21 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_9c601433,tr,parsed_like,"Türkiye geri adım attı , ABde döner tartışması bitti – DW – 25 . 09 . 2025",2025-09-25 22:00:00,2025-09-25 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_acc4508e,tr,parsed_like,Danimarka ile ABD arasında Grönland krizi – DW – 22 . 12 . 2025,2025-12-22 20:15:00,2025-12-22 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d5e36a21,tr,parsed_like,Türkiyenin de imza attığı Gazze deklarasyonunda ne var ? – DW – 14 . 10 . 2025,2025-10-14 20:45:00,2025-10-14 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_f5f93784,tr,parsed_like,"Döner olmadı , Türk kahvesine AB tescili yolda – DW – 06 . 11 . 2025",2025-11-06 20:00:00,2025-11-06 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_3096ee35,tr,parsed_like,Anadolu kuruyor : Yağışlar 52 yılın en düşük seviyesinde – DW – 19 . 10 . 2025,2025-10-19 23:30:00,2025-10-19 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_6ed5d248,tr,parsed_like,Mesut Özarslan : Ne AKP ne MHP bana uzak,2026-02-09 19:45:00,2026-02-08 00:00:00,,,,,,0,0,0
+gdelt_23175ffd,sw,fallback_like,Vita vya Ukraine : Zelensky apinga kulitoa jimbo la Donbas huku Warusi wakisonga mbele na mapigano,2025-08-13 15:30:00,2025-08-13 15:30:00,,,,,,0,0,0
+gdelt_a87b2bd2,sw,fallback_like,Magereza Uganda yakabiliwa na mzigo wa kulea watoto wachanga,2026-01-28 01:15:00,2026-01-28 01:15:00,,,,,,0,0,0
+gdelt_49da8676,sw,fallback_like,Leipzig wakwama mbio za kufuzu ligi ya mabingwa,2026-02-16 21:30:00,2026-02-16 21:30:00,,,,,,0,0,0
+gdelt_cb1492c3,sw,fallback_like,Marekani na Iran zatishia kushambulia miundombinu muhimu,2026-03-23 13:15:00,2026-03-23 13:15:00,,,,,,0,0,0
+gdelt_2daf652f,sw,fallback_like,Hukumu dhidi ya Lai yakosolewa kimataifa,2026-02-10 00:15:00,2026-02-10 00:15:00,,,,,,0,0,0
+gdelt_53a31ae3,sw,fallback_like,Umoja wa Mataifa waonya kuhusu hali Sudan Kusini,2026-01-26 00:30:00,2026-01-26 00:30:00,,,,,,0,0,0
+gdelt_fe129d36,sw,fallback_like,"Rais Samia aitetea Tume ya Oktoba 29 , aipa miezi mitatu kujibu hoja 7",2025-11-20 21:45:00,2025-11-20 21:45:00,,,,,,0,0,0
+gdelt_2c4d4965,sw,fallback_like,Aina10 ya nyoka wenye sumu na hatari zaidi duniani,2025-09-09 20:15:00,2025-09-09 20:15:00,,,,,,0,0,0
+gdelt_15909ee3,sw,fallback_like,"Mpango wa Trump wenye mambo 28 kumaliza vita Ukraine , utafanya kazi ? ",2025-11-25 21:15:00,2025-11-25 21:15:00,,,,,,0,0,0
+gdelt_11baa586,sw,fallback_like,Rais wa Israel ziarani Australia,2026-02-09 14:30:00,2026-02-09 14:30:00,,,,,,0,0,0
+gdelt_320d3298,sw,fallback_like,  Niliwaona wakikanyaga watu waliojeruhiwa kwa magari yao  – ukimbizi wa kutisha kutoka vitani nchini Sudan,2025-12-01 14:45:00,2025-12-01 14:45:00,,,,,,0,0,0
+gdelt_d5f0086d,pt,parsed_like,Premiê da França renuncia horas após anunciar novo governo – DW – 06 / 10 / 2025,2025-10-06 17:15:00,2025-10-06 00:00:00,2025-01-01 00:00:00,year,06 / 10 / 2025,search_dates,low,1,1,1
+gdelt_4f6fb61f,pt,parsed_like,IA desafia indústria musical ao chegar ao topo das paradas – DW – 30 / 11 / 2025,2025-11-30 23:15:00,2025-11-30 00:00:00,2025-01-01 00:00:00,year,30 / 11 / 2025,search_dates,low,1,1,1
+gdelt_a40b17d8,pt,parsed_like,Tensão aumenta na Califórnia após Trump enviar tropas – DW – 10 / 06 / 2025,2025-06-10 17:00:00,2025-06-10 00:00:00,2025-01-01 00:00:00,year,10 / 06 / 2025,search_dates,low,1,1,1
+gdelt_c677ff59,pt,parsed_like,Por que as enchentes no Texas que mataram mais de 100 foram tão letais,2025-07-08 18:45:00,2025-11-01 00:00:00,,,,,,0,0,0
+gdelt_e0620e01,pt,parsed_like,Dinamarca impõe sorteio para serviço militar de mulheres – DW – 02 / 07 / 2025,2025-09-01 05:30:00,2025-07-02 00:00:00,2025-01-01 00:00:00,year,02 / 07 / 2025,search_dates,low,1,1,1
+gdelt_9d2dc06a,pt,parsed_like,Trump administration seeks to deport Kilmar Abrego Garcia to Uganda,2025-08-24 03:30:00,2025-08-21 00:00:00,,,,,,0,0,0
+gdelt_f6295547,pt,parsed_like,"Isolados , civis tentam deixar Kupiansk por conta própria – DW – 14 / 10 / 2025",2025-10-15 04:45:00,2025-10-14 00:00:00,2025-01-01 00:00:00,year,14 / 10 / 2025,search_dates,low,1,1,1
+gdelt_492d2991,pt,parsed_like,"Primer ministro japonés ha decidido dimitir , según medios | Spanish . xinhuanet . com",2025-09-07 21:45:00,2025-06-01 00:00:00,,,,,,0,0,0
+gdelt_798be384,pt,parsed_like,Eleies no Chile : o que defendem comunista e  Bolsonaro chileno  que vão ao 2º turno,2025-11-17 10:15:00,2025-11-01 00:00:00,,,,,,0,0,0
+gdelt_21d6ceff,pt,parsed_like,Maior porta - aviões do mundo se aproxima da Venezuela – DW – 11 / 11 / 2025,2025-11-12 03:00:00,2025-11-11 00:00:00,2025-01-01 00:00:00,year,11 / 11 / 2025,search_dates,low,1,1,1
+gdelt_7f4adbca,pt,parsed_like,Trump e Netanyahu dizem concordar com plano de paz para Gaza – DW – 29 / 09 / 2025,2025-09-30 09:15:00,2025-09-29 00:00:00,2025-01-01 00:00:00,year,29 / 09 / 2025,search_dates,low,1,1,1
+gdelt_b983a0e2,pt,parsed_like,Diretora do Louvre pede demissão após roubo de joias,2026-02-25 04:45:00,2026-02-22 00:00:00,,,,,,0,0,0
+gdelt_883da372,ur,fallback_like,  ہیومن کمپیوٹر : سرکس ملازم کی ان پڑھ بیٹی جو ریاضی کے مشکل سوالات سیکنڈوں میں حل کر دیا کرتیں,2025-11-04 23:30:00,2025-11-04 23:30:00,,,,,,0,0,0
+gdelt_ae443094,ur,fallback_like,حیات شیرپاؤ : ٹیپ ریکارڈر میں چھپا بم اور وہ ہائی پروفائل قتل جس کے ملزم  افغانستان فرار ہو گئے  ,2026-02-09 16:00:00,2026-02-09 16:00:00,,,,,,0,0,0
+gdelt_7b8615fe,ur,fallback_like,چرنجیوی : وہ اداکار جو اپنے عروج پر امیتابھ بچن سے زیادہ فیس لیتے تھے,2025-08-24 21:15:00,2025-08-24 21:15:00,,,,,,0,0,0
+gdelt_da193ea3,ur,fallback_like,چھوٹتی ٹرین پکڑنے کے لیے  دو سموسوں  کی قیمت سمارٹ واچ : ریلوے سٹیشن پر ہونے والی دھینگا مشتی کی کہانی,2025-10-19 20:00:00,2025-10-19 20:00:00,,,,,,0,0,0
+gdelt_ec511313,ur,fallback_like,فرانس کے ستمبر میں فلسطینی ریاست کو تسلیم کرنے کے فیصلہ سے برطانیہ پر دباؤ میں اضافہ کیوں ہوا ہے ؟ ,2025-07-27 16:45:00,2025-07-27 16:45:00,,,,,,0,0,0
+gdelt_d86576b2,ur,fallback_like,ہیروشیما اور ناگاساکی : 80 سال قبل ہونے والے جوہری دھماکے,2025-08-06 13:15:00,2025-08-06 13:15:00,,,,,,0,0,0
+gdelt_c1b90895,ur,fallback_like,پاکستان کے ساتھ مئی کی لڑائی کے بعد انڈیا کے دفاعی بجٹ میں 15 فیصد اضافہ کیوں کیا گیا ؟ ,2026-02-02 12:45:00,2026-02-02 12:45:00,,,,,,0,0,0
+gdelt_2258bee4,ur,fallback_like,افغانستان ، پاکستان امن مذاکرات کا تیسرا دور : طالبان کا وفد استنبول پہنچ گیا,2025-11-06 13:45:00,2025-11-06 13:45:00,,,,,,0,0,0
+gdelt_1097e52d,ur,fallback_like,شمالی کوریا کے خفیہ آئی ٹی ورکرز جنھیں حکومت بیرونِ ملک سرکار کے لیے پیسے کمانے بھیجتی رہی,2025-08-03 23:45:00,2025-08-03 23:45:00,,,,,,0,0,0
+gdelt_c0385b4d,ur,fallback_like,کیا منہ کھول کر سونا کسی بیماری کی علامت ہو سکتا ہے ؟ ,2025-08-11 17:45:00,2025-08-11 17:45:00,,,,,,0,0,0
+gdelt_8fafd91a,ur,fallback_like,مصر میں حماس اور اسرائیل کے درمیان بالواسطہ مذاکرات کے دو دن ، اب تک کیا طے پایا ہے ؟ ,2025-10-08 15:15:00,2025-10-08 15:15:00,,,,,,0,0,0
+gdelt_73369e82,ur,fallback_like,گوتم گھمبیر کا قصور ، خراب پچز یا ناقص سلیکشن :  ناقابلِ تسخیر  سمجھے جانے والی انڈین ٹیسٹ ٹیم اپنے ہی گھر میں بار بار کیوں ہار رہی ہے ؟ ,2025-11-30 15:45:00,2025-11-30 15:45:00,,,,,,0,0,0
+gdelt_08c622ae,ur,fallback_like,  سیاست ہم پر چھوڑ دیں ، ہم 14 سال قید کاٹ سکتے ہیں آپ نہیں : صدر زرداری کی پاکستان کرکٹ ٹیم سے التجا,2025-06-02 01:30:00,2025-06-02 01:30:00,,,,,,0,0,0
+gdelt_257ac497,ur,fallback_like,پاکستان کے ٹی20 ورلڈ کپ سکواڈ میں  خوش قسمت بابر  شامل اور حارث رؤف ٹیم سے باہر :  بے خوف ہو کر کرکٹ کھیلنا ہو گی  ,2026-01-25 21:15:00,2026-01-25 21:15:00,,,,,,0,0,0
+gdelt_43f13f8a,ru,fallback_like,Что будет с архивом диктатора Франко в Испании ? ,2026-01-13 02:30:00,2026-01-13 02:30:00,,,,,,0,0,0
+gdelt_c516b086,ru,fallback_like,Война на Ближнем Востоке привела к коллапсу авиасообщения,2026-03-01 23:00:00,2026-03-01 23:00:00,,,,,,0,0,0
+gdelt_f4711a3b,ru,fallback_like,Quantum Systems поставит Украине 15 000 дронов - перехватчиков,2026-03-23 22:45:00,2026-03-23 22:45:00,,,,,,0,0,0
+gdelt_fcd2afdc,ru,fallback_like,Возможные переговоры США с Ираном : главное о версиях Трампа и СМИ,2026-03-24 21:15:00,2026-03-24 21:15:00,,,,,,0,0,0
+gdelt_ab89ae72,ru,fallback_like,Часть Брянской области обесточена после ударов БПЛА,2026-02-16 08:00:00,2026-02-16 08:00:00,,,,,,0,0,0
+gdelt_ad4c8cd9,ru,fallback_like,Писториус : Атаки РФ на фоне переговоров  особо циничны  ,2026-01-27 07:15:00,2026-01-27 07:15:00,,,,,,0,0,0
+gdelt_08572f78,ru,fallback_like,Замглавкома ВМФ России погиб в Курской области - BBC News Русская служба,2025-07-03 21:45:00,2025-07-03 21:45:00,,,,,,0,0,0
+gdelt_d8ce3ad8,ru,fallback_like,СМИ : Сербия стала обязывать россиян с  визараном  уезжать,2026-03-28 03:00:00,2026-03-28 03:00:00,,,,,,0,0,0
+gdelt_c506b134,ru,fallback_like,Овации Зеленскому и головомойка Орбану : спецсессия ЕП,2026-02-25 04:00:00,2026-02-25 04:00:00,,,,,,0,0,0
+gdelt_ebed747d,ru,fallback_like,РФ грозит нехватка ресурсов для хранения непроданной нефти,2026-02-17 03:15:00,2026-02-17 03:15:00,,,,,,0,0,0
+gdelt_4ee630d8,ru,fallback_like,Axios : Курды готовят наступление на режим в Иране,2026-03-05 21:45:00,2026-03-05 21:45:00,,,,,,0,0,0
+gdelt_c028eef5,tr,fallback_like,Danimarka : Bebeklerin ailelerinden alınmasına tepki büyüyor,2025-11-24 03:30:00,2025-11-24 03:30:00,,,,,,0,0,0
+gdelt_0e4d1288,tr,fallback_like,Öcalandan Suriye açıklaması : Süreci baltalama girişimi,2026-01-18 19:15:00,2026-01-18 19:15:00,,,,,,0,0,0
+gdelt_fc6dbebb,tr,fallback_like,"İsrail , Gazzeye doğru ilerleyen yardım gemisini durdurma emri verdi",2025-06-09 03:30:00,2025-06-09 03:30:00,,,,,,0,0,0
+gdelt_fbfad1ca,tr,fallback_like,Magnezyum gerçekten uykuya yardımcı oluyor mu ? ,2025-10-29 14:30:00,2025-10-29 14:30:00,,,,,,0,0,0
+gdelt_430ea2cb,tr,fallback_like,Popüler sağlık tavsiyeleri bilim tarafından destekleniyor mu ? ,2025-08-03 17:45:00,2025-08-03 17:45:00,,,,,,0,0,0
+gdelt_a122501e,tr,fallback_like,BMden Lübnan için insani felaket uyarısı,2026-03-28 06:30:00,2026-03-28 06:30:00,,,,,,0,0,0
+gdelt_ab712ee9,tr,fallback_like,"ABD Katar  ın hediyesi uçağı , başkanlık jeti olarak hazırlamaya başladı",2025-07-29 10:00:00,2025-07-29 10:00:00,,,,,,0,0,0
+gdelt_d683e0ac,tr,fallback_like,Laricani misillemesi : İrandan İsraile yoğun füze saldırısı,2026-03-18 18:15:00,2026-03-18 18:15:00,,,,,,0,0,0
+gdelt_9500f3b7,tr,fallback_like,Kedilerin yüksek sesinin nedeni genleri olabilir,2025-07-04 12:30:00,2025-07-04 12:30:00,,,,,,0,0,0
+gdelt_64297d7d,tr,fallback_like,CHPnin Ortaköydeki  köprü  yürüyüşüne polis engeli,2026-02-18 01:00:00,2026-02-18 01:00:00,,,,,,0,0,0
+gdelt_4e8340f6,fr,parsed_like,LUE soumet à lONU sa contribution déterminée au niveau national actualisée pour lAccord de Paris - Xinhua,2025-11-06 08:15:00,2025-11-01 00:00:00,,,,,,0,0,0
+gdelt_f06870a3,fr,parsed_like,"Souvenirs émus des habitants , un an après​ la chute de Goma",2026-01-27 19:30:00,2025-01-27 19:30:00,,,,,,0,0,0
+gdelt_bbf1ed75,fr,parsed_like,"Lannée 2025 , la 3ème année la plus chaude jamais enregistrée ( Copernicus ) - Xinhua",2026-01-14 17:15:00,2025-12-31 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_cb2e16aa,fr,parsed_like,"L  économie asiatique devrait augmenter de 4 , 5 % en 2026 ( rapport ) - Xinhua",2026-03-24 20:30:00,2026-03-24 00:00:00,,,,,,0,0,0
+gdelt_242a4cad,fr,parsed_like,La Roumanie envisage daccueillir des actifs militaires américains pendant 90 jours - Xinhua,2026-03-11 22:30:00,2025-12-11 22:30:00,,,,,,0,0,0
+gdelt_c4ef5e61,fr,parsed_like,"Le chef de lONU propose une baisse du budget ordinaire pour 2026 à 3 , 238 milliards de dollars - Xinhua",2025-12-02 08:15:00,2026-01-01 00:00:00,,,,,,0,0,0
+gdelt_984af0ec,fr,parsed_like,Trump exprime sa déception face au refus du Royaume - Uni de participer aux frappes contre lIran - Xinhua,2026-03-03 21:45:00,2026-02-28 00:00:00,,,,,,0,0,0
+gdelt_aeef0435,fr,parsed_like,"La production industrielle chinoise en hausse de 4 , 8 % en novembre - Xinhua",2025-12-15 13:00:00,2025-11-01 00:00:00,,,,,,0,0,0
+gdelt_596d6257,bg,parsed_like,"Само на 15 , а вече наемни убийци :  Gen Z  на турската мафия",2026-03-17 22:00:00,2026-01-01 00:00:00,,,,,,0,0,0
+gdelt_578197f8,bg,parsed_like,"  Нашата цел е резултат , който да лиши Русия от победа  ",2026-02-16 20:45:00,2026-02-16 00:00:00,,,,,,0,0,0
+gdelt_b53b34ce,bg,parsed_like,Какво може да научи България за еврото от Хърватия – DW – 28 . 07 . 2025,2025-07-28 23:45:00,2025-07-28 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_24790b65,bg,parsed_like,Трагедията в  Елените : когато всичко е прогнило от корупция – DW – 6 . 10 . 2025,2025-10-06 21:30:00,2025-10-06 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_e49505f4,bg,parsed_like,САЩ : как и метеоролозите станаха жертва на дезинформацията – DW – 16 . 12 . 2025,2025-12-17 00:30:00,2025-12-16 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_2f75ff3f,bg,parsed_like,Михаил Екимджиев : Как България се превърна в срутище – DW – 13 . 10 . 2025,2025-10-13 21:45:00,2025-10-13 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_582a4932,bg,parsed_like,Защо Тръмп и MAGA помагат на Орбан да остане на власт,2026-03-09 23:45:00,2026-03-09 00:00:00,,,,,,0,0,0
+gdelt_cac4509c,ja,fallback_like,ロケット打ち上げで新産業を育む都市 中国 ・ 海南省文昌市,2026-01-07 18:15:00,2026-01-07 18:15:00,,,,,,0,0,0
+gdelt_f88d5cf1,ja,fallback_like,マグロ養殖で漁業の発展を推進 中国海南省,2025-09-22 17:00:00,2025-09-22 17:00:00,,,,,,0,0,0
+gdelt_586e2b24,id,parsed_like,Arah Kebijakan Eropa terhadap Iran Jadi Bahasan di MSC,2026-02-16 15:45:00,2026-02-15 00:00:00,,,,,,0,0,0
+gdelt_b945d478,id,parsed_like,Kenapa Jerman Kesulitan Daur Ulang Logam Tanah Jarang ? – DW – 26 . 08 . 2025,2025-08-26 14:30:00,2025-08-26 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_73fdc75f,id,parsed_like,"Setahun Berlalu , Jurnalis DW Masih Menuntut Keadilan – DW – 13 . 10 . 2025",2025-10-13 17:00:00,2025-10-13 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_df27bdf4,id,parsed_like,"Pertama di Dunia , Indonesia dan Malaysia Blokir Grok AI – DW – 12 . 01 . 2026",2026-01-12 19:45:00,2026-01-12 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_cfe7ac02,id,parsed_like,Kenapa Trump Lebih Sepaham dengan Diktatur Timur Tengah ? – DW – 16 . 12 . 2025,2025-12-16 13:15:00,2025-12-16 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_9c4b699e,id,parsed_like,Rusia Cap DW sebagai  Organisasi yang Tak Diinginkan  – DW – 15 . 12 . 2025,2025-12-15 17:00:00,2025-12-15 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_079ff651,vi,fallback_like,Ông trùm ở Campuchia bị Mỹ truy tố là ai ? - BBC News Tiếng Việt,2025-10-16 21:30:00,2025-10-16 21:30:00,,,,,,0,0,0
+gdelt_9143fe0d,vi,fallback_like,Thiếu tướng Mai Hoàng làm giám đốc công an TP HCM - BBC News Tiếng Việt,2025-06-09 16:30:00,2025-06-09 16:30:00,,,,,,0,0,0
+gdelt_17cc632b,vi,fallback_like,Nội chiến Sudan : Cuộc chạy trốn kinh hoàng khỏi el - Fasher ở Darfur,2025-12-03 11:15:00,2025-12-03 11:15:00,,,,,,0,0,0
+gdelt_61ebecc0,vi,fallback_like,Cuộc chiến chống phe theo tư tưởng Mao Trạch Đông tại Ấn Độ,2025-09-29 16:00:00,2025-09-29 16:00:00,,,,,,0,0,0
+gdelt_4dd5c38a,vi,fallback_like,Điểm danh dàn  cá mập  vướng vòng lao lý - BBC News Tiếng Việt,2025-10-19 22:45:00,2025-10-19 22:45:00,,,,,,0,0,0
+gdelt_65b80bf2,vi,fallback_like,Greenland : Những đứa trẻ bị giành khỏi bàn tay cha mẹ,2025-12-16 23:45:00,2025-12-16 23:45:00,,,,,,0,0,0
+gdelt_41ff5fd5,da,fallback_like,"Morgan Geyser ,  Slender Man  stabber , captured after fleeing custody",2025-11-25 03:30:00,2025-11-25 03:30:00,,,,,,0,0,0
+gdelt_d599533e,da,fallback_like,"Oil , stock trading spiked before Trump Iran remarks : media",2026-03-25 05:45:00,2026-03-25 05:45:00,,,,,,0,0,0
+gdelt_f783f00d,da,fallback_like,"Man gets jail for stealing durians , amulets",2025-09-15 16:45:00,2025-09-15 16:45:00,,,,,,0,0,0
+gdelt_00d83b1c,ar,fallback_like,العملة السورية الجديدة .. كيف ينعكس استبدال العملة على جيبة المواطن ؟ ,2025-12-30 02:00:00,2025-12-30 02:00:00,,,,,,0,0,0
+gdelt_f3cfae6c,ar,fallback_like,هل ينجح مجلس التعاون الخليجي في نزع فتيل الخلاف العراقي الكويتي ؟ ,2026-02-25 02:15:00,2026-02-25 02:15:00,,,,,,0,0,0
+gdelt_cb8a39b9,ar,fallback_like,هل تهدد أزمة كاليفورنيا أسس النظام الفدرالي الأمريكي ؟ ,2025-06-11 03:15:00,2025-06-11 03:15:00,,,,,,0,0,0
+gdelt_af303856,ar,fallback_like,الحذر يخيم على العراق .. قصف وتظاهرات ومخاوف,2026-03-02 02:15:00,2026-03-02 02:15:00,,,,,,0,0,0
+gdelt_186366c8,ar,fallback_like,  سردية وطنية للاقتصاد .. مصر تخطط لما بعد صندوق النقد الدولي,2025-09-09 03:45:00,2025-09-09 03:45:00,,,,,,0,0,0
+gdelt_4c303de3,ar,fallback_like,أم تترك أطفالها الثلاثة في شوارع مصر ومجلس الأمومة يتحرك,2025-11-12 05:30:00,2025-11-12 05:30:00,,,,,,0,0,0
+gdelt_e48a7bab,ar,fallback_like,ترامب يطلق ممشى المشاهير الرئاسي في البيت الأبيض ويستبدل بايدن بقلم آلي,2025-09-26 01:30:00,2025-09-26 01:30:00,,,,,,0,0,0
+gdelt_9cbc3817,ar,fallback_like,كيف يؤثر مقتل خامنئي في مسار حرب إيران مع الولايات المتحدة وإسرائيل ؟ ,2026-03-02 03:00:00,2026-03-02 03:00:00,,,,,,0,0,0
+gdelt_b5c7a50d,hi,parsed_like,ब्रिटेन के प्रधानमंत्री दो दिवसीय यात्रा पर भारत पहुंचे – DW – 08 . 10 . 2025,2025-10-08 16:30:00,2025-10-08 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_da16379d,hi,parsed_like,"कोविड ने छेड़े , चूहे के स्पर्म – DW – 12 . 10 . 2025",2025-10-13 01:00:00,2025-10-12 00:00:00,2025-01-01 00:00:00,year,12 . 10 . 2025,search_dates,low,1,1,1
+gdelt_92b911ca,hi,parsed_like,ट्रंप के किस कदम से भारतीय किसानों को हो सकता है फायदा – DW – 17 . 11 . 2025,2025-11-17 19:00:00,2025-11-17 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_b7e76c41,hi,parsed_like,आगे क्या करना चाहते हैं नेपाल के प्रदर्शनकारी जेन - जी – DW – 29 . 09 . 2025,2025-09-29 23:30:00,2025-09-29 00:00:00,2025-01-01 00:00:00,year,29 . 09 . 2025,search_dates,low,1,1,1
+gdelt_ad050f9d,de,fallback_like,Was politische Gefangene in Belarus im Winter durchmachen,2026-02-02 07:00:00,2026-02-02 07:00:00,,,,,,0,0,0
+gdelt_17c450c8,de,fallback_like,  Kriegsähnlich  - Sorge um Fußball - WM wegen Gewalt in Mexiko,2026-02-25 18:15:00,2026-02-25 18:15:00,,,,,,0,0,0
+gdelt_599eae58,de,fallback_like,Voynich - Manuskript : Geheimcode bringt Lösung näher,2026-01-14 20:30:00,2026-01-14 20:30:00,,,,,,0,0,0
+gdelt_6ee5b601,de,fallback_like,Urteil in Hongkong : Lange Haft für Aktivist Jimmy Lai,2026-02-09 19:00:00,2026-02-09 19:00:00,,,,,,0,0,0
+gdelt_dbbc9f14,de,fallback_like,USA - Städte kämpfen um Solar - und Windprojekte,2026-01-20 01:30:00,2026-01-20 01:30:00,,,,,,0,0,0
+gdelt_2f686aac,uk,parsed_like,Мерц назвав дружбу з Ізраїлем  великим скарбом  – DW – 07 . 12 . 2025,2025-12-07 15:00:00,2025-12-07 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_628638e5,uk,parsed_like,Мусульманин лівих поглядів : новий мер Нью - Йорка Мамдані – DW – 05 . 11 . 2025,2025-11-05 19:15:00,2025-11-05 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_9481ba64,uk,parsed_like,Путін вирішив узаконити у Росії тортури – DW – 08 . 09 . 2025,2025-09-09 05:45:00,2025-09-08 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_f27c841f,uk,parsed_like,"Наступна зустріч України , США і РФ відбудеться 1 лютого",2026-01-27 07:15:00,2026-02-01 00:00:00,,,,,,0,0,0
+gdelt_a64052f0,uk,parsed_like,Більшість німців побоюється нападу РФ на НАТО - опитування – DW – 14 . 09 . 2025,2025-09-14 19:15:00,2025-09-14 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_2c410319,uk,parsed_like,Іран пообіцяв  рішуче відповісти  на відновлення санкцій – DW – 28 . 09 . 2025,2025-09-28 23:00:00,2025-09-28 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_0d9c100d,uk,parsed_like,Польща підготує 500 тисяч добровольців до кінця 2026 року – DW – 06 . 11 . 2025,2025-11-07 00:30:00,2026-01-01 00:00:00,2026-01-01 00:00:00,year,2026 року,search_dates,low,1,1,1
+gdelt_dbb880d0,uk,parsed_like,Цілі - ТЦК : РФ атакувала Запоріжжя та вдруге за ранок Харків – DW – 07 . 07 . 2025,2025-07-07 17:30:00,2025-07-07 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d494df61,uk,parsed_like,"Рубіо після перемовин : Продуктивна зустріч , роботи ще багато – DW – 30 . 11 . 2025",2025-12-01 05:45:00,2025-11-30 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_5450f7ec,uk,parsed_like,Гілі на  Рамштайні  закличе до кампанії з озброєння України – DW – 21 . 07 . 2025,2025-07-21 14:30:00,2025-07-21 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_f4bf111b,uk,parsed_like,Шоколадна паста без горіхів ? І до чого тут Туреччина – DW – 13 . 08 . 2025,2025-08-14 03:30:00,2025-08-13 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_380847c9,uk,parsed_like,Фон дер Ляєн : ЄC має  точні плани  щодо військ в Україні – DW – 31 . 08 . 2025,2025-09-01 07:00:00,2025-08-31 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_6ba48607,uk,parsed_like,У TikTok виявили мережу для впливу на вибори в Чехії – DW – 29 . 09 . 2025,2025-09-29 22:00:00,2025-09-29 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_c07cba39,uk,parsed_like,Зеленський закликав реагувати на тривоги цими днями – DW – 08 . 06 . 2025,2025-06-09 02:45:00,2025-06-08 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_0646dae4,uk,parsed_like,Сили РФ атакували енергооб  єкти на Чернігівщині і у Харкові – DW – 06 . 10 . 2025,2025-10-06 17:15:00,2025-10-06 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_c0b125ab,uk,parsed_like,Блок проросійського Шора іде на вибори парламенту у Молдові – DW – 06 . 07 . 2025,2025-07-07 03:00:00,2025-07-06 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_8c962dde,uk,parsed_like,Справа Шабуніна : в чому підозрюють антикорупціонера – DW – 14 . 07 . 2025,2025-07-15 06:30:00,2025-07-14 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_229f22c1,uk,parsed_like,Опитування : більшість німців - за зростання оборонних витрат – DW – 04 . 08 . 2025,2025-08-05 02:45:00,2025-08-04 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_5dd22551,ro,parsed_like,Oamenii din Germania sunt ceva mai mulțumiți de viața lor – DW – 29 . 10 . 2025,2025-10-29 22:30:00,2025-10-29 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_37b02c34,ro,parsed_like,Cele cinci provocări economice ale anului 2026 – DW – 02 . 01 . 2026,2026-01-02 18:00:00,2026-01-02 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_bdc61220,ro,parsed_like,Analiză : PSD între AUR și Lecția Trump – DW – 04 . 08 . 2025,2025-08-04 16:45:00,2025-08-04 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_3890c7ab,ro,parsed_like,Desinformao prejudica aceitao de dieta saudável – DW – 05 / 10 / 2025,2025-10-05 22:15:00,2025-10-05 00:00:00,2025-01-01 00:00:00,year,05 / 10 / 2025,search_dates,low,1,1,1
+gdelt_45849b22,ro,parsed_like,Andrea Tenenti | Al Jazeera,2026-03-12 01:15:00,2026-03-12 00:00:00,,,,,,0,0,0
+gdelt_bfcec9ff,pl,parsed_like,"Większy zasięg , więcej pieniędzy . Niemiecka broń dla Ukrainy – DW – 03 . 08 . 2025",2025-08-03 17:00:00,2025-08-03 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_6b18a977,pl,parsed_like,Prasa o reformie socjalu : „ Praca musi się opłacać  ,2026-03-06 15:45:00,2026-08-01 00:00:00,,,,,,0,0,0
+gdelt_c4460228,pl,parsed_like,Blackout w Berlinie . Dlaczego wciąż nie znaleziono sprawcy ? ,2026-02-01 23:00:00,2026-02-01 00:00:00,,,,,,0,0,0
+gdelt_671efbdc,pl,parsed_like,Deutsche Bahn : jakie zmiany są niezbędne ? – DW – 24 . 08 . 2025,2025-08-25 04:15:00,2025-08-24 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_9aea8eba,pl,parsed_like,Prasa : „ Nie ma uspokojenia . Napięcia united states - Europa,2026-02-16 18:15:00,2026-02-10 00:00:00,,,,,,0,0,0
+gdelt_bacd8d10,pl,parsed_like,Prasa o cenach paliw : prawo antymonopolowe do zmiany,2026-03-27 16:00:00,2026-03-22 00:00:00,,,,,,0,0,0
+gdelt_b3d7e3ab,pl,parsed_like,Prezydent Niemiec gratuluje Karolowi Nawrockiemu – DW – 02 . 06 . 2025,2025-06-02 17:30:00,2025-06-02 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_5b9effe6,pl,parsed_like,Polityk AfD jedzie do Moskwy . „ Ryzyko wycieku informacji  – DW – 13 . 10 . 2025,2025-10-13 23:00:00,2025-10-13 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_ab8e9ce1,so,fallback_like,Trump oo xadka awooddiisa tijaabinaya iyo Minnesota oo iska celineysa,2026-01-19 16:15:00,2026-01-19 16:15:00,,,,,,0,0,0
+gdelt_cc25ebfc,so,fallback_like,Zelensky oo lagu wado inuu London uga qayb galo wadahadallo heer sare ah oo ku saabsan Ukraine,2025-12-08 16:30:00,2025-12-08 16:30:00,,,,,,0,0,0
+gdelt_27d5afb0,so,fallback_like,Somaliland : Dugsiyo u xidhmay abaarta darteed iyo kumannaan arday oo waxbarasho laaan noqday,2025-11-24 18:15:00,2025-11-24 18:15:00,,,,,,0,0,0
+gdelt_70ab134e,sv,fallback_like,Asia stocks up before Trump - Zelenskyy talks,2025-08-18 16:30:00,2025-08-18 16:30:00,,,,,,0,0,0
+gdelt_5576eee7,it,fallback_like,"US diplomat Marco Rubio denounces settler violence , tolls in Hormuz strait",2026-03-28 03:45:00,2026-03-28 03:45:00,,,,,,0,0,0
+gdelt_e9c82fea,it,fallback_like,Indonesia Lewotobi Laki - Laki volcano erupts as alert level raised,2025-09-20 16:45:00,2025-09-20 16:45:00,,,,,,0,0,0
+gdelt_1d4f8b1c,vi,parsed_like,Ông Trump : Putin phải đồng ý ngừng bắn trong 10 - 12 ngày,2025-07-29 16:15:00,2025-07-17 16:15:00,,,,,,0,0,0
+gdelt_117a92b0,el,parsed_like,Μ . Βρετανία : « Βασιλική » υποδοχή για τον Τραμπ – DW – 16 / 09 / 2025,2025-09-17 03:00:00,2025-09-16 00:00:00,2025-01-01 00:00:00,year,16 / 09 / 2025,search_dates,low,1,1,1
+gdelt_64a5cd6b,el,parsed_like,Γιατί δεν χαλαρώνουμε στις διακοπές ; – DW – 25 / 06 / 2025,2025-07-20 17:45:00,2025-06-25 00:00:00,2025-01-01 00:00:00,year,25 / 06 / 2025,search_dates,low,1,1,1
+gdelt_a8189729,el,parsed_like,Γαστριμαργικά και άλλα της Θεσσαλονίκης – DW – 08 / 06 / 2025,2025-06-08 16:30:00,2025-06-08 00:00:00,2025-01-01 00:00:00,year,08 / 06 / 2025,search_dates,low,1,1,1
+gdelt_599f9156,ar,parsed_like,مرحلتان من عمرك يشيخ فيهما جسدك بشكل مفاجئ ! – DW – 2025 / 10 / 19,2025-10-19 23:00:00,2025-10-19 00:00:00,2025-01-01 00:00:00,year,2025 / 10 / 19,search_dates,low,1,1,1
+gdelt_f8686284,ar,parsed_like,مكون في مشروبات الطاقة مرتبط بسرطان الدم – DW – 2025 / 6 / 1,2025-06-01 18:15:00,2025-06-01 00:00:00,2025-01-01 00:00:00,year,2025 / 6 / 1,search_dates,low,1,1,1
+gdelt_b5e80940,ur,parsed_like,تاریخ کی خاموشی – DW – 16 . 11 . 2025,2025-11-17 01:00:00,2025-11-16 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_5b418131,ur,parsed_like,دل کی صحت کا خیال کیسے رکھا جائے ؟ – DW – 28 . 09 . 2025,2025-09-28 18:15:00,2025-09-28 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_02b82e9e,pl,fallback_like,Niemieckie rolnictwo : Farmy umierają mimo wysokich cen,2026-01-19 01:45:00,2026-01-19 01:45:00,,,,,,0,0,0
+gdelt_837a82e7,pl,fallback_like,Ogórki drożeją drastycznie . Oto powód,2026-01-20 01:30:00,2026-01-20 01:30:00,,,,,,0,0,0
+gdelt_84df1f11,pl,fallback_like,Białoruś : śnieg i mróz jako tortura w więzieniach,2026-02-02 15:00:00,2026-02-02 15:00:00,,,,,,0,0,0
+gdelt_fce02287,hr,fallback_like, „ Porez na šećer  protiv budžetskog deficita,2026-01-14 17:00:00,2026-01-14 17:00:00,,,,,,0,0,0
+gdelt_a1221d6d,hr,fallback_like,Prijeti li nova naftna kriza poput one iz 1970 - ih ? ,2026-03-27 18:00:00,2026-03-27 18:00:00,1970-01-01 00:00:00,year,1970,search_dates,low,1,0,0
+gdelt_a0f5d8c7,hr,fallback_like,Međunarodno pravo ili pravo jačeg ? ,2026-03-28 22:30:00,2026-03-28 22:30:00,,,,,,0,0,0
+gdelt_a99733f6,bg,fallback_like,Путин и Лукашенко получили приглашение в  Совет мира  Трампа,2026-01-20 01:00:00,2026-01-20 01:00:00,,,,,,0,0,0
+gdelt_83329729,bg,fallback_like,Санкциите дават ефект : износът на руски нефт и газ спада,2026-02-25 22:15:00,2026-02-25 22:15:00,,,,,,0,0,0
+gdelt_59911ae4,pt,fallback_like,O prédio construído para combater a solidão na terceira idade,2026-02-26 10:45:00,2026-02-26 10:45:00,,,,,,0,0,0
+gdelt_e01b08cb,pt,fallback_like,Entenda por que cidadãos da Nova Zelândia deixam o país em números recordes,2026-02-10 21:15:00,2026-02-10 21:15:00,,,,,,0,0,0
+gdelt_f17d5487,pt,fallback_like,Volkswagen vai cortar 50 mil empregos na Alemanha,2026-03-11 04:30:00,2026-03-11 04:30:00,,,,,,0,0,0
+gdelt_afc3a910,pt,fallback_like,Kim Kataguiri defende pena de morte para membros de faces,2025-10-29 07:30:00,2025-10-29 07:30:00,,,,,,0,0,0
+gdelt_abf68ce2,pt,fallback_like,Juiz questiona cerceamento à defesa de Maduro nos EUA,2026-03-27 08:00:00,2026-03-27 08:00:00,,,,,,0,0,0
+gdelt_c02a7778,pt,fallback_like,Xi se reúne con presidenta de Dominica | Spanish . xinhuanet . com,2025-10-14 19:45:00,2025-10-14 19:45:00,,,,,,0,0,0
+gdelt_e745f9c7,pt,fallback_like,Exposies imersivas sobre o naufrágio do Titanic atraem multidões e levantam debate ético,2026-01-06 09:00:00,2026-01-06 09:00:00,,,,,,0,0,0
+gdelt_e62ec0da,ja,parsed_like,朝鮮族の習俗で祝う星火村の春節 中国黒竜江省ジャムス市,2026-02-22 12:30:00,2026-02-17 00:00:00,,,,,,0,0,0
+gdelt_82c10f8d,ca,fallback_like,Cuba defiant as it braces for post - Maduro era,2026-01-06 07:15:00,2026-01-06 07:15:00,,,,,,0,0,0
+gdelt_51195311,ca,fallback_like,Celebran desfile de Carnaval de Venecia con tema de JJ . OO . | Spanish . xinhuanet . com,2026-02-03 12:15:00,2026-02-03 12:15:00,,,,,,0,0,0
+gdelt_615d0e1f,ca,fallback_like,"Eight Arab , Islamic countries condemn Israeli closure of Al - Aqsa Mosque",2026-03-12 09:15:00,2026-03-12 09:15:00,,,,,,0,0,0
+gdelt_b34e316c,hi,fallback_like,ग्रीनलैंड को लेकर राजनीतिक तनाव से खासे चिंतित हैं वैज्ञानिक,2026-02-02 21:45:00,2026-02-02 21:45:00,,,,,,0,0,0
+gdelt_7c63ab3f,hi,fallback_like,जर्मनी को मिलेगा तुर्क मूल का पहला मुख्यमंत्री,2026-03-09 04:45:00,2026-03-09 04:45:00,,,,,,0,0,0
+gdelt_536f8b5f,sl,parsed_like,Stalno „ pljuvanje po Evropi  ide na živce,2026-02-16 04:15:00,2026-02-16 00:00:00,,,,,,0,0,0
+gdelt_85032825,sl,parsed_like,Naš mobitel je naša droga – DW – 10 . 08 . 2025,2025-08-10 17:30:00,2025-08-10 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_1b93d879,it,parsed_like,More Palestinians return to Gaza via Rafah as Israeli attacks continue,2026-02-11 17:45:00,2026-02-05 00:00:00,,,,,,0,0,0
+gdelt_83ca0bb7,it,parsed_like,Europe cannot condemn colonialism à la carte,2026-01-22 19:00:00,2026-01-17 00:00:00,,,,,,0,0,0
+gdelt_e8a2a1b1,id,fallback_like,Indonesia Boyong Kapal Riset Kelautan dari Jerman,2026-02-11 17:45:00,2026-02-11 17:45:00,,,,,,0,0,0
+gdelt_93c90ac1,id,fallback_like,Israel Klaim Tewaskan Pejabat Tinggi Iran dalam Serangan,2026-03-17 23:15:00,2026-03-17 23:15:00,,,,,,0,0,0
+gdelt_d9e05db2,id,fallback_like,Studi : Makanan Ultraolahan Bersifat Adiktif Mirip Rokok,2026-02-04 15:30:00,2026-02-04 15:30:00,,,,,,0,0,0
+gdelt_ffc91961,no,fallback_like,Massive sinkhole opens up outside Bangkok hospital,2025-09-26 16:15:00,2025-09-26 16:15:00,,,,,,0,0,0
+gdelt_a9ad5e1c,no,fallback_like,London taxi driver saves passengers from falling tree,2025-09-14 16:15:00,2025-09-14 16:15:00,,,,,,0,0,0
+gdelt_931548a9,ro,fallback_like,România nu ar fi mai sigură dacă refuza cooperarea cu SUA,2026-03-23 17:45:00,2026-03-23 17:45:00,,,,,,0,0,0
+gdelt_4974b645,ro,fallback_like,"Moldova , asediată de traficanții de arme și droguri",2026-03-24 01:00:00,2026-03-24 01:00:00,,,,,,0,0,0
+gdelt_d58c4d8f,mk,fallback_like,Безредија во Албанија : десетици повредeни и уапсени,2026-02-11 19:00:00,2026-02-11 19:00:00,,,,,,0,0,0
+gdelt_142fb7d9,mk,fallback_like,Иран пред пресврт по атентатот врз Хаменеи,2026-03-02 15:00:00,2026-03-02 15:00:00,,,,,,0,0,0
+gdelt_44b928a5,mk,fallback_like,Во воена операција е убиен мексиканскиот нарко - бос Ел Менчо,2026-02-23 16:45:00,2026-02-23 16:45:00,,,,,,0,0,0
+gdelt_a2077679,da,parsed_like,Budget 2026 debate : Joan Pereira on rejuvenation of older HDB estates,2026-02-25 14:30:00,2026-02-25 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_ae213247,da,parsed_like,Budget 2026 debate : Andre Low on Singapore vision for AI,2026-02-26 13:15:00,2026-02-26 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_557bd24e,fa,parsed_like,زلزله ۸ / ۸ کامچاتکا ؛ یک آتشفشان دیگر در روسیه پس از پنج قرن فعال شد,2025-08-03 22:45:00,2025-08-08 00:00:00,,,,,,0,0,0
+gdelt_5746d194,zh-tw,fallback_like,BBC調查 ： 俄羅斯資助的假新聞網絡如何擾亂歐洲的選舉 - BBC News 中文,2025-09-22 18:30:00,2025-09-22 18:30:00,,,,,,0,0,0
+gdelt_e83061de,zh-tw,fallback_like,中國為何即將通過一項促進 「 民族團結 」 的新法律 ？ - BBC News 中文,2026-03-10 19:45:00,2026-03-10 19:45:00,,,,,,0,0,0
+gdelt_1cfc4eb0,no,parsed_like,Sun halo over Singapore,2025-08-28 12:00:00,2025-08-24 00:00:00,,,,,,0,0,0
+gdelt_f15ec146,so,parsed_like,"Tehran oo diidday  awaamiirta  wadahadallada Washington , iyo Israaiil oo ka hadashay kulanka soo socda ee Netanyahu iyo Trump",2026-02-09 01:15:00,2026-11-01 00:00:00,,,,,,0,0,0
+gdelt_c8b05755,so,parsed_like,Maxaa ka soo baxay kulankiii la wada sugayay ee Trump iyo Natenyahu ? ,2025-12-30 13:00:00,2025-11-01 00:00:00,,,,,,0,0,0
+gdelt_0b198db8,so,parsed_like,Sheekada Masaarigii mucjisada ahaa ee 17 - ka sano basaasayay Israaiil,2025-11-24 13:15:00,2025-11-01 00:00:00,,,,,,0,0,0
+gdelt_eb53e58b,sl,fallback_like,Spoljna politika Srbije bez jasne strategije ? ,2026-03-26 17:30:00,2026-03-26 17:30:00,,,,,,0,0,0
+gdelt_395e427f,nl,fallback_like,"Iran Khamenei rejects US nuclear demand , vows to keep enriching uranium",2025-06-04 15:45:00,2025-06-04 15:45:00,,,,,,0,0,0
+gdelt_8e9fbdbe,nl,fallback_like,"NFL results week 17 : Allen & Hurts struggle , Browns stun Steelers",2025-12-30 02:45:00,2025-12-30 02:45:00,,,,,,0,0,0
+gdelt_351744f9,tl,fallback_like,Super Typhoon Ragasa hits Hong Kong,2025-09-24 14:15:00,2025-09-24 14:15:00,,,,,,0,0,0
+gdelt_206bd682,af,parsed_like,Zelenskyy says will meet Trump next week as Russia intensifies attacks,2025-09-21 02:45:00,2025-09-28 02:45:00,,,,,,0,0,0
+gdelt_c4e8d25e,sv,parsed_like,"Oil slides , stocks rebound on Trump Iran remarks",2026-03-24 05:45:00,2026-03-18 00:00:00,,,,,,0,0,0
+gdelt_6304005e,ca,parsed_like,US Open 2025 results : Jessica Pegula beats Barbora Krejcikova to reach semi - finals,2025-09-03 05:00:00,2025-09-03 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_891e5665,ca,parsed_like,Colombia busca a autores intelectuales de ataque a Uribe – DW – 08 / 06 / 2025,2025-06-09 02:45:00,2025-06-08 00:00:00,2025-01-01 00:00:00,year,08 / 06 / 2025,search_dates,low,1,1,1
+gdelt_877aca3b,et,parsed_like,"Oil prices jump , stocks skid on Middle East turmoil",2026-03-02 11:15:00,2026-02-25 00:00:00,,,,,,0,0,0
+gdelt_da66b4ef,el,fallback_like,Ξεκίνησε η πολύκροτη δίκη μελών του HDP,2026-02-02 21:45:00,2026-02-02 21:45:00,,,,,,0,0,0
+gdelt_168f2283,te,fallback_like,వార్తలు - BBC News తెలుగు,2025-11-24 23:15:00,2025-11-24 23:15:00,,,,,,0,0,0
+gdelt_ad9a0cbd,et,fallback_like,"Punjab : Floods ravage Indian state killing 30 and submerging 1 , 400 villages",2025-09-03 15:30:00,2025-09-03 15:30:00,,,,,,0,0,0
+gdelt_f2ccde1f,zh-tw,parsed_like,防彈少年團回歸 ， 中國 「 限韓令 」 陰影依舊未散 - BBC News 中文,2026-03-22 22:15:00,2026-03-01 00:00:00,,,,,,0,0,0
+gdelt_b8142228,sq,fallback_like,Poland CD Projekt third - quarter net profit jumps 148 % ,2025-11-27 08:30:00,2025-11-27 08:30:00,,,,,,0,0,0
+gdelt_ca833d26,nl,parsed_like,Brandkatastrophe in Crans - Montana : Dutzende Tote – DW – 01 . 01 . 2026,2026-01-01 22:45:00,2026-01-01 00:00:00,2026-01-01 00:00:00,year,2026,search_dates,low,1,1,1
+gdelt_e72f9e0b,nl,parsed_like,Volkswagen Group profits take big hit on Porsche shift,2026-03-10 20:30:00,2026-03-04 00:00:00,,,,,,0,0,0
+gdelt_8026532e,tl,parsed_like,RSAF aerial display at Singapore 2025 National Day Parade,2025-08-11 10:45:00,2025-08-11 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_d5e1ea4b,cy,fallback_like,Newborn dies after failures in maternity care at Ysbyty Gwynedd in Bangor,2026-01-28 03:15:00,2026-01-28 03:15:00,,,,,,0,0,0
+gdelt_37b9a99c,bn,fallback_like,চীন সফরে জার্মান চ্যান্সেলর,2026-02-26 02:45:00,2026-02-26 02:45:00,,,,,,0,0,0
+gdelt_3fa98a73,ta,fallback_like,முகப்பு - BBC News தமிழ்,2025-11-24 23:15:00,2025-11-24 23:15:00,,,,,,0,0,0
+gdelt_489d1af6,ne,parsed_like,दलाई लामा का ट्रस्ट तय करेगा उनका उत्तराधिकारी – DW – 02 . 07 . 2025,2025-07-02 14:45:00,2025-07-02 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_703c2d5f,unknown,fallback_like,ප්‍රධාන පුවත් - BBC News සිංහල,2025-11-24 23:15:00,2025-11-24 23:15:00,,,,,,0,0,0
+gdelt_982101d0,cy,parsed_like,  I was fined £100 for a poo my dog didnt do  ,2025-10-29 16:00:00,2025-01-01 00:00:00,,,,,,0,0,0
+gdelt_99cfd749,fi,fallback_like,Zelenskyy eyes invite to Trump - Putin talks in Budapest,2025-10-20 19:45:00,2025-10-20 19:45:00,,,,,,0,0,0
+gdelt_9b6ba15a,hu,fallback_like,A menos cerveza ... Heineken recortará hasta 6 . 000 empleos,2026-02-11 19:00:00,2026-02-11 19:00:00,,,,,,0,0,0
+gdelt_c8a9d7b0,lt,fallback_like,Zelenskyy nominates Yulia Svyrydenko as new Ukraine PM,2025-07-15 01:00:00,2025-07-15 01:00:00,,,,,,0,0,0
+gdelt_ca237a4a,fi,parsed_like,Ukraine updates : Russia joins talks in Miami – DW – 12 / 21 / 2025,2025-12-21 09:45:00,2025-12-21 00:00:00,2025-01-01 00:00:00,year,12 / 21 / 2025,search_dates,low,1,1,1
+gdelt_cacc9cf3,lt,parsed_like,Gaza : Asosiasi Cendekia Vonis Israel Lakukan Genosida – DW – 02 . 09 . 2025,2025-09-02 22:15:00,2025-09-02 00:00:00,2025-01-01 00:00:00,year,2025,search_dates,low,1,1,1
+gdelt_cbe2eae6,mr,fallback_like,बातम्या - BBC News मराठी,2025-11-24 23:15:00,2025-11-24 23:15:00,,,,,,0,0,0
+gdelt_e5349f43,bn,parsed_like,মঙ্গলবার একটি না দুইটি শপথ ? ,2026-02-16 16:15:00,2026-02-10 00:00:00,,,,,,0,0,0

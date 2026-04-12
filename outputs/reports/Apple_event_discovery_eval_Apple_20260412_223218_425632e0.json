@@ -1,0 +1,145 @@
+{
+  "topic": "Apple",
+  "run_id": "Apple_20260412_223218_425632e0",
+  "generated_at": "2026-04-12T22:32:54",
+  "event_count": 14,
+  "assignment_count": 21,
+  "singleton_count": 13,
+  "singleton_ratio": 0.9286,
+  "non_noise_event_count": 1,
+  "avg_confidence": 0.6348,
+  "avg_non_noise_confidence": 0.6756,
+  "cluster_size_distribution": {
+    "1": 13,
+    "8": 1
+  },
+  "top_events": [
+    {
+      "event_id": "Apple_20260412_223218_425632e0:Apple_event_005",
+      "cluster_size": 8,
+      "confidence": 0.6756,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "Musk firms sue Apple and OpenAI , alleging they hurt competition",
+      "event_time_anchor": "2025-08-26 00:00:00",
+      "member_titles": [
+        "Mahkeme Apple  ın  çevreci saat  reklamlarını durdurdu – DW – 26 . 08 . 2025",
+        "UK agrees to drop mandate for Apple  back door , US spy chief says | Technology News",
+        "Musk sues Apple , OpenAI over alleged AI competition suppression",
+        "Apple sued over use of copyrighted books to train Apple Intelligence",
+        "Apple sued by authors over use of books in AI training",
+        "Musk says xAI to take legal action against Apple over App Store rankings",
+        "US says united kingdom has withdrawn demand for Apple user encrypted data",
+        "Musk firms sue Apple and OpenAI , alleging they hurt competition"
+      ]
+    },
+    {
+      "event_id": "Apple_20260412_223218_425632e0:Apple_event_001",
+      "cluster_size": 1,
+      "confidence": 0.6317,
+      "system_is_noise": true,
+      "noise_reason": "singleton_component",
+      "canonical_title": "Chappell Roan Apple dance , and other Primavera moments",
+      "event_time_anchor": "2025-06-08 00:00:00",
+      "member_titles": [
+        "Chappell Roan Apple dance , and other Primavera moments"
+      ]
+    },
+    {
+      "event_id": "Apple_20260412_223218_425632e0:Apple_event_002",
+      "cluster_size": 1,
+      "confidence": 0.6317,
+      "system_is_noise": true,
+      "noise_reason": "singleton_component",
+      "canonical_title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
+      "event_time_anchor": "2025-06-09 00:00:00",
+      "member_titles": [
+        "WWDC : Apple faces AI , regulatory challenges as it woos software developers"
+      ]
+    },
+    {
+      "event_id": "Apple_20260412_223218_425632e0:Apple_event_003",
+      "cluster_size": 1,
+      "confidence": 0.6317,
+      "system_is_noise": true,
+      "noise_reason": "singleton_component",
+      "canonical_title": "Apple hits back against  unprecedented  €500m EU fine",
+      "event_time_anchor": "2025-07-07 00:00:00",
+      "member_titles": [
+        "Apple hits back against  unprecedented  €500m EU fine"
+      ]
+    },
+    {
+      "event_id": "Apple_20260412_223218_425632e0:Apple_event_004",
+      "cluster_size": 1,
+      "confidence": 0.6317,
+      "system_is_noise": true,
+      "noise_reason": "singleton_component",
+      "canonical_title": "Trump announces US$100 billion new investment pledge from Apple",
+      "event_time_anchor": "2025-08-07 00:00:00",
+      "member_titles": [
+        "Trump announces US$100 billion new investment pledge from Apple"
+      ]
+    },
+    {
+      "event_id": "Apple_20260412_223218_425632e0:Apple_event_006",
+      "cluster_size": 1,
+      "confidence": 0.6317,
+      "system_is_noise": true,
+      "noise_reason": "singleton_component",
+      "canonical_title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "member_titles": [
+        "Apple iPhone 17 Event : Our Live Updates and Takeaways"
+      ]
+    },
+    {
+      "event_id": "Apple_20260412_223218_425632e0:Apple_event_007",
+      "cluster_size": 1,
+      "confidence": 0.6317,
+      "system_is_noise": true,
+      "noise_reason": "singleton_component",
+      "canonical_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "member_titles": [
+        "Apple holds down new iPhone prices amid threats of Trump tariffs"
+      ]
+    },
+    {
+      "event_id": "Apple_20260412_223218_425632e0:Apple_event_008",
+      "cluster_size": 1,
+      "confidence": 0.6317,
+      "system_is_noise": true,
+      "noise_reason": "singleton_component",
+      "canonical_title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+      "event_time_anchor": "2025-10-15 00:00:00",
+      "member_titles": [
+        "Apple sengage à augmenter ses investissements en Chine - Xinhua"
+      ]
+    },
+    {
+      "event_id": "Apple_20260412_223218_425632e0:Apple_event_009",
+      "cluster_size": 1,
+      "confidence": 0.6317,
+      "system_is_noise": true,
+      "noise_reason": "singleton_component",
+      "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+      "event_time_anchor": "2025-10-17 00:00:00",
+      "member_titles": [
+        "China urges  equal dialogue  with US as Apple Cook visits"
+      ]
+    },
+    {
+      "event_id": "Apple_20260412_223218_425632e0:Apple_event_010",
+      "cluster_size": 1,
+      "confidence": 0.6317,
+      "system_is_noise": true,
+      "noise_reason": "singleton_component",
+      "canonical_title": "Apple claims  tremendou global uptake of latest iPhones",
+      "event_time_anchor": "2025-10-31 00:00:00",
+      "member_titles": [
+        "Apple claims  tremendou global uptake of latest iPhones"
+      ]
+    }
+  ]
+}
