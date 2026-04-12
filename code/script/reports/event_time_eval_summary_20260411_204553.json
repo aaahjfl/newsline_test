@@ -1,0 +1,364 @@
+{
+  "config": {
+    "table": "parser_newsdata",
+    "sample_size": 1200,
+    "strata_mode": "language_parse_mode",
+    "seed": 42,
+    "day_tolerance": 1,
+    "gold_mode": "loose",
+    "max_rows": 0
+  },
+  "overall": {
+    "sample_count": 1200,
+    "evaluable_count": 390,
+    "evaluable_coverage": 0.325,
+    "exact_accuracy": 0.8718,
+    "relaxed_accuracy": 0.8718,
+    "day_tolerance": 1,
+    "gold_mode": "loose",
+    "pseudo_pattern_distribution": {
+      "search_dates": 370,
+      "zh_ymd": 9,
+      "relative_day": 4,
+      "relative_year": 3,
+      "zh_md": 3,
+      "en_month_only": 1
+    },
+    "pseudo_confidence_distribution": {
+      "medium": 377,
+      "high": 12,
+      "low": 1
+    }
+  },
+  "by_language": {
+    "en": {
+      "sample_count": 574,
+      "evaluable_count": 106,
+      "evaluable_coverage": 0.1847,
+      "exact_accuracy": 0.7642,
+      "relaxed_accuracy": 0.7642
+    },
+    "zh-cn": {
+      "sample_count": 110,
+      "evaluable_count": 29,
+      "evaluable_coverage": 0.2636,
+      "exact_accuracy": 0.9655,
+      "relaxed_accuracy": 0.9655
+    },
+    "es": {
+      "sample_count": 68,
+      "evaluable_count": 36,
+      "evaluable_coverage": 0.5294,
+      "exact_accuracy": 0.9722,
+      "relaxed_accuracy": 0.9722
+    },
+    "ko": {
+      "sample_count": 63,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.0317,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "fr": {
+      "sample_count": 51,
+      "evaluable_count": 11,
+      "evaluable_coverage": 0.2157,
+      "exact_accuracy": 0.6364,
+      "relaxed_accuracy": 0.6364
+    },
+    "ru": {
+      "sample_count": 33,
+      "evaluable_count": 27,
+      "evaluable_coverage": 0.8182,
+      "exact_accuracy": 0.963,
+      "relaxed_accuracy": 0.963
+    },
+    "uk": {
+      "sample_count": 30,
+      "evaluable_count": 22,
+      "evaluable_coverage": 0.7333,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "sw": {
+      "sample_count": 27,
+      "evaluable_count": 19,
+      "evaluable_coverage": 0.7037,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "tr": {
+      "sample_count": 22,
+      "evaluable_count": 14,
+      "evaluable_coverage": 0.6364,
+      "exact_accuracy": 0.8571,
+      "relaxed_accuracy": 0.8571
+    },
+    "fa": {
+      "sample_count": 19,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.1053,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "de": {
+      "sample_count": 19,
+      "evaluable_count": 15,
+      "evaluable_coverage": 0.7895,
+      "exact_accuracy": 0.8667,
+      "relaxed_accuracy": 0.8667
+    },
+    "pt": {
+      "sample_count": 19,
+      "evaluable_count": 12,
+      "evaluable_coverage": 0.6316,
+      "exact_accuracy": 0.8333,
+      "relaxed_accuracy": 0.8333
+    },
+    "ur": {
+      "sample_count": 16,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.0625,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "hr": {
+      "sample_count": 14,
+      "evaluable_count": 14,
+      "evaluable_coverage": 1.0,
+      "exact_accuracy": 0.8571,
+      "relaxed_accuracy": 0.8571
+    },
+    "pl": {
+      "sample_count": 11,
+      "evaluable_count": 10,
+      "evaluable_coverage": 0.9091,
+      "exact_accuracy": 0.9,
+      "relaxed_accuracy": 0.9
+    },
+    "id": {
+      "sample_count": 10,
+      "evaluable_count": 9,
+      "evaluable_coverage": 0.9,
+      "exact_accuracy": 0.6667,
+      "relaxed_accuracy": 0.6667
+    },
+    "ar": {
+      "sample_count": 10,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.2,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "bg": {
+      "sample_count": 9,
+      "evaluable_count": 8,
+      "evaluable_coverage": 0.8889,
+      "exact_accuracy": 0.875,
+      "relaxed_accuracy": 0.875
+    },
+    "mk": {
+      "sample_count": 8,
+      "evaluable_count": 7,
+      "evaluable_coverage": 0.875,
+      "exact_accuracy": 0.8571,
+      "relaxed_accuracy": 0.8571
+    },
+    "vi": {
+      "sample_count": 7,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.1429,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "sq": {
+      "sample_count": 6,
+      "evaluable_count": 5,
+      "evaluable_coverage": 0.8333,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "ro": {
+      "sample_count": 6,
+      "evaluable_count": 4,
+      "evaluable_coverage": 0.6667,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "so": {
+      "sample_count": 6,
+      "evaluable_count": 4,
+      "evaluable_coverage": 0.6667,
+      "exact_accuracy": 0.75,
+      "relaxed_accuracy": 0.75
+    },
+    "da": {
+      "sample_count": 5,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.4,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "hi": {
+      "sample_count": 5,
+      "evaluable_count": 4,
+      "evaluable_coverage": 0.8,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "el": {
+      "sample_count": 5,
+      "evaluable_count": 3,
+      "evaluable_coverage": 0.6,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "ca": {
+      "sample_count": 5,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.4,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "it": {
+      "sample_count": 4,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "sl": {
+      "sample_count": 4,
+      "evaluable_count": 3,
+      "evaluable_coverage": 0.75,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "af": {
+      "sample_count": 3,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.3333,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "ja": {
+      "sample_count": 3,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.3333,
+      "exact_accuracy": 0.0,
+      "relaxed_accuracy": 0.0
+    },
+    "no": {
+      "sample_count": 3,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.3333,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "zh-tw": {
+      "sample_count": 3,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.3333,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "nl": {
+      "sample_count": 3,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.3333,
+      "exact_accuracy": 0.0,
+      "relaxed_accuracy": 0.0
+    },
+    "sv": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "tl": {
+      "sample_count": 2,
+      "evaluable_count": 2,
+      "evaluable_coverage": 1.0,
+      "exact_accuracy": 0.5,
+      "relaxed_accuracy": 0.5
+    },
+    "et": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "cy": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "bn": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "fi": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "te": {
+      "sample_count": 1,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null
+    },
+    "ta": {
+      "sample_count": 1,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null
+    },
+    "ne": {
+      "sample_count": 1,
+      "evaluable_count": 1,
+      "evaluable_coverage": 1.0,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "unknown": {
+      "sample_count": 1,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null
+    },
+    "hu": {
+      "sample_count": 1,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null
+    },
+    "lt": {
+      "sample_count": 1,
+      "evaluable_count": 1,
+      "evaluable_coverage": 1.0,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0
+    },
+    "mr": {
+      "sample_count": 1,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null
+    }
+  }
+}

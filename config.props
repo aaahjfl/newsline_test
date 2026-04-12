@@ -1,4 +1,11 @@
 ################################
+##  LEGACY EXTERNAL CONFIG    ##
+################################
+# This file is kept only for historical / external-tool compatibility.
+# It is not the primary configuration source for the new top-level architecture.
+# At present it only serves the old HeidelTime-related stack.
+#
+################################
 ##           MAIN             ##
 ################################
 # Consideration of different timex3-types

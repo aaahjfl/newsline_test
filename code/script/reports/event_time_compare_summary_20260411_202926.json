@@ -1,0 +1,52 @@
+{
+  "config": {
+    "table_v1": "parser_newsdata_com",
+    "table_v2": "parser_newsdata",
+    "sample_size": 1200,
+    "strata_mode": "language_parse_mode",
+    "strata_on": "both",
+    "seed": 42,
+    "day_tolerance": 1,
+    "max_rows": 0
+  },
+  "dataset": {
+    "v1_count": 49130,
+    "v2_count": 49130,
+    "overlap_count": 49130,
+    "standard_timestamp_mismatch_count": 0,
+    "sampled_count": 1200
+  },
+  "overall_v1": {
+    "sample_count": 1200,
+    "evaluable_count": 12,
+    "evaluable_coverage": 0.01,
+    "exact_accuracy": 0.8333,
+    "relaxed_accuracy": 0.8333,
+    "day_tolerance": 1
+  },
+  "overall_v2": {
+    "sample_count": 1200,
+    "evaluable_count": 12,
+    "evaluable_coverage": 0.01,
+    "exact_accuracy": 1.0,
+    "relaxed_accuracy": 1.0,
+    "day_tolerance": 1
+  },
+  "overall_delta": {
+    "exact_accuracy_delta_v2_minus_v1": 0.1667,
+    "relaxed_accuracy_delta_v2_minus_v1": 0.1667,
+    "evaluable_coverage_delta_v2_minus_v1": 0.0
+  },
+  "head_to_head": {
+    "exact": {
+      "v2_better": 2,
+      "v1_better": 0,
+      "tie": 10
+    },
+    "relaxed": {
+      "v2_better": 2,
+      "v1_better": 0,
+      "tie": 10
+    }
+  }
+}

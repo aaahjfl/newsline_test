@@ -1,0 +1,407 @@
+{
+  "config": {
+    "table": "parser_newsdata",
+    "sample_size": 120,
+    "strata_mode": "language_parse_mode",
+    "seed": 42,
+    "day_tolerance": 1,
+    "gold_mode": "balanced",
+    "max_rows": 2000
+  },
+  "overall": {
+    "sample_count": 120,
+    "evaluable_count": 32,
+    "evaluable_coverage": 0.2667,
+    "exact_accuracy": 1.0,
+    "relaxed_accuracy": 1.0,
+    "range_hit_accuracy": 1.0,
+    "anchor_in_gold_range_accuracy": 1.0,
+    "interval_evaluable_count": 32,
+    "interval_range_hit_accuracy": 1.0,
+    "day_tolerance": 1,
+    "gold_mode": "balanced",
+    "pseudo_pattern_distribution": {
+      "search_dates": 31,
+      "en_month_only": 1
+    },
+    "pseudo_confidence_distribution": {
+      "low": 32
+    }
+  },
+  "by_language": {
+    "en": {
+      "sample_count": 33,
+      "evaluable_count": 5,
+      "evaluable_coverage": 0.1515,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 5,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "zh-cn": {
+      "sample_count": 9,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.1111,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "es": {
+      "sample_count": 6,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.1667,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "ko": {
+      "sample_count": 5,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "uk": {
+      "sample_count": 4,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 2,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "fr": {
+      "sample_count": 4,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.25,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "sw": {
+      "sample_count": 4,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 2,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "tr": {
+      "sample_count": 4,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 2,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "ru": {
+      "sample_count": 3,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.6667,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 2,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "hr": {
+      "sample_count": 3,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.6667,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 2,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "fa": {
+      "sample_count": 3,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "de": {
+      "sample_count": 3,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.6667,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 2,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "pt": {
+      "sample_count": 3,
+      "evaluable_count": 2,
+      "evaluable_coverage": 0.6667,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 2,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "ur": {
+      "sample_count": 3,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "mk": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "bg": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "ja": {
+      "sample_count": 2,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "id": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "vi": {
+      "sample_count": 2,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "da": {
+      "sample_count": 2,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "ar": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "hi": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "ro": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "pl": {
+      "sample_count": 2,
+      "evaluable_count": 1,
+      "evaluable_coverage": 0.5,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "so": {
+      "sample_count": 2,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "it": {
+      "sample_count": 2,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "no": {
+      "sample_count": 2,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "af": {
+      "sample_count": 1,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "sq": {
+      "sample_count": 1,
+      "evaluable_count": 1,
+      "evaluable_coverage": 1.0,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "sv": {
+      "sample_count": 1,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "el": {
+      "sample_count": 1,
+      "evaluable_count": 1,
+      "evaluable_coverage": 1.0,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "ca": {
+      "sample_count": 1,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    },
+    "sl": {
+      "sample_count": 1,
+      "evaluable_count": 1,
+      "evaluable_coverage": 1.0,
+      "exact_accuracy": 1.0,
+      "relaxed_accuracy": 1.0,
+      "range_hit_accuracy": 1.0,
+      "anchor_in_gold_range_accuracy": 1.0,
+      "interval_evaluable_count": 1,
+      "interval_range_hit_accuracy": 1.0
+    },
+    "zh-tw": {
+      "sample_count": 1,
+      "evaluable_count": 0,
+      "evaluable_coverage": 0.0,
+      "exact_accuracy": null,
+      "relaxed_accuracy": null,
+      "range_hit_accuracy": null,
+      "anchor_in_gold_range_accuracy": null,
+      "interval_evaluable_count": 0,
+      "interval_range_hit_accuracy": null
+    }
+  }
+}
