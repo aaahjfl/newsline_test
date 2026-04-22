@@ -42,6 +42,7 @@ packaging==26.0
 pandas==3.0.1
 pillow==12.1.1
 preshed==3.0.13
+protobuf==7.34.1
 py-heideltime==1.0.6
 pydantic==2.12.5
 pydantic_core==2.41.5

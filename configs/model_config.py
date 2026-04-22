@@ -2,8 +2,9 @@
 
 MODEL_CONFIG = {
     "embedding_model": "Qwen/Qwen3-Embedding-4B",
+    "topic_alias_model": "qwen3.5:9b",
     "topic_translation_model": "facebook/nllb-200-distilled-600M",
-    "reasoning_model": "qwen3:8b",
+    "reasoning_model": "qwen3.5:9b",
     "time_parser_primary": "spaCy",
     "time_parser_fallback": "HeidelTime",
 }

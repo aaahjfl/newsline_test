@@ -38,6 +38,7 @@ def main() -> int:
     print(f"topic: {result.topic}")
     print(f"run_id: {result.run_id}")
     print(f"topic_aliases: {result.topic_aliases}")
+    print(f"topic_alias_details: {result.topic_alias_details}")
     print(f"candidate_count: {result.candidate_count}")
     print(f"filtered_count: {result.filtered_count}")
     print(f"event_count: {len(result.events)}")

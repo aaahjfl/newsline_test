@@ -21,6 +21,7 @@ MODULES = [
     "data_pipeline.scrapers.nyt",
     "data_pipeline.scrapers.rss",
     "core.schemas",
+    "core.llm.ollama_client",
     "core.event_discovery.legacy_adapter",
     "core.event_discovery.pipeline",
     "core.timeline_reasoning.legacy_adapter",

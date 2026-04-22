@@ -86,32 +86,81 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
     def test_topic_alias_expansion_is_extensible(self) -> None:
         from core.event_discovery.topic_expansion import expand_topic_aliases
 
-        def fake_translate(topic: str, src_lang: str, tgt_lang: str) -> str | None:
-            del src_lang
-            table = {
-                ("苹果", "en"): "Apple",
-                ("苹果", "es"): "Apple",
-                ("苹果", "fr"): "Apple",
+        payload = {
+            "aliases": {
+                "en": ["Apple"],
+                "es": ["Apple"],
+                "fr": ["Apple"],
             }
-            return table.get((topic, tgt_lang))
-
+        }
         with patch("core.event_discovery.topic_expansion.detect_topic_language", return_value="zh-cn"):
-            with patch("core.event_discovery.topic_expansion._translate_topic_once", side_effect=fake_translate):
+            with patch("core.event_discovery.topic_expansion._load_llm_alias_payload", return_value=payload):
                 aliases = expand_topic_aliases("苹果", target_langs=["en", "es", "fr"])
 
         self.assertEqual(aliases[0], "苹果")
         self.assertIn("Apple", aliases)
 
-    def test_named_entity_topic_expansion_stays_conservative(self) -> None:
-        from core.event_discovery.topic_expansion import expand_topic_aliases
+    def test_topic_alias_expansion_cleans_and_keeps_multilingual_aliases(self) -> None:
+        from core.event_discovery.topic_expansion import expand_topic_alias_candidates, expand_topic_aliases
 
+        payload = {
+            "aliases": {
+                "en": ["Apple / Apple Inc.", "Apple news"],
+                "zh-cn": ["苹果公司（Apple Inc.）"],
+                "fr": ["Apple", "Pomme", "Pomme news"],
+                "ru": ["Apple"],
+            },
+        }
         with patch("core.event_discovery.topic_expansion.detect_topic_language", return_value="en"):
-            with patch("core.event_discovery.topic_expansion._translate_topic_once") as translate_mock:
-                aliases = expand_topic_aliases("Apple", target_langs=["en", "es", "fr", "zh-cn", "ru"])
+            with patch("core.event_discovery.topic_expansion._load_llm_alias_payload", return_value=payload):
+                aliases = expand_topic_aliases("Apple", target_langs=["en", "zh-cn", "fr", "ru"])
+                alias_candidates = expand_topic_alias_candidates("Apple", target_langs=["en", "zh-cn", "fr", "ru"])
 
-        self.assertEqual(translate_mock.call_count, 0)
-        self.assertEqual(aliases, ["Apple"])
-        self.assertEqual(aliases[0], "Apple")
+        self.assertIn("Apple", aliases)
+        self.assertIn("Apple Inc.", aliases)
+        self.assertIn("苹果公司", aliases)
+        self.assertIn("Pomme", aliases)
+        self.assertNotIn("Apple news", aliases)
+        self.assertNotIn("Pomme news", aliases)
+        pomme_alias = next(alias for alias in alias_candidates if alias.text == "Pomme")
+        self.assertIn("possible_translated_named_entity", pomme_alias.notes)
+
+    def test_pipeline_uses_all_cleaned_aliases_for_recall(self) -> None:
+        from core.event_discovery.pipeline import _fetch_candidates_with_alias_strategy
+        from core.event_discovery.topic_expansion import TopicAlias
+
+        aliases = [
+            TopicAlias("Apple Inc.", "en"),
+            TopicAlias("苹果公司", "zh-cn", notes=("possible_translated_named_entity",)),
+            TopicAlias("苹果", "zh-cn"),
+        ]
+        sample_news = [
+            NewsItem(news_id=1, title="Apple Inc. announces new chips"),
+            NewsItem(news_id=2, title="苹果公司发布新产品"),
+            NewsItem(news_id=3, title="苹果供应链新闻"),
+        ]
+
+        with patch("core.event_discovery.pipeline.expand_topic_alias_candidates", return_value=aliases):
+            with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=sample_news) as fetch_mock:
+                used_aliases, alias_details, candidate_news, filtered_news = _fetch_candidates_with_alias_strategy(
+                    "Apple",
+                    None,
+                )
+
+        self.assertEqual(fetch_mock.call_count, 1)
+        self.assertIn("苹果", used_aliases)
+        self.assertIn({"text": "Apple Inc.", "lang": "en", "priority": "strong"}, alias_details)
+        self.assertIn(
+            {
+                "text": "苹果公司",
+                "lang": "zh-cn",
+                "priority": "strong",
+                "notes": ["possible_translated_named_entity"],
+            },
+            alias_details,
+        )
+        self.assertEqual(len(candidate_news), 3)
+        self.assertEqual(len(filtered_news), 3)
 
     def test_encoder_uses_fixed_prompt(self) -> None:
         from core.event_discovery.encoder import EMBEDDING_PROMPT, encode_titles
@@ -133,6 +182,7 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
 
     def test_topic_run_produces_events_and_exports(self) -> None:
         from core.event_discovery.pipeline import run_event_discovery
+        from core.event_discovery.topic_expansion import TopicAlias
 
         sample_news = [
             NewsItem(
@@ -167,10 +217,14 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
 
         with TemporaryDirectory() as tempdir:
             with patch("core.event_discovery.pipeline.OUTPUTS_DIR", Path(tempdir)):
-                with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=sample_news):
-                    with patch("core.event_discovery.pipeline.encode_titles", return_value=embeddings):
-                        with patch("core.event_discovery.pipeline.persist_result_to_db"):
-                            result = run_event_discovery("Fed", limit=10)
+                with patch(
+                    "core.event_discovery.pipeline.expand_topic_alias_candidates",
+                    return_value=[TopicAlias("Fed", "en")],
+                ):
+                    with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=sample_news):
+                        with patch("core.event_discovery.pipeline.encode_titles", return_value=embeddings):
+                            with patch("core.event_discovery.pipeline.persist_result_to_db"):
+                                result = run_event_discovery("Fed", limit=10)
 
             export_paths = list(result.output_paths.values())
             for path in export_paths:
@@ -194,12 +248,17 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
 
     def test_empty_result_does_not_crash(self) -> None:
         from core.event_discovery.pipeline import run_event_discovery
+        from core.event_discovery.topic_expansion import TopicAlias
 
         with TemporaryDirectory() as tempdir:
             with patch("core.event_discovery.pipeline.OUTPUTS_DIR", Path(tempdir)):
-                with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=[]):
-                    with patch("core.event_discovery.pipeline.persist_result_to_db"):
-                        result = run_event_discovery("NoHits")
+                with patch(
+                    "core.event_discovery.pipeline.expand_topic_alias_candidates",
+                    return_value=[TopicAlias("NoHits", "en")],
+                ):
+                    with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=[]):
+                        with patch("core.event_discovery.pipeline.persist_result_to_db"):
+                            result = run_event_discovery("NoHits")
 
             export_paths = list(result.output_paths.values())
             for path in export_paths:
@@ -213,6 +272,7 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
 
     def test_single_news_still_forms_event(self) -> None:
         from core.event_discovery.pipeline import run_event_discovery
+        from core.event_discovery.topic_expansion import TopicAlias
 
         sample_news = [
             NewsItem(
@@ -228,13 +288,17 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
 
         with TemporaryDirectory() as tempdir:
             with patch("core.event_discovery.pipeline.OUTPUTS_DIR", Path(tempdir)):
-                with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=sample_news):
-                    with patch(
-                        "core.event_discovery.pipeline.encode_titles",
-                        return_value=np.asarray([[1.0, 0.0]], dtype=np.float32),
-                    ):
-                        with patch("core.event_discovery.pipeline.persist_result_to_db"):
-                            result = run_event_discovery("Single")
+                with patch(
+                    "core.event_discovery.pipeline.expand_topic_alias_candidates",
+                    return_value=[TopicAlias("Single", "en")],
+                ):
+                    with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=sample_news):
+                        with patch(
+                            "core.event_discovery.pipeline.encode_titles",
+                            return_value=np.asarray([[1.0, 0.0]], dtype=np.float32),
+                        ):
+                            with patch("core.event_discovery.pipeline.persist_result_to_db"):
+                                result = run_event_discovery("Single")
 
         self.assertEqual(len(result.events), 1)
         self.assertEqual(result.events[0].cluster_size, 1)
@@ -243,6 +307,7 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
 
     def test_event_fields_are_complete(self) -> None:
         from core.event_discovery.pipeline import run_event_discovery
+        from core.event_discovery.topic_expansion import TopicAlias
 
         sample_news = [
             NewsItem(
@@ -269,13 +334,17 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
 
         with TemporaryDirectory() as tempdir:
             with patch("core.event_discovery.pipeline.OUTPUTS_DIR", Path(tempdir)):
-                with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=sample_news):
-                    with patch(
-                        "core.event_discovery.pipeline.encode_titles",
-                        return_value=np.asarray([[1.0, 0.0], [0.99, 0.05]], dtype=np.float32),
-                    ):
-                        with patch("core.event_discovery.pipeline.persist_result_to_db"):
-                            result = run_event_discovery("Topic")
+                with patch(
+                    "core.event_discovery.pipeline.expand_topic_alias_candidates",
+                    return_value=[TopicAlias("Topic", "en")],
+                ):
+                    with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=sample_news):
+                        with patch(
+                            "core.event_discovery.pipeline.encode_titles",
+                            return_value=np.asarray([[1.0, 0.0], [0.99, 0.05]], dtype=np.float32),
+                        ):
+                            with patch("core.event_discovery.pipeline.persist_result_to_db"):
+                                result = run_event_discovery("Topic")
 
         self.assertEqual(result.candidate_count, 2)
         self.assertEqual(result.filtered_count, 2)
@@ -303,6 +372,7 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
 
     def test_parser_is_noise_is_not_used_as_filter(self) -> None:
         from core.event_discovery.pipeline import run_event_discovery
+        from core.event_discovery.topic_expansion import TopicAlias
 
         sample_news = [
             NewsItem(
@@ -319,18 +389,22 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
 
         with TemporaryDirectory() as tempdir:
             with patch("core.event_discovery.pipeline.OUTPUTS_DIR", Path(tempdir)):
-                with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=sample_news):
-                    with patch(
-                        "core.event_discovery.pipeline.encode_titles",
-                        return_value=np.asarray([[1.0, 0.0]], dtype=np.float32),
-                    ):
-                        with patch("core.event_discovery.pipeline.persist_result_to_db"):
-                            result = run_event_discovery("Topic")
+                with patch(
+                    "core.event_discovery.pipeline.expand_topic_alias_candidates",
+                    return_value=[TopicAlias("Topic", "en")],
+                ):
+                    with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=sample_news):
+                        with patch(
+                            "core.event_discovery.pipeline.encode_titles",
+                            return_value=np.asarray([[1.0, 0.0]], dtype=np.float32),
+                        ):
+                            with patch("core.event_discovery.pipeline.persist_result_to_db"):
+                                result = run_event_discovery("Topic")
 
         self.assertEqual(result.filtered_count, 1)
         self.assertEqual(len(result.events), 1)
-        self.assertTrue(result.events[0].system_is_noise)
-        self.assertEqual(result.events[0].noise_reason, "singleton_component")
+        self.assertFalse(result.events[0].system_is_noise)
+        self.assertIsNone(result.events[0].noise_reason)
 
 
 if __name__ == "__main__":

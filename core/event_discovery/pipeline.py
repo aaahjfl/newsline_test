@@ -8,15 +8,17 @@ from pathlib import Path
 import re
 from typing import Any
 import unicodedata
+import warnings
 from uuid import uuid4
 
+from configs.pipeline_config import PIPELINE_CONFIG
 from configs.path_config import OUTPUTS_DIR
 from database.db_utils import get_db_connection
 
 from .clustering import cluster_embeddings
 from .encoder import encode_titles
 from .event_builder import build_event_nodes
-from .topic_expansion import expand_topic_aliases
+from .topic_expansion import TopicAlias, expand_topic_alias_candidates
 from core.schemas import EventDiscoveryResult, NewsItem
 
 EVENT_TABLE = "event_discovery_events"
@@ -104,6 +106,9 @@ def fetch_candidate_news(topic: str, limit: int | None = None, *, aliases: list[
         raise ValueError("topic must be a non-empty string.")
 
     topic_aliases = aliases or [topic.strip()]
+    topic_aliases = [alias for alias in topic_aliases if str(alias).strip()]
+    if not topic_aliases:
+        topic_aliases = [topic.strip()]
     like_clauses = " OR ".join(["title LIKE %s" for _ in topic_aliases])
 
     sql = """
@@ -170,6 +175,55 @@ def _filter_candidates(news_items: list[NewsItem], topic_aliases: list[str]) -> 
     ]
 
 
+def _dedupe_alias_texts(aliases: list[str]) -> list[str]:
+    unique: list[str] = []
+    seen: set[str] = set()
+    for alias in aliases:
+        normalized = _normalize_match_text(str(alias))
+        key = normalized.casefold()
+        if not normalized or key in seen:
+            continue
+        seen.add(key)
+        unique.append(normalized)
+    return unique
+
+
+def _serialize_topic_alias_details(alias_candidates: list[TopicAlias]) -> list[dict[str, Any]]:
+    details: list[dict[str, Any]] = []
+    for alias in alias_candidates:
+        payload: dict[str, Any] = {
+            "text": alias.text,
+            "lang": alias.lang,
+            "priority": alias.priority,
+        }
+        if alias.notes:
+            payload["notes"] = list(alias.notes)
+        details.append(payload)
+    return details
+
+
+def _fetch_candidates_with_alias_strategy(
+    topic: str,
+    limit: int | None,
+) -> tuple[list[str], list[dict[str, Any]], list[NewsItem], list[NewsItem]]:
+    alias_candidates = expand_topic_alias_candidates(topic)
+    used_aliases = _dedupe_alias_texts([alias.text for alias in alias_candidates] or [topic.strip()])
+    alias_details = _serialize_topic_alias_details(alias_candidates)
+    candidate_news = fetch_candidate_news(topic, limit=limit, aliases=used_aliases)
+    filtered_news = _filter_candidates(candidate_news, used_aliases)
+
+    warning_count = int(PIPELINE_CONFIG.get("event_discovery_candidate_warning_count", 8000))
+    if len(filtered_news) > warning_count:
+        warnings.warn(
+            f"Topic '{topic}' produced {len(filtered_news)} filtered candidates; "
+            "graph-link clustering builds an N x N similarity matrix.",
+            RuntimeWarning,
+            stacklevel=2,
+        )
+
+    return used_aliases, alias_details, candidate_news, filtered_news
+
+
 def _resolve_output_dir() -> Path:
     output_dir = OUTPUTS_DIR / "clustered"
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -194,6 +248,9 @@ def _export_outputs(result: EventDiscoveryResult) -> dict[str, str]:
             "topic": result.topic,
             "run_id": result.run_id,
             "topic_aliases": result.topic_aliases,
+            "topic_alias_details": result.topic_alias_details,
+            "candidate_count": result.candidate_count,
+            "filtered_count": result.filtered_count,
             "events": [event.to_dict() for event in result.events],
         },
     )
@@ -203,6 +260,9 @@ def _export_outputs(result: EventDiscoveryResult) -> dict[str, str]:
             "topic": result.topic,
             "run_id": result.run_id,
             "topic_aliases": result.topic_aliases,
+            "topic_alias_details": result.topic_alias_details,
+            "candidate_count": result.candidate_count,
+            "filtered_count": result.filtered_count,
             "assignments": result.assignments,
         },
     )
@@ -212,6 +272,9 @@ def _export_outputs(result: EventDiscoveryResult) -> dict[str, str]:
             "topic": result.topic,
             "run_id": result.run_id,
             "topic_aliases": result.topic_aliases,
+            "topic_alias_details": result.topic_alias_details,
+            "candidate_count": result.candidate_count,
+            "filtered_count": result.filtered_count,
             "graph_edges": result.graph_edges,
         },
     )
@@ -501,15 +564,14 @@ def run_event_discovery(topic: str, limit: int | None = None) -> EventDiscoveryR
     if not isinstance(topic, str):
         raise TypeError("run_event_discovery expects a topic string and reads candidates from MySQL.")
 
-    topic_aliases = expand_topic_aliases(topic)
-    candidate_news = fetch_candidate_news(topic, limit=limit, aliases=topic_aliases)
-    filtered_news = _filter_candidates(candidate_news, topic_aliases)
+    topic_aliases, topic_alias_details, candidate_news, filtered_news = _fetch_candidates_with_alias_strategy(topic, limit)
     run_id = _generate_run_id(topic)
 
     result = EventDiscoveryResult(
         topic=topic,
         run_id=run_id,
         topic_aliases=topic_aliases,
+        topic_alias_details=topic_alias_details,
         candidate_count=len(candidate_news),
         filtered_count=len(filtered_news),
     )

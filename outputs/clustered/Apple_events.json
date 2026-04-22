@@ -1,32 +1,149 @@
 {
   "topic": "Apple",
-  "run_id": "Apple_20260413_001053_eff7d96a",
+  "run_id": "Apple_20260421_103229_832fa474",
   "topic_aliases": [
     "Apple",
-    "果",
-    "애플은",
-    "Apple Apple"
+    "Apple Inc.",
+    "Apple Computer",
+    "苹果",
+    "苹果公司",
+    "苹果电脑"
+  ],
+  "topic_alias_details": [
+    {
+      "text": "Apple",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Inc.",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Computer",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "苹果",
+      "lang": "zh-cn",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity",
+        "very_short_alias"
+      ]
+    },
+    {
+      "text": "苹果公司",
+      "lang": "zh-cn",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "苹果电脑",
+      "lang": "zh-cn",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "Apple",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Inc.",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Computer",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple",
+      "lang": "ko",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Inc.",
+      "lang": "ko",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Computer",
+      "lang": "ko",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Inc.",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Computer",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Inc.",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Computer",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Inc.",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Computer",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple",
+      "lang": "sw",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Inc.",
+      "lang": "sw",
+      "priority": "strong"
+    },
+    {
+      "text": "Apple Computer",
+      "lang": "sw",
+      "priority": "strong"
+    }
   ],
   "events": [
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_001",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_ec8d9ff5"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "2024年我国4059家高校院所成果转化合同金额达2269 . 1亿元 - 新华网",
-      "representative_news_id": "gdelt_ec8d9ff5",
-      "event_time_start": "2024-01-01 00:00:00",
-      "event_time_end": "2024-12-31 00:00:00",
-      "event_time_anchor": "2024-12-31 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_002",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_001",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_01a2f648"
@@ -39,11 +156,11 @@
       "event_time_anchor": "2025-06-08 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_003",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_002",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_378d9600"
@@ -56,148 +173,11 @@
       "event_time_anchor": "2025-06-09 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_004",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_9275ceea"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "贵州省第十六次哲学社会科学优秀成果奖评奖申报通知 - 新华网",
-      "representative_news_id": "gdelt_9275ceea",
-      "event_time_start": "2025-06-09 00:00:00",
-      "event_time_end": "2025-06-09 00:00:00",
-      "event_time_anchor": "2025-06-09 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_005",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_89109791",
-        "gdelt_aa245c6b"
-      ],
-      "cluster_size": 2,
-      "canonical_title": "八种只在亚马逊能喝到的稀有果汁 - BBC News 中文",
-      "representative_news_id": "gdelt_aa245c6b",
-      "event_time_start": "2025-06-09 00:00:00",
-      "event_time_end": "2025-06-09 00:00:00",
-      "event_time_anchor": "2025-06-09 00:00:00",
-      "source_count": 1,
-      "confidence": 0.89,
       "system_is_noise": false,
       "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_006",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_f53c1cab"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "老挝首批输华芒果抵达昆明 _ 新华网",
-      "representative_news_id": "gdelt_f53c1cab",
-      "event_time_start": "2025-06-10 00:00:00",
-      "event_time_end": "2025-06-10 00:00:00",
-      "event_time_anchor": "2025-06-10 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_007",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_5182e93e"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "伊朗 ： 战争的环境后果未明 – DW – 2025年6月29日",
-      "representative_news_id": "gdelt_5182e93e",
-      "event_time_start": "2025-06-29 00:00:00",
-      "event_time_end": "2025-06-29 00:00:00",
-      "event_time_anchor": "2025-06-29 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_008",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_a8d9dcce"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "沈阳政务服务数字化改革成果全国推广 - 新华网辽宁频道",
-      "representative_news_id": "gdelt_a8d9dcce",
-      "event_time_start": "2025-07-02 00:00:00",
-      "event_time_end": "2025-07-02 00:00:00",
-      "event_time_anchor": "2025-07-02 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_009",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_986a91d1"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "2025贵州 · 镇宁黄果树半程马拉松鸣枪 - 新华网",
-      "representative_news_id": "gdelt_986a91d1",
-      "event_time_start": "2025-07-03 00:00:00",
-      "event_time_end": "2025-07-03 00:00:00",
-      "event_time_anchor": "2025-07-03 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_010",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_ee198a3d"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "景谷 ： 芒果产业兴 乡村焕新颜 _ 新华网",
-      "representative_news_id": "gdelt_ee198a3d",
-      "event_time_start": "2025-07-04 00:00:00",
-      "event_time_end": "2025-07-04 00:00:00",
-      "event_time_anchor": "2025-07-04 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_011",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_778a30eb"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "纪念苏东坡渡海928周年 澄迈县东坡行经古驿道考察成果发布 - 新华网",
-      "representative_news_id": "gdelt_778a30eb",
-      "event_time_start": "2025-07-06 00:00:00",
-      "event_time_end": "2025-07-06 00:00:00",
-      "event_time_anchor": "2025-07-06 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_012",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_003",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_0f6929fe"
@@ -210,115 +190,11 @@
       "event_time_anchor": "2025-07-07 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_013",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_b5d51873"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "辽宁省举办第二届博士后创新创业大赛暨成果展示交流系列活动 - 新华网辽宁频道",
-      "representative_news_id": "gdelt_b5d51873",
-      "event_time_start": "2025-07-22 00:00:00",
-      "event_time_end": "2025-07-22 00:00:00",
-      "event_time_anchor": "2025-07-22 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_014",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_7f4481ad"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "专家 ： 大罢免  首轮投票结果折射民进党政治操弄不得人心 - 新华网",
-      "representative_news_id": "gdelt_7f4481ad",
-      "event_time_start": "2025-07-28 00:00:00",
-      "event_time_end": "2025-07-28 00:00:00",
-      "event_time_anchor": "2025-07-28 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_015",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_8069501c"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "福州市科技成果转化促进会成立 - 新华网",
-      "representative_news_id": "gdelt_8069501c",
-      "event_time_start": "2025-07-28 00:00:00",
-      "event_time_end": "2025-07-28 00:00:00",
-      "event_time_anchor": "2025-07-28 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_016",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_21261c11",
-        "gdelt_506dd8ef",
-        "gdelt_59306185"
-      ],
-      "cluster_size": 3,
-      "canonical_title": "雄安古州城遗址考古成果展在京揭幕 - 新华网",
-      "representative_news_id": "gdelt_21261c11",
-      "event_time_start": "2025-07-29 00:00:00",
-      "event_time_end": "2025-07-29 00:00:00",
-      "event_time_anchor": "2025-07-29 00:00:00",
-      "source_count": 1,
-      "confidence": 0.9434,
       "system_is_noise": false,
       "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_017",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_6d77998f"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "人工智能场景化应用创新与产业落地论坛  在哈尔滨举行 多领域创新成果集中亮相 - 新华网",
-      "representative_news_id": "gdelt_6d77998f",
-      "event_time_start": "2025-08-05 00:00:00",
-      "event_time_end": "2025-08-05 00:00:00",
-      "event_time_anchor": "2025-08-05 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_018",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_a92f478a"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "新研究 ： 超加工食品可能阻碍减重效果 - 新华网",
-      "representative_news_id": "gdelt_a92f478a",
-      "event_time_start": "2025-08-05 00:00:00",
-      "event_time_end": "2025-08-05 00:00:00",
-      "event_time_anchor": "2025-08-05 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_019",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_004",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_a04b8066"
@@ -331,66 +207,11 @@
       "event_time_anchor": "2025-08-07 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_020",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_878d4084"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "国台办 ： 希望广大台胞同我们一道铭记抗战历史 ， 捍卫胜利成果 - 新华网",
-      "representative_news_id": "gdelt_878d4084",
-      "event_time_start": "2025-08-13 00:00:00",
-      "event_time_end": "2025-08-13 00:00:00",
-      "event_time_anchor": "2025-08-13 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_021",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_d4bb559f",
-        "gdelt_11d49b1c",
-        "gdelt_1dd5efd8",
-        "gdelt_9988b760",
-        "gdelt_f47915cb"
-      ],
-      "cluster_size": 5,
-      "canonical_title": "从山间野果到富民强县的金色产业 龙里山间浸润刺梨香 - 新华网",
-      "representative_news_id": "gdelt_9988b760",
-      "event_time_start": "2025-07-04 00:00:00",
-      "event_time_end": "2025-12-16 00:00:00",
-      "event_time_anchor": "2025-08-14 00:00:00",
-      "source_count": 1,
-      "confidence": 0.7424,
       "system_is_noise": false,
       "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_022",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_95ac307c"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "河南省  最美医务工作者  评选结果揭晓 - 新华网河南频道",
-      "representative_news_id": "gdelt_95ac307c",
-      "event_time_start": "2025-08-17 00:00:00",
-      "event_time_end": "2025-08-17 00:00:00",
-      "event_time_anchor": "2025-08-17 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_023",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_005",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_452c33c1"
@@ -403,11 +224,11 @@
       "event_time_anchor": "2025-08-19 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_024",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_006",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_b4f73e8f"
@@ -420,45 +241,11 @@
       "event_time_anchor": "2025-08-19 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_025",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_b8ccfd3c"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "殷勇 ： 用好赛事举办成果 更好推动机器人产业创新发展 - 新华网",
-      "representative_news_id": "gdelt_b8ccfd3c",
-      "event_time_start": "2025-08-19 00:00:00",
-      "event_time_end": "2025-08-19 00:00:00",
-      "event_time_anchor": "2025-08-19 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_026",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_6cf9f117"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "甘肃省一项成果填补国内空白 - 新华网",
-      "representative_news_id": "gdelt_6cf9f117",
-      "event_time_start": "2025-08-24 00:00:00",
-      "event_time_end": "2025-08-24 00:00:00",
-      "event_time_anchor": "2025-08-24 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_027",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_007",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_00b3d875"
@@ -471,11 +258,11 @@
       "event_time_anchor": "2025-08-26 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_028",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_008",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_b03f4957",
@@ -491,80 +278,12 @@
       "event_time_end": "2025-10-12 00:00:00",
       "event_time_anchor": "2025-08-26 00:00:00",
       "source_count": 3,
-      "confidence": 0.7156,
+      "confidence": 0.7312,
       "system_is_noise": false,
       "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_029",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_c4fe1d37"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "复星医药成功发行首单民营药企科创债 创新转型成果获认可 - 新华网",
-      "representative_news_id": "gdelt_c4fe1d37",
-      "event_time_start": "2025-08-26 00:00:00",
-      "event_time_end": "2025-08-26 00:00:00",
-      "event_time_anchor": "2025-08-26 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_030",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_6aad8b5b"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "聚焦数据资产化和数字经济发展水平 ， 贵州省社会科学院发布两项研究成果 - 新华网",
-      "representative_news_id": "gdelt_6aad8b5b",
-      "event_time_start": "2025-09-02 00:00:00",
-      "event_time_end": "2025-09-02 00:00:00",
-      "event_time_anchor": "2025-09-02 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_031",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_6430f045"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "南非外长相信二十国集团领导人约堡峰会将取得重要成果 - 新华网",
-      "representative_news_id": "gdelt_6430f045",
-      "event_time_start": "2025-09-07 00:00:00",
-      "event_time_end": "2025-09-07 00:00:00",
-      "event_time_anchor": "2025-09-07 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_032",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_eb2b0a70"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "兰州市  无废城市  建设取得阶段性成果 - 新华网",
-      "representative_news_id": "gdelt_eb2b0a70",
-      "event_time_start": "2025-09-08 00:00:00",
-      "event_time_end": "2025-09-08 00:00:00",
-      "event_time_anchor": "2025-09-08 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_033",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_009",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_3873c872"
@@ -577,11 +296,11 @@
       "event_time_anchor": "2025-09-10 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_034",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_010",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_7537ad02"
@@ -594,183 +313,11 @@
       "event_time_anchor": "2025-09-10 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_035",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_e4405d9e"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "杭州发布新一轮全域陆生野生动物资源本底调查成果 - 新华网",
-      "representative_news_id": "gdelt_e4405d9e",
-      "event_time_start": "2025-09-16 00:00:00",
-      "event_time_end": "2025-09-16 00:00:00",
-      "event_time_anchor": "2025-09-16 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_036",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_01ab0f46"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "菌果药  三业并举 ， 河南西峡的绿色致富答卷 - 新华网河南频道",
-      "representative_news_id": "gdelt_01ab0f46",
-      "event_time_start": "2025-09-21 00:00:00",
-      "event_time_end": "2025-09-21 00:00:00",
-      "event_time_anchor": "2025-09-21 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_037",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_75ce1dfd"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "福建省3项  揭榜挂帅  成果寻转化伙伴 - 新华网",
-      "representative_news_id": "gdelt_75ce1dfd",
-      "event_time_start": "2025-09-25 00:00:00",
-      "event_time_end": "2025-09-25 00:00:00",
-      "event_time_anchor": "2025-09-25 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_038",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_2bd8eb83"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "三星堆多学科研究取得重要阶段性成果 - 新华网",
-      "representative_news_id": "gdelt_2bd8eb83",
-      "event_time_start": "2025-09-28 00:00:00",
-      "event_time_end": "2025-09-28 00:00:00",
-      "event_time_anchor": "2025-09-28 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_039",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_b8015f75"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "丽江市第二届文创大赛成果发布 赋能文旅产业发展 _ 新华网",
-      "representative_news_id": "gdelt_b8015f75",
-      "event_time_start": "2025-09-28 00:00:00",
-      "event_time_end": "2025-09-28 00:00:00",
-      "event_time_anchor": "2025-09-28 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_040",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_01bbaca4"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "福建深耕中非互联网合作 数字赋能经贸往来结硕果 - 新华网",
-      "representative_news_id": "gdelt_01bbaca4",
-      "event_time_start": "2025-09-30 00:00:00",
-      "event_time_end": "2025-09-30 00:00:00",
-      "event_time_anchor": "2025-09-30 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_041",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_53dfae25"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "南果梨之乡  的  温暖  驿站 - 新华网辽宁频道",
-      "representative_news_id": "gdelt_53dfae25",
-      "event_time_start": "2025-10-06 00:00:00",
-      "event_time_end": "2025-10-06 00:00:00",
-      "event_time_anchor": "2025-10-06 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_042",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_548a04c4"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "新研究发现可提高化疗效果的抗癌微生物 - 新华网",
-      "representative_news_id": "gdelt_548a04c4",
-      "event_time_start": "2025-10-12 00:00:00",
-      "event_time_end": "2025-10-12 00:00:00",
-      "event_time_anchor": "2025-10-12 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_043",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_22944ddc"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "牛羊菜果薯药粮种  写就甘肃  十四五  农业产业振兴答卷 - 新华网",
-      "representative_news_id": "gdelt_22944ddc",
-      "event_time_start": "2025-10-13 00:00:00",
-      "event_time_end": "2025-10-13 00:00:00",
-      "event_time_anchor": "2025-10-13 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_044",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_02b48256",
-        "gdelt_234c3524",
-        "gdelt_c024dc57"
-      ],
-      "cluster_size": 3,
-      "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
-      "representative_news_id": "gdelt_c024dc57",
-      "event_time_start": "2025-10-12 00:00:00",
-      "event_time_end": "2025-11-23 00:00:00",
-      "event_time_anchor": "2025-10-13 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6864,
       "system_is_noise": false,
       "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_045",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_011",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_0857ec17"
@@ -783,28 +330,11 @@
       "event_time_anchor": "2025-10-15 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_046",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_c38d1f47"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "江苏创新成果亮相中国国际大学生创新大赛总决赛现场 _ 新华网江苏频道",
-      "representative_news_id": "gdelt_c38d1f47",
-      "event_time_start": "2025-10-16 00:00:00",
-      "event_time_end": "2025-10-16 00:00:00",
-      "event_time_anchor": "2025-10-16 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_047",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_012",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_4e108ff2"
@@ -817,117 +347,32 @@
       "event_time_anchor": "2025-10-17 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_048",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_013",
       "topic": "Apple",
       "member_news_ids": [
-        "gdelt_f42af142"
+        "gdelt_02b48256",
+        "gdelt_234c3524",
+        "gdelt_f42af142",
+        "gdelt_dadc04e1",
+        "gdelt_c024dc57"
       ],
-      "cluster_size": 1,
-      "canonical_title": "2025中国苹果年会暨庆阳苹果营销大会举行 - 新华网",
-      "representative_news_id": "gdelt_f42af142",
+      "cluster_size": 5,
+      "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+      "representative_news_id": "gdelt_c024dc57",
       "event_time_start": "2025-01-01 00:00:00",
       "event_time_end": "2025-12-31 00:00:00",
       "event_time_anchor": "2025-10-19 00:00:00",
       "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_049",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_64690747",
-        "gdelt_a70fe03c",
-        "gdelt_74e903b0",
-        "gdelt_4599f258"
-      ],
-      "cluster_size": 4,
-      "canonical_title": "乌江公司举行  四力四推  党建工程创一流成果交流会 - 新华网",
-      "representative_news_id": "gdelt_4599f258",
-      "event_time_start": "2025-09-21 00:00:00",
-      "event_time_end": "2025-10-31 00:00:00",
-      "event_time_anchor": "2025-10-20 00:00:00",
-      "source_count": 1,
-      "confidence": 0.7151,
+      "confidence": 0.7243,
       "system_is_noise": false,
       "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_050",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_d6cb3113"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "果菌王  之后 ， 他们送菌上天  开盲盒 _ 新华网",
-      "representative_news_id": "gdelt_d6cb3113",
-      "event_time_start": "2025-10-20 00:00:00",
-      "event_time_end": "2025-10-20 00:00:00",
-      "event_time_anchor": "2025-10-20 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_051",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_5cf2e411"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "十四五  以来 云南特色农业强省建设成果丰硕 _ 新华网",
-      "representative_news_id": "gdelt_5cf2e411",
-      "event_time_start": "2025-10-21 00:00:00",
-      "event_time_end": "2025-10-21 00:00:00",
-      "event_time_anchor": "2025-10-21 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_052",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_05018c25"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "中企承建巴基斯坦巴拉果德水电站实现大坝截流 - 新华网",
-      "representative_news_id": "gdelt_05018c25",
-      "event_time_start": "2025-10-26 00:00:00",
-      "event_time_end": "2025-10-26 00:00:00",
-      "event_time_anchor": "2025-10-26 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_053",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_19d529cf",
-        "gdelt_a0d5618b"
-      ],
-      "cluster_size": 2,
-      "canonical_title": "通讯丨中赞农业标准化合作  硕果盈枝 - 新华网",
-      "representative_news_id": "gdelt_a0d5618b",
-      "event_time_start": "2025-07-07 00:00:00",
-      "event_time_end": "2025-10-29 00:00:00",
-      "event_time_anchor": "2025-10-29 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6655,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_054",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_014",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_89208461"
@@ -940,45 +385,11 @@
       "event_time_anchor": "2025-10-31 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_055",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_42cee32e"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "称中国承诺不犯台 特朗普 ： 习近平明白后果 – DW – 2025年11月3日",
-      "representative_news_id": "gdelt_42cee32e",
-      "event_time_start": "2025-11-03 00:00:00",
-      "event_time_end": "2025-11-03 00:00:00",
-      "event_time_anchor": "2025-11-03 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_056",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_dadc04e1"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "天水 ： 花牛苹果热销海内外市场 - 新华网",
-      "representative_news_id": "gdelt_dadc04e1",
-      "event_time_start": "2025-11-10 00:00:00",
-      "event_time_end": "2025-11-10 00:00:00",
-      "event_time_anchor": "2025-11-10 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_057",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_015",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_df373439"
@@ -991,147 +402,11 @@
       "event_time_anchor": "2025-11-13 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_058",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_2209f5ec"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "福田秀出科技硬实力 ， 六大创新成果集中亮相 - 新华网",
-      "representative_news_id": "gdelt_2209f5ec",
-      "event_time_start": "2025-11-16 00:00:00",
-      "event_time_end": "2025-11-16 00:00:00",
-      "event_time_anchor": "2025-11-16 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_059",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_884f9f58"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "中国科学院627项 最新科技成果河南  招亲 - 新华网河南频道",
-      "representative_news_id": "gdelt_884f9f58",
-      "event_time_start": "2025-11-16 00:00:00",
-      "event_time_end": "2025-11-16 00:00:00",
-      "event_time_anchor": "2025-11-16 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_060",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_ab81fa48"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "福州开展教育专家培养项目成果展示和教学研讨 - 新华网",
-      "representative_news_id": "gdelt_ab81fa48",
-      "event_time_start": "2025-11-23 00:00:00",
-      "event_time_end": "2025-11-23 00:00:00",
-      "event_time_anchor": "2025-11-23 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_061",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_b999eb86"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "云南防汛救灾 ： 果断转移避险 临灾不惧主动防御 _ 新华网",
-      "representative_news_id": "gdelt_b999eb86",
-      "event_time_start": "2025-11-24 00:00:00",
-      "event_time_end": "2025-11-24 00:00:00",
-      "event_time_anchor": "2025-11-24 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_062",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_c3234c21"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "浙江医疗产业新成果落地阿克苏 - 新华网",
-      "representative_news_id": "gdelt_c3234c21",
-      "event_time_start": "2025-11-25 00:00:00",
-      "event_time_end": "2025-11-25 00:00:00",
-      "event_time_anchor": "2025-11-25 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_063",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_b4e27ceb"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "北京多项考古研究成果发布 长城考古发掘取得重要收获 - 新华网",
-      "representative_news_id": "gdelt_b4e27ceb",
-      "event_time_start": "2025-12-02 00:00:00",
-      "event_time_end": "2025-12-02 00:00:00",
-      "event_time_anchor": "2025-12-02 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_064",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_bf869c7a"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "携手共建  蓝色粮仓  闽东北渔业协作结硕果 - 新华网",
-      "representative_news_id": "gdelt_bf869c7a",
-      "event_time_start": "2025-12-02 00:00:00",
-      "event_time_end": "2025-12-02 00:00:00",
-      "event_time_anchor": "2025-12-02 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_065",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_ccaca63d"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "闽水稻联合研究成果位列年度10项成果之首 - 新华网",
-      "representative_news_id": "gdelt_ccaca63d",
-      "event_time_start": "2025-12-02 00:00:00",
-      "event_time_end": "2025-12-02 00:00:00",
-      "event_time_anchor": "2025-12-02 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_066",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_016",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_053c4f00"
@@ -1144,28 +419,11 @@
       "event_time_anchor": "2025-12-05 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_067",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_5b4f3757"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "云南省农科院质标所创新成果通过专家鉴定 - 新华网",
-      "representative_news_id": "gdelt_5b4f3757",
-      "event_time_start": "2025-12-07 00:00:00",
-      "event_time_end": "2025-12-07 00:00:00",
-      "event_time_anchor": "2025-12-07 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_068",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_017",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_981cf720"
@@ -1178,130 +436,11 @@
       "event_time_anchor": "2025-12-07 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
+      "system_is_noise": false,
+      "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_069",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_c4cc98c7"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "第二届中国 （ 海南 ） 人才交流大会 ： 精准对接促转化 ， 百果行  为海口  聚势赋能 - 新华网",
-      "representative_news_id": "gdelt_c4cc98c7",
-      "event_time_start": "2025-12-08 00:00:00",
-      "event_time_end": "2025-12-08 00:00:00",
-      "event_time_anchor": "2025-12-08 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_070",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_c8ef1026"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "海南热带果汁畅销海外市场 - 新华网",
-      "representative_news_id": "gdelt_c8ef1026",
-      "event_time_start": "2025-12-14 00:00:00",
-      "event_time_end": "2025-12-14 00:00:00",
-      "event_time_anchor": "2025-12-14 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_071",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_f3d7cafa"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "三年行动上台阶 云南高等教育赋能区域发展成果丰硕 _ 新华网",
-      "representative_news_id": "gdelt_f3d7cafa",
-      "event_time_start": "2025-12-15 00:00:00",
-      "event_time_end": "2025-12-15 00:00:00",
-      "event_time_anchor": "2025-12-15 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_072",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_a61a0c85"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "百余艺术家在京呈现  国际新媒体艺术  最新成果 - 新华网",
-      "representative_news_id": "gdelt_a61a0c85",
-      "event_time_start": "2025-12-16 00:00:00",
-      "event_time_end": "2025-12-16 00:00:00",
-      "event_time_anchor": "2025-12-16 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_073",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_e5234ecd"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "浙江发布法治公安建设成果 - 新华网",
-      "representative_news_id": "gdelt_e5234ecd",
-      "event_time_start": "2025-12-16 00:00:00",
-      "event_time_end": "2025-12-16 00:00:00",
-      "event_time_anchor": "2025-12-16 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_074",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_7ab70672"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "浙江庆元 ： 一颗  金果果  甜了日子 、 富了乡村 - 新华网",
-      "representative_news_id": "gdelt_7ab70672",
-      "event_time_start": "2025-12-21 00:00:00",
-      "event_time_end": "2025-12-21 00:00:00",
-      "event_time_anchor": "2025-12-21 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_075",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_8adcf7c5"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "津甘协作结硕果 大棚蓝莓市场俏 - 新华网",
-      "representative_news_id": "gdelt_8adcf7c5",
-      "event_time_start": "2025-12-23 00:00:00",
-      "event_time_end": "2025-12-23 00:00:00",
-      "event_time_anchor": "2025-12-23 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_076",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_018",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_196abd56"
@@ -1314,272 +453,11 @@
       "event_time_anchor": "2025-12-28 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_077",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_280ed976",
-        "gdelt_1db0a606",
-        "gdelt_c18ba00d"
-      ],
-      "cluster_size": 3,
-      "canonical_title": "学分银行让学习成果存得住 - 新华网河南频道",
-      "representative_news_id": "gdelt_c18ba00d",
-      "event_time_start": "2025-12-01 00:00:00",
-      "event_time_end": "2026-01-01 00:00:00",
-      "event_time_anchor": "2025-12-30 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6881,
       "system_is_noise": false,
       "noise_reason": null
     },
     {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_078",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_c798117a"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "昆明目前有80多个品种的鲜果供市民选择  水果自由  成为日常 _ 新华网",
-      "representative_news_id": "gdelt_c798117a",
-      "event_time_start": "2025-12-30 00:00:00",
-      "event_time_end": "2025-12-30 00:00:00",
-      "event_time_anchor": "2025-12-30 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_079",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_7f79509b"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "贵阳花果园国际文化艺术交流中心12月31日正式对外开放 - 新华网",
-      "representative_news_id": "gdelt_7f79509b",
-      "event_time_start": "2025-12-31 00:00:00",
-      "event_time_end": "2025-12-31 00:00:00",
-      "event_time_anchor": "2025-12-31 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_080",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_4acc7be8"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "《 科学 》 杂志发表我国科研新成果 为精准医学提供新工具 - 新华网",
-      "representative_news_id": "gdelt_4acc7be8",
-      "event_time_start": "2026-01-02 00:00:00",
-      "event_time_end": "2026-01-02 00:00:00",
-      "event_time_anchor": "2026-01-02 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_081",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_023d0a0d"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "海南自由贸易港语言服务研究  成果发布 - 新华网",
-      "representative_news_id": "gdelt_023d0a0d",
-      "event_time_start": "2026-01-11 00:00:00",
-      "event_time_end": "2026-01-11 00:00:00",
-      "event_time_anchor": "2026-01-11 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_082",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_68cb89f4",
-        "gdelt_a10913ab",
-        "gdelt_3baaabf4"
-      ],
-      "cluster_size": 3,
-      "canonical_title": "甘肃省多部门联合发布便利化营商环境三年建设成果 - 新华网",
-      "representative_news_id": "gdelt_68cb89f4",
-      "event_time_start": "2025-12-28 00:00:00",
-      "event_time_end": "2026-01-26 00:00:00",
-      "event_time_anchor": "2026-01-11 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6617,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_083",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_99807276"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "承德深化  京津研发 、 承德转化  模式 以  三个一批  推进创新要素聚集科技成果转化 - 新华网河北频道 - 新华网",
-      "representative_news_id": "gdelt_99807276",
-      "event_time_start": "2026-01-12 00:00:00",
-      "event_time_end": "2026-01-12 00:00:00",
-      "event_time_anchor": "2026-01-12 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_084",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_0c4b11fb"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "我国科学家最新研究成果助力  糖肝共病  早筛早诊 _ 新华网江苏频道",
-      "representative_news_id": "gdelt_0c4b11fb",
-      "event_time_start": "2026-01-22 00:00:00",
-      "event_time_end": "2026-01-22 00:00:00",
-      "event_time_anchor": "2026-01-22 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_085",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_b0547b3b",
-        "gdelt_be6068de"
-      ],
-      "cluster_size": 2,
-      "canonical_title": "我曾像许多女性一样  掩盖更年期症状  但这样可能带来后果 - BBC News 中文",
-      "representative_news_id": "gdelt_b0547b3b",
-      "event_time_start": "2026-01-01 00:00:00",
-      "event_time_end": "2026-01-27 00:00:00",
-      "event_time_anchor": "2026-01-27 00:00:00",
-      "source_count": 1,
-      "confidence": 0.7086,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_086",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_06aa43d8"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "美国新的膳食金字塔肉类唱主角 专家警告后果",
-      "representative_news_id": "gdelt_06aa43d8",
-      "event_time_start": "2026-02-01 00:00:00",
-      "event_time_end": "2026-02-01 00:00:00",
-      "event_time_anchor": "2026-02-01 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_087",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_15562c3e"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "我国科学家开发的多模态大模型成果登上 《 自然 》- 新华网",
-      "representative_news_id": "gdelt_15562c3e",
-      "event_time_start": "2026-02-01 00:00:00",
-      "event_time_end": "2026-02-01 00:00:00",
-      "event_time_anchor": "2026-02-01 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_088",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_cb6a6f48"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "中国重慶で氷雪カーニバル 観光が 「 熱い効果 」 創出",
-      "representative_news_id": "gdelt_cb6a6f48",
-      "event_time_start": "2026-02-01 00:00:00",
-      "event_time_end": "2026-02-01 00:00:00",
-      "event_time_anchor": "2026-02-01 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_089",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_699f952b",
-        "gdelt_7a1f4d5c"
-      ],
-      "cluster_size": 2,
-      "canonical_title": "精品频出 惠民  走心  云南省文学艺术事业成果丰硕 _ 新华网",
-      "representative_news_id": "gdelt_7a1f4d5c",
-      "event_time_start": "2026-01-01 00:00:00",
-      "event_time_end": "2026-12-31 00:00:00",
-      "event_time_anchor": "2026-02-26 00:00:00",
-      "source_count": 1,
-      "confidence": 0.7328,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_090",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_704242dd"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "三亚亚沙会集体项目分组抽签结果揭晓 - 新华网",
-      "representative_news_id": "gdelt_704242dd",
-      "event_time_start": "2026-03-01 00:00:00",
-      "event_time_end": "2026-03-01 00:00:00",
-      "event_time_anchor": "2026-03-01 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_091",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_2870d1eb"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "多个联合国机构警告中东战火引发  黑雨  等后果",
-      "representative_news_id": "gdelt_2870d1eb",
-      "event_time_start": "2026-03-11 00:00:00",
-      "event_time_end": "2026-03-11 00:00:00",
-      "event_time_anchor": "2026-03-11 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_092",
+      "event_id": "Apple_20260421_103229_832fa474:Apple_event_019",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_89e5b6fd"
@@ -1592,60 +470,8 @@
       "event_time_anchor": "2026-03-23 00:00:00",
       "source_count": 1,
       "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_093",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_72a9809c"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "福建发布建设两岸融合发展示范区首批阶段性标志性成果 - 新华网",
-      "representative_news_id": "gdelt_72a9809c",
-      "event_time_start": "2026-03-27 00:00:00",
-      "event_time_end": "2026-03-27 00:00:00",
-      "event_time_anchor": "2026-03-27 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_094",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_a46d6b02",
-        "gdelt_71b0d721"
-      ],
-      "cluster_size": 2,
-      "canonical_title": "温州乐清巧搭校企科技成果供需桥 - 新华网",
-      "representative_news_id": "gdelt_a46d6b02",
-      "event_time_start": "2026-03-16 00:00:00",
-      "event_time_end": "2026-03-27 00:00:00",
-      "event_time_anchor": "2026-03-27 00:00:00",
-      "source_count": 1,
-      "confidence": 0.7462,
       "system_is_noise": false,
       "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260413_001053_eff7d96a:Apple_event_095",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_f0ae29c4"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "云南立法推动草果产业高质量发展 _ 新华网",
-      "representative_news_id": "gdelt_f0ae29c4",
-      "event_time_start": "2026-03-28 00:00:00",
-      "event_time_end": "2026-03-28 00:00:00",
-      "event_time_anchor": "2026-03-28 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": true,
-      "noise_reason": "singleton_component"
     }
   ]
 }

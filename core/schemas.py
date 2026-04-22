@@ -105,6 +105,7 @@ class EventDiscoveryResult:
     topic: str
     run_id: str
     topic_aliases: list[str] = field(default_factory=list)
+    topic_alias_details: list[dict[str, Any]] = field(default_factory=list)
     candidate_count: int = 0
     filtered_count: int = 0
     events: list[EventNode] = field(default_factory=list)
@@ -117,6 +118,7 @@ class EventDiscoveryResult:
             "topic": self.topic,
             "run_id": self.run_id,
             "topic_aliases": list(self.topic_aliases),
+            "topic_alias_details": list(self.topic_alias_details),
             "candidate_count": self.candidate_count,
             "filtered_count": self.filtered_count,
             "events": [event.to_dict() for event in self.events],

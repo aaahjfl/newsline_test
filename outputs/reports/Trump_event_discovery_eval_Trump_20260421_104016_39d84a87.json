@@ -1,0 +1,702 @@
+{
+  "topic": "Trump",
+  "run_id": "Trump_20260421_104016_39d84a87",
+  "topic_aliases": [
+    "Trump",
+    "Donald Trump",
+    "Donald J. Trump",
+    "特朗普",
+    "川普",
+    "唐纳德·特朗普",
+    "트럼프",
+    "도널드 트럼프",
+    "도널드 J. 트럼프",
+    "Трамп",
+    "Дональд Трамп",
+    "Дональд Дж. Трамп"
+  ],
+  "generated_at": "2026-04-21T10:58:12",
+  "event_count": 2276,
+  "assignment_count": 3223,
+  "singleton_count": 1805,
+  "singleton_ratio": 0.7931,
+  "non_noise_event_count": 2276,
+  "avg_confidence": 0.6723,
+  "avg_non_noise_confidence": 0.6723,
+  "cluster_size_distribution": {
+    "1": 1805,
+    "2": 285,
+    "3": 94,
+    "4": 39,
+    "5": 23,
+    "6": 9,
+    "7": 5,
+    "8": 2,
+    "9": 6,
+    "10": 2,
+    "11": 1,
+    "12": 1,
+    "15": 1,
+    "17": 1,
+    "22": 1,
+    "39": 1
+  },
+  "top_events": [
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_2096",
+      "cluster_size": 39,
+      "confidence": 0.7714,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "Iran war live : Trump says conflict will be over soon ; Gulf attacks continue | US - Israel war on Iran News",
+      "event_time_anchor": "2026-03-10 00:00:00",
+      "time_span_days": 58.0,
+      "member_titles": [
+        "Iran war live : Tehran vows to use powerful missiles , rejects Trump talks | US - Israel war on Iran News",
+        "Iran war live : Trump wants  unconditional surrender  as attacks continue | Israel - Iran conflict News",
+        "Iran war live : Tehran says Trump peace talk claims are  fake new | US - Israel war on Iran News",
+        "Iran war live : Trump says war going  well  as Gulf under wave of attacks | US - Israel war on Iran News",
+        "Iran war live : Trump says conflict will be over soon ; Gulf attacks continue | US - Israel war on Iran News",
+        "Iran war live : Araghchi says no talks with US as Trump vows to  hit harder  | US - Israel war on Iran News",
+        "Iran war live : Tehran says Trump peace talk claims are  fake new | US - Israel war on Iran News",
+        "Iran war live : Tehran vows to use powerful missiles , rejects Trump talks | US - Israel war on Iran News",
+        "Iran war live : Araghchi says no talks with US as Trump vows to  hit harder  | US - Israel war on Iran News",
+        "Iran war live : Trump vows  very hard  strikes ; Iran says will not surrender | Israel - Iran conflict News",
+        "Iran war live : Trump says conflict will be over soon ; Gulf attacks continue | US - Israel war on Iran News",
+        "Iran war live : Tehran says Trump peace talk claims are  fake new | US - Israel war on Iran News",
+        "Iran war live : Araghchi says no talks with US as Trump vows to  hit harder  | US - Israel war on Iran News",
+        "Iran war live : Trump again demands surrender ; Israel bombs oil depots | Israel - Iran conflict News",
+        "Iran war live : Tehran vows to use powerful missiles , rejects Trump talks | US - Israel war on Iran News",
+        "Iran war live : Trump says conflict will be over soon ; Gulf attacks continue | US - Israel war on Iran News",
+        "Iran war live : Tehran says Trump peace talk claims are  fake new | US - Israel war on Iran News",
+        "Iran live news : Trump says war to last 4 - 5 weeks ; Israel under fire | Israel - Iran conflict News",
+        "Iran war live : Araghchi says no talks with US as Trump vows to  hit harder  | US - Israel war on Iran News",
+        "Iran war live : Trump says war going  well  as Gulf under wave of attacks | US - Israel war on Iran News",
+        "Iran war live : Trump vows  very hard  strikes ; Iran says will not surrender | Israel - Iran conflict News",
+        "Iran war live : Trump says war going  well  as Gulf under wave of attacks | US - Israel war on Iran News",
+        "Iran war live : Trump vows  very hard  strikes ; Iran says will not surrender | Israel - Iran conflict News",
+        "Iran war live : Trump again demands surrender ; Israel bombs oil depots | Israel - Iran conflict News",
+        "Iran war live : Trump vows  very hard  strikes ; Iran says will not surrender | Israel - Iran conflict News",
+        "Iran war live : Trump says Iran being  demolished  as Gulf attacks continue | Israel - Iran conflict News",
+        "Iran war live : Iran denies talks happened after Trump claims | US - Israel war on Iran News",
+        "Iran war live : Trump says Iran being  demolished  as Gulf attacks continue | Israel - Iran conflict News",
+        "Iran war live : Trump says conflict will be over soon ; Gulf attacks continue | US - Israel war on Iran News",
+        "Iran war live : Tehran vows to use powerful missiles , rejects Trump talks | US - Israel war on Iran News",
+        "Iran war live : Trump says conflict will be over soon ; Gulf attacks continue | US - Israel war on Iran News",
+        "Iran war live : Tehran vows to use powerful missiles , rejects Trump talks | US - Israel war on Iran News",
+        "Iran war live : Trump wants  unconditional surrender  as attacks continue | Israel - Iran conflict News",
+        "Iran war live : Tehran says Trump peace talk claims are  fake new | US - Israel war on Iran News",
+        "Iran war live : Trump wants  unconditional surrender  as attacks continue | Israel - Iran conflict News",
+        "Iran war live : Trump wants  unconditional surrender  as attacks continue | Israel - Iran conflict News",
+        "Iran war live : Trump again demands surrender ; Israel bombs oil depots | Israel - Iran conflict News",
+        "Iran war live : Trump says war going  well  as Gulf under wave of attacks | US - Israel war on Iran News",
+        "Iran war live : Trump again demands surrender ; Israel bombs oil depots | Israel - Iran conflict News"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_643",
+      "cluster_size": 22,
+      "confidence": 0.7586,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "Трамп : Путіну не подобається Зеленський – DW – 25 . 08 . 2025",
+      "event_time_anchor": "2025-08-31 00:00:00",
+      "time_span_days": 179.0,
+      "member_titles": [
+        "FT : Трамп на зустрічі з Зеленським лаявся і просував тези РФ – DW – 19 . 10 . 2025",
+        "Трамп : Зеленський і Путін ненавидять один одного – DW – 15 . 09 . 2025",
+        "Трамп : Путіну не подобається Зеленський – DW – 25 . 08 . 2025",
+        "Зеленський : За тиждень будемо думати про зустріч з Трампом – DW – 16 . 12 . 2025",
+        "Трамп хоче провести саміт із Путіним і Зеленським 22 серпня – DW – 17 . 08 . 2025",
+        "СМИ ФРГ : Трамп явно встал на сторону Путина – DW – 03 . 07 . 2025",
+        "Зеленський поговорив з Трампом :  Дуже хороша розмова  – DW – 14 . 07 . 2025",
+        "Ольга Стефанішина : Є відчуття , що Трамп довіряє Зеленському – DW – 24 . 09 . 2025",
+        "Зустріч Трамп - Зеленський у Вашингтоні : очікування в Україні – DW – 18 . 08 . 2025",
+        "Зеленський сподівається невдовзі поговорити з Трампом – DW – 03 . 07 . 2025",
+        "Зеленський відповів Трампу і назвав умови для виборів – DW – 09 . 12 . 2025",
+        "Зеленський : Є сигнали , що команда Трампа чує Україну – DW – 23 . 11 . 2025",
+        "Встреча Трампа и Зеленского завершилась без видимого прорыва – DW – 29 . 12 . 2025",
+        "Зеленський про ультиматум Трампа РФ : Мир через силу можливий – DW – 28 . 07 . 2025",
+        "Зеленський нагадав про відведені Трампом  два тижні  для РФ – DW – 31 . 08 . 2025",
+        "Зеленський провів другу розмову з Трампом за два дні – DW – 12 . 10 . 2025",
+        "Рютте : Только Трамп сможет заставить Путина заключить мир – DW – 21 . 12 . 2025",
+        "Переговори з Трампом : хто полетить із Зеленським у Вашингтон – DW – 17 . 08 . 2025",
+        "Трамп про розмову з Путіним : Я не досяг жодного прогресу – DW – 04 . 07 . 2025",
+        "Рютте : Трамп - єдиний , хто зможе змусити Путіна до миру – DW – 21 . 12 . 2025",
+        "Встреча Трамп - Зеленский в Вашингтоне : ожидания в Украине – DW – 18 . 08 . 2025",
+        "Трамп о разговоре с Путиным : Прогресса нет – DW – 04 . 07 . 2025"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_128",
+      "cluster_size": 17,
+      "confidence": 0.8111,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News",
+      "event_time_anchor": "2025-07-03 00:00:00",
+      "time_span_days": 21.0,
+      "member_titles": [
+        "Donald Trump live : President budget bill to face tight vote in US House | Donald Trump News",
+        "Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News",
+        "Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News",
+        "Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News",
+        "Entenda megapacote fiscal de Trump aprovado pelo Congresso – DW – 03 / 07 / 2025",
+        "Donald Trump live :  One Big Beautiful Bill  faces tight vote in US House | Donald Trump News",
+        "Major win for Trump as Congress passes  big , beautiful bill",
+        "See How Trump Big Bill Could Affect Your Taxes , Health Care and Other Finances",
+        "How will Trump  Big Beautiful Bill  impact Americans ? – DW – 07 / 02 / 2025",
+        "Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News",
+        "US House approves Trump  Big , Beautiful  bill – DW – 07 / 03 / 2025",
+        "Donald Trump live :  One Big Beautiful Bill  faces tight vote in US House | Donald Trump News",
+        "Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News",
+        "Trump  One Big Beautiful Bill  passes the US House of Representatives | Donald Trump News",
+        "Donald Trump live :  One Big Beautiful Bill  faces tight vote in US House | Donald Trump News",
+        "La Chambre des représentants des Etats - Unis adopte la  grande et belle loi  budgétaire de Trump - Xinhua",
+        "Trump Big Bill Would Be More Regressive Than Any Major Law in Decades"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_736",
+      "cluster_size": 15,
+      "confidence": 0.7442,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "Trump arrives in Britain for second state visit",
+      "event_time_anchor": "2025-09-16 00:00:00",
+      "time_span_days": 66.0,
+      "member_titles": [
+        "Quiz on U . K . State Visit Etiquette as Trump Meets With Charles",
+        "President Trump is in united kingdom for historic second state visit",
+        "Britain to roll out red carpet , royal fanfare for Trump visit",
+        "Londres anuncia visita de Estado de Trump en Septiembre – DW – 14 / 07 / 2025",
+        "特朗普将再访英国 ： 该次有哪些看点 ？ - BBC News 中文",
+        "Why Trump united kingdom state visit is mired with potential pitfalls",
+        "President Donald Trump and Melania land in united kingdom for second state visit - follow live",
+        "Trump will be hosted by King at Windsor during second state visit",
+        "特朗普將再訪英國 ： 該次有哪些看點 ？ - BBC News 中文",
+        "Trump heads for historic second united kingdom state visit",
+        "Trump second state visit to the united kingdom will be met by royal pomp , protests | Donald Trump News",
+        "US President Donald Trump arrives in united kingdom for second state visit | Business and Economy News",
+        "Trump arrives in Britain for second state visit",
+        "Trump en route to united kingdom for second state visit – DW – 09 / 16 / 2025",
+        "Trump hails united kingdom special relationship as he revels in pomp of historic state visit"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_045",
+      "cluster_size": 12,
+      "confidence": 0.72,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "Map : See the Countries Under Trump New Travel Ban",
+      "event_time_anchor": "2025-06-07 00:00:00",
+      "time_span_days": 199.0,
+      "member_titles": [
+        "Trump firma proclamación prohibiendo viajar a EE . UU . desde 12 países",
+        "Map : See the Countries Under Trump New Travel Ban",
+        "Trump travel ban sparks World Cup questions and raises more soccer issues",
+        "Donald Trump travel ban undermines Gianni Infantino World Cup vision",
+        "Trump prohíbe entrada de palestinos y sirios a EE . UU . – DW – 16 / 12 / 2025",
+        "Trump imposes full travel bans on seven more countries , Palestinians",
+        "Qual o impacto das restries de viagens impostas por Trump ? – DW – 09 / 06 / 2025",
+        "Trump travel ban on 12 countries goes into effect on Jun 9",
+        "Donald Trump travel ban : Why ? And why now ? | Donald Trump News",
+        "Iran condemns  racist mentality  behind US travel ban | Donald Trump News",
+        "Trump vastly expands US travel bans to 39 countries – DW – 12 / 17 / 2025",
+        "Which countries are on Trump travel ban list , and who will be affected ? | Donald Trump News"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_1611",
+      "cluster_size": 11,
+      "confidence": 0.8712,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "Iran protests LIVE : Tehran says Trump encouraging political destabilisation | Protests News",
+      "event_time_anchor": "2026-01-14 00:00:00",
+      "time_span_days": 13.0,
+      "member_titles": [
+        "Iran protests LIVE : Tehran says Trump encouraging political destabilisation | Protests News",
+        "Iran protests live : Trump tells Iranians  keep protesting , help on the way  | Protests News",
+        "Iran protests live : Trump tells Iranians  keep protesting , help on the way  | Protests News",
+        "Trump urges Iranians to keep protesting , saying  help is on its way",
+        "Iran protests LIVE : Tehran says Trump encouraging political destabilisation | Protests News",
+        "Iran urges UN to respond to Trump  reckles threats over protests | Donald Trump News",
+        "Iran : Trump considers action and says Iran wants meeting after hundreds of protesters reported killed",
+        "Iran protests LIVE : Tehran says Trump encouraging political destabilisation | Protests News",
+        "Iran protests LIVE : Tehran says Trump encouraging political destabilisation | Protests News",
+        "Iran protests LIVE : Tehran says Trump encouraging political destabilisation | Protests News",
+        "US says  all options on the table  if Iran protest killings continue | Donald Trump News"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_1173",
+      "cluster_size": 10,
+      "confidence": 0.773,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+      "event_time_anchor": "2025-11-13 00:00:00",
+      "time_span_days": 83.0,
+      "member_titles": [
+        "Trump signs spending bill , ending US government shutdown – DW – 11 / 13 / 2025",
+        "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+        "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+        "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+        "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+        "Trump signs spending bill ending US government shutdown",
+        "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+        "Trump signs deal to end longest US government shutdown in history",
+        "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+        "US House passes spending bill to end longest govt shutdown in history | Donald Trump News"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_846",
+      "cluster_size": 10,
+      "confidence": 0.7625,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "LIVE : US government shutdown starts as Trump threatens mass layoffs",
+      "event_time_anchor": "2025-10-01 00:00:00",
+      "time_span_days": 36.0,
+      "member_titles": [
+        "US government lurches toward shutdown , Trump threatens fresh cuts",
+        "LIVE : US government shutdown starts as Trump threatens mass layoffs",
+        "LIVE : US government shutdown starts as Trump threatens mass layoffs",
+        "LIVE : US government shutdown starts as Trump threatens mass layoffs",
+        "Trump piles pain on Democrats over US government shutdown",
+        "LIVE : US government shutdown starts as Trump threatens mass layoffs",
+        "Trump announces layoffs amid government shutdown , despite legal questions",
+        "Trump blasts Democrats as government shutdown becomes longest ever",
+        "Will they change course ?: US Senate in deadlock over government shutdown | Donald Trump News",
+        "LIVE : US government shutdown starts as Trump threatens mass layoffs"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_1543",
+      "cluster_size": 9,
+      "confidence": 1.0,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "LIVE : US to dictate decisions to Venezuela , control oil sales  indefinitely | Donald Trump News",
+      "event_time_anchor": "2026-01-08 00:00:00",
+      "time_span_days": 0.0,
+      "member_titles": [
+        "LIVE : US to dictate decisions to Venezuela , control oil sales  indefinitely | Donald Trump News",
+        "LIVE : US to dictate decisions to Venezuela , control oil sales  indefinitely | Donald Trump News",
+        "LIVE : US to dictate decisions to Venezuela , control oil sales  indefinitely | Donald Trump News",
+        "LIVE : US to dictate decisions to Venezuela , control oil sales  indefinitely | Donald Trump News",
+        "LIVE : US to dictate decisions to Venezuela , control oil sales  indefinitely | Donald Trump News",
+        "LIVE : US to dictate decisions to Venezuela , control oil sales  indefinitely | Donald Trump News",
+        "LIVE : US to dictate decisions to Venezuela , control oil sales  indefinitely | Donald Trump News",
+        "LIVE : US to dictate decisions to Venezuela , control oil sales  indefinitely | Donald Trump News",
+        "LIVE : US to dictate decisions to Venezuela , control oil sales  indefinitely | Donald Trump News"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_2141",
+      "cluster_size": 9,
+      "confidence": 0.9848,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "canonical_title": "Iran war live : Trump scolds allies for not joining Strait of Hormuz mission | US - Israel war on Iran News",
+      "event_time_anchor": "2026-03-17 00:00:00",
+      "time_span_days": 0.0,
+      "member_titles": [
+        "Iran war live : Trump scolds allies for not joining Strait of Hormuz mission | US - Israel war on Iran News",
+        "Iran war live : Trump chastises nations for lack of  enthusiasm  over Hormuz | US - Israel war on Iran News",
+        "Iran war live : Trump scolds allies for not joining Strait of Hormuz mission | US - Israel war on Iran News",
+        "Iran war live : Trump chastises nations for lack of  enthusiasm  over Hormuz | US - Israel war on Iran News",
+        "Iran war live : Trump chastises nations for lack of  enthusiasm  over Hormuz | US - Israel war on Iran News",
+        "Iran war live : Trump scolds allies for not joining Strait of Hormuz mission | US - Israel war on Iran News",
+        "Iran war live : Trump scolds allies for not joining Strait of Hormuz mission | US - Israel war on Iran News",
+        "Iran war live : Trump scolds allies for not joining Strait of Hormuz mission | US - Israel war on Iran News",
+        "Iran war live : Trump chastises nations for lack of  enthusiasm  over Hormuz | US - Israel war on Iran News"
+      ]
+    }
+  ],
+  "topic_alias_details": [
+    {
+      "text": "Trump",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "Donald Trump",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "Donald J. Trump",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "特朗普",
+      "lang": "zh-cn",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "川普",
+      "lang": "zh-cn",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity",
+        "very_short_alias"
+      ]
+    },
+    {
+      "text": "唐纳德·特朗普",
+      "lang": "zh-cn",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "Trump",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "Donald Trump",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "Donald J. Trump",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "트럼프",
+      "lang": "ko",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "도널드 트럼프",
+      "lang": "ko",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "도널드 J. 트럼프",
+      "lang": "ko",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "Trump",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Donald Trump",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Donald J. Trump",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Трамп",
+      "lang": "ru",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "Дональд Трамп",
+      "lang": "ru",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "Дональд Дж. Трамп",
+      "lang": "ru",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "Трамп",
+      "lang": "uk",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "Дональд Трамп",
+      "lang": "uk",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "Дональд Дж. Трамп",
+      "lang": "uk",
+      "priority": "strong",
+      "notes": [
+        "possible_translated_named_entity"
+      ]
+    },
+    {
+      "text": "Trump",
+      "lang": "sw",
+      "priority": "strong"
+    },
+    {
+      "text": "Donald Trump",
+      "lang": "sw",
+      "priority": "strong"
+    },
+    {
+      "text": "Donald J. Trump",
+      "lang": "sw",
+      "priority": "strong"
+    }
+  ],
+  "topic_alias_count": 12,
+  "topic_alias_detail_count": 24,
+  "candidate_count": null,
+  "filtered_count": null,
+  "graph_summary": {
+    "edge_count": 1747,
+    "edge_reasons": {
+      "semantic_and_time": 1602,
+      "semantic_override": 145
+    },
+    "min_similarity": 0.811289,
+    "median_similarity": 0.946402,
+    "max_similarity": 1.0
+  },
+  "diagnostic_thresholds": {
+    "large_cluster_min": 10,
+    "long_span_days": 45.0
+  },
+  "diagnostic_event_count": 155,
+  "diagnostic_events": [
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_2096",
+      "cluster_size": 39,
+      "confidence": 0.7714,
+      "diagnostic_reasons": [
+        "large_cluster",
+        "long_time_span",
+        "rolling_or_live_title",
+        "large_cluster_low_confidence"
+      ],
+      "time_span_days": 58.0,
+      "canonical_title": "Iran war live : Trump says conflict will be over soon ; Gulf attacks continue | US - Israel war on Iran News",
+      "event_time_start": "2026-01-27 00:00:00",
+      "event_time_end": "2026-03-26 00:00:00",
+      "sample_member_titles": [
+        "Iran war live : Tehran vows to use powerful missiles , rejects Trump talks | US - Israel war on Iran News",
+        "Iran war live : Trump wants  unconditional surrender  as attacks continue | Israel - Iran conflict News",
+        "Iran war live : Tehran says Trump peace talk claims are  fake new | US - Israel war on Iran News",
+        "Iran war live : Trump says war going  well  as Gulf under wave of attacks | US - Israel war on Iran News",
+        "Iran war live : Trump says conflict will be over soon ; Gulf attacks continue | US - Israel war on Iran News"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_1173",
+      "cluster_size": 10,
+      "confidence": 0.773,
+      "diagnostic_reasons": [
+        "large_cluster",
+        "long_time_span",
+        "rolling_or_live_title",
+        "large_cluster_low_confidence"
+      ],
+      "time_span_days": 83.0,
+      "canonical_title": "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+      "event_time_start": "2025-11-13 00:00:00",
+      "event_time_end": "2026-02-04 00:00:00",
+      "sample_member_titles": [
+        "Trump signs spending bill , ending US government shutdown – DW – 11 / 13 / 2025",
+        "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+        "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+        "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News",
+        "LIVE : Trump signs bill to end longest US government shutdown | Donald Trump News"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_643",
+      "cluster_size": 22,
+      "confidence": 0.7586,
+      "diagnostic_reasons": [
+        "large_cluster",
+        "long_time_span",
+        "large_cluster_low_confidence"
+      ],
+      "time_span_days": 179.0,
+      "canonical_title": "Трамп : Путіну не подобається Зеленський – DW – 25 . 08 . 2025",
+      "event_time_start": "2025-07-03 00:00:00",
+      "event_time_end": "2025-12-29 00:00:00",
+      "sample_member_titles": [
+        "FT : Трамп на зустрічі з Зеленським лаявся і просував тези РФ – DW – 19 . 10 . 2025",
+        "Трамп : Зеленський і Путін ненавидять один одного – DW – 15 . 09 . 2025",
+        "Трамп : Путіну не подобається Зеленський – DW – 25 . 08 . 2025",
+        "Зеленський : За тиждень будемо думати про зустріч з Трампом – DW – 16 . 12 . 2025",
+        "Трамп хоче провести саміт із Путіним і Зеленським 22 серпня – DW – 17 . 08 . 2025"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_736",
+      "cluster_size": 15,
+      "confidence": 0.7442,
+      "diagnostic_reasons": [
+        "large_cluster",
+        "long_time_span",
+        "large_cluster_low_confidence"
+      ],
+      "time_span_days": 66.0,
+      "canonical_title": "Trump arrives in Britain for second state visit",
+      "event_time_start": "2025-07-14 00:00:00",
+      "event_time_end": "2025-09-18 00:00:00",
+      "sample_member_titles": [
+        "Quiz on U . K . State Visit Etiquette as Trump Meets With Charles",
+        "President Trump is in united kingdom for historic second state visit",
+        "Britain to roll out red carpet , royal fanfare for Trump visit",
+        "Londres anuncia visita de Estado de Trump en Septiembre – DW – 14 / 07 / 2025",
+        "特朗普将再访英国 ： 该次有哪些看点 ？ - BBC News 中文"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_045",
+      "cluster_size": 12,
+      "confidence": 0.72,
+      "diagnostic_reasons": [
+        "large_cluster",
+        "long_time_span",
+        "large_cluster_low_confidence"
+      ],
+      "time_span_days": 199.0,
+      "canonical_title": "Map : See the Countries Under Trump New Travel Ban",
+      "event_time_start": "2025-06-01 00:00:00",
+      "event_time_end": "2025-12-17 00:00:00",
+      "sample_member_titles": [
+        "Trump firma proclamación prohibiendo viajar a EE . UU . desde 12 países",
+        "Map : See the Countries Under Trump New Travel Ban",
+        "Trump travel ban sparks World Cup questions and raises more soccer issues",
+        "Donald Trump travel ban undermines Gianni Infantino World Cup vision",
+        "Trump prohíbe entrada de palestinos y sirios a EE . UU . – DW – 16 / 12 / 2025"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_846",
+      "cluster_size": 10,
+      "confidence": 0.7625,
+      "diagnostic_reasons": [
+        "large_cluster",
+        "rolling_or_live_title",
+        "large_cluster_low_confidence"
+      ],
+      "time_span_days": 36.0,
+      "canonical_title": "LIVE : US government shutdown starts as Trump threatens mass layoffs",
+      "event_time_start": "2025-10-01 00:00:00",
+      "event_time_end": "2025-11-06 00:00:00",
+      "sample_member_titles": [
+        "US government lurches toward shutdown , Trump threatens fresh cuts",
+        "LIVE : US government shutdown starts as Trump threatens mass layoffs",
+        "LIVE : US government shutdown starts as Trump threatens mass layoffs",
+        "LIVE : US government shutdown starts as Trump threatens mass layoffs",
+        "Trump piles pain on Democrats over US government shutdown"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_128",
+      "cluster_size": 17,
+      "confidence": 0.8111,
+      "diagnostic_reasons": [
+        "large_cluster",
+        "rolling_or_live_title"
+      ],
+      "time_span_days": 21.0,
+      "canonical_title": "Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News",
+      "event_time_start": "2025-06-13 00:00:00",
+      "event_time_end": "2025-07-04 00:00:00",
+      "sample_member_titles": [
+        "Donald Trump live : President budget bill to face tight vote in US House | Donald Trump News",
+        "Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News",
+        "Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News",
+        "Donald Trump live :  One Big Beautiful Bill  to face tight vote in US House | Donald Trump News",
+        "Entenda megapacote fiscal de Trump aprovado pelo Congresso – DW – 03 / 07 / 2025"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_1611",
+      "cluster_size": 11,
+      "confidence": 0.8712,
+      "diagnostic_reasons": [
+        "large_cluster",
+        "rolling_or_live_title"
+      ],
+      "time_span_days": 13.0,
+      "canonical_title": "Iran protests LIVE : Tehran says Trump encouraging political destabilisation | Protests News",
+      "event_time_start": "2026-01-03 00:00:00",
+      "event_time_end": "2026-01-16 00:00:00",
+      "sample_member_titles": [
+        "Iran protests LIVE : Tehran says Trump encouraging political destabilisation | Protests News",
+        "Iran protests live : Trump tells Iranians  keep protesting , help on the way  | Protests News",
+        "Iran protests live : Trump tells Iranians  keep protesting , help on the way  | Protests News",
+        "Trump urges Iranians to keep protesting , saying  help is on its way",
+        "Iran protests LIVE : Tehran says Trump encouraging political destabilisation | Protests News"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_559",
+      "cluster_size": 3,
+      "confidence": 0.7152,
+      "diagnostic_reasons": [
+        "long_time_span",
+        "rolling_or_live_title"
+      ],
+      "time_span_days": 68.0,
+      "canonical_title": "Ukraine updates : Trump floats meeting with Putin , Zelenskyy – DW – 08 / 13 / 2025",
+      "event_time_start": "2025-08-13 00:00:00",
+      "event_time_end": "2025-10-20 00:00:00",
+      "sample_member_titles": [
+        "Ukraine : Zelenskyy will meet Putin , Trump if invited – DW – 10 / 20 / 2025",
+        "Ukraine updates : Trump floats meeting with Putin , Zelenskyy – DW – 08 / 13 / 2025",
+        "Ukraine : Trump calls Putin to arrange talks with Zelenskyy – DW – 08 / 19 / 2025"
+      ]
+    },
+    {
+      "event_id": "Trump_20260421_104016_39d84a87:Trump_event_776",
+      "cluster_size": 1,
+      "confidence": 0.6317,
+      "diagnostic_reasons": [
+        "long_time_span",
+        "rolling_or_live_title"
+      ],
+      "time_span_days": 364.0,
+      "canonical_title": "UN General Assembly 2025 live : Trump , Erdogan , Qatari emir to give address | Israel - Palestine conflict News",
+      "event_time_start": "2025-01-01 00:00:00",
+      "event_time_end": "2025-12-31 00:00:00",
+      "sample_member_titles": [
+        "UN General Assembly 2025 live : Trump , Erdogan , Qatari emir to give address | Israel - Palestine conflict News"
+      ]
+    }
+  ]
+}

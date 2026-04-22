@@ -92,8 +92,6 @@ def _confidence_score(cluster: EventCluster) -> float:
 
 def _noise_hint(cluster: EventCluster, confidence: float) -> tuple[bool, str | None]:
     """Return a conservative SBERT-side noise hint for downstream LLM validation."""
-    if cluster.cluster_size == 1:
-        return True, "singleton_component"
     if confidence < 0.55:
         return True, "low_cluster_confidence"
     return False, None

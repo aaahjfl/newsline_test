@@ -1,0 +1,9 @@
+{
+  "built_at": "2026-04-20 00:20:13",
+  "model": "Qwen/Qwen3-Embedding-4B",
+  "prompt": "请为跨语言新闻主题检索生成语义向量。向量应能召回不同语言中与同一主题相关的新闻标题，包括同一实体、机构、人物、地点、组织或事件主题的不同表达。",
+  "count": 49130,
+  "dimension": 2560,
+  "limit": null,
+  "index_path": "/Users/hjfl/newsline/outputs/embeddings/title_embedding_index.npz"
+}
