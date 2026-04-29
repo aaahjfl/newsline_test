@@ -1,4 +1,8 @@
-"""Streamlit entry placeholder for the formal project frontend."""
+"""Legacy Streamlit entry for the formal project frontend.
+
+The production display layer now lives in `services.timeline_api` and serves
+`frontend/static` through FastAPI.
+"""
 
 try:
     import streamlit as st
@@ -9,8 +13,8 @@ except ImportError:  # pragma: no cover - optional at import time.
 def build_app_description() -> str:
     """Return the current frontend status description."""
     return (
-        "Formal frontend skeleton is ready. "
-        "Connect data pipeline, event discovery, and timeline reasoning modules next."
+        "NewsLine web UI is implemented as a FastAPI-served static frontend. "
+        "Run: uvicorn services.timeline_api:app --reload"
     )
 
 
@@ -23,7 +27,7 @@ def main() -> None:
 
     st.set_page_config(page_title="NewsLine", layout="wide")
     st.title("NewsLine")
-    st.caption("项目当前处于架构重构与基础骨架搭建阶段。")
+    st.caption("正式展示层已迁移到 FastAPI + 静态前端。")
     st.info(description)
 
 
