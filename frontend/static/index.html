@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NewsLine</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell" data-view="idle">
+      <section class="landing-view" aria-label="NewsLine topic input">
+        <div class="copy-panel">
+          <p class="eyebrow">NewsLine</p>
+          <h1><span>新闻事件</span><span>时间线重构系统</span></h1>
+          <p class="intro">
+            基于 SBERT 事件发现与轻量 LLM 决断，从多语种新闻中组织候选事件，
+            生成可追溯的结构化时间线。
+          </p>
+
+          <form class="topic-form" id="topicForm">
+            <label class="sr-only" for="topicInput">Topic</label>
+            <input
+              id="topicInput"
+              name="topic"
+              type="text"
+              autocomplete="off"
+              placeholder="输入 topic，例如 Apple / Trump"
+              required
+            />
+
+            <label class="sr-only" for="modeSelect">LLM 模式</label>
+            <select id="modeSelect" name="mode" aria-label="LLM 模式">
+              <option value="fast">fast</option>
+              <option value="standard">standard</option>
+              <option value="full">full</option>
+            </select>
+
+            <button id="submitButton" type="submit">生成时间线</button>
+          </form>
+
+          <div class="progress-panel" aria-live="polite">
+            <div class="progress-meta">
+              <span id="progressStage">准备生成</span>
+              <span id="progressPercent">0%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-time-grid">
+              <span>已用 <strong id="elapsedTime">0 秒</strong></span>
+              <span>预计总时间 <strong id="estimateTime">约 4 分钟</strong></span>
+              <span>预计剩余 <strong id="remainingTime">计算中</strong></span>
+            </div>
+            <p id="progressMessage" class="progress-message">等待后端任务启动。</p>
+            <div class="notice-panel" id="noticePanel" aria-live="polite">
+              <p class="notice-title" id="noticeTitle"></p>
+              <p class="notice-body" id="noticeBody"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="globe-panel" aria-hidden="true">
+          <canvas id="globeCanvas"></canvas>
+        </div>
+      </section>
+
+      <section class="timeline-view" aria-label="Timeline result">
+        <header class="timeline-header">
+          <div>
+            <p class="eyebrow">Timeline</p>
+            <h2 id="resultTitle">生成结果</h2>
+          </div>
+          <button class="ghost-button" id="backButton" type="button">返回</button>
+        </header>
+
+        <div class="timeline-stats" id="timelineStats"></div>
+
+        <div class="timeline-frame" id="timelineFrame">
+          <div class="edge-zone edge-zone-left" aria-hidden="true"></div>
+          <div class="edge-zone edge-zone-right" aria-hidden="true"></div>
+          <div class="timeline-scroller" id="timelineScroller">
+            <div class="timeline-rail" id="timelineRail"></div>
+          </div>
+        </div>
+
+        <div class="article-popover" id="articlePopover" role="dialog" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
