@@ -1,6 +1,6 @@
 {
   "topic": "Apple",
-  "run_id": "Apple_20260421_103229_832fa474",
+  "run_id": "Apple_20260504_000208_e22d9ca7",
   "topic_aliases": [
     "Apple",
     "Apple Inc.",
@@ -141,186 +141,128 @@
       "priority": "strong"
     }
   ],
+  "candidate_count": 23,
+  "filtered_count": 16,
   "graph_edges": [
     {
-      "left_index": 4,
-      "right_index": 8,
-      "left_news_id": "gdelt_b03f4957",
-      "right_news_id": "gdelt_64b42138",
-      "similarity": 0.923713,
-      "time_gap_days": 14.0,
-      "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_008",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_008"
-    },
-    {
-      "left_index": 4,
-      "right_index": 9,
-      "left_news_id": "gdelt_b03f4957",
-      "right_news_id": "gdelt_fc3d4392",
-      "similarity": 0.923702,
-      "time_gap_days": 14.0,
-      "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_008",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_008"
-    },
-    {
-      "left_index": 4,
-      "right_index": 10,
-      "left_news_id": "gdelt_b03f4957",
-      "right_news_id": "gdelt_a17bd04a",
-      "similarity": 0.811665,
-      "time_gap_days": 25.0,
-      "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_008",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_008"
-    },
-    {
-      "left_index": 8,
-      "right_index": 9,
-      "left_news_id": "gdelt_64b42138",
-      "right_news_id": "gdelt_fc3d4392",
-      "similarity": 0.975475,
-      "time_gap_days": 0.0,
-      "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_008",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_008"
-    },
-    {
-      "left_index": 8,
-      "right_index": 10,
-      "left_news_id": "gdelt_64b42138",
-      "right_news_id": "gdelt_a17bd04a",
-      "similarity": 0.842508,
-      "time_gap_days": 11.0,
-      "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_008",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_008"
-    },
-    {
-      "left_index": 9,
-      "right_index": 10,
-      "left_news_id": "gdelt_fc3d4392",
-      "right_news_id": "gdelt_a17bd04a",
-      "similarity": 0.826517,
-      "time_gap_days": 11.0,
-      "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_008",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_008"
-    },
-    {
-      "left_index": 10,
-      "right_index": 14,
+      "left_index": 0,
+      "right_index": 4,
       "left_news_id": "gdelt_a17bd04a",
       "right_news_id": "gdelt_a16e39b8",
       "similarity": 0.962216,
       "time_gap_days": 36.0,
       "edge_reason": "semantic_override",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_008",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_008"
+      "run_id": "Apple_20260504_000208_e22d9ca7",
+      "left_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_003",
+      "right_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_003"
     },
     {
-      "left_index": 13,
-      "right_index": 15,
+      "left_index": 3,
+      "right_index": 5,
       "left_news_id": "gdelt_02b48256",
       "right_news_id": "gdelt_234c3524",
       "similarity": 0.863108,
       "time_gap_days": 1.0,
       "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_013",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_013"
+      "run_id": "Apple_20260504_000208_e22d9ca7",
+      "left_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+      "right_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005"
     },
     {
-      "left_index": 13,
-      "right_index": 18,
+      "left_index": 3,
+      "right_index": 8,
       "left_news_id": "gdelt_02b48256",
       "right_news_id": "gdelt_f42af142",
       "similarity": 0.848611,
       "time_gap_days": 7.0,
       "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_013",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_013"
+      "run_id": "Apple_20260504_000208_e22d9ca7",
+      "left_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+      "right_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005"
     },
     {
-      "left_index": 13,
-      "right_index": 20,
+      "left_index": 3,
+      "right_index": 10,
       "left_news_id": "gdelt_02b48256",
       "right_news_id": "gdelt_dadc04e1",
       "similarity": 0.849824,
       "time_gap_days": 29.0,
       "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_013",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_013"
+      "run_id": "Apple_20260504_000208_e22d9ca7",
+      "left_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+      "right_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005"
     },
     {
-      "left_index": 13,
-      "right_index": 22,
+      "left_index": 3,
+      "right_index": 12,
       "left_news_id": "gdelt_02b48256",
       "right_news_id": "gdelt_c024dc57",
       "similarity": 0.961969,
       "time_gap_days": 42.0,
       "edge_reason": "semantic_override",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_013",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_013"
+      "run_id": "Apple_20260504_000208_e22d9ca7",
+      "left_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+      "right_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005"
     },
     {
-      "left_index": 15,
-      "right_index": 18,
+      "left_index": 5,
+      "right_index": 8,
       "left_news_id": "gdelt_234c3524",
       "right_news_id": "gdelt_f42af142",
       "similarity": 0.836447,
       "time_gap_days": 6.0,
       "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_013",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_013"
+      "run_id": "Apple_20260504_000208_e22d9ca7",
+      "left_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+      "right_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005"
     },
     {
-      "left_index": 15,
-      "right_index": 20,
+      "left_index": 5,
+      "right_index": 10,
       "left_news_id": "gdelt_234c3524",
       "right_news_id": "gdelt_dadc04e1",
       "similarity": 0.836034,
       "time_gap_days": 28.0,
       "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_013",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_013"
+      "run_id": "Apple_20260504_000208_e22d9ca7",
+      "left_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+      "right_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005"
     },
     {
-      "left_index": 18,
-      "right_index": 20,
+      "left_index": 8,
+      "right_index": 10,
       "left_news_id": "gdelt_f42af142",
       "right_news_id": "gdelt_dadc04e1",
       "similarity": 0.861929,
       "time_gap_days": 22.0,
       "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_013",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_013"
+      "run_id": "Apple_20260504_000208_e22d9ca7",
+      "left_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+      "right_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005"
     },
     {
-      "left_index": 20,
-      "right_index": 22,
+      "left_index": 10,
+      "right_index": 12,
       "left_news_id": "gdelt_dadc04e1",
       "right_news_id": "gdelt_c024dc57",
       "similarity": 0.855625,
       "time_gap_days": 13.0,
       "edge_reason": "semantic_and_time",
-      "run_id": "Apple_20260421_103229_832fa474",
-      "left_event_id": "Apple_20260421_103229_832fa474:Apple_event_013",
-      "right_event_id": "Apple_20260421_103229_832fa474:Apple_event_013"
+      "run_id": "Apple_20260504_000208_e22d9ca7",
+      "left_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+      "right_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005"
+    },
+    {
+      "left_index": 6,
+      "right_index": 7,
+      "left_news_id": "gdelt_0857ec17",
+      "right_news_id": "gdelt_4e108ff2",
+      "similarity": 0.816425,
+      "time_gap_days": 2.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "Apple_20260504_000208_e22d9ca7",
+      "left_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_004",
+      "right_event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_004"
     }
   ]
 }

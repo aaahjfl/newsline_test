@@ -1,6 +1,6 @@
 {
   "topic": "Apple",
-  "run_id": "Apple_20260421_103229_832fa474",
+  "run_id": "Apple_20260504_000208_e22d9ca7",
   "topic_aliases": [
     "Apple",
     "Apple Inc.",
@@ -141,149 +141,11 @@
       "priority": "strong"
     }
   ],
+  "candidate_count": 23,
+  "filtered_count": 16,
   "events": [
     {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_001",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_01a2f648"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "Chappell Roan Apple dance , and other Primavera moments",
-      "representative_news_id": "gdelt_01a2f648",
-      "event_time_start": "2025-06-08 00:00:00",
-      "event_time_end": "2025-06-08 00:00:00",
-      "event_time_anchor": "2025-06-08 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_002",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_378d9600"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
-      "representative_news_id": "gdelt_378d9600",
-      "event_time_start": "2025-06-09 00:00:00",
-      "event_time_end": "2025-06-09 00:00:00",
-      "event_time_anchor": "2025-06-09 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_003",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_0f6929fe"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "Apple hits back against  unprecedented  €500m EU fine",
-      "representative_news_id": "gdelt_0f6929fe",
-      "event_time_start": "2025-07-07 00:00:00",
-      "event_time_end": "2025-07-07 00:00:00",
-      "event_time_anchor": "2025-07-07 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_004",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_a04b8066"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "Trump announces US$100 billion new investment pledge from Apple",
-      "representative_news_id": "gdelt_a04b8066",
-      "event_time_start": "2025-08-07 00:00:00",
-      "event_time_end": "2025-08-07 00:00:00",
-      "event_time_anchor": "2025-08-07 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_005",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_452c33c1"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "UK agrees to drop mandate for Apple  back door , US spy chief says | Technology News",
-      "representative_news_id": "gdelt_452c33c1",
-      "event_time_start": "2025-08-19 00:00:00",
-      "event_time_end": "2025-08-19 00:00:00",
-      "event_time_anchor": "2025-08-19 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_006",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_b4f73e8f"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "US says united kingdom has withdrawn demand for Apple user encrypted data",
-      "representative_news_id": "gdelt_b4f73e8f",
-      "event_time_start": "2025-08-19 00:00:00",
-      "event_time_end": "2025-08-19 00:00:00",
-      "event_time_anchor": "2025-08-19 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_007",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_00b3d875"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "Mahkeme Apple  ın  çevreci saat  reklamlarını durdurdu – DW – 26 . 08 . 2025",
-      "representative_news_id": "gdelt_00b3d875",
-      "event_time_start": "2025-08-26 00:00:00",
-      "event_time_end": "2025-08-26 00:00:00",
-      "event_time_anchor": "2025-08-26 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_008",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_b03f4957",
-        "gdelt_64b42138",
-        "gdelt_fc3d4392",
-        "gdelt_a17bd04a",
-        "gdelt_a16e39b8"
-      ],
-      "cluster_size": 5,
-      "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
-      "representative_news_id": "gdelt_64b42138",
-      "event_time_start": "2025-08-12 00:00:00",
-      "event_time_end": "2025-10-12 00:00:00",
-      "event_time_anchor": "2025-08-26 00:00:00",
-      "source_count": 3,
-      "confidence": 0.7312,
-      "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_009",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_001",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_3873c872"
@@ -295,12 +157,26 @@
       "event_time_end": "2025-09-10 00:00:00",
       "event_time_anchor": "2025-09-10 00:00:00",
       "source_count": 1,
-      "confidence": 0.6317,
+      "confidence": 0.563,
       "system_is_noise": false,
-      "noise_reason": null
+      "noise_reason": null,
+      "risk_flags": [
+        "rolling_coverage"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
     },
     {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_010",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_002",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_7537ad02"
@@ -312,46 +188,86 @@
       "event_time_end": "2025-09-10 00:00:00",
       "event_time_anchor": "2025-09-10 00:00:00",
       "source_count": 1,
-      "confidence": 0.6317,
+      "confidence": 0.643,
       "system_is_noise": false,
-      "noise_reason": null
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
     },
     {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_011",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_003",
       "topic": "Apple",
       "member_news_ids": [
-        "gdelt_0857ec17"
+        "gdelt_a17bd04a",
+        "gdelt_a16e39b8"
       ],
-      "cluster_size": 1,
-      "canonical_title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
-      "representative_news_id": "gdelt_0857ec17",
-      "event_time_start": "2025-10-15 00:00:00",
-      "event_time_end": "2025-10-15 00:00:00",
-      "event_time_anchor": "2025-10-15 00:00:00",
+      "cluster_size": 2,
+      "canonical_title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+      "representative_news_id": "gdelt_a16e39b8",
+      "event_time_start": "2025-09-06 00:00:00",
+      "event_time_end": "2025-10-12 00:00:00",
+      "event_time_anchor": "2025-10-12 00:00:00",
       "source_count": 1,
-      "confidence": 0.6317,
+      "confidence": 0.675,
       "system_is_noise": false,
-      "noise_reason": null
+      "noise_reason": null,
+      "risk_flags": [
+        "low_temporal_coherence"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.9622,
+        "temporal_coherence": 0.0,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 36.0,
+        "clustered_title_count": 2
+      }
     },
     {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_012",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_004",
       "topic": "Apple",
       "member_news_ids": [
+        "gdelt_0857ec17",
         "gdelt_4e108ff2"
       ],
-      "cluster_size": 1,
+      "cluster_size": 2,
       "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
       "representative_news_id": "gdelt_4e108ff2",
-      "event_time_start": "2025-10-17 00:00:00",
+      "event_time_start": "2025-10-15 00:00:00",
       "event_time_end": "2025-10-17 00:00:00",
       "event_time_anchor": "2025-10-17 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
+      "source_count": 2,
+      "confidence": 0.8427,
       "system_is_noise": false,
-      "noise_reason": null
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8164,
+        "temporal_coherence": 0.9333,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 2.0,
+        "clustered_title_count": 2
+      }
     },
     {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_013",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_02b48256",
@@ -367,12 +283,27 @@
       "event_time_end": "2025-12-31 00:00:00",
       "event_time_anchor": "2025-10-19 00:00:00",
       "source_count": 1,
-      "confidence": 0.7243,
+      "confidence": 0.558,
       "system_is_noise": false,
-      "noise_reason": null
+      "noise_reason": null,
+      "risk_flags": [
+        "long_time_span",
+        "low_temporal_coherence"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8623,
+        "temporal_coherence": 0.0,
+        "support_score": 1.0,
+        "graph_density": 0.8,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 5,
+        "article_count": 5,
+        "time_span_days": 364.0,
+        "clustered_title_count": 5
+      }
     },
     {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_014",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_006",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_89208461"
@@ -384,12 +315,26 @@
       "event_time_end": "2025-10-31 00:00:00",
       "event_time_anchor": "2025-10-31 00:00:00",
       "source_count": 1,
-      "confidence": 0.6317,
+      "confidence": 0.563,
       "system_is_noise": false,
-      "noise_reason": null
+      "noise_reason": null,
+      "risk_flags": [
+        "rolling_coverage"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
     },
     {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_015",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_007",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_df373439"
@@ -401,12 +346,24 @@
       "event_time_end": "2025-11-13 00:00:00",
       "event_time_anchor": "2025-11-13 00:00:00",
       "source_count": 1,
-      "confidence": 0.6317,
+      "confidence": 0.643,
       "system_is_noise": false,
-      "noise_reason": null
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
     },
     {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_016",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_008",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_053c4f00"
@@ -418,12 +375,24 @@
       "event_time_end": "2025-12-05 00:00:00",
       "event_time_anchor": "2025-12-05 00:00:00",
       "source_count": 1,
-      "confidence": 0.6317,
+      "confidence": 0.643,
       "system_is_noise": false,
-      "noise_reason": null
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
     },
     {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_017",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_009",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_981cf720"
@@ -435,12 +404,24 @@
       "event_time_end": "2025-12-07 00:00:00",
       "event_time_anchor": "2025-12-07 00:00:00",
       "source_count": 1,
-      "confidence": 0.6317,
+      "confidence": 0.643,
       "system_is_noise": false,
-      "noise_reason": null
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
     },
     {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_018",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_010",
       "topic": "Apple",
       "member_news_ids": [
         "gdelt_196abd56"
@@ -452,26 +433,21 @@
       "event_time_end": "2025-12-28 00:00:00",
       "event_time_anchor": "2025-12-28 00:00:00",
       "source_count": 1,
-      "confidence": 0.6317,
+      "confidence": 0.643,
       "system_is_noise": false,
-      "noise_reason": null
-    },
-    {
-      "event_id": "Apple_20260421_103229_832fa474:Apple_event_019",
-      "topic": "Apple",
-      "member_news_ids": [
-        "gdelt_89e5b6fd"
-      ],
-      "cluster_size": 1,
-      "canonical_title": "丽江宁蒗 ： 联农带农促增收 一颗苹果甜万家 _ 新华网",
-      "representative_news_id": "gdelt_89e5b6fd",
-      "event_time_start": "2026-03-23 00:00:00",
-      "event_time_end": "2026-03-23 00:00:00",
-      "event_time_anchor": "2026-03-23 00:00:00",
-      "source_count": 1,
-      "confidence": 0.6317,
-      "system_is_noise": false,
-      "noise_reason": null
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
     }
   ]
 }

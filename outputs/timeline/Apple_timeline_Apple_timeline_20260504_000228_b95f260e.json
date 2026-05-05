@@ -1,0 +1,1716 @@
+{
+  "topic": "Apple",
+  "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+  "reasoning_run_id": "Apple_timeline_20260504_000228_b95f260e",
+  "model_name": "qwen3.5:9b",
+  "mode": "fast",
+  "prompt_version": "timeline_reasoning_v7",
+  "generated_at": "2026-05-04 00:03:25",
+  "status": "completed",
+  "summary": {
+    "input_event_count": 10,
+    "review_event_count": 4,
+    "accepted_event_count": 9,
+    "rejected_event_count": 1
+  },
+  "timeline": [
+    {
+      "reasoning_run_id": "Apple_timeline_20260504_000228_b95f260e",
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_001",
+      "order_index": 1,
+      "canonical_title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+      "display_title": "Apple iPhone 17 Event",
+      "event_time_start": "2025-09-10 00:00:00",
+      "event_time_end": "2025-09-10 00:00:00",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "resolved_time_start": "2025-09-10 00:00:00",
+      "resolved_time_end": "2025-09-10 00:00:00",
+      "resolved_time_anchor": "2025-09-10 00:00:00",
+      "display_date": "2025-09-10",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_3873c872"
+      ],
+      "confidence": 0.563,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "decision_confidence": 0.563,
+      "time_confidence": 0.8,
+      "decision_reason": "Concrete product launch event involving Apple; title cleaned for neutrality.",
+      "risk_flags": [
+        "rolling_coverage",
+        "low_confidence",
+        "low_source_support",
+        "rolling_coverage_title",
+        "ambiguous_topic_low_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_3873c872",
+          "title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/wirecutter/money/apple-iphone-17-event-20250909/",
+          "event_time_anchor": "2025-09-10 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260504_000228_b95f260e",
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_002",
+      "order_index": 2,
+      "canonical_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+      "display_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+      "event_time_start": "2025-09-10 00:00:00",
+      "event_time_end": "2025-09-10 00:00:00",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "resolved_time_start": "2025-09-10 00:00:00",
+      "resolved_time_end": "2025-09-10 00:00:00",
+      "resolved_time_anchor": "2025-09-10 00:00:00",
+      "display_date": "2025-09-10",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_7537ad02"
+      ],
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "decision_confidence": 0.643,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "ambiguous_topic_low_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_7537ad02",
+          "title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-event-new-iphone-prices-trump-tariff-threat-5339971",
+          "event_time_anchor": "2025-09-10 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260504_000228_b95f260e",
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_003",
+      "order_index": 3,
+      "canonical_title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+      "display_title": "Apple sued over copyrighted books for AI training",
+      "event_time_start": "2025-09-06 00:00:00",
+      "event_time_end": "2025-10-12 00:00:00",
+      "event_time_anchor": "2025-10-12 00:00:00",
+      "resolved_time_start": "2025-09-06 00:00:00",
+      "resolved_time_end": "2025-10-12 00:00:00",
+      "resolved_time_anchor": "2025-10-12 00:00:00",
+      "display_date": "2025-10-12",
+      "cluster_size": 2,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_a17bd04a",
+        "gdelt_a16e39b8"
+      ],
+      "confidence": 0.675,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "decision_confidence": 0.675,
+      "time_confidence": 0.8,
+      "decision_reason": "Concrete legal event involving Apple; anchor date selected from canonical evidence.",
+      "risk_flags": [
+        "low_temporal_coherence",
+        "medium_confidence",
+        "low_source_support",
+        "semantic_override_edges",
+        "ambiguous_topic_low_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_a16e39b8",
+          "title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-sued-over-use-copyrighted-books-train-apple-intelligence-5395431",
+          "event_time_anchor": "2025-10-12 00:00:00",
+          "cluster_size": 2,
+          "canonical_title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_a17bd04a",
+          "title": "Apple sued by authors over use of books in AI training",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-sued-authors-over-use-books-in-ai-training-5335556",
+          "event_time_anchor": "2025-09-06 00:00:00",
+          "cluster_size": 2,
+          "canonical_title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260504_000228_b95f260e",
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_004",
+      "order_index": 4,
+      "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+      "display_title": "China urges  equal dialogue  with US as Apple Cook visits",
+      "event_time_start": "2025-10-15 00:00:00",
+      "event_time_end": "2025-10-17 00:00:00",
+      "event_time_anchor": "2025-10-17 00:00:00",
+      "resolved_time_start": "2025-10-15 00:00:00",
+      "resolved_time_end": "2025-10-17 00:00:00",
+      "resolved_time_anchor": "2025-10-17 00:00:00",
+      "display_date": "2025-10-17",
+      "cluster_size": 2,
+      "source_count": 2,
+      "member_news_ids": [
+        "gdelt_0857ec17",
+        "gdelt_4e108ff2"
+      ],
+      "confidence": 0.8427,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "decision_confidence": 0.8427,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "risk_flags": [],
+      "articles": [
+        {
+          "news_id": "gdelt_0857ec17",
+          "title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+          "source": "新华网",
+          "url": "http://french.xinhuanet.com/20251015/9acf06bc43d94c51bb65f5bfdc471d84/c.html",
+          "event_time_anchor": "2025-10-15 00:00:00",
+          "cluster_size": 2,
+          "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_4e108ff2",
+          "title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/east-asia/china-urges-us-equal-dialogue-trade-war-tariffs-apple-tim-cook-5407116",
+          "event_time_anchor": "2025-10-17 00:00:00",
+          "cluster_size": 2,
+          "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260504_000228_b95f260e",
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_006",
+      "order_index": 5,
+      "canonical_title": "Apple claims  tremendou global uptake of latest iPhones",
+      "display_title": "Apple claims global uptake of latest iPhones",
+      "event_time_start": "2025-10-31 00:00:00",
+      "event_time_end": "2025-10-31 00:00:00",
+      "event_time_anchor": "2025-10-31 00:00:00",
+      "resolved_time_start": "2025-10-31 00:00:00",
+      "resolved_time_end": "2025-10-31 00:00:00",
+      "resolved_time_anchor": "2025-10-31 00:00:00",
+      "display_date": "2025-10-31",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_89208461"
+      ],
+      "confidence": 0.563,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "decision_confidence": 0.563,
+      "time_confidence": 0.8,
+      "decision_reason": "Concrete business claim event involving Apple; title corrected for grammar and neutrality.",
+      "risk_flags": [
+        "rolling_coverage",
+        "low_confidence",
+        "low_source_support",
+        "rolling_coverage_title",
+        "ambiguous_topic_low_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_89208461",
+          "title": "Apple claims  tremendou global uptake of latest iPhones",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cz6n98exv9zo",
+          "event_time_anchor": "2025-10-31 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple claims  tremendou global uptake of latest iPhones",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260504_000228_b95f260e",
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_007",
+      "order_index": 6,
+      "canonical_title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+      "display_title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+      "event_time_start": "2025-11-13 00:00:00",
+      "event_time_end": "2025-11-13 00:00:00",
+      "event_time_anchor": "2025-11-13 00:00:00",
+      "resolved_time_start": "2025-11-13 00:00:00",
+      "resolved_time_end": "2025-11-13 00:00:00",
+      "resolved_time_anchor": "2025-11-13 00:00:00",
+      "display_date": "2025-11-13",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_df373439"
+      ],
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "decision_confidence": 0.643,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "ambiguous_topic_low_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_df373439",
+          "title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cn97ndgpnq7o",
+          "event_time_anchor": "2025-11-13 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260504_000228_b95f260e",
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_008",
+      "order_index": 7,
+      "canonical_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+      "display_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+      "event_time_start": "2025-12-05 00:00:00",
+      "event_time_end": "2025-12-05 00:00:00",
+      "event_time_anchor": "2025-12-05 00:00:00",
+      "resolved_time_start": "2025-12-05 00:00:00",
+      "resolved_time_end": "2025-12-05 00:00:00",
+      "resolved_time_anchor": "2025-12-05 00:00:00",
+      "display_date": "2025-12-05",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_053c4f00"
+      ],
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "decision_confidence": 0.643,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "ambiguous_topic_low_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_053c4f00",
+          "title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/russia-blocks-apples-facetime-in-mounting-push-against-foreign-tech-platforms-5549056",
+          "event_time_anchor": "2025-12-05 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260504_000228_b95f260e",
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_009",
+      "order_index": 8,
+      "canonical_title": "Apple , Google send new round of cyber threat notifications to users around world",
+      "display_title": "Apple , Google send new round of cyber threat notifications to users around world",
+      "event_time_start": "2025-12-07 00:00:00",
+      "event_time_end": "2025-12-07 00:00:00",
+      "event_time_anchor": "2025-12-07 00:00:00",
+      "resolved_time_start": "2025-12-07 00:00:00",
+      "resolved_time_end": "2025-12-07 00:00:00",
+      "resolved_time_anchor": "2025-12-07 00:00:00",
+      "display_date": "2025-12-07",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_981cf720"
+      ],
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "decision_confidence": 0.643,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "ambiguous_topic_low_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_981cf720",
+          "title": "Apple , Google send new round of cyber threat notifications to users around world",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-google-send-new-round-cyber-threat-notifications-users-around-world-5564151",
+          "event_time_anchor": "2025-12-07 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple , Google send new round of cyber threat notifications to users around world",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260504_000228_b95f260e",
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_010",
+      "order_index": 9,
+      "canonical_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+      "display_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+      "event_time_start": "2025-12-28 00:00:00",
+      "event_time_end": "2025-12-28 00:00:00",
+      "event_time_anchor": "2025-12-28 00:00:00",
+      "resolved_time_start": "2025-12-28 00:00:00",
+      "resolved_time_end": "2025-12-28 00:00:00",
+      "resolved_time_anchor": "2025-12-28 00:00:00",
+      "display_date": "2025-12-28",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_196abd56"
+      ],
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "decision_confidence": 0.643,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "ambiguous_topic_low_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_196abd56",
+          "title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+          "source": "DW",
+          "url": "https://www.dw.com/ru/apple-po-trebovaniu-rossii-udalila-iz-appstore-prilozenie-dla-lgbtznakomstv/a-75321186",
+          "event_time_anchor": "2025-12-28 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_001",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "display_title": "Apple iPhone 17 Event",
+      "resolved_time_start": "2025-09-10 00:00:00",
+      "resolved_time_end": "2025-09-10 00:00:00",
+      "resolved_time_anchor": "2025-09-10 00:00:00",
+      "decision_confidence": 0.563,
+      "time_confidence": 0.8,
+      "decision_reason": "Concrete product launch event involving Apple; title cleaned for neutrality.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_001",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple iPhone 17 Event",
+            "resolved_time_anchor": "2025-09-10 00:00:00",
+            "decision_reason": "Concrete product launch event involving Apple; title cleaned for neutrality."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_003",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple sued over copyrighted books for AI training",
+            "resolved_time_anchor": "2025-10-12 00:00:00",
+            "decision_reason": "Concrete legal event involving Apple; anchor date selected from canonical evidence."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+            "keep_event": true,
+            "is_topic_relevant": false,
+            "final_is_noise": true,
+            "display_title": null,
+            "resolved_time_anchor": null,
+            "decision_reason": "Title refers to Pingliang apples (fruit), not the Apple company; strict_entity mismatch."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_006",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple claims global uptake of latest iPhones",
+            "resolved_time_anchor": "2025-10-31 00:00:00",
+            "decision_reason": "Concrete business claim event involving Apple; title corrected for grammar and neutrality."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_002",
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "display_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+      "resolved_time_start": "2025-09-10 00:00:00",
+      "resolved_time_end": "2025-09-10 00:00:00",
+      "resolved_time_anchor": "2025-09-10 00:00:00",
+      "decision_confidence": 0.643,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "raw_response_json": {
+        "route": "auto_accept",
+        "risk_flags": [
+          "low_confidence",
+          "low_source_support",
+          "ambiguous_topic_low_support"
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_003",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "display_title": "Apple sued over copyrighted books for AI training",
+      "resolved_time_start": "2025-09-06 00:00:00",
+      "resolved_time_end": "2025-10-12 00:00:00",
+      "resolved_time_anchor": "2025-10-12 00:00:00",
+      "decision_confidence": 0.675,
+      "time_confidence": 0.8,
+      "decision_reason": "Concrete legal event involving Apple; anchor date selected from canonical evidence.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_001",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple iPhone 17 Event",
+            "resolved_time_anchor": "2025-09-10 00:00:00",
+            "decision_reason": "Concrete product launch event involving Apple; title cleaned for neutrality."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_003",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple sued over copyrighted books for AI training",
+            "resolved_time_anchor": "2025-10-12 00:00:00",
+            "decision_reason": "Concrete legal event involving Apple; anchor date selected from canonical evidence."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+            "keep_event": true,
+            "is_topic_relevant": false,
+            "final_is_noise": true,
+            "display_title": null,
+            "resolved_time_anchor": null,
+            "decision_reason": "Title refers to Pingliang apples (fruit), not the Apple company; strict_entity mismatch."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_006",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple claims global uptake of latest iPhones",
+            "resolved_time_anchor": "2025-10-31 00:00:00",
+            "decision_reason": "Concrete business claim event involving Apple; title corrected for grammar and neutrality."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_004",
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "display_title": "China urges  equal dialogue  with US as Apple Cook visits",
+      "resolved_time_start": "2025-10-15 00:00:00",
+      "resolved_time_end": "2025-10-17 00:00:00",
+      "resolved_time_anchor": "2025-10-17 00:00:00",
+      "decision_confidence": 0.8427,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "raw_response_json": {
+        "route": "auto_accept",
+        "risk_flags": []
+      }
+    },
+    {
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+      "decision_source": "llm",
+      "keep_event": false,
+      "is_topic_relevant": false,
+      "final_is_noise": true,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "display_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+      "resolved_time_start": "2025-01-01 00:00:00",
+      "resolved_time_end": "2025-12-31 00:00:00",
+      "resolved_time_anchor": null,
+      "decision_confidence": 0.75,
+      "time_confidence": 0.0,
+      "decision_reason": "Title refers to Pingliang apples (fruit), not the Apple company; strict_entity mismatch.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_001",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple iPhone 17 Event",
+            "resolved_time_anchor": "2025-09-10 00:00:00",
+            "decision_reason": "Concrete product launch event involving Apple; title cleaned for neutrality."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_003",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple sued over copyrighted books for AI training",
+            "resolved_time_anchor": "2025-10-12 00:00:00",
+            "decision_reason": "Concrete legal event involving Apple; anchor date selected from canonical evidence."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+            "keep_event": true,
+            "is_topic_relevant": false,
+            "final_is_noise": true,
+            "display_title": null,
+            "resolved_time_anchor": null,
+            "decision_reason": "Title refers to Pingliang apples (fruit), not the Apple company; strict_entity mismatch."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_006",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple claims global uptake of latest iPhones",
+            "resolved_time_anchor": "2025-10-31 00:00:00",
+            "decision_reason": "Concrete business claim event involving Apple; title corrected for grammar and neutrality."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_006",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "display_title": "Apple claims global uptake of latest iPhones",
+      "resolved_time_start": "2025-10-31 00:00:00",
+      "resolved_time_end": "2025-10-31 00:00:00",
+      "resolved_time_anchor": "2025-10-31 00:00:00",
+      "decision_confidence": 0.563,
+      "time_confidence": 0.8,
+      "decision_reason": "Concrete business claim event involving Apple; title corrected for grammar and neutrality.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_001",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple iPhone 17 Event",
+            "resolved_time_anchor": "2025-09-10 00:00:00",
+            "decision_reason": "Concrete product launch event involving Apple; title cleaned for neutrality."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_003",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple sued over copyrighted books for AI training",
+            "resolved_time_anchor": "2025-10-12 00:00:00",
+            "decision_reason": "Concrete legal event involving Apple; anchor date selected from canonical evidence."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+            "keep_event": true,
+            "is_topic_relevant": false,
+            "final_is_noise": true,
+            "display_title": null,
+            "resolved_time_anchor": null,
+            "decision_reason": "Title refers to Pingliang apples (fruit), not the Apple company; strict_entity mismatch."
+          },
+          {
+            "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_006",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "display_title": "Apple claims global uptake of latest iPhones",
+            "resolved_time_anchor": "2025-10-31 00:00:00",
+            "decision_reason": "Concrete business claim event involving Apple; title corrected for grammar and neutrality."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_007",
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "display_title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+      "resolved_time_start": "2025-11-13 00:00:00",
+      "resolved_time_end": "2025-11-13 00:00:00",
+      "resolved_time_anchor": "2025-11-13 00:00:00",
+      "decision_confidence": 0.643,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "raw_response_json": {
+        "route": "auto_accept",
+        "risk_flags": [
+          "low_confidence",
+          "low_source_support",
+          "ambiguous_topic_low_support"
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_008",
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "display_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+      "resolved_time_start": "2025-12-05 00:00:00",
+      "resolved_time_end": "2025-12-05 00:00:00",
+      "resolved_time_anchor": "2025-12-05 00:00:00",
+      "decision_confidence": 0.643,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "raw_response_json": {
+        "route": "auto_accept",
+        "risk_flags": [
+          "low_confidence",
+          "low_source_support",
+          "ambiguous_topic_low_support"
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_009",
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "display_title": "Apple , Google send new round of cyber threat notifications to users around world",
+      "resolved_time_start": "2025-12-07 00:00:00",
+      "resolved_time_end": "2025-12-07 00:00:00",
+      "resolved_time_anchor": "2025-12-07 00:00:00",
+      "decision_confidence": 0.643,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "raw_response_json": {
+        "route": "auto_accept",
+        "risk_flags": [
+          "low_confidence",
+          "low_source_support",
+          "ambiguous_topic_low_support"
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_010",
+      "decision_source": "rule",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "split_reason": null,
+      "merge_reason": null,
+      "display_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+      "resolved_time_start": "2025-12-28 00:00:00",
+      "resolved_time_end": "2025-12-28 00:00:00",
+      "resolved_time_anchor": "2025-12-28 00:00:00",
+      "decision_confidence": 0.643,
+      "time_confidence": 1.0,
+      "decision_reason": "Accepted by rule-based routing; no high-risk flags required LLM review.",
+      "raw_response_json": {
+        "route": "auto_accept",
+        "risk_flags": [
+          "low_confidence",
+          "low_source_support",
+          "ambiguous_topic_low_support"
+        ]
+      }
+    }
+  ],
+  "decision_contexts": {
+    "Apple_20260504_000208_e22d9ca7:Apple_event_001": {
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_001",
+      "canonical_title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.563,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-09-10 00:00:00",
+      "event_time_end": "2025-09-10 00:00:00",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "member_news_ids": [
+        "gdelt_3873c872"
+      ],
+      "member_titles_sample": [
+        "Apple iPhone 17 Event : Our Live Updates and Takeaways"
+      ],
+      "member_title_evidence": [
+        {
+          "title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+          "source": null,
+          "event_time_anchor": "2025-09-10 00:00:00",
+          "news_id": null,
+          "evidence_role": "container_title"
+        }
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_3873c872",
+          "title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/wirecutter/money/apple-iphone-17-event-20250909/",
+          "event_time_anchor": "2025-09-10 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "rolling_coverage",
+        "low_confidence",
+        "low_source_support",
+        "rolling_coverage_title",
+        "ambiguous_topic_low_support"
+      ],
+      "quality_summary": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0
+      },
+      "topic_profile": {
+        "topic": "Apple",
+        "surface_form_type": "proper_noun_like",
+        "token_count": 1,
+        "single_surface_form": true,
+        "ambiguity_level": "high",
+        "strict_named_entity_relevance": true,
+        "relevance_guidance": "Treat the topic as a likely named entity, brand, organization, person, place, product, or code-like surface form. A translated alias can be relevant when it clearly refers to the same entity. Reject evidence only when it clearly uses another word sense, a common noun meaning, a generic analogy, or an unrelated cultural phrase."
+      }
+    },
+    "Apple_20260504_000208_e22d9ca7:Apple_event_002": {
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_002",
+      "canonical_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-09-10 00:00:00",
+      "event_time_end": "2025-09-10 00:00:00",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "member_news_ids": [
+        "gdelt_7537ad02"
+      ],
+      "member_titles_sample": [
+        "Apple holds down new iPhone prices amid threats of Trump tariffs"
+      ],
+      "member_title_evidence": [
+        {
+          "title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+          "source": null,
+          "event_time_anchor": "2025-09-10 00:00:00",
+          "news_id": null,
+          "evidence_role": "canonical"
+        }
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_7537ad02",
+          "title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-event-new-iphone-prices-trump-tariff-threat-5339971",
+          "event_time_anchor": "2025-09-10 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "ambiguous_topic_low_support"
+      ],
+      "quality_summary": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0
+      },
+      "topic_profile": {
+        "topic": "Apple",
+        "surface_form_type": "proper_noun_like",
+        "token_count": 1,
+        "single_surface_form": true,
+        "ambiguity_level": "high",
+        "strict_named_entity_relevance": true,
+        "relevance_guidance": "Treat the topic as a likely named entity, brand, organization, person, place, product, or code-like surface form. A translated alias can be relevant when it clearly refers to the same entity. Reject evidence only when it clearly uses another word sense, a common noun meaning, a generic analogy, or an unrelated cultural phrase."
+      }
+    },
+    "Apple_20260504_000208_e22d9ca7:Apple_event_003": {
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_003",
+      "canonical_title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+      "cluster_size": 2,
+      "source_count": 1,
+      "confidence": 0.675,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-09-06 00:00:00",
+      "event_time_end": "2025-10-12 00:00:00",
+      "event_time_anchor": "2025-10-12 00:00:00",
+      "member_news_ids": [
+        "gdelt_a17bd04a",
+        "gdelt_a16e39b8"
+      ],
+      "member_titles_sample": [
+        "Apple sued over use of copyrighted books to train Apple Intelligence",
+        "Apple sued by authors over use of books in AI training"
+      ],
+      "member_title_evidence": [
+        {
+          "title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+          "source": null,
+          "event_time_anchor": "2025-10-12 00:00:00",
+          "news_id": null,
+          "evidence_role": "canonical"
+        },
+        {
+          "title": "Apple sued by authors over use of books in AI training",
+          "source": "亚洲新闻台",
+          "event_time_anchor": "2025-09-06 00:00:00",
+          "news_id": "gdelt_a17bd04a",
+          "evidence_role": "time_spread"
+        }
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_a16e39b8",
+          "title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-sued-over-use-copyrighted-books-train-apple-intelligence-5395431",
+          "event_time_anchor": "2025-10-12 00:00:00",
+          "cluster_size": 2,
+          "canonical_title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_a17bd04a",
+          "title": "Apple sued by authors over use of books in AI training",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-sued-authors-over-use-books-in-ai-training-5335556",
+          "event_time_anchor": "2025-09-06 00:00:00",
+          "cluster_size": 2,
+          "canonical_title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 2,
+      "graph_edge_count": 2,
+      "risk_flags": [
+        "low_temporal_coherence",
+        "medium_confidence",
+        "low_source_support",
+        "semantic_override_edges",
+        "ambiguous_topic_low_support"
+      ],
+      "quality_summary": {
+        "semantic_cohesion": 0.9622,
+        "temporal_coherence": 0.0,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 36.0
+      },
+      "topic_profile": {
+        "topic": "Apple",
+        "surface_form_type": "proper_noun_like",
+        "token_count": 1,
+        "single_surface_form": true,
+        "ambiguity_level": "high",
+        "strict_named_entity_relevance": true,
+        "relevance_guidance": "Treat the topic as a likely named entity, brand, organization, person, place, product, or code-like surface form. A translated alias can be relevant when it clearly refers to the same entity. Reject evidence only when it clearly uses another word sense, a common noun meaning, a generic analogy, or an unrelated cultural phrase."
+      }
+    },
+    "Apple_20260504_000208_e22d9ca7:Apple_event_004": {
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_004",
+      "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+      "cluster_size": 2,
+      "source_count": 2,
+      "confidence": 0.8427,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-10-15 00:00:00",
+      "event_time_end": "2025-10-17 00:00:00",
+      "event_time_anchor": "2025-10-17 00:00:00",
+      "member_news_ids": [
+        "gdelt_0857ec17",
+        "gdelt_4e108ff2"
+      ],
+      "member_titles_sample": [
+        "China urges  equal dialogue  with US as Apple Cook visits",
+        "Apple sengage à augmenter ses investissements en Chine - Xinhua"
+      ],
+      "member_title_evidence": [
+        {
+          "title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "source": null,
+          "event_time_anchor": "2025-10-17 00:00:00",
+          "news_id": null,
+          "evidence_role": "canonical"
+        },
+        {
+          "title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+          "source": "新华网",
+          "event_time_anchor": "2025-10-15 00:00:00",
+          "news_id": "gdelt_0857ec17",
+          "evidence_role": "time_spread"
+        }
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_0857ec17",
+          "title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+          "source": "新华网",
+          "url": "http://french.xinhuanet.com/20251015/9acf06bc43d94c51bb65f5bfdc471d84/c.html",
+          "event_time_anchor": "2025-10-15 00:00:00",
+          "cluster_size": 2,
+          "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_4e108ff2",
+          "title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/east-asia/china-urges-us-equal-dialogue-trade-war-tariffs-apple-tim-cook-5407116",
+          "event_time_anchor": "2025-10-17 00:00:00",
+          "cluster_size": 2,
+          "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 2,
+      "risk_flags": [],
+      "quality_summary": {
+        "semantic_cohesion": 0.8164,
+        "temporal_coherence": 0.9333,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 2.0
+      },
+      "topic_profile": {
+        "topic": "Apple",
+        "surface_form_type": "proper_noun_like",
+        "token_count": 1,
+        "single_surface_form": true,
+        "ambiguity_level": "high",
+        "strict_named_entity_relevance": true,
+        "relevance_guidance": "Treat the topic as a likely named entity, brand, organization, person, place, product, or code-like surface form. A translated alias can be relevant when it clearly refers to the same entity. Reject evidence only when it clearly uses another word sense, a common noun meaning, a generic analogy, or an unrelated cultural phrase."
+      }
+    },
+    "Apple_20260504_000208_e22d9ca7:Apple_event_005": {
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_005",
+      "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+      "cluster_size": 5,
+      "source_count": 1,
+      "confidence": 0.558,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-01-01 00:00:00",
+      "event_time_end": "2025-12-31 00:00:00",
+      "event_time_anchor": "2025-10-19 00:00:00",
+      "member_news_ids": [
+        "gdelt_02b48256",
+        "gdelt_234c3524",
+        "gdelt_f42af142",
+        "gdelt_dadc04e1",
+        "gdelt_c024dc57"
+      ],
+      "member_titles_sample": [
+        "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+        "平凉  静宁苹果  品牌价值达181亿元 - 新华网",
+        "2025中国苹果年会暨庆阳苹果营销大会举行 - 新华网",
+        "平凉市崆峒区 ： 苹果  升级记 - 新华网",
+        "天水 ： 花牛苹果热销海内外市场 - 新华网"
+      ],
+      "member_title_evidence": [
+        {
+          "title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "source": null,
+          "event_time_anchor": "2025-10-19 00:00:00",
+          "news_id": null,
+          "evidence_role": "canonical"
+        },
+        {
+          "title": "平凉  静宁苹果  品牌价值达181亿元 - 新华网",
+          "source": "新华网",
+          "event_time_anchor": "2025-10-12 00:00:00",
+          "news_id": "gdelt_02b48256",
+          "evidence_role": "time_spread"
+        },
+        {
+          "title": "2025中国苹果年会暨庆阳苹果营销大会举行 - 新华网",
+          "source": "新华网",
+          "event_time_anchor": "2025-10-19 00:00:00",
+          "news_id": "gdelt_f42af142",
+          "evidence_role": "time_spread"
+        },
+        {
+          "title": "平凉市崆峒区 ： 苹果  升级记 - 新华网",
+          "source": "新华网",
+          "event_time_anchor": "2025-10-13 00:00:00",
+          "news_id": "gdelt_234c3524",
+          "evidence_role": "member"
+        },
+        {
+          "title": "天水 ： 花牛苹果热销海内外市场 - 新华网",
+          "source": "新华网",
+          "event_time_anchor": "2025-11-10 00:00:00",
+          "news_id": "gdelt_dadc04e1",
+          "evidence_role": "member"
+        }
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_02b48256",
+          "title": "平凉  静宁苹果  品牌价值达181亿元 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251012/67bf8f160e9b4a61ae8055af2f8dbc0e/c.html",
+          "event_time_anchor": "2025-10-12 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_234c3524",
+          "title": "平凉市崆峒区 ： 苹果  升级记 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251013/7923d1e63d6a4657aaf93fb7a0063952/c.html",
+          "event_time_anchor": "2025-10-13 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_c024dc57",
+          "title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251123/796494fac5d7493e9f0cfc1014edb338/c.html",
+          "event_time_anchor": "2025-11-23 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_dadc04e1",
+          "title": "天水 ： 花牛苹果热销海内外市场 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251110/881d8d1bc9424db087bffdeefce17f0b/c.html",
+          "event_time_anchor": "2025-11-10 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_f42af142",
+          "title": "2025中国苹果年会暨庆阳苹果营销大会举行 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251019/9187f55f3922452ea7b98e03697bef6d/c.html",
+          "event_time_anchor": "2025-10-19 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 2,
+      "graph_edge_count": 16,
+      "risk_flags": [
+        "long_time_span",
+        "low_temporal_coherence",
+        "low_confidence",
+        "low_source_support",
+        "semantic_override_edges",
+        "translated_topic_alias_risk",
+        "ambiguous_topic_low_support"
+      ],
+      "quality_summary": {
+        "semantic_cohesion": 0.8623,
+        "temporal_coherence": 0.0,
+        "support_score": 1.0,
+        "graph_density": 0.8,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 5,
+        "article_count": 5,
+        "time_span_days": 364.0
+      },
+      "topic_profile": {
+        "topic": "Apple",
+        "surface_form_type": "proper_noun_like",
+        "token_count": 1,
+        "single_surface_form": true,
+        "ambiguity_level": "high",
+        "strict_named_entity_relevance": true,
+        "relevance_guidance": "Treat the topic as a likely named entity, brand, organization, person, place, product, or code-like surface form. A translated alias can be relevant when it clearly refers to the same entity. Reject evidence only when it clearly uses another word sense, a common noun meaning, a generic analogy, or an unrelated cultural phrase."
+      }
+    },
+    "Apple_20260504_000208_e22d9ca7:Apple_event_006": {
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_006",
+      "canonical_title": "Apple claims  tremendou global uptake of latest iPhones",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.563,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-10-31 00:00:00",
+      "event_time_end": "2025-10-31 00:00:00",
+      "event_time_anchor": "2025-10-31 00:00:00",
+      "member_news_ids": [
+        "gdelt_89208461"
+      ],
+      "member_titles_sample": [
+        "Apple claims  tremendou global uptake of latest iPhones"
+      ],
+      "member_title_evidence": [
+        {
+          "title": "Apple claims  tremendou global uptake of latest iPhones",
+          "source": null,
+          "event_time_anchor": "2025-10-31 00:00:00",
+          "news_id": null,
+          "evidence_role": "container_title"
+        }
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_89208461",
+          "title": "Apple claims  tremendou global uptake of latest iPhones",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cz6n98exv9zo",
+          "event_time_anchor": "2025-10-31 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple claims  tremendou global uptake of latest iPhones",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "rolling_coverage",
+        "low_confidence",
+        "low_source_support",
+        "rolling_coverage_title",
+        "ambiguous_topic_low_support"
+      ],
+      "quality_summary": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0
+      },
+      "topic_profile": {
+        "topic": "Apple",
+        "surface_form_type": "proper_noun_like",
+        "token_count": 1,
+        "single_surface_form": true,
+        "ambiguity_level": "high",
+        "strict_named_entity_relevance": true,
+        "relevance_guidance": "Treat the topic as a likely named entity, brand, organization, person, place, product, or code-like surface form. A translated alias can be relevant when it clearly refers to the same entity. Reject evidence only when it clearly uses another word sense, a common noun meaning, a generic analogy, or an unrelated cultural phrase."
+      }
+    },
+    "Apple_20260504_000208_e22d9ca7:Apple_event_007": {
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_007",
+      "canonical_title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-11-13 00:00:00",
+      "event_time_end": "2025-11-13 00:00:00",
+      "event_time_anchor": "2025-11-13 00:00:00",
+      "member_news_ids": [
+        "gdelt_df373439"
+      ],
+      "member_titles_sample": [
+        "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online"
+      ],
+      "member_title_evidence": [
+        {
+          "title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+          "source": null,
+          "event_time_anchor": "2025-11-13 00:00:00",
+          "news_id": null,
+          "evidence_role": "canonical"
+        }
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_df373439",
+          "title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cn97ndgpnq7o",
+          "event_time_anchor": "2025-11-13 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "ambiguous_topic_low_support"
+      ],
+      "quality_summary": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0
+      },
+      "topic_profile": {
+        "topic": "Apple",
+        "surface_form_type": "proper_noun_like",
+        "token_count": 1,
+        "single_surface_form": true,
+        "ambiguity_level": "high",
+        "strict_named_entity_relevance": true,
+        "relevance_guidance": "Treat the topic as a likely named entity, brand, organization, person, place, product, or code-like surface form. A translated alias can be relevant when it clearly refers to the same entity. Reject evidence only when it clearly uses another word sense, a common noun meaning, a generic analogy, or an unrelated cultural phrase."
+      }
+    },
+    "Apple_20260504_000208_e22d9ca7:Apple_event_008": {
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_008",
+      "canonical_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-12-05 00:00:00",
+      "event_time_end": "2025-12-05 00:00:00",
+      "event_time_anchor": "2025-12-05 00:00:00",
+      "member_news_ids": [
+        "gdelt_053c4f00"
+      ],
+      "member_titles_sample": [
+        "Russia blocks Apple FaceTime in mounting push against foreign tech platforms"
+      ],
+      "member_title_evidence": [
+        {
+          "title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+          "source": null,
+          "event_time_anchor": "2025-12-05 00:00:00",
+          "news_id": null,
+          "evidence_role": "canonical"
+        }
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_053c4f00",
+          "title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/russia-blocks-apples-facetime-in-mounting-push-against-foreign-tech-platforms-5549056",
+          "event_time_anchor": "2025-12-05 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "ambiguous_topic_low_support"
+      ],
+      "quality_summary": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0
+      },
+      "topic_profile": {
+        "topic": "Apple",
+        "surface_form_type": "proper_noun_like",
+        "token_count": 1,
+        "single_surface_form": true,
+        "ambiguity_level": "high",
+        "strict_named_entity_relevance": true,
+        "relevance_guidance": "Treat the topic as a likely named entity, brand, organization, person, place, product, or code-like surface form. A translated alias can be relevant when it clearly refers to the same entity. Reject evidence only when it clearly uses another word sense, a common noun meaning, a generic analogy, or an unrelated cultural phrase."
+      }
+    },
+    "Apple_20260504_000208_e22d9ca7:Apple_event_009": {
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_009",
+      "canonical_title": "Apple , Google send new round of cyber threat notifications to users around world",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-12-07 00:00:00",
+      "event_time_end": "2025-12-07 00:00:00",
+      "event_time_anchor": "2025-12-07 00:00:00",
+      "member_news_ids": [
+        "gdelt_981cf720"
+      ],
+      "member_titles_sample": [
+        "Apple , Google send new round of cyber threat notifications to users around world"
+      ],
+      "member_title_evidence": [
+        {
+          "title": "Apple , Google send new round of cyber threat notifications to users around world",
+          "source": null,
+          "event_time_anchor": "2025-12-07 00:00:00",
+          "news_id": null,
+          "evidence_role": "canonical"
+        }
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_981cf720",
+          "title": "Apple , Google send new round of cyber threat notifications to users around world",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-google-send-new-round-cyber-threat-notifications-users-around-world-5564151",
+          "event_time_anchor": "2025-12-07 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple , Google send new round of cyber threat notifications to users around world",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "ambiguous_topic_low_support"
+      ],
+      "quality_summary": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0
+      },
+      "topic_profile": {
+        "topic": "Apple",
+        "surface_form_type": "proper_noun_like",
+        "token_count": 1,
+        "single_surface_form": true,
+        "ambiguity_level": "high",
+        "strict_named_entity_relevance": true,
+        "relevance_guidance": "Treat the topic as a likely named entity, brand, organization, person, place, product, or code-like surface form. A translated alias can be relevant when it clearly refers to the same entity. Reject evidence only when it clearly uses another word sense, a common noun meaning, a generic analogy, or an unrelated cultural phrase."
+      }
+    },
+    "Apple_20260504_000208_e22d9ca7:Apple_event_010": {
+      "discovery_run_id": "Apple_20260504_000208_e22d9ca7",
+      "topic": "Apple",
+      "event_id": "Apple_20260504_000208_e22d9ca7:Apple_event_010",
+      "canonical_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-12-28 00:00:00",
+      "event_time_end": "2025-12-28 00:00:00",
+      "event_time_anchor": "2025-12-28 00:00:00",
+      "member_news_ids": [
+        "gdelt_196abd56"
+      ],
+      "member_titles_sample": [
+        "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025"
+      ],
+      "member_title_evidence": [
+        {
+          "title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+          "source": null,
+          "event_time_anchor": "2025-12-28 00:00:00",
+          "news_id": null,
+          "evidence_role": "canonical"
+        }
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_196abd56",
+          "title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+          "source": "DW",
+          "url": "https://www.dw.com/ru/apple-po-trebovaniu-rossii-udalila-iz-appstore-prilozenie-dla-lgbtznakomstv/a-75321186",
+          "event_time_anchor": "2025-12-28 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "ambiguous_topic_low_support"
+      ],
+      "quality_summary": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0
+      },
+      "topic_profile": {
+        "topic": "Apple",
+        "surface_form_type": "proper_noun_like",
+        "token_count": 1,
+        "single_surface_form": true,
+        "ambiguity_level": "high",
+        "strict_named_entity_relevance": true,
+        "relevance_guidance": "Treat the topic as a likely named entity, brand, organization, person, place, product, or code-like surface form. A translated alias can be relevant when it clearly refers to the same entity. Reject evidence only when it clearly uses another word sense, a common noun meaning, a generic analogy, or an unrelated cultural phrase."
+      }
+    }
+  },
+  "output_paths": {}
+}
