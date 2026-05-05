@@ -22,6 +22,40 @@ def _clamp_float(value: Any, default: float = 0.0) -> float:
         return default
 
 
+def _as_bool(value: Any, default: bool = False) -> bool:
+    if isinstance(value, bool):
+        return value
+    if value is None:
+        return default
+    if isinstance(value, (int, float)):
+        return bool(value)
+    if isinstance(value, str):
+        normalized = value.strip().casefold()
+        if normalized in {"true", "1", "yes", "y"}:
+            return True
+        if normalized in {"false", "0", "no", "n", "null", "none", ""}:
+            return False
+    return default
+
+
+def _payload_value_or_card(payload: dict[str, Any], key: str, fallback: str | None) -> str | None:
+    if key in payload:
+        value = payload.get(key)
+        return str(value).strip() if value not in (None, "") else None
+    return fallback
+
+
+def _derived_decision_confidence(card: EventCard, keep_event: bool) -> float:
+    base = _clamp_float(card.confidence, default=0.75)
+    if keep_event:
+        return max(0.5, min(0.9, base))
+    return 0.75
+
+
+def _derived_time_confidence(resolved_time_anchor: str | None) -> float:
+    return 0.8 if resolved_time_anchor else 0.0
+
+
 def _extract_json_object(text: str) -> dict[str, Any]:
     stripped = text.strip()
     stripped = re.sub(r"<think>.*?</think>", "", stripped, flags=re.IGNORECASE | re.DOTALL).strip()
@@ -39,11 +73,13 @@ def _extract_json_object(text: str) -> dict[str, Any]:
 
 
 def _decision_from_payload(payload: dict[str, Any], card: EventCard, raw: dict[str, Any]) -> EventDecision:
-    keep_event = bool(payload.get("keep_event", True))
-    is_topic_relevant = bool(payload.get("is_topic_relevant", keep_event))
-    final_is_noise = bool(payload.get("final_is_noise", not keep_event))
+    keep_event = _as_bool(payload.get("keep_event"), default=True)
+    is_topic_relevant = _as_bool(payload.get("is_topic_relevant"), default=keep_event)
+    final_is_noise = _as_bool(payload.get("final_is_noise"), default=not keep_event)
     if final_is_noise or not is_topic_relevant:
         keep_event = False
+
+    resolved_time_anchor = _payload_value_or_card(payload, "resolved_time_anchor", card.event_time_anchor)
 
     return EventDecision(
         event_id=card.event_id,
@@ -51,14 +87,16 @@ def _decision_from_payload(payload: dict[str, Any], card: EventCard, raw: dict[s
         keep_event=keep_event,
         is_topic_relevant=is_topic_relevant,
         final_is_noise=final_is_noise,
-        needs_split=bool(payload.get("needs_split", False)),
-        needs_merge=bool(payload.get("needs_merge", False)),
+        needs_split=False,
+        needs_merge=False,
+        split_reason=None,
+        merge_reason=None,
         display_title=payload.get("display_title") or card.canonical_title,
-        resolved_time_start=payload.get("resolved_time_start") or card.event_time_start,
-        resolved_time_end=payload.get("resolved_time_end") or card.event_time_end,
-        resolved_time_anchor=payload.get("resolved_time_anchor") or card.event_time_anchor,
-        decision_confidence=_clamp_float(payload.get("decision_confidence"), default=0.5),
-        time_confidence=_clamp_float(payload.get("time_confidence"), default=0.5),
+        resolved_time_start=card.event_time_start,
+        resolved_time_end=card.event_time_end,
+        resolved_time_anchor=resolved_time_anchor,
+        decision_confidence=_derived_decision_confidence(card, keep_event),
+        time_confidence=_derived_time_confidence(resolved_time_anchor),
         decision_reason=payload.get("decision_reason") or "LLM decision returned without a detailed reason.",
         raw_response_json=raw,
     )
@@ -68,6 +106,7 @@ def _fallback_decision(card: EventCard, reason: str) -> EventDecision:
     """Return a conservative decision when the LLM cannot answer one card."""
     final_is_noise = bool(
         card.system_is_noise
+        or "rolling_coverage" in card.risk_flags
         or "rolling_coverage_title" in card.risk_flags
         or "missing_canonical_title" in card.risk_flags
         or "empty_cluster" in card.risk_flags
@@ -79,8 +118,10 @@ def _fallback_decision(card: EventCard, reason: str) -> EventDecision:
         keep_event=keep_event,
         is_topic_relevant=True,
         final_is_noise=final_is_noise,
-        needs_split="large_cluster" in card.risk_flags or "long_time_span" in card.risk_flags,
+        needs_split=False,
         needs_merge=False,
+        split_reason=None,
+        merge_reason=None,
         display_title=card.canonical_title,
         resolved_time_start=card.event_time_start,
         resolved_time_end=card.event_time_end,
@@ -156,8 +197,6 @@ def _judge_batch(
                 "keep_event": False,
                 "is_topic_relevant": False,
                 "final_is_noise": True,
-                "decision_confidence": 0.0,
-                "time_confidence": 0.0,
                 "decision_reason": "LLM response omitted this event_id.",
             }
         decisions.append(_decision_from_payload(payload, card, raw))
@@ -168,7 +207,7 @@ def judge_event_cards_with_llm(
     cards: list[EventCard],
     *,
     model_name: str | None = None,
-    batch_size: int = 1,
+    batch_size: int = 4,
     timeout_seconds: int = 300,
 ) -> list[EventDecision]:
     """Ask Ollama to judge event cards in bounded batches."""

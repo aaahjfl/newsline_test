@@ -9,7 +9,8 @@ news data
 -> preprocessing / time parsing
 -> SBERT event discovery
 -> LLM timeline reasoning
--> timeline outputs / future display layer
+-> MySQL timeline storage
+-> interactive web display layer
 ```
 
 核心思想是将“候选事件发现”和“最终时间线决断”分开处理。SBERT / embedding 层负责高召回、可解释的候选事件组织；LLM 层负责轻量语义裁判、噪声过滤和时间线节点决断。系统不依赖大模型直接生成完整时间线，而是保留规则、图结构和数据库记录，便于调试、复现实验和后续评测。
@@ -24,9 +25,11 @@ news data
 - 大簇二次切分与无监督诊断
 - 基于本地 Ollama `qwen3.5:9b` 的 LLM 事件决断
 - 最终时间线 JSON 输出与 MySQL 落库
+- FastAPI + 静态前端展示层
+- 基于 MySQL 的历史时间线复用与交互式时间线查看
 - SBERT 层与 LLM 层的 handoff 文档和测试用例
 
-展示层仍处于后续开发阶段。当前输出主要面向调试、实验分析和下一阶段前端读取。
+当前展示层支持用户在网页中输入一次 topic 和 LLM mode，后端自动串联 SBERT 事件发现层与 LLM 时间线决断层，并从 MySQL 读取正式时间线结果进行展示。
 
 ## Repository Layout
 
@@ -40,6 +43,9 @@ newsline/
 │   ├── llm/                  # local LLM client abstraction
 │   └── timeline_reasoning/   # LLM-assisted timeline reasoning layer
 ├── code/script/              # runnable experiment and pipeline scripts
+├── services/                 # FastAPI display API and service facade
+├── frontend/
+│   └── static/               # static HTML/CSS/JS web display layer
 ├── outputs/                  # clustered events, reports, timelines and metadata
 ├── tests/                    # unit tests and experimental scripts
 ├── archive_mvp/              # archived MVP experiments
@@ -88,6 +94,42 @@ Main files:
 - `core/timeline_reasoning/persistence.py`
 - `core/timeline_reasoning/pipeline.py`
 
+### 3. Web Display Layer
+
+The display layer is implemented as a FastAPI-served static web application. It is intentionally lightweight: there is no Node build step, and the frontend is plain HTML, CSS and JavaScript.
+
+The user enters a `topic` and selects one LLM reasoning mode:
+
+- `fast`
+- `standard`
+- `full`
+
+The backend creates a web job, optionally reuses a completed MySQL timeline for the same `topic + mode`, or runs the full pipeline:
+
+```text
+topic + mode
+-> run_event_discovery(topic)
+-> persist event_discovery_* tables
+-> run_timeline_reasoning_pipeline(topic, mode, dry_run=False)
+-> persist timeline_* tables
+-> query timeline_nodes and timeline_node_articles for display
+```
+
+The frontend has three states:
+
+- `idle`: landing page with topic input, mode selector and a restrained canvas globe.
+- `running`: progress panel with stage text, smoothed percentage, elapsed time, estimated total time and cancel button.
+- `result`: horizontal interactive timeline with hover popovers for clustered news articles.
+
+Main files:
+
+- `services/timeline_api.py`
+- `code/script/run_timeline_web_job.py`
+- `frontend/static/index.html`
+- `frontend/static/styles.css`
+- `frontend/static/app.js`
+- `frontend_display_layer_handoff.md`
+
 ## Data Assumptions
 
 The current pipeline reads from a MySQL table such as `parser_newsdata`. The expected fields include:
@@ -119,7 +161,7 @@ Run timeline reasoning on the latest event discovery result:
   --topic "Apple" \
   --mode fast \
   --limit-events 20 \
-  --llm-batch-size 1 \
+  --llm-batch-size 4 \
   --llm-timeout-seconds 60
 ```
 
@@ -132,6 +174,41 @@ For dry-run debugging:
   --limit-events 20 \
   --dry-run
 ```
+
+## Running the Web Frontend
+
+Start the web display service:
+
+```bash
+cd /Users/hjfl/newsline
+source .venv/bin/activate
+uvicorn services.timeline_api:app --host 127.0.0.1 --port 8000
+```
+
+Open:
+
+```text
+http://127.0.0.1:8000
+```
+
+During development, use reload mode:
+
+```bash
+uvicorn services.timeline_api:app --host 127.0.0.1 --port 8000 --reload
+```
+
+The web API exposes:
+
+```text
+GET  /api/health
+POST /api/timeline/jobs
+GET  /api/timeline/jobs/{job_id}/status
+POST /api/timeline/jobs/{job_id}/cancel
+GET  /api/timeline/jobs/{job_id}/result
+GET  /api/timeline/results/{reasoning_run_id}
+```
+
+The frontend expects MySQL, Ollama and the local embedding / LLM model environment to be available. If a matching completed timeline already exists in MySQL for the same `topic` and `mode`, the API reuses that result instead of recomputing the pipeline.
 
 ## Outputs
 
@@ -150,6 +227,16 @@ outputs/timeline/
 ```
 
 When not running in dry-run mode, timeline reasoning also writes to MySQL tables for runs, event decisions, timeline nodes and node-level article mappings.
+
+The web display layer reads formal results from:
+
+```text
+timeline_reasoning_runs
+timeline_nodes
+timeline_node_articles
+```
+
+It does not use timeline JSON files as its primary data source.
 
 The large title embedding index under `outputs/embeddings/` is an experimental artifact. The metadata file can be versioned normally, while the `.npz` index is too large for ordinary GitHub storage and should be handled through Git LFS or regenerated locally.
 
@@ -179,4 +266,4 @@ The current implementation is intentionally conservative. It favors traceability
 - final ordering is deterministic;
 - suspicious events are marked rather than automatically rewritten.
 
-Planned work includes improving large-topic cluster splitting, strengthening topic disambiguation, refining LLM input sampling, adding human-review reports and building the first display layer for interactive timeline inspection.
+Planned work includes improving large-topic cluster splitting, strengthening topic disambiguation, refining LLM input sampling, adding human-review reports, adding a timeline node detail panel and exposing more fine-grained backend progress callbacks for the web display layer.

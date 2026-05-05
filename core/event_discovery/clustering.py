@@ -14,6 +14,15 @@ from core.schemas import EventCluster, EventEdge, NewsItem
 SIMILARITY_THRESHOLD = 0.80
 TIME_WINDOW_DAYS = 30.0
 OVERRIDE_SIMILARITY_THRESHOLD = 0.92
+ROLLING_TIME_WINDOW_DAYS = 3.0
+ROLLING_OVERRIDE_SIMILARITY_THRESHOLD = 0.97
+SMALL_CLUSTER_MERGE_SOURCE_MAX_SIZE = 2
+SMALL_CLUSTER_MERGE_RESULT_MAX_SIZE = 5
+SMALL_CLUSTER_MERGE_TIME_WINDOW_DAYS = 7.0
+SMALL_CLUSTER_MERGE_AVG_SIMILARITY = 0.86
+SMALL_CLUSTER_MERGE_MAX_SIMILARITY = 0.90
+SMALL_CLUSTER_MERGE_MISSING_TIME_AVG_SIMILARITY = 0.90
+SMALL_CLUSTER_MERGE_MISSING_TIME_MAX_SIMILARITY = 0.94
 OVERSIZED_COMPONENT_LIMIT = 120
 COHESION_REFINEMENT_MIN_SIZE = 6
 MIN_COMPONENT_EDGE_DENSITY = 0.35
@@ -52,6 +61,20 @@ def _time_gap_days(left: NewsItem, right: NewsItem) -> float | None:
     return abs((left_dt - right_dt).total_seconds()) / 86400.0
 
 
+def _risk_flags(item: NewsItem) -> set[str]:
+    values = item.metadata.get("title_risk_flags") if item.metadata else None
+    if not isinstance(values, list):
+        return set()
+    return {str(value) for value in values}
+
+
+def _edge_time_policy(left: NewsItem, right: NewsItem) -> tuple[float, float]:
+    flags = _risk_flags(left).union(_risk_flags(right))
+    if "rolling_coverage" in flags:
+        return ROLLING_TIME_WINDOW_DAYS, ROLLING_OVERRIDE_SIMILARITY_THRESHOLD
+    return TIME_WINDOW_DAYS, OVERRIDE_SIMILARITY_THRESHOLD
+
+
 def _mean_upper_triangle(matrix: np.ndarray) -> float | None:
     if matrix.shape[0] <= 1:
         return None
@@ -70,6 +93,16 @@ def _component_time_consistency(news_items: list[NewsItem]) -> float | None:
     sorted_anchors = sorted(anchors)
     span_days = abs((sorted_anchors[-1] - sorted_anchors[0]).total_seconds()) / 86400.0
     return max(0.0, 1.0 - min(span_days / TIME_WINDOW_DAYS, 1.0))
+
+
+def _component_time_span_days(member_indices: list[int], news_items: list[NewsItem]) -> float | None:
+    anchors = [_parse_iso_datetime(news_items[index].event_time_anchor) for index in member_indices]
+    anchors = [anchor for anchor in anchors if anchor is not None]
+    if len(anchors) <= 1:
+        return None
+
+    sorted_anchors = sorted(anchors)
+    return abs((sorted_anchors[-1] - sorted_anchors[0]).total_seconds()) / 86400.0
 
 
 class _UnionFind:
@@ -107,6 +140,16 @@ class _EdgeCandidate(NamedTuple):
     edge_reason: str
 
 
+class _MergeCandidate(NamedTuple):
+    left_component: int
+    right_component: int
+    average_similarity: float
+    max_similarity: float
+    best_left: int
+    best_right: int
+    gap_days: float | None
+
+
 def _edge_candidate(
     left: int,
     right: int,
@@ -119,12 +162,13 @@ def _edge_candidate(
         return None
 
     gap_days = _time_gap_days(news_items[left], news_items[right])
-    if gap_days is not None and gap_days > TIME_WINDOW_DAYS and similarity < OVERRIDE_SIMILARITY_THRESHOLD:
+    time_window_days, override_threshold = _edge_time_policy(news_items[left], news_items[right])
+    if gap_days is not None and gap_days > time_window_days and similarity < override_threshold:
         return None
 
     if gap_days is None:
         edge_reason = "semantic_only"
-    elif gap_days <= TIME_WINDOW_DAYS:
+    elif gap_days <= time_window_days:
         edge_reason = "semantic_and_time"
     else:
         edge_reason = "semantic_override"
@@ -226,6 +270,137 @@ def _refine_components(
     return refined_groups, refined_edges
 
 
+def _component_contains_risk(member_indices: list[int], news_items: list[NewsItem], risk_flag: str) -> bool:
+    return any(risk_flag in _risk_flags(news_items[index]) for index in member_indices)
+
+
+def _merge_candidate(
+    left_component: int,
+    right_component: int,
+    left_indices: list[int],
+    right_indices: list[int],
+    news_items: list[NewsItem],
+    similarity_matrix: np.ndarray,
+) -> _MergeCandidate | None:
+    if len(left_indices) + len(right_indices) > SMALL_CLUSTER_MERGE_RESULT_MAX_SIZE:
+        return None
+    if _component_contains_risk(left_indices, news_items, "rolling_coverage"):
+        return None
+    if _component_contains_risk(right_indices, news_items, "rolling_coverage"):
+        return None
+
+    cross = similarity_matrix[np.ix_(left_indices, right_indices)]
+    average_similarity = float(np.mean(cross))
+    best_local_index = int(np.argmax(cross))
+    left_local, right_local = np.unravel_index(best_local_index, cross.shape)
+    max_similarity = float(cross[left_local, right_local])
+
+    combined_indices = [*left_indices, *right_indices]
+    combined_span = _component_time_span_days(combined_indices, news_items)
+    if combined_span is None:
+        if (
+            average_similarity < SMALL_CLUSTER_MERGE_MISSING_TIME_AVG_SIMILARITY
+            or max_similarity < SMALL_CLUSTER_MERGE_MISSING_TIME_MAX_SIMILARITY
+        ):
+            return None
+    elif combined_span > SMALL_CLUSTER_MERGE_TIME_WINDOW_DAYS:
+        return None
+    elif average_similarity < SMALL_CLUSTER_MERGE_AVG_SIMILARITY or max_similarity < SMALL_CLUSTER_MERGE_MAX_SIMILARITY:
+        return None
+
+    best_left = left_indices[left_local]
+    best_right = right_indices[right_local]
+    return _MergeCandidate(
+        left_component=left_component,
+        right_component=right_component,
+        average_similarity=average_similarity,
+        max_similarity=max_similarity,
+        best_left=best_left,
+        best_right=best_right,
+        gap_days=_time_gap_days(news_items[best_left], news_items[best_right]),
+    )
+
+
+def _merge_small_components(
+    grouped_indices: list[list[int]],
+    news_items: list[NewsItem],
+    similarity_matrix: np.ndarray,
+) -> tuple[list[list[int]], list[_EdgeCandidate]]:
+    """Conservatively merge tiny over-split components into compact events."""
+    if len(grouped_indices) <= 1:
+        return grouped_indices, []
+
+    eligible_components = [
+        component_index
+        for component_index, group in enumerate(grouped_indices)
+        if len(group) <= SMALL_CLUSTER_MERGE_SOURCE_MAX_SIZE
+    ]
+    if len(eligible_components) <= 1:
+        return grouped_indices, []
+
+    candidates: list[_MergeCandidate] = []
+    for left_offset, left_component in enumerate(eligible_components):
+        for right_component in eligible_components[left_offset + 1 :]:
+            candidate = _merge_candidate(
+                left_component,
+                right_component,
+                grouped_indices[left_component],
+                grouped_indices[right_component],
+                news_items,
+                similarity_matrix,
+            )
+            if candidate is not None:
+                candidates.append(candidate)
+
+    if not candidates:
+        return grouped_indices, []
+
+    candidates.sort(key=lambda item: (-item.average_similarity, -item.max_similarity, item.left_component, item.right_component))
+    union_find = _UnionFind(len(grouped_indices))
+    root_members = {index: list(group) for index, group in enumerate(grouped_indices)}
+    merge_edges: list[_EdgeCandidate] = []
+
+    for candidate in candidates:
+        left_root = union_find.find(candidate.left_component)
+        right_root = union_find.find(candidate.right_component)
+        if left_root == right_root:
+            continue
+
+        left_indices = root_members[left_root]
+        right_indices = root_members[right_root]
+        refreshed = _merge_candidate(
+            left_root,
+            right_root,
+            left_indices,
+            right_indices,
+            news_items,
+            similarity_matrix,
+        )
+        if refreshed is None:
+            continue
+
+        union_find.union(left_root, right_root)
+        merged_root = union_find.find(left_root)
+        retired_root = right_root if merged_root == left_root else left_root
+        root_members[merged_root] = sorted([*left_indices, *right_indices])
+        root_members.pop(retired_root, None)
+        merge_edges.append(
+            _EdgeCandidate(
+                refreshed.best_left,
+                refreshed.best_right,
+                refreshed.max_similarity,
+                refreshed.gap_days,
+                "small_cluster_merge",
+            )
+        )
+
+    merged_groups: dict[int, list[int]] = defaultdict(list)
+    for component_index, group in enumerate(grouped_indices):
+        merged_groups[union_find.find(component_index)].extend(group)
+
+    return [sorted(group) for group in merged_groups.values()], merge_edges
+
+
 def cluster_embeddings(
     news_items: list[NewsItem],
     embeddings: np.ndarray,
@@ -247,6 +422,8 @@ def cluster_embeddings(
         similarity_matrix,
         SIMILARITY_THRESHOLD,
     )
+    grouped_indices, merge_edges = _merge_small_components(grouped_indices, news_items, similarity_matrix)
+    edge_candidates.extend(merge_edges)
     edges = [
         EventEdge(
             left_index=edge.left,
@@ -265,6 +442,12 @@ def cluster_embeddings(
         sorted_indices = sorted(member_indices)
         submatrix = similarity_matrix[np.ix_(sorted_indices, sorted_indices)]
         cluster_items = [news_items[index] for index in sorted_indices]
+        member_set = set(sorted_indices)
+        cluster_edges = [
+            edge
+            for edge in edge_candidates
+            if edge.left in member_set and edge.right in member_set
+        ]
         clusters.append(
             EventCluster(
                 event_id=f"cluster_{cluster_index:03d}",
@@ -274,6 +457,7 @@ def cluster_embeddings(
                 cluster_size=len(sorted_indices),
                 average_similarity=_mean_upper_triangle(submatrix),
                 time_consistency=_component_time_consistency(cluster_items),
+                edge_density=_component_edge_density(sorted_indices, cluster_edges),
             )
         )
 

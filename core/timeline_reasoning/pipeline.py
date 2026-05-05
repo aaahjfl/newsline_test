@@ -92,6 +92,12 @@ def load_event_nodes_for_timeline(topic: str, run_id: str | None = None) -> tupl
     connection = get_db_connection()
     try:
         with connection.cursor() as cursor:
+            cursor.execute(f"SHOW COLUMNS FROM {EVENT_TABLE}")
+            event_columns = {row["Field"] for row in cursor.fetchall()}
+            extra_columns = ""
+            if {"risk_flags", "quality_metrics"}.issubset(event_columns):
+                extra_columns = ",\n                risk_flags,\n                quality_metrics"
+
             cursor.execute(
                 f"""
                 SELECT
@@ -108,6 +114,7 @@ def load_event_nodes_for_timeline(topic: str, run_id: str | None = None) -> tupl
                 confidence,
                 system_is_noise,
                 noise_reason
+                {extra_columns}
                 FROM {EVENT_TABLE}
                 WHERE topic = %s AND run_id = %s
                 ORDER BY COALESCE(event_time_anchor, event_time_start, event_time_end) ASC, id ASC
@@ -129,6 +136,28 @@ def load_event_nodes_for_timeline(topic: str, run_id: str | None = None) -> tupl
         else:
             member_news_ids = member_news_ids_raw or []
 
+        risk_flags_raw = row.get("risk_flags")
+        if isinstance(risk_flags_raw, str):
+            try:
+                risk_flags = json.loads(risk_flags_raw)
+            except json.JSONDecodeError:
+                risk_flags = []
+        else:
+            risk_flags = risk_flags_raw or []
+        if not isinstance(risk_flags, list):
+            risk_flags = []
+
+        quality_metrics_raw = row.get("quality_metrics")
+        if isinstance(quality_metrics_raw, str):
+            try:
+                quality_metrics = json.loads(quality_metrics_raw)
+            except json.JSONDecodeError:
+                quality_metrics = {}
+        else:
+            quality_metrics = quality_metrics_raw or {}
+        if not isinstance(quality_metrics, dict):
+            quality_metrics = {}
+
         events.append(
             EventNode(
                 event_id=row["event_id"],
@@ -144,6 +173,8 @@ def load_event_nodes_for_timeline(topic: str, run_id: str | None = None) -> tupl
                 confidence=float(row.get("confidence") or 0.0),
                 system_is_noise=bool(row.get("system_is_noise")),
                 noise_reason=row.get("noise_reason"),
+                risk_flags=[str(flag) for flag in risk_flags],
+                quality_metrics=quality_metrics,
             )
         )
 
@@ -318,6 +349,53 @@ def _slice_events_and_assignments(
     return limited_events, [assignment for assignment in assignments if assignment.get("event_id") in event_ids]
 
 
+def _standard_review_extra_limit(card_count: int, existing_review_count: int) -> int:
+    target = max(4, min(60, (card_count + 2) // 3))
+    return max(0, target - existing_review_count)
+
+
+def _standard_uncertainty_score(card: EventCard) -> tuple[int, float, int, str]:
+    flags = set(card.risk_flags)
+    score = 0
+    if "translated_topic_alias_risk" in flags:
+        score += 100
+    if "ambiguous_topic_low_support" in flags:
+        score += 40
+    if "low_confidence" in flags:
+        score += 20
+    if "medium_confidence" in flags:
+        score += 10
+    if "low_source_support" in flags:
+        score += 8
+    if not (card.event_time_anchor or card.event_time_start or card.event_time_end):
+        score += 6
+    return (-score, card.confidence or 0.0, -card.cluster_size, card.event_id)
+
+
+def _select_standard_uncertainty_reviews(
+    cards: list[EventCard],
+    *,
+    existing_review_ids: set[str],
+) -> list[EventCard]:
+    limit = _standard_review_extra_limit(len(cards), len(existing_review_ids))
+    if limit <= 0:
+        return []
+    candidates = [
+        card
+        for card in cards
+        if card.event_id not in existing_review_ids
+        and {
+            "translated_topic_alias_risk",
+            "ambiguous_topic_low_support",
+            "low_confidence",
+            "medium_confidence",
+            "low_source_support",
+        }.intersection(card.risk_flags)
+    ]
+    candidates.sort(key=_standard_uncertainty_score)
+    return candidates[:limit]
+
+
 def _route_and_decide(
     cards: list[EventCard],
     *,
@@ -328,13 +406,26 @@ def _route_and_decide(
 ) -> tuple[list[EventDecision], int]:
     decisions: list[EventDecision] = []
     review_cards: list[EventCard] = []
+    rule_cards: list[tuple[EventCard, str]] = []
 
     for card in cards:
         route = route_event_card(card, mode=mode)
         if route == "llm_review":
             review_cards.append(card)
         else:
-            decisions.append(build_rule_decision(card, route=route))
+            rule_cards.append((card, route))
+
+    normalized_mode = mode.strip().casefold()
+    if normalized_mode == "standard":
+        existing_review_ids = {card.event_id for card in review_cards}
+        extra_reviews = _select_standard_uncertainty_reviews(cards, existing_review_ids=existing_review_ids)
+        extra_review_ids = {card.event_id for card in extra_reviews}
+        review_cards.extend(extra_reviews)
+        for card, route in rule_cards:
+            if card.event_id not in extra_review_ids:
+                decisions.append(build_rule_decision(card, route=route))
+    else:
+        decisions.extend(build_rule_decision(card, route=route) for card, route in rule_cards)
 
     llm_decisions = judge_event_cards_with_llm(
         review_cards,
@@ -356,9 +447,10 @@ def run_timeline_reasoning_pipeline(
     mode: str = "standard",
     limit_events: int | None = None,
     dry_run: bool = False,
-    llm_batch_size: int = 1,
+    llm_batch_size: int = 4,
     model_name: str | None = None,
     llm_timeout_seconds: int = 300,
+    extra_config: dict[str, Any] | None = None,
 ) -> TimelineReasoningResult:
     """Run the full LLM decision layer and materialize a display-ready timeline."""
     normalized_topic = topic.strip()
@@ -412,13 +504,16 @@ def run_timeline_reasoning_pipeline(
 
     result.output_paths = _export_timeline_result(result)
     if not dry_run:
+        config = {
+            "mode": mode,
+            "limit_events": limit_events,
+            "llm_batch_size": llm_batch_size,
+            "dry_run": dry_run,
+        }
+        if extra_config:
+            config.update(extra_config)
         persist_timeline_reasoning_result(
             result,
-            config={
-                "mode": mode,
-                "limit_events": limit_events,
-                "llm_batch_size": llm_batch_size,
-                "dry_run": dry_run,
-            },
+            config=config,
         )
     return result

@@ -33,8 +33,10 @@ def parse_args() -> argparse.Namespace:
         choices=("fast", "standard", "full"),
         help="Timeline reasoning mode.",
     )
-    parser.add_argument("--llm-batch-size", type=int, default=1)
+    parser.add_argument("--llm-batch-size", type=int, default=4)
     parser.add_argument("--llm-timeout-seconds", type=int, default=300)
+    parser.add_argument("--start-date", default=None, help="Optional candidate start date, YYYY-MM-DD.")
+    parser.add_argument("--end-date", default=None, help="Optional candidate end date, YYYY-MM-DD.")
     return parser.parse_args()
 
 
@@ -45,12 +47,16 @@ def main() -> int:
         _emit("error", progress=0, stage="输入 topic 为空", error="topic must not be empty.")
         return 2
 
+    date_range_text = ""
+    if args.start_date or args.end_date:
+        date_range_text = f"；时间范围：{args.start_date or '最早'} 至 {args.end_date or '最晚'}"
+
     try:
         _emit(
             "stage",
             progress=5,
             stage="准备生成任务",
-            message=f"已接收 topic「{topic}」，当前使用 {args.mode} 模式。正在准备调用后端流水线。",
+            message=f"已接收 topic「{topic}」，当前使用 {args.mode} 模式{date_range_text}。正在准备调用后端流水线。",
         )
         _emit(
             "stage",
@@ -64,7 +70,11 @@ def main() -> int:
             stage="正在发现候选事件簇",
             message="SBERT 层正在处理候选新闻。该阶段会从 MySQL 读取新闻标题，并用 embedding 相似度组织候选事件簇。",
         )
-        discovery_result = run_event_discovery(topic)
+        discovery_result = run_event_discovery(
+            topic,
+            start_date=args.start_date,
+            end_date=args.end_date,
+        )
         _emit(
             "stage",
             progress=64,
@@ -94,6 +104,10 @@ def main() -> int:
             dry_run=False,
             llm_batch_size=args.llm_batch_size,
             llm_timeout_seconds=args.llm_timeout_seconds,
+            extra_config={
+                "start_date": args.start_date,
+                "end_date": args.end_date,
+            },
         )
         _emit(
             "done",

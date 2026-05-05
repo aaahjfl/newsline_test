@@ -21,7 +21,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--mode", default="standard", choices=["fast", "standard", "full"], help="决断模式")
     parser.add_argument("--limit-events", type=int, default=None, help="调试时限制处理的事件数")
     parser.add_argument("--dry-run", action="store_true", help="只输出 JSON，不写入 MySQL")
-    parser.add_argument("--llm-batch-size", type=int, default=1, help="每次发送给 LLM 的事件卡片数量")
+    parser.add_argument("--llm-batch-size", type=int, default=4, help="每次发送给 LLM 的事件卡片数量")
     parser.add_argument("--llm-timeout-seconds", type=int, default=300, help="单次 LLM 请求超时时间")
     return parser
 

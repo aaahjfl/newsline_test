@@ -40,6 +40,8 @@ CREATE TABLE IF NOT EXISTS event_discovery_events (
     confidence DECIMAL(6,4) NOT NULL DEFAULT 0.0000,
     system_is_noise BOOLEAN NOT NULL DEFAULT FALSE,
     noise_reason VARCHAR(64) NULL,
+    risk_flags LONGTEXT NULL,
+    quality_metrics LONGTEXT NULL,
     generated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 

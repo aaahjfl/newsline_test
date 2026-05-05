@@ -18,6 +18,7 @@ from database.db_utils import get_db_connection
 from .clustering import cluster_embeddings
 from .encoder import encode_titles
 from .event_builder import build_event_nodes
+from .title_features import detect_title_risk_flags, normalize_title_for_matching
 from .topic_expansion import TopicAlias, expand_topic_alias_candidates
 from core.schemas import EventDiscoveryResult, NewsItem
 
@@ -100,16 +101,52 @@ def _is_noise(value: Any) -> bool:
     return str(value).strip().lower() in {"1", "true", "yes", "y"}
 
 
-def fetch_candidate_news(topic: str, limit: int | None = None, *, aliases: list[str] | None = None) -> list[NewsItem]:
+def _normalize_date_bound(value: str | date | datetime | None, *, end_of_day: bool = False) -> str | None:
+    if value is None:
+        return None
+    if isinstance(value, datetime):
+        return value.strftime("%Y-%m-%d %H:%M:%S")
+    if isinstance(value, date):
+        base = datetime.combine(value, datetime.max.time() if end_of_day else datetime.min.time())
+        return base.strftime("%Y-%m-%d %H:%M:%S")
+
+    text = str(value).strip()
+    if not text:
+        return None
+    for fmt in ("%Y-%m-%d", "%Y-%m-%d %H:%M:%S"):
+        try:
+            parsed = datetime.strptime(text, fmt)
+            if fmt == "%Y-%m-%d" and end_of_day:
+                parsed = datetime.combine(parsed.date(), datetime.max.time())
+            return parsed.strftime("%Y-%m-%d %H:%M:%S")
+        except ValueError:
+            continue
+    raise ValueError("date bounds must use YYYY-MM-DD or YYYY-MM-DD HH:MM:SS format.")
+
+
+def fetch_candidate_news(
+    topic: str,
+    limit: int | None = None,
+    *,
+    aliases: list[str] | None = None,
+    start_date: str | date | datetime | None = None,
+    end_date: str | date | datetime | None = None,
+) -> list[NewsItem]:
     """Fetch candidate news rows from `parser_newsdata` by topic."""
     if not topic or not topic.strip():
         raise ValueError("topic must be a non-empty string.")
+
+    start_bound = _normalize_date_bound(start_date)
+    end_bound = _normalize_date_bound(end_date, end_of_day=True)
+    if start_bound and end_bound and start_bound > end_bound:
+        raise ValueError("start_date must be earlier than or equal to end_date.")
 
     topic_aliases = aliases or [topic.strip()]
     topic_aliases = [alias for alias in topic_aliases if str(alias).strip()]
     if not topic_aliases:
         topic_aliases = [topic.strip()]
     like_clauses = " OR ".join(["title LIKE %s" for _ in topic_aliases])
+    time_expr = "COALESCE(event_timestamp, event_time_start, event_time_end, standard_timestamp)"
 
     sql = """
         SELECT
@@ -129,6 +166,15 @@ def fetch_candidate_news(topic: str, limit: int | None = None, *, aliases: list[
           AND (
     """ + like_clauses + """
           )
+    """
+    params: list[Any] = [f"%{alias}%" for alias in topic_aliases]
+    if start_bound:
+        sql += f" AND {time_expr} >= %s\n"
+        params.append(start_bound)
+    if end_bound:
+        sql += f" AND {time_expr} <= %s\n"
+        params.append(end_bound)
+    sql += """
         ORDER BY COALESCE(
             event_timestamp,
             event_time_start,
@@ -137,7 +183,6 @@ def fetch_candidate_news(topic: str, limit: int | None = None, *, aliases: list[
             CAST('9999-12-31 23:59:59' AS DATETIME)
         ) ASC, id ASC
     """
-    params: list[Any] = [f"%{alias}%" for alias in topic_aliases]
     if limit is not None:
         sql += " LIMIT %s"
         params.append(limit)
@@ -175,6 +220,34 @@ def _filter_candidates(news_items: list[NewsItem], topic_aliases: list[str]) -> 
     ]
 
 
+def _prepare_news_for_clustering(news_items: list[NewsItem]) -> list[NewsItem]:
+    """Annotate generic title features and collapse exact normalized duplicates."""
+    groups: dict[str, list[NewsItem]] = {}
+    ordered_keys: list[str] = []
+
+    for item in news_items:
+        normalized_title = normalize_title_for_matching(item.title)
+        risk_flags = detect_title_risk_flags(item.title)
+        item.metadata["normalized_title"] = normalized_title
+        item.metadata["title_risk_flags"] = risk_flags
+
+        key = normalized_title or item.title.strip().casefold() or str(item.news_id)
+        if key not in groups:
+            groups[key] = []
+            ordered_keys.append(key)
+        groups[key].append(item)
+
+    representatives: list[NewsItem] = []
+    for key in ordered_keys:
+        group = groups[key]
+        representative = group[0]
+        representative.metadata["duplicate_members"] = group
+        representative.metadata["duplicate_count"] = len(group)
+        representatives.append(representative)
+
+    return representatives
+
+
 def _dedupe_alias_texts(aliases: list[str]) -> list[str]:
     unique: list[str] = []
     seen: set[str] = set()
@@ -205,11 +278,20 @@ def _serialize_topic_alias_details(alias_candidates: list[TopicAlias]) -> list[d
 def _fetch_candidates_with_alias_strategy(
     topic: str,
     limit: int | None,
+    *,
+    start_date: str | date | datetime | None = None,
+    end_date: str | date | datetime | None = None,
 ) -> tuple[list[str], list[dict[str, Any]], list[NewsItem], list[NewsItem]]:
     alias_candidates = expand_topic_alias_candidates(topic)
     used_aliases = _dedupe_alias_texts([alias.text for alias in alias_candidates] or [topic.strip()])
     alias_details = _serialize_topic_alias_details(alias_candidates)
-    candidate_news = fetch_candidate_news(topic, limit=limit, aliases=used_aliases)
+    candidate_news = fetch_candidate_news(
+        topic,
+        limit=limit,
+        aliases=used_aliases,
+        start_date=start_date,
+        end_date=end_date,
+    )
     filtered_news = _filter_candidates(candidate_news, used_aliases)
 
     warning_count = int(PIPELINE_CONFIG.get("event_discovery_candidate_warning_count", 8000))
@@ -361,6 +443,8 @@ def ensure_event_discovery_schema(cursor) -> None:
             confidence DECIMAL(6,4) NOT NULL DEFAULT 0.0000,
             system_is_noise BOOLEAN NOT NULL DEFAULT FALSE,
             noise_reason VARCHAR(64) NULL,
+            risk_flags LONGTEXT NULL,
+            quality_metrics LONGTEXT NULL,
             generated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
             UNIQUE KEY uniq_event_discovery_events_run_event (run_id, event_id),
             KEY idx_event_discovery_events_run (run_id),
@@ -377,6 +461,10 @@ def ensure_event_discovery_schema(cursor) -> None:
         cursor.execute(f"ALTER TABLE {EVENT_TABLE} ADD COLUMN system_is_noise BOOLEAN NOT NULL DEFAULT FALSE AFTER confidence")
     if "noise_reason" not in event_columns:
         cursor.execute(f"ALTER TABLE {EVENT_TABLE} ADD COLUMN noise_reason VARCHAR(64) NULL AFTER system_is_noise")
+    if "risk_flags" not in event_columns:
+        cursor.execute(f"ALTER TABLE {EVENT_TABLE} ADD COLUMN risk_flags LONGTEXT NULL AFTER noise_reason")
+    if "quality_metrics" not in event_columns:
+        cursor.execute(f"ALTER TABLE {EVENT_TABLE} ADD COLUMN quality_metrics LONGTEXT NULL AFTER risk_flags")
     cursor.execute(
         f"""
         CREATE TABLE IF NOT EXISTS {ASSIGNMENT_TABLE} (
@@ -462,8 +550,10 @@ def persist_result_to_db(result: EventDiscoveryResult) -> None:
                         source_count,
                         confidence,
                         system_is_noise,
-                        noise_reason
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                        noise_reason,
+                        risk_flags,
+                        quality_metrics
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                     """,
                     [
                         (
@@ -481,6 +571,8 @@ def persist_result_to_db(result: EventDiscoveryResult) -> None:
                             event.confidence,
                             event.system_is_noise,
                             event.noise_reason,
+                            json.dumps(event.risk_flags, ensure_ascii=False),
+                            json.dumps(event.quality_metrics, ensure_ascii=False),
                         )
                         for event in result.events
                     ],
@@ -559,12 +651,23 @@ def persist_result_to_db(result: EventDiscoveryResult) -> None:
         connection.close()
 
 
-def run_event_discovery(topic: str, limit: int | None = None) -> EventDiscoveryResult:
+def run_event_discovery(
+    topic: str,
+    limit: int | None = None,
+    *,
+    start_date: str | date | datetime | None = None,
+    end_date: str | date | datetime | None = None,
+) -> EventDiscoveryResult:
     """Run the formal SBERT event discovery pipeline for a single topic."""
     if not isinstance(topic, str):
         raise TypeError("run_event_discovery expects a topic string and reads candidates from MySQL.")
 
-    topic_aliases, topic_alias_details, candidate_news, filtered_news = _fetch_candidates_with_alias_strategy(topic, limit)
+    topic_aliases, topic_alias_details, candidate_news, filtered_news = _fetch_candidates_with_alias_strategy(
+        topic,
+        limit,
+        start_date=start_date,
+        end_date=end_date,
+    )
     run_id = _generate_run_id(topic)
 
     result = EventDiscoveryResult(
@@ -581,9 +684,10 @@ def run_event_discovery(topic: str, limit: int | None = None) -> EventDiscoveryR
         result.output_paths = _export_outputs(result)
         return result
 
-    embeddings = encode_titles([item.title for item in filtered_news])
-    clusters, edges, similarity_matrix = cluster_embeddings(filtered_news, embeddings, topic=topic)
-    events, assignments = build_event_nodes(topic, clusters, filtered_news, similarity_matrix)
+    clustering_news = _prepare_news_for_clustering(filtered_news)
+    embeddings = encode_titles([item.title for item in clustering_news])
+    clusters, edges, similarity_matrix = cluster_embeddings(clustering_news, embeddings, topic=topic)
+    events, assignments = build_event_nodes(topic, clusters, clustering_news, similarity_matrix)
     events, assignments = _attach_run_context(run_id, events, assignments)
 
     result.events = events

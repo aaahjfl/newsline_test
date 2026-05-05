@@ -96,7 +96,7 @@ class TimelineReasoningPipelineTest(unittest.TestCase):
                 }
             ],
         ]
-        fake_connections = [_FakeConnection([responses[0]]), _FakeConnection([responses[1]])]
+        fake_connections = [_FakeConnection([responses[0]]), _FakeConnection([[{"Field": "event_id"}], responses[1]])]
 
         with patch("core.timeline_reasoning.pipeline.get_db_connection", side_effect=fake_connections):
             run_id, events = load_event_nodes_for_timeline("Fed")
@@ -215,8 +215,66 @@ class TimelineReasoningPipelineTest(unittest.TestCase):
         self.assertEqual(len(cards), 1)
         self.assertEqual(len(cards[0].articles), 2)
         self.assertEqual(cards[0].articles[1]["url"], "https://example.com/2")
-        self.assertIn("member_titles_sample", cards[0].to_llm_dict())
+        self.assertIn("evidence", cards[0].to_llm_dict())
+        self.assertIn("topic_profile", cards[0].to_llm_dict())
         self.assertNotIn("articles", cards[0].to_llm_dict())
+        self.assertNotIn("member_titles_sample", cards[0].to_llm_dict())
+        self.assertNotIn("member_title_evidence", cards[0].to_llm_dict())
+
+    def test_event_card_includes_quality_summary_and_diverse_title_evidence(self) -> None:
+        from core.timeline_reasoning.event_cards import build_event_cards
+
+        event = EventNode(
+            event_id="run_1:Fed_event_001",
+            topic="Fed",
+            member_news_ids=["1", "2", "3"],
+            cluster_size=3,
+            canonical_title="Fed keeps rates unchanged",
+            event_time_anchor="2026-04-02 00:00:00",
+            source_count=3,
+            confidence=0.91,
+            quality_metrics={
+                "semantic_cohesion": 0.88,
+                "temporal_coherence": 0.93,
+                "duplicate_ratio": 0.0,
+                "article_count": 3,
+                "ignored_detail": "not sent to llm",
+            },
+        )
+        assignments = [
+            {
+                "event_id": "run_1:Fed_event_001",
+                "news_id": "1",
+                "title": "Fed keeps rates unchanged",
+                "source": "Reuters",
+                "event_time_anchor": "2026-04-02 00:00:00",
+            },
+            {
+                "event_id": "run_1:Fed_event_001",
+                "news_id": "2",
+                "title": "Federal Reserve leaves interest rates steady",
+                "source": "AP",
+                "event_time_anchor": "2026-04-01 00:00:00",
+            },
+            {
+                "event_id": "run_1:Fed_event_001",
+                "news_id": "3",
+                "title": "Fed rate decision live updates",
+                "source": "Example",
+                "event_time_anchor": "2026-04-03 00:00:00",
+            },
+        ]
+
+        card = build_event_cards(discovery_run_id="run_1", events=[event], assignments=assignments)[0]
+        payload = card.to_llm_dict()
+
+        self.assertNotIn("quality_summary", payload)
+        self.assertIn("quality_hints", payload)
+        self.assertGreaterEqual(len(payload["evidence"]), 3)
+        self.assertLessEqual(len(payload["evidence"]), 4)
+        self.assertIn("container_title", {item["role"] for item in payload["evidence"]})
+        self.assertNotIn("news_id", payload["evidence"][0])
+        self.assertEqual(payload["time"]["anchor"], "2026-04-02")
 
     def test_rule_routing_sends_system_noise_to_llm_review(self) -> None:
         from core.timeline_reasoning.filters import route_event_card
@@ -236,6 +294,115 @@ class TimelineReasoningPipelineTest(unittest.TestCase):
         self.assertEqual(route_event_card(card, mode="standard"), "llm_review")
         self.assertIn("system_noise", card.risk_flags)
 
+    def test_fast_routing_does_not_review_low_confidence_singleton_without_structural_risk(self) -> None:
+        from core.timeline_reasoning.filters import route_event_card
+        from core.timeline_reasoning.models import EventCard
+
+        card = EventCard(
+            discovery_run_id="run_1",
+            topic="Fed",
+            event_id="run_1:Fed_event_001",
+            canonical_title="Fed keeps rates unchanged",
+            cluster_size=1,
+            source_count=1,
+            confidence=0.62,
+            event_time_anchor="2026-04-01 00:00:00",
+        )
+
+        self.assertEqual(route_event_card(card, mode="fast"), "auto_accept")
+        self.assertIn("low_confidence", card.risk_flags)
+
+    def test_standard_routing_does_not_force_review_for_translated_alias_risk_alone(self) -> None:
+        from core.timeline_reasoning.filters import route_event_card
+        from core.timeline_reasoning.models import EventCard
+        from core.timeline_reasoning.topic_profile import build_topic_profile
+
+        card = EventCard(
+            discovery_run_id="run_1",
+            topic="Apple",
+            topic_profile=build_topic_profile("Apple"),
+            event_id="run_1:Apple_event_001",
+            canonical_title="静宁苹果产业品牌价值提升",
+            cluster_size=1,
+            source_count=1,
+            confidence=0.62,
+            event_time_anchor="2026-04-01 00:00:00",
+            member_titles_sample=["静宁苹果产业品牌价值提升"],
+        )
+
+        self.assertEqual(route_event_card(card, mode="standard"), "auto_accept")
+        self.assertIn("translated_topic_alias_risk", card.risk_flags)
+
+    def test_standard_routing_reviews_translated_alias_when_structural_risk_exists(self) -> None:
+        from core.timeline_reasoning.filters import route_event_card
+        from core.timeline_reasoning.models import EventCard
+        from core.timeline_reasoning.topic_profile import build_topic_profile
+
+        card = EventCard(
+            discovery_run_id="run_1",
+            topic="Apple",
+            topic_profile=build_topic_profile("Apple"),
+            event_id="run_1:Apple_event_001",
+            canonical_title="静宁苹果产业品牌价值提升",
+            cluster_size=2,
+            source_count=1,
+            confidence=0.62,
+            event_time_start="2026-01-01 00:00:00",
+            event_time_end="2026-04-01 00:00:00",
+            event_time_anchor="2026-04-01 00:00:00",
+            member_titles_sample=["静宁苹果产业品牌价值提升"],
+        )
+
+        self.assertEqual(route_event_card(card, mode="standard"), "llm_review")
+        self.assertIn("translated_topic_alias_risk", card.risk_flags)
+        self.assertIn("long_time_span", card.risk_flags)
+
+    def test_standard_mode_samples_uncertain_events_without_full_review(self) -> None:
+        from core.timeline_reasoning.models import EventCard, EventDecision
+        from core.timeline_reasoning.pipeline import _route_and_decide
+
+        cards = [
+            EventCard(
+                discovery_run_id="run_1",
+                topic="Fed",
+                event_id=f"event_{index}",
+                canonical_title=f"Fed event {index}",
+                cluster_size=1,
+                source_count=1,
+                confidence=0.62,
+                event_time_anchor="2026-04-01 00:00:00",
+            )
+            for index in range(12)
+        ]
+
+        def fake_judge(review_cards, **kwargs):
+            del kwargs
+            return [
+                EventDecision(
+                    event_id=card.event_id,
+                    decision_source="llm",
+                    keep_event=True,
+                    is_topic_relevant=True,
+                    final_is_noise=False,
+                    display_title=card.canonical_title,
+                    resolved_time_anchor=card.event_time_anchor,
+                )
+                for card in review_cards
+            ]
+
+        with patch("core.timeline_reasoning.pipeline.judge_event_cards_with_llm", side_effect=fake_judge):
+            decisions, review_count = _route_and_decide(
+                cards,
+                mode="standard",
+                model_name="dummy",
+                llm_batch_size=1,
+                llm_timeout_seconds=1,
+            )
+
+        self.assertEqual(review_count, 4)
+        self.assertEqual(len(decisions), 12)
+        self.assertEqual(sum(1 for decision in decisions if decision.decision_source == "llm"), 4)
+
     def test_llm_json_parser_ignores_visible_think_blocks(self) -> None:
         from core.timeline_reasoning.llm_judge import _extract_json_object
 
@@ -244,6 +411,93 @@ class TimelineReasoningPipelineTest(unittest.TestCase):
         )
 
         self.assertEqual(parsed["decisions"][0]["event_id"], "event_1")
+
+    def test_llm_decision_preserves_explicit_null_time(self) -> None:
+        from core.timeline_reasoning.llm_judge import _decision_from_payload
+        from core.timeline_reasoning.models import EventCard
+
+        card = EventCard(
+            discovery_run_id="run_1",
+            topic="Fed",
+            event_id="event_1",
+            canonical_title="Fed keeps rates unchanged",
+            event_time_anchor="2026-04-01 00:00:00",
+        )
+        decision = _decision_from_payload(
+            {
+                "event_id": "event_1",
+                "keep_event": True,
+                "is_topic_relevant": True,
+                "final_is_noise": False,
+                "resolved_time_anchor": None,
+            },
+            card,
+            {"decisions": []},
+        )
+
+        self.assertIsNone(decision.resolved_time_anchor)
+
+    def test_llm_decision_uses_display_title_but_ignores_other_locally_derived_fields(self) -> None:
+        from core.timeline_reasoning.llm_judge import _decision_from_payload
+        from core.timeline_reasoning.models import EventCard
+
+        card = EventCard(
+            discovery_run_id="run_1",
+            topic="Fed",
+            event_id="event_1",
+            canonical_title="Fed keeps rates unchanged",
+            confidence=0.82,
+            event_time_start="2026-04-01 00:00:00",
+            event_time_end="2026-04-01 00:00:00",
+            event_time_anchor="2026-04-01 00:00:00",
+        )
+        decision = _decision_from_payload(
+            {
+                "event_id": "event_1",
+                "keep_event": True,
+                "is_topic_relevant": True,
+                "final_is_noise": False,
+                "display_title": "LLM rewritten title",
+                "resolved_time_start": "2026-05-01 00:00:00",
+                "resolved_time_end": "2026-05-02 00:00:00",
+                "resolved_time_anchor": "2026-04-02 00:00:00",
+                "decision_confidence": 0.1,
+                "time_confidence": 0.1,
+                "decision_reason": "Relevant concrete event.",
+            },
+            card,
+            {"decisions": []},
+        )
+
+        self.assertEqual(decision.display_title, "LLM rewritten title")
+        self.assertEqual(decision.resolved_time_start, card.event_time_start)
+        self.assertEqual(decision.resolved_time_end, card.event_time_end)
+        self.assertEqual(decision.resolved_time_anchor, "2026-04-02 00:00:00")
+        self.assertEqual(decision.decision_confidence, 0.82)
+        self.assertEqual(decision.time_confidence, 0.8)
+
+    def test_prompt_excludes_locally_derived_decision_fields(self) -> None:
+        from core.timeline_reasoning.models import EventCard
+        from core.timeline_reasoning.prompts import build_event_decision_prompt
+
+        prompt = build_event_decision_prompt(
+            [
+                EventCard(
+                    discovery_run_id="run_1",
+                    topic="Fed",
+                    event_id="event_1",
+                    canonical_title="Fed keeps rates unchanged",
+                    event_time_anchor="2026-04-01 00:00:00",
+                )
+            ]
+        )
+
+        self.assertIn('"display_title"', prompt)
+        self.assertNotIn('"resolved_time_start"', prompt)
+        self.assertNotIn('"resolved_time_end"', prompt)
+        self.assertNotIn('"decision_confidence"', prompt)
+        self.assertNotIn('"time_confidence"', prompt)
+        self.assertIn('"resolved_time_anchor"', prompt)
 
     def test_run_timeline_reasoning_pipeline_exports_json_and_preserves_articles(self) -> None:
         from core.timeline_reasoning.models import EventDecision

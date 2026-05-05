@@ -18,6 +18,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="运行正式版 SBERT 事件发现层")
     parser.add_argument("--topic", help="要检索和聚类的主题关键词")
     parser.add_argument("--limit", type=int, default=None, help="候选新闻读取上限")
+    parser.add_argument("--start-date", default=None, help="候选新闻起始日期，格式 YYYY-MM-DD")
+    parser.add_argument("--end-date", default=None, help="候选新闻结束日期，格式 YYYY-MM-DD")
     return parser
 
 
@@ -33,7 +35,12 @@ def main() -> int:
         print("topic 不能为空，已退出。")
         return 1
 
-    result = run_event_discovery(topic, limit=args.limit)
+    result = run_event_discovery(
+        topic,
+        limit=args.limit,
+        start_date=args.start_date,
+        end_date=args.end_date,
+    )
 
     print(f"topic: {result.topic}")
     print(f"run_id: {result.run_id}")

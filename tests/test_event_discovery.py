@@ -75,6 +75,47 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
 
         self.assertEqual(sorted(cluster.cluster_size for cluster in clusters), [2, 3, 3])
 
+    def test_small_component_merge_combines_tight_non_rolling_fragments(self) -> None:
+        from core.event_discovery.clustering import _merge_small_components
+
+        news_items = [
+            NewsItem(news_id="a", title="Fed keeps rates unchanged", event_time_anchor="2026-04-01 00:00:00"),
+            NewsItem(news_id="b", title="Federal Reserve leaves rates steady", event_time_anchor="2026-04-02 00:00:00"),
+            NewsItem(news_id="c", title="Unrelated Fed speech", event_time_anchor="2026-04-01 00:00:00"),
+        ]
+        similarity_matrix = np.asarray(
+            [
+                [1.0, 0.92, 0.2],
+                [0.92, 1.0, 0.2],
+                [0.2, 0.2, 1.0],
+            ],
+            dtype=np.float32,
+        )
+
+        groups, edges = _merge_small_components([[0], [1], [2]], news_items, similarity_matrix)
+
+        self.assertEqual(sorted(sorted(group) for group in groups), [[0, 1], [2]])
+        self.assertEqual(edges[0].edge_reason, "small_cluster_merge")
+
+    def test_small_component_merge_blocks_rolling_fragments(self) -> None:
+        from core.event_discovery.clustering import _merge_small_components
+
+        news_items = [
+            NewsItem(
+                news_id="a",
+                title="LIVE: Fed keeps rates unchanged",
+                event_time_anchor="2026-04-01 00:00:00",
+                metadata={"title_risk_flags": ["rolling_coverage"]},
+            ),
+            NewsItem(news_id="b", title="Fed keeps rates unchanged", event_time_anchor="2026-04-02 00:00:00"),
+        ]
+        similarity_matrix = np.asarray([[1.0, 0.96], [0.96, 1.0]], dtype=np.float32)
+
+        groups, edges = _merge_small_components([[0], [1]], news_items, similarity_matrix)
+
+        self.assertEqual(sorted(sorted(group) for group in groups), [[0], [1]])
+        self.assertEqual(edges, [])
+
     def test_topic_matcher_avoids_grapples_false_positive(self) -> None:
         from core.event_discovery.pipeline import _title_matches_topic
 
@@ -367,6 +408,8 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
                 "confidence",
                 "system_is_noise",
                 "noise_reason",
+                "risk_flags",
+                "quality_metrics",
             },
         )
 
@@ -405,6 +448,49 @@ class EventDiscoveryPipelineTest(unittest.TestCase):
         self.assertEqual(len(result.events), 1)
         self.assertFalse(result.events[0].system_is_noise)
         self.assertIsNone(result.events[0].noise_reason)
+
+    def test_title_normalization_collapses_packaging_duplicates(self) -> None:
+        from core.event_discovery.pipeline import run_event_discovery
+        from core.event_discovery.topic_expansion import TopicAlias
+
+        sample_news = [
+            NewsItem(
+                news_id=1,
+                title="LIVE: Fed keeps rates unchanged | Economy News",
+                source="Reuters",
+                event_time_anchor="2026-04-01 00:00:00",
+                event_time_start="2026-04-01 00:00:00",
+                event_time_end="2026-04-01 00:00:00",
+            ),
+            NewsItem(
+                news_id=2,
+                title="Fed keeps rates unchanged",
+                source="AP",
+                event_time_anchor="2026-04-01 00:00:00",
+                event_time_start="2026-04-01 00:00:00",
+                event_time_end="2026-04-01 00:00:00",
+            ),
+        ]
+
+        with TemporaryDirectory() as tempdir:
+            with patch("core.event_discovery.pipeline.OUTPUTS_DIR", Path(tempdir)):
+                with patch(
+                    "core.event_discovery.pipeline.expand_topic_alias_candidates",
+                    return_value=[TopicAlias("Fed", "en")],
+                ):
+                    with patch("core.event_discovery.pipeline.fetch_candidate_news", return_value=sample_news):
+                        with patch(
+                            "core.event_discovery.pipeline.encode_titles",
+                            return_value=np.asarray([[1.0, 0.0]], dtype=np.float32),
+                        ) as encode_mock:
+                            with patch("core.event_discovery.pipeline.persist_result_to_db"):
+                                result = run_event_discovery("Fed")
+
+        self.assertEqual(encode_mock.call_args.args[0], ["LIVE: Fed keeps rates unchanged | Economy News"])
+        self.assertEqual(len(result.events), 1)
+        self.assertEqual(result.events[0].cluster_size, 2)
+        self.assertIn("rolling_coverage", result.events[0].risk_flags)
+        self.assertEqual(result.events[0].quality_metrics["unique_title_count"], 1)
 
 
 if __name__ == "__main__":

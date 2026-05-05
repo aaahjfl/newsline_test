@@ -43,11 +43,16 @@ MODE_ESTIMATES_SECONDS = {
     "standard": 420,
     "full": 720,
 }
+DATASET_START_DATE = "2025-06-01"
+DATASET_END_DATE = "2026-04-01"
 
 
 class CreateTimelineJobRequest(BaseModel):
     topic: str = Field(..., min_length=1, max_length=255)
     mode: Literal["fast", "standard", "full"] = "fast"
+    start_date: date | None = None
+    end_date: date | None = None
+    force_regenerate: bool = False
 
 
 @dataclass
@@ -55,6 +60,8 @@ class TimelineJob:
     job_id: str
     topic: str
     mode: str
+    start_date: str | None = None
+    end_date: str | None = None
     status: str = "queued"
     progress: int = 0
     stage: str = "已加入队列"
@@ -108,6 +115,8 @@ class TimelineJob:
             "job_id": self.job_id,
             "topic": self.topic,
             "mode": self.mode,
+            "start_date": self.start_date,
+            "end_date": self.end_date,
             "status": self.status,
             "progress": self.progress,
             "stage": self.stage,
@@ -155,6 +164,47 @@ def _normalize_row(row: dict) -> dict:
     return {key: _json_value(value) for key, value in row.items()}
 
 
+def _date_key(value: date | str | None) -> str | None:
+    if value is None:
+        return None
+    if isinstance(value, date):
+        return value.isoformat()
+    text = str(value).strip()
+    return text[:10] if text else None
+
+
+def _date_range_label(start_date: str | None, end_date: str | None) -> str:
+    if start_date and end_date:
+        return f"{start_date} 至 {end_date}"
+    if start_date:
+        return f"{start_date} 之后"
+    if end_date:
+        return f"{end_date} 之前"
+    return "全时段"
+
+
+def _config_matches_date_range(config_json: str | None, start_date: str | None, end_date: str | None) -> bool:
+    requested_start = start_date
+    requested_end = end_date
+    requested_is_full_dataset = requested_start == DATASET_START_DATE and requested_end == DATASET_END_DATE
+
+    if not config_json:
+        return (requested_start is None and requested_end is None) or requested_is_full_dataset
+    try:
+        config = json.loads(config_json)
+    except json.JSONDecodeError:
+        return (requested_start is None and requested_end is None) or requested_is_full_dataset
+
+    config_start = _date_key(config.get("start_date"))
+    config_end = _date_key(config.get("end_date"))
+    config_is_full_dataset = config_start == DATASET_START_DATE and config_end == DATASET_END_DATE
+    if requested_is_full_dataset and config_start is None and config_end is None:
+        return True
+    if config_is_full_dataset and requested_start is None and requested_end is None:
+        return True
+    return config_start == requested_start and config_end == requested_end
+
+
 def _friendly_error_hint(raw_text: str | None) -> str | None:
     if not raw_text:
         return None
@@ -196,7 +246,13 @@ def _count_timeline_nodes(reasoning_run_id: str) -> int:
         connection.close()
 
 
-def find_cached_timeline_run(topic: str, mode: str) -> dict | None:
+def find_cached_timeline_run(
+    topic: str,
+    mode: str,
+    *,
+    start_date: str | None = None,
+    end_date: str | None = None,
+) -> dict | None:
     """Return the newest completed run for a fixed-dataset topic/mode pair."""
     connection = get_db_connection()
     try:
@@ -209,17 +265,27 @@ def find_cached_timeline_run(topic: str, mode: str) -> dict | None:
                   AND mode = %s
                   AND status = 'completed'
                 ORDER BY generated_at DESC, id DESC
-                LIMIT 1
+                LIMIT 100
                 """,
                 (topic, mode),
             )
-            row = cursor.fetchone()
-            return _normalize_row(row) if row else None
+            rows = cursor.fetchall()
+            for row in rows:
+                if _config_matches_date_range(row.get("config_json"), start_date, end_date):
+                    return _normalize_row(row)
+            return None
     finally:
         connection.close()
 
 
-def _build_cached_job(topic: str, mode: str, cached_run: dict) -> TimelineJob:
+def _build_cached_job(
+    topic: str,
+    mode: str,
+    cached_run: dict,
+    *,
+    start_date: str | None = None,
+    end_date: str | None = None,
+) -> TimelineJob:
     reasoning_run_id = str(cached_run["reasoning_run_id"])
     try:
         node_count = _count_timeline_nodes(reasoning_run_id)
@@ -229,10 +295,12 @@ def _build_cached_job(topic: str, mode: str, cached_run: dict) -> TimelineJob:
         job_id=uuid.uuid4().hex[:12],
         topic=topic,
         mode=mode,
+        start_date=start_date,
+        end_date=end_date,
         status="completed",
         progress=100,
         stage="已找到历史时间线",
-        message="数据集固定，已直接复用 MySQL 中同 topic 和 mode 的最新完成结果。",
+        message=f"数据集固定，已直接复用 MySQL 中同 topic、mode 和日期范围（{_date_range_label(start_date, end_date)}）的最新完成结果。",
         discovery_run_id=cached_run.get("discovery_run_id"),
         reasoning_run_id=reasoning_run_id,
         timeline_count=node_count,
@@ -286,6 +354,8 @@ def _run_job_process(job_id: str) -> None:
         job = jobs[job_id]
         topic = job.topic
         mode = job.mode
+        start_date = job.start_date
+        end_date = job.end_date
 
     command = [
         sys.executable,
@@ -295,6 +365,10 @@ def _run_job_process(job_id: str) -> None:
         "--mode",
         mode,
     ]
+    if start_date:
+        command.extend(["--start-date", start_date])
+    if end_date:
+        command.extend(["--end-date", end_date])
 
     try:
         process = subprocess.Popen(
@@ -354,9 +428,9 @@ def _run_job_process(job_id: str) -> None:
             job.stage = "生成失败"
 
 
-def _start_job(topic: str, mode: str) -> TimelineJob:
+def _start_job(topic: str, mode: str, *, start_date: str | None = None, end_date: str | None = None) -> TimelineJob:
     job_id = uuid.uuid4().hex[:12]
-    job = TimelineJob(job_id=job_id, topic=topic.strip(), mode=mode)
+    job = TimelineJob(job_id=job_id, topic=topic.strip(), mode=mode, start_date=start_date, end_date=end_date)
     with jobs_lock:
         jobs[job_id] = job
 
@@ -435,6 +509,13 @@ def load_timeline_result_from_db(reasoning_run_id: str) -> dict:
         timeline.append(node)
 
     normalized_run = _normalize_row(run)
+    config_json = normalized_run.get("config_json")
+    config = {}
+    if isinstance(config_json, str) and config_json.strip():
+        try:
+            config = json.loads(config_json)
+        except json.JSONDecodeError:
+            config = {}
     return {
         "topic": normalized_run.get("topic"),
         "discovery_run_id": normalized_run.get("discovery_run_id"),
@@ -444,6 +525,8 @@ def load_timeline_result_from_db(reasoning_run_id: str) -> dict:
         "prompt_version": normalized_run.get("prompt_version"),
         "generated_at": normalized_run.get("generated_at"),
         "status": normalized_run.get("status"),
+        "start_date": _date_key(config.get("start_date")),
+        "end_date": _date_key(config.get("end_date")),
         "summary": {
             "input_event_count": normalized_run.get("input_event_count"),
             "review_event_count": normalized_run.get("review_event_count"),
@@ -452,6 +535,56 @@ def load_timeline_result_from_db(reasoning_run_id: str) -> dict:
         },
         "timeline": timeline,
     }
+
+
+def list_recent_timeline_runs(limit: int = 6) -> list[dict]:
+    bounded_limit = max(1, min(int(limit or 6), 12))
+    connection = get_db_connection()
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute(
+                f"""
+                SELECT
+                    runs.*,
+                    COALESCE(node_counts.node_count, 0) AS node_count
+                FROM {RUN_TABLE} AS runs
+                LEFT JOIN (
+                    SELECT reasoning_run_id, COUNT(*) AS node_count
+                    FROM {NODE_TABLE}
+                    GROUP BY reasoning_run_id
+                ) AS node_counts
+                  ON node_counts.reasoning_run_id = runs.reasoning_run_id
+                WHERE runs.status = 'completed'
+                ORDER BY runs.generated_at DESC, runs.id DESC
+                LIMIT %s
+                """,
+                (bounded_limit,),
+            )
+            rows = [_normalize_row(row) for row in cursor.fetchall()]
+    finally:
+        connection.close()
+
+    records = []
+    for row in rows:
+        config = {}
+        config_json = row.get("config_json")
+        if isinstance(config_json, str) and config_json.strip():
+            try:
+                config = json.loads(config_json)
+            except json.JSONDecodeError:
+                config = {}
+        records.append(
+            {
+                "topic": row.get("topic"),
+                "mode": row.get("mode"),
+                "reasoning_run_id": row.get("reasoning_run_id"),
+                "generated_at": row.get("generated_at"),
+                "node_count": row.get("node_count"),
+                "start_date": _date_key(config.get("start_date")),
+                "end_date": _date_key(config.get("end_date")),
+            }
+        )
+    return records
 
 
 def create_app():
@@ -476,8 +609,19 @@ def create_app():
         topic = request.topic.strip()
         if not topic:
             raise HTTPException(status_code=400, detail="topic must not be empty.")
+        start_date = _date_key(request.start_date)
+        end_date = _date_key(request.end_date)
+        if start_date and end_date and start_date > end_date:
+            raise HTTPException(status_code=400, detail="start_date must be earlier than or equal to end_date.")
+        cached_run = None
         try:
-            cached_run = find_cached_timeline_run(topic, request.mode)
+            if not request.force_regenerate:
+                cached_run = find_cached_timeline_run(
+                    topic,
+                    request.mode,
+                    start_date=start_date,
+                    end_date=end_date,
+                )
         except Exception as exc:
             if _is_missing_cache_table_error(exc):
                 cached_run = None
@@ -490,11 +634,17 @@ def create_app():
                     },
                 ) from exc
         if cached_run is not None:
-            job = _build_cached_job(topic, request.mode, cached_run)
+            job = _build_cached_job(
+                topic,
+                request.mode,
+                cached_run,
+                start_date=start_date,
+                end_date=end_date,
+            )
             with jobs_lock:
                 jobs[job.job_id] = job
             return job.public_dict()
-        job = _start_job(topic, request.mode)
+        job = _start_job(topic, request.mode, start_date=start_date, end_date=end_date)
         return job.public_dict()
 
     @api.get("/api/timeline/jobs/{job_id}/status")
@@ -535,11 +685,15 @@ def create_app():
             if job.status != "completed" or not job.reasoning_run_id:
                 raise HTTPException(status_code=409, detail="Job is not completed yet.")
             reasoning_run_id = job.reasoning_run_id
+            job_status = job.public_dict()
 
         try:
-            return load_timeline_result_from_db(reasoning_run_id)
+            result = load_timeline_result_from_db(reasoning_run_id)
         except KeyError:
             raise HTTPException(status_code=404, detail="Timeline result not found in MySQL.") from None
+        result["elapsed_seconds"] = job_status.get("elapsed_seconds")
+        result["cache_hit"] = job_status.get("cache_hit")
+        return result
 
     @api.get("/api/timeline/results/{reasoning_run_id}")
     def get_timeline_result_by_run(reasoning_run_id: str) -> dict:
@@ -547,6 +701,19 @@ def create_app():
             return load_timeline_result_from_db(reasoning_run_id)
         except KeyError:
             raise HTTPException(status_code=404, detail="Timeline result not found in MySQL.") from None
+
+    @api.get("/api/timeline/recent")
+    def get_recent_timeline_runs(limit: int = 6) -> dict:
+        try:
+            return {"items": list_recent_timeline_runs(limit)}
+        except Exception as exc:
+            raise HTTPException(
+                status_code=503,
+                detail={
+                    "message": "无法读取最近生成记录。",
+                    "hint": _friendly_error_hint(str(exc)),
+                },
+            ) from exc
 
     if STATIC_DIR.exists():
         api.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")

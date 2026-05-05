@@ -2,6 +2,13 @@ const shell = document.querySelector(".app-shell");
 const form = document.querySelector("#topicForm");
 const topicInput = document.querySelector("#topicInput");
 const modeSelect = document.querySelector("#modeSelect");
+const startYearSelect = document.querySelector("#startYearSelect");
+const startMonthSelect = document.querySelector("#startMonthSelect");
+const startDaySelect = document.querySelector("#startDaySelect");
+const endYearSelect = document.querySelector("#endYearSelect");
+const endMonthSelect = document.querySelector("#endMonthSelect");
+const endDaySelect = document.querySelector("#endDaySelect");
+const forceRegenerateToggle = document.querySelector("#forceRegenerateToggle");
 const submitButton = document.querySelector("#submitButton");
 const progressStage = document.querySelector("#progressStage");
 const progressPercent = document.querySelector("#progressPercent");
@@ -15,12 +22,24 @@ const noticeTitle = document.querySelector("#noticeTitle");
 const noticeBody = document.querySelector("#noticeBody");
 const resultTitle = document.querySelector("#resultTitle");
 const timelineStats = document.querySelector("#timelineStats");
+const timelineInsight = document.querySelector("#timelineInsight");
+const monthScrubber = document.querySelector("#monthScrubber");
 const timelineFrame = document.querySelector("#timelineFrame");
 const timelineScroller = document.querySelector("#timelineScroller");
 const timelineRail = document.querySelector("#timelineRail");
 const articlePopover = document.querySelector("#articlePopover");
+const recentList = document.querySelector("#recentList");
+const refreshRecentButton = document.querySelector("#refreshRecentButton");
+const nodeDrawer = document.querySelector("#nodeDrawer");
+const nodeDrawerBody = document.querySelector("#nodeDrawerBody");
+const closeNodeDrawer = document.querySelector("#closeNodeDrawer");
 const backButton = document.querySelector("#backButton");
 const VISIBLE_TIMELINE_NODES = 6;
+const DATASET_START = "2025-06-01";
+const DATASET_END = "2026-04-01";
+const MIN_TIMELINE_NODE_WIDTH = 188;
+const MAX_TIMELINE_NODE_WIDTH = 260;
+const MIN_TIMELINE_SIDE_PADDING = 40;
 
 let currentJobId = null;
 let pollTimer = null;
@@ -31,9 +50,114 @@ let targetProgress = 0;
 let softProgressCap = 0;
 let progressLoop = null;
 let lastProgressTick = 0;
+let currentTimelineResult = null;
+let activeNodeIndex = null;
+let currentMonthGroups = [];
+let hoveredNodeIndex = null;
+let hoverClearTimer = null;
+let popoverNodeIndex = null;
+let popoverNode = null;
+let popoverHasPointer = false;
+let monthScrubberDrag = null;
+let monthScrubberIgnoreClickUntil = 0;
 
 function setView(view) {
   shell.dataset.view = view;
+}
+
+function parseDateParts(value) {
+  const [year, month, day] = value.split("-").map((part) => Number(part));
+  return { year, month, day };
+}
+
+function pad2(value) {
+  return String(value).padStart(2, "0");
+}
+
+function formatDateParts(year, month, day) {
+  return `${year}-${pad2(month)}-${pad2(day)}`;
+}
+
+function daysInMonth(year, month) {
+  return new Date(year, month, 0).getDate();
+}
+
+function monthBoundsForYear(year) {
+  const start = parseDateParts(DATASET_START);
+  const end = parseDateParts(DATASET_END);
+  if (year === start.year && year === end.year) return { min: start.month, max: end.month };
+  if (year === start.year) return { min: start.month, max: 12 };
+  if (year === end.year) return { min: 1, max: end.month };
+  return { min: 1, max: 12 };
+}
+
+function dayBoundsForMonth(year, month) {
+  const start = parseDateParts(DATASET_START);
+  const end = parseDateParts(DATASET_END);
+  let min = 1;
+  let max = daysInMonth(year, month);
+  if (year === start.year && month === start.month) min = start.day;
+  if (year === end.year && month === end.month) max = end.day;
+  return { min, max };
+}
+
+function fillSelect(select, values, formatter = (value) => value, selectedValue = null) {
+  const previous = selectedValue ?? select.value;
+  select.innerHTML = "";
+  values.forEach((value) => {
+    const option = document.createElement("option");
+    option.value = String(value);
+    option.textContent = formatter(value);
+    select.append(option);
+  });
+  if (values.map(String).includes(String(previous))) {
+    select.value = String(previous);
+  }
+}
+
+function fillDateControls(prefix, selectedDate) {
+  const yearSelect = prefix === "start" ? startYearSelect : endYearSelect;
+  const monthSelect = prefix === "start" ? startMonthSelect : endMonthSelect;
+  const daySelect = prefix === "start" ? startDaySelect : endDaySelect;
+  const selected = parseDateParts(selectedDate);
+  const start = parseDateParts(DATASET_START);
+  const end = parseDateParts(DATASET_END);
+  const years = [];
+  for (let year = start.year; year <= end.year; year += 1) years.push(year);
+
+  fillSelect(yearSelect, years, (year) => `${year}年`, selected.year);
+  const { min: minMonth, max: maxMonth } = monthBoundsForYear(Number(yearSelect.value));
+  const months = [];
+  for (let month = minMonth; month <= maxMonth; month += 1) months.push(month);
+  fillSelect(monthSelect, months, (month) => `${month}月`, selected.month);
+
+  const { min: minDay, max: maxDay } = dayBoundsForMonth(Number(yearSelect.value), Number(monthSelect.value));
+  const days = [];
+  for (let day = minDay; day <= maxDay; day += 1) days.push(day);
+  fillSelect(daySelect, days, (day) => `${day}日`, selected.day);
+}
+
+function getDateValue(prefix) {
+  const yearSelect = prefix === "start" ? startYearSelect : endYearSelect;
+  const monthSelect = prefix === "start" ? startMonthSelect : endMonthSelect;
+  const daySelect = prefix === "start" ? startDaySelect : endDaySelect;
+  return formatDateParts(Number(yearSelect.value), Number(monthSelect.value), Number(daySelect.value));
+}
+
+function refreshDateControls(prefix) {
+  const current = getDateValue(prefix);
+  fillDateControls(prefix, current);
+}
+
+function initDateControls() {
+  fillDateControls("start", DATASET_START);
+  fillDateControls("end", DATASET_END);
+  [startYearSelect, startMonthSelect].forEach((select) => {
+    select.addEventListener("change", () => refreshDateControls("start"));
+  });
+  [endYearSelect, endMonthSelect].forEach((select) => {
+    select.addEventListener("change", () => refreshDateControls("end"));
+  });
 }
 
 function setProgress(progress, stage, message, status = {}) {
@@ -144,10 +268,16 @@ async function apiFetch(url, options = {}) {
   return data;
 }
 
-async function createJob(topic, mode) {
+async function createJob(topic, mode, startDate, endDate, forceRegenerate = false) {
   return apiFetch("/api/timeline/jobs", {
     method: "POST",
-    body: JSON.stringify({ topic, mode }),
+    body: JSON.stringify({
+      topic,
+      mode,
+      start_date: startDate || null,
+      end_date: endDate || null,
+      force_regenerate: forceRegenerate,
+    }),
   });
 }
 
@@ -163,6 +293,14 @@ async function getJobResult(jobId) {
   return apiFetch(`/api/timeline/jobs/${jobId}/result`);
 }
 
+async function getTimelineResultByRun(reasoningRunId) {
+  return apiFetch(`/api/timeline/results/${encodeURIComponent(reasoningRunId)}`);
+}
+
+async function getRecentTimelines() {
+  return apiFetch("/api/timeline/recent?limit=6");
+}
+
 function startPolling(jobId) {
   stopPolling();
   pollTimer = window.setInterval(async () => {
@@ -173,7 +311,9 @@ function startPolling(jobId) {
       if (status.status === "completed") {
         stopPolling();
         const result = await getJobResult(jobId);
+        result.elapsed_seconds = result.elapsed_seconds ?? status.elapsed_seconds;
         renderTimeline(result);
+        loadRecentTimelines();
         setView("result");
         submitButton.disabled = false;
       }
@@ -208,7 +348,18 @@ form.addEventListener("submit", async (event) => {
   event.preventDefault();
   const topic = topicInput.value.trim();
   const mode = modeSelect.value;
+  const selectedStartDate = getDateValue("start");
+  const selectedEndDate = getDateValue("end");
+  const startDate = selectedStartDate;
+  const endDate = selectedEndDate;
+  const forceRegenerate = forceRegenerateToggle.checked;
   if (!topic) return;
+  if (selectedStartDate && selectedEndDate && selectedStartDate > selectedEndDate) {
+    setView("running");
+    setProgress(0, "日期范围无效", "开始日期不能晚于结束日期。", { status: "failed" });
+    showNotice("请调整时间范围", "当前数据集范围为 2025-06-01 至 2026-04-01，可以只填写开始或结束日期。");
+    return;
+  }
 
   if (currentJobId) {
     submitButton.disabled = true;
@@ -238,15 +389,16 @@ form.addEventListener("submit", async (event) => {
     remaining_seconds: getModeEstimateSeconds(mode),
   });
   try {
-    const job = await createJob(topic, mode);
+    const job = await createJob(topic, mode, startDate, endDate, forceRegenerate);
     currentJobId = job.job_id;
     submitButton.textContent = "停止生成";
     submitButton.disabled = false;
     setProgress(job.progress, job.stage, job.message, job);
     if (job.cache_hit) {
-      showNotice("已复用历史结果", "MySQL 中存在同 topic 和 mode 的已完成时间线，本次没有重复运行 SBERT 和 LLM。");
+      showNotice("已复用历史结果", "MySQL 中存在同 topic、mode 和日期范围的已完成时间线，本次没有重复运行 SBERT 和 LLM。");
       const result = await getJobResult(job.job_id);
       renderTimeline(result);
+      loadRecentTimelines();
       window.setTimeout(() => {
         hideNotice();
         setView("result");
@@ -269,8 +421,16 @@ function getModeEstimateSeconds(mode) {
   return 240;
 }
 
+initDateControls();
+loadRecentTimelines();
+
+refreshRecentButton.addEventListener("click", () => {
+  loadRecentTimelines();
+});
+
 backButton.addEventListener("click", () => {
   hidePopover();
+  hideNodeDrawer();
   hideNotice();
   currentJobId = null;
   submitButton.textContent = "生成时间线";
@@ -283,20 +443,38 @@ function getNodeTitle(node) {
 }
 
 function renderTimeline(result) {
+  currentTimelineResult = result;
+  activeNodeIndex = null;
+  hoveredNodeIndex = null;
+  hideNodeDrawer();
   const nodes = Array.isArray(result.timeline) ? result.timeline : [];
   resultTitle.textContent = `${result.topic || "Topic"} 时间线`;
-  timelineStats.textContent = `${nodes.length} 个时间线节点 · ${result.mode || "fast"} 模式 · ${result.reasoning_run_id || ""}`;
+  const rangeText = formatDateRange(result.start_date, result.end_date);
+  const runtimeText = result.cache_hit
+    ? "复用历史结果"
+    : result.elapsed_seconds != null
+      ? `总用时 ${formatDuration(result.elapsed_seconds)}`
+      : null;
+  timelineStats.textContent = [
+    `${nodes.length} 个时间线节点`,
+    `${result.mode || "fast"} 模式`,
+    rangeText,
+    runtimeText,
+    result.reasoning_run_id || "",
+  ].filter(Boolean).join(" · ");
+  const timelineAnalysis = buildTimelineAnalysis(nodes);
+  timelineInsight.textContent = timelineAnalysis.summary;
+  renderMonthScrubber(timelineAnalysis.months);
   timelineRail.innerHTML = "";
   timelineRail.style.justifyContent = nodes.length <= VISIBLE_TIMELINE_NODES ? "center" : "flex-start";
-
-  const frameWidth = Math.max(320, timelineFrame.clientWidth || window.innerWidth);
-  const nodeWidth = Math.max(188, Math.min(260, (frameWidth - 80) / VISIBLE_TIMELINE_NODES));
-  timelineRail.style.setProperty("--node-width", `${nodeWidth}px`);
+  updateTimelineLayout(nodes.length);
 
   nodes.forEach((node, index) => {
     const item = document.createElement("article");
     item.className = "timeline-node";
     item.dataset.index = String(index);
+    item.addEventListener("mouseenter", () => setHoveredNode(index));
+    item.addEventListener("mouseleave", () => scheduleClearHoveredNode(index));
 
     const inner = document.createElement("div");
     inner.className = "timeline-node-inner";
@@ -312,10 +490,11 @@ function renderTimeline(result) {
     title.className = "timeline-title";
     title.type = "button";
     title.textContent = getNodeTitle(node);
-    title.addEventListener("mouseenter", () => showPopover(title, node));
-    title.addEventListener("focus", () => showPopover(title, node));
+    title.addEventListener("mouseenter", () => showPopover(title, node, index));
+    title.addEventListener("focus", () => showPopover(title, node, index));
     title.addEventListener("mouseleave", scheduleHidePopover);
     title.addEventListener("blur", scheduleHidePopover);
+    title.addEventListener("click", () => openNodeDrawer(node, index));
 
     inner.append(date, dot, title);
     item.append(inner);
@@ -323,12 +502,317 @@ function renderTimeline(result) {
   });
 
   timelineScroller.scrollLeft = 0;
+  window.requestAnimationFrame(() => {
+    updateTimelineEdgeFades();
+    updateCenteredNode();
+    updateActiveMonth();
+  });
+}
+
+function updateTimelineLayout(nodeCount = timelineRail.children.length) {
+  const frameWidth = Math.max(320, timelineFrame.clientWidth || window.innerWidth);
+  const nodeWidth = Math.max(
+    MIN_TIMELINE_NODE_WIDTH,
+    Math.min(MAX_TIMELINE_NODE_WIDTH, (frameWidth - MIN_TIMELINE_SIDE_PADDING * 2) / VISIBLE_TIMELINE_NODES),
+  );
+  const canScroll = nodeCount > VISIBLE_TIMELINE_NODES;
+  const sidePadding = canScroll
+    ? Math.max(MIN_TIMELINE_SIDE_PADDING, timelineScroller.clientWidth / 2 - nodeWidth / 2)
+    : MIN_TIMELINE_SIDE_PADDING;
+  timelineRail.style.setProperty("--node-width", `${nodeWidth}px`);
+  timelineRail.style.setProperty("--rail-side-padding", `${sidePadding}px`);
+}
+
+function formatDateRange(startDate, endDate) {
+  if (startDate && endDate) return `${startDate} 至 ${endDate}`;
+  if (startDate) return `${startDate} 之后`;
+  if (endDate) return `${endDate} 之前`;
+  return "全时段";
+}
+
+function getNodeDateValue(node) {
+  const candidates = [
+    node.display_date,
+    node.resolved_time_anchor,
+    node.resolved_time_start,
+    node.event_time_anchor,
+    node.event_time_start,
+  ];
+  for (const candidate of candidates) {
+    const match = String(candidate || "").match(/\d{4}-\d{2}-\d{2}/);
+    if (match) return match[0];
+  }
+  return null;
+}
+
+function parseIsoDate(value) {
+  if (!value) return null;
+  const [year, month, day] = value.split("-").map((part) => Number(part));
+  if (!year || !month || !day) return null;
+  return new Date(year, month - 1, day);
+}
+
+function monthKeyFromDate(value) {
+  return value ? value.slice(0, 7) : null;
+}
+
+function buildTimelineAnalysis(nodes) {
+  const groups = [];
+  const groupByMonth = new Map();
+  const dates = [];
+
+  nodes.forEach((node, index) => {
+    const dateValue = getNodeDateValue(node);
+    const parsed = parseIsoDate(dateValue);
+    if (parsed) dates.push(parsed);
+    const monthKey = monthKeyFromDate(dateValue);
+    if (!monthKey) return;
+    if (!groupByMonth.has(monthKey)) {
+      const group = { key: monthKey, firstIndex: index, count: 0 };
+      groupByMonth.set(monthKey, group);
+      groups.push(group);
+    }
+    groupByMonth.get(monthKey).count += 1;
+  });
+
+  if (dates.length === 0) {
+    return {
+      summary: nodes.length > 0 ? `共 ${nodes.length} 个节点 · 暂无可解析日期` : "暂无可分析节点",
+      months: [],
+    };
+  }
+
+  const minTime = Math.min(...dates.map((date) => date.getTime()));
+  const maxTime = Math.max(...dates.map((date) => date.getTime()));
+  const coverageDays = Math.max(1, Math.round((maxTime - minTime) / 86400000) + 1);
+  const peakMonth = groups.reduce((best, group) => (!best || group.count > best.count ? group : best), null);
+  const averagePerDay = nodes.length / coverageDays;
+  return {
+    summary: [
+      `覆盖 ${coverageDays} 天`,
+      `平均每日 ${formatAverage(averagePerDay)} 节点`,
+      peakMonth ? `峰值月份 ${peakMonth.key}` : null,
+    ].filter(Boolean).join(" · "),
+    months: groups,
+  };
+}
+
+function formatAverage(value) {
+  if (value >= 10) return String(Math.round(value));
+  return value.toFixed(1);
+}
+
+function renderMonthScrubber(months) {
+  currentMonthGroups = Array.isArray(months) ? months : [];
+  monthScrubber.innerHTML = "";
+  if (currentMonthGroups.length === 0) {
+    monthScrubber.dataset.empty = "true";
+    return;
+  }
+  monthScrubber.dataset.empty = "false";
+  currentMonthGroups.forEach((month) => {
+    const button = document.createElement("button");
+    button.className = "month-chip";
+    button.type = "button";
+    button.dataset.month = month.key;
+    button.dataset.index = String(month.firstIndex);
+    button.innerHTML = `<span>${month.key}</span><small>${month.count}</small>`;
+    button.addEventListener("click", (event) => {
+      if (performance.now() < monthScrubberIgnoreClickUntil) {
+        event.preventDefault();
+        return;
+      }
+      scrollToTimelineNode(month.firstIndex);
+    });
+    monthScrubber.append(button);
+  });
+}
+
+function scrollToTimelineNode(index, behavior = "smooth") {
+  const item = timelineRail.children[index];
+  if (!item) return;
+  const targetLeft = item.offsetLeft + item.offsetWidth / 2 - timelineScroller.clientWidth / 2;
+  timelineScroller.scrollTo({
+    left: Math.max(0, targetLeft),
+    behavior,
+  });
+}
+
+function getCenteredNodeIndex() {
+  if (timelineRail.children.length === 0) return null;
+  const center = timelineScroller.scrollLeft + timelineScroller.clientWidth / 2;
+  let activeIndex = 0;
+  let activeDistance = Number.POSITIVE_INFINITY;
+  [...timelineRail.children].forEach((item, index) => {
+    const itemCenter = item.offsetLeft + item.offsetWidth / 2;
+    const distance = Math.abs(itemCenter - center);
+    if (distance < activeDistance) {
+      activeDistance = distance;
+      activeIndex = index;
+    }
+  });
+  return activeIndex;
+}
+
+function updateCenteredNode() {
+  const highlightedIndex = activeNodeIndex ?? hoveredNodeIndex ?? getCenteredNodeIndex();
+  [...timelineRail.children].forEach((item, index) => {
+    item.dataset.center = index === highlightedIndex ? "true" : "false";
+  });
+}
+
+function setHoveredNode(index) {
+  window.clearTimeout(hoverClearTimer);
+  hoveredNodeIndex = index;
+  updateCenteredNode();
+}
+
+function clearHoveredNode(expectedIndex = null) {
+  window.clearTimeout(hoverClearTimer);
+  if (expectedIndex !== null && hoveredNodeIndex !== expectedIndex) return;
+  if (expectedIndex !== null && popoverHasPointer && popoverNodeIndex === expectedIndex) return;
+  hoveredNodeIndex = null;
+  updateCenteredNode();
+}
+
+function scheduleClearHoveredNode(expectedIndex = null) {
+  window.clearTimeout(hoverClearTimer);
+  hoverClearTimer = window.setTimeout(() => clearHoveredNode(expectedIndex), 140);
+}
+
+function updateActiveMonth() {
+  if (currentMonthGroups.length === 0 || timelineRail.children.length === 0) return;
+  const activeIndex = getCenteredNodeIndex();
+  const activeNode = currentTimelineResult?.timeline?.[activeIndex];
+  const activeMonth = monthKeyFromDate(getNodeDateValue(activeNode || {}));
+  [...monthScrubber.children].forEach((button) => {
+    const isActive = button.dataset.month === activeMonth;
+    button.dataset.active = isActive ? "true" : "false";
+    if (isActive) {
+      keepMonthChipInView(button);
+    }
+  });
+}
+
+function keepMonthChipInView(button) {
+  if (monthScrubberDrag) return;
+  const scrubberLeft = monthScrubber.scrollLeft;
+  const scrubberRight = scrubberLeft + monthScrubber.clientWidth;
+  const buttonLeft = button.offsetLeft - 8;
+  const buttonRight = button.offsetLeft + button.offsetWidth + 8;
+  if (buttonLeft < scrubberLeft) {
+    monthScrubber.scrollTo({ left: Math.max(0, buttonLeft), behavior: "smooth" });
+  } else if (buttonRight > scrubberRight) {
+    monthScrubber.scrollTo({ left: buttonRight - monthScrubber.clientWidth, behavior: "smooth" });
+  }
+}
+
+monthScrubber.addEventListener("pointerdown", (event) => {
+  if (event.button !== 0 || monthScrubber.dataset.empty === "true") return;
+  monthScrubberDrag = {
+    pointerId: event.pointerId,
+    startX: event.clientX,
+    startScrollLeft: monthScrubber.scrollLeft,
+    moved: false,
+  };
+});
+
+function moveMonthScrubberDrag(event) {
+  if (!monthScrubberDrag || monthScrubberDrag.pointerId !== event.pointerId) return;
+  const deltaX = event.clientX - monthScrubberDrag.startX;
+  if (Math.abs(deltaX) > 3) {
+    monthScrubberDrag.moved = true;
+    monthScrubber.dataset.dragging = "true";
+  }
+  if (monthScrubberDrag.moved) {
+    event.preventDefault();
+    monthScrubber.scrollLeft = monthScrubberDrag.startScrollLeft - deltaX;
+  }
+}
+
+function endMonthScrubberDrag(event) {
+  if (!monthScrubberDrag || monthScrubberDrag.pointerId !== event.pointerId) return;
+  const dragged = monthScrubberDrag.moved;
+  monthScrubberDrag = null;
+  monthScrubber.dataset.dragging = "false";
+  if (dragged) {
+    monthScrubberIgnoreClickUntil = performance.now() + 180;
+  }
+}
+
+document.addEventListener("pointermove", moveMonthScrubberDrag);
+document.addEventListener("pointerup", endMonthScrubberDrag);
+document.addEventListener("pointercancel", endMonthScrubberDrag);
+
+async function loadRecentTimelines() {
+  recentList.innerHTML = '<p class="recent-empty">正在读取最近生成记录。</p>';
+  try {
+    const payload = await getRecentTimelines();
+    const records = Array.isArray(payload.items) ? payload.items : [];
+    if (records.length === 0) {
+      recentList.innerHTML = '<p class="recent-empty">还没有已完成的时间线。</p>';
+      return;
+    }
+    recentList.innerHTML = "";
+    records.forEach((record) => {
+      const item = document.createElement("button");
+      item.className = "recent-item";
+      item.type = "button";
+      item.innerHTML = `
+        <span class="recent-topic">${escapeHtml(record.topic || "Topic")}</span>
+        <span class="recent-meta">${escapeHtml(formatRecentMeta(record))}</span>
+      `;
+      item.addEventListener("click", () => loadRecentTimeline(record.reasoning_run_id));
+      recentList.append(item);
+    });
+  } catch (error) {
+    recentList.innerHTML = '<p class="recent-empty">最近生成记录暂时不可用。</p>';
+  }
+}
+
+function formatRecentMeta(record) {
+  const parts = [
+    `${record.node_count || 0} 节点`,
+    `${record.mode || "fast"} 模式`,
+    formatDateRange(record.start_date, record.end_date),
+  ];
+  if (record.generated_at) parts.push(formatGeneratedTime(record.generated_at));
+  return parts.filter(Boolean).join(" · ");
+}
+
+function formatGeneratedTime(value) {
+  const text = String(value || "").replace("T", " ");
+  const [datePart, timePart = ""] = text.split(" ");
+  const [year, month, day] = datePart.split("-");
+  const shortTime = timePart.slice(0, 5);
+  if (year && month && day && shortTime) return `生成于 ${year}年${month}月${day}日 ${shortTime}`;
+  if (year && month && day) return `生成于 ${year}年${month}月${day}日`;
+  return text ? `生成于 ${text}` : "";
+}
+
+async function loadRecentTimeline(reasoningRunId) {
+  if (!reasoningRunId) return;
+  hideNotice();
+  hidePopover();
+  hideNodeDrawer();
+  try {
+    const result = await getTimelineResultByRun(reasoningRunId);
+    result.cache_hit = true;
+    renderTimeline(result);
+    setView("result");
+  } catch (error) {
+    showNotice("无法打开历史记录", error.hint || error.message);
+  }
 }
 
 let hideTimer = null;
 
-function showPopover(anchor, node) {
+function showPopover(anchor, node, index = null) {
   window.clearTimeout(hideTimer);
+  window.clearTimeout(hoverClearTimer);
+  popoverNodeIndex = index;
+  popoverNode = node;
+  if (index !== null) setHoveredNode(index);
   const articles = Array.isArray(node.articles) ? node.articles : [];
   const links = articles
     .map((article) => {
@@ -345,6 +829,7 @@ function showPopover(anchor, node) {
     <div class="article-list">${links || "<p>暂无新闻标题。</p>"}</div>
   `;
   articlePopover.dataset.open = "true";
+  articlePopover.dataset.nodeIndex = index === null ? "" : String(index);
   articlePopover.setAttribute("aria-hidden", "false");
 
   const rect = anchor.getBoundingClientRect();
@@ -355,7 +840,7 @@ function showPopover(anchor, node) {
   );
   const top = Math.min(
     window.innerHeight - popoverRect.height - 16,
-    Math.max(16, rect.bottom + 14),
+    Math.max(16, rect.bottom + 26),
   );
   articlePopover.style.left = `${left}px`;
   articlePopover.style.top = `${top}px`;
@@ -368,11 +853,112 @@ function scheduleHidePopover() {
 
 function hidePopover() {
   articlePopover.dataset.open = "false";
+  delete articlePopover.dataset.nodeIndex;
   articlePopover.setAttribute("aria-hidden", "true");
+  popoverNodeIndex = null;
+  popoverNode = null;
+  popoverHasPointer = false;
 }
 
-articlePopover.addEventListener("mouseenter", () => window.clearTimeout(hideTimer));
-articlePopover.addEventListener("mouseleave", scheduleHidePopover);
+articlePopover.addEventListener("mouseenter", () => {
+  window.clearTimeout(hideTimer);
+  window.clearTimeout(hoverClearTimer);
+  popoverHasPointer = true;
+  if (popoverNodeIndex !== null) setHoveredNode(popoverNodeIndex);
+});
+
+articlePopover.addEventListener("mouseleave", () => {
+  popoverHasPointer = false;
+  scheduleHidePopover();
+  scheduleClearHoveredNode(popoverNodeIndex);
+});
+
+function openPopoverNodeDrawer(event) {
+  const target = event.target instanceof Element ? event.target : null;
+  if (target?.closest("#articlePopover a")) return;
+  const datasetNodeIndex =
+    articlePopover.dataset.nodeIndex === "" || articlePopover.dataset.nodeIndex == null
+      ? null
+      : Number(articlePopover.dataset.nodeIndex);
+  const nodeIndex = popoverNodeIndex ?? datasetNodeIndex;
+  const node = popoverNode ?? currentTimelineResult?.timeline?.[nodeIndex];
+  if (!node || !Number.isInteger(nodeIndex)) return;
+  event.preventDefault();
+  event.stopPropagation();
+  openNodeDrawer(node, nodeIndex);
+}
+
+articlePopover.addEventListener("pointerup", openPopoverNodeDrawer);
+articlePopover.addEventListener("click", openPopoverNodeDrawer);
+
+function openNodeDrawer(node, index) {
+  activeNodeIndex = index;
+  hidePopover();
+  [...timelineRail.children].forEach((item, itemIndex) => {
+    item.dataset.selected = itemIndex === index ? "true" : "false";
+  });
+  const articles = Array.isArray(node.articles) ? node.articles : [];
+  const articleLinks = articles
+    .map((article) => {
+      const title = escapeHtml(article.title || "Untitled article");
+      const source = escapeHtml(article.source || "Unknown source");
+      const url = article.url || "#";
+      return `<a href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">${title}<span>${source}</span></a>`;
+    })
+    .join("");
+  const confidence = node.decision_confidence ?? node.confidence;
+  const riskFlags = Array.isArray(node.risk_flags) ? node.risk_flags.filter(Boolean) : [];
+  const reasons = [
+    node.decision_reason,
+    node.split_reason ? `拆分提示：${node.split_reason}` : null,
+    node.merge_reason ? `合并提示：${node.merge_reason}` : null,
+  ].filter(Boolean);
+
+  nodeDrawerBody.innerHTML = `
+    <h3>${escapeHtml(getNodeTitle(node))}</h3>
+    <p class="node-subtitle">${escapeHtml(node.canonical_title || "未提供 canonical title")}</p>
+    <div class="node-detail-grid">
+      <span><strong>${escapeHtml(node.display_date || node.resolved_time_anchor || "未知")}</strong>时间锚点</span>
+      <span><strong>${articles.length}</strong>相关新闻</span>
+      <span><strong>${node.cluster_size ?? "-"}</strong>聚类规模</span>
+      <span><strong>${formatConfidence(confidence)}</strong>置信度</span>
+    </div>
+    ${riskFlags.length > 0 ? `<div class="risk-row">${riskFlags.map((flag) => `<span>${escapeHtml(flag)}</span>`).join("")}</div>` : ""}
+    ${reasons.length > 0 ? `<div class="node-reason">${reasons.map((reason) => `<p>${escapeHtml(reason)}</p>`).join("")}</div>` : ""}
+    <div class="drawer-section-title">相关新闻</div>
+    <div class="drawer-article-list">${articleLinks || "<p>暂无新闻标题。</p>"}</div>
+  `;
+  nodeDrawer.dataset.open = "true";
+  nodeDrawer.setAttribute("aria-hidden", "false");
+  updateCenteredNode();
+}
+
+function hideNodeDrawer() {
+  nodeDrawer.dataset.open = "false";
+  nodeDrawer.setAttribute("aria-hidden", "true");
+  activeNodeIndex = null;
+  [...timelineRail.children].forEach((item) => {
+    item.dataset.selected = "false";
+  });
+  updateCenteredNode();
+}
+
+function formatConfidence(value) {
+  if (value == null || value === "") return "-";
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return "-";
+  return `${Math.round(numeric * 100)}%`;
+}
+
+closeNodeDrawer.addEventListener("click", hideNodeDrawer);
+
+document.addEventListener("pointerdown", (event) => {
+  if (shell.dataset.view !== "result" || nodeDrawer.dataset.open !== "true") return;
+  const target = event.target instanceof Element ? event.target : null;
+  if (!target) return;
+  if (nodeDrawer.contains(target) || target.closest(".timeline-title") || target.closest("#articlePopover")) return;
+  hideNodeDrawer();
+});
 
 function escapeHtml(value) {
   return String(value)
@@ -387,11 +973,23 @@ function escapeAttribute(value) {
   return escapeHtml(value).replaceAll("`", "&#096;");
 }
 
+function updateTimelineEdgeFades() {
+  const maxScroll = Math.max(0, timelineScroller.scrollWidth - timelineScroller.clientWidth);
+  const current = timelineScroller.scrollLeft;
+  const threshold = 4;
+  timelineFrame.dataset.leftFade = current <= threshold ? "off" : "on";
+  timelineFrame.dataset.rightFade = current >= maxScroll - threshold ? "off" : "on";
+  if (maxScroll <= threshold) {
+    timelineFrame.dataset.leftFade = "off";
+    timelineFrame.dataset.rightFade = "off";
+  }
+}
+
 timelineFrame.addEventListener("mousemove", (event) => {
   if (shell.dataset.view !== "result") return;
   const rect = timelineFrame.getBoundingClientRect();
   const x = event.clientX - rect.left;
-  const zone = rect.width * 0.18;
+  const zone = rect.width * 0.09;
   if (x < zone) {
     scrollVelocity = -Math.ceil(10 * (1 - x / zone));
   } else if (x > rect.width - zone) {
@@ -411,6 +1009,7 @@ function ensureScrollLoop() {
   const step = () => {
     if (scrollVelocity !== 0) {
       timelineScroller.scrollLeft += scrollVelocity;
+      updateTimelineEdgeFades();
       scrollAnimation = window.requestAnimationFrame(step);
       return;
     }
@@ -418,6 +1017,12 @@ function ensureScrollLoop() {
   };
   scrollAnimation = window.requestAnimationFrame(step);
 }
+
+timelineScroller.addEventListener("scroll", () => {
+  updateTimelineEdgeFades();
+  updateCenteredNode();
+  updateActiveMonth();
+});
 
 function resizeCanvas(canvas) {
   const rect = canvas.getBoundingClientRect();
@@ -533,8 +1138,11 @@ drawGlobe();
 
 window.addEventListener("resize", () => {
   if (shell.dataset.view === "result" && timelineRail.children.length > 0) {
-    const frameWidth = Math.max(320, timelineFrame.clientWidth || window.innerWidth);
-    const nodeWidth = Math.max(188, Math.min(260, (frameWidth - 80) / VISIBLE_TIMELINE_NODES));
-    timelineRail.style.setProperty("--node-width", `${nodeWidth}px`);
+    const activeIndex = getCenteredNodeIndex();
+    updateTimelineLayout();
+    if (activeIndex !== null) scrollToTimelineNode(activeIndex, "auto");
+    updateTimelineEdgeFades();
+    updateCenteredNode();
+    updateActiveMonth();
   }
 });

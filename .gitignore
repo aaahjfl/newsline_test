@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.DS_Store
+.playwright-cli/
+
+.venv/
+venv/
+env/
+
+output/
+tmp/
+
+outputs/embeddings/*.npz
+outputs/reports/*.json
+outputs/timeline/*.json

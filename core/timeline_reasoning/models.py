@@ -7,6 +7,64 @@ from datetime import datetime
 from typing import Any
 
 
+def _short_date(value: str | None) -> str | None:
+    if not value:
+        return None
+    text = str(value).strip()
+    return text[:10] if len(text) >= 10 else text or None
+
+
+def _compact_topic_profile(profile: dict[str, Any]) -> dict[str, Any]:
+    if not profile:
+        return {}
+    return {
+        "type": profile.get("surface_form_type"),
+        "ambiguous": bool(profile.get("ambiguity_level") == "high"),
+        "strict_entity": bool(profile.get("strict_named_entity_relevance")),
+    }
+
+
+def _quality_hints(summary: dict[str, Any]) -> list[str]:
+    hints: list[str] = []
+    time_span = summary.get("time_span_days")
+    if isinstance(time_span, (int, float)) and time_span > 45:
+        hints.append(f"time_span_{round(float(time_span), 1)}d")
+    temporal = summary.get("temporal_coherence")
+    if isinstance(temporal, (int, float)) and temporal < 0.4:
+        hints.append(f"low_temporal_{round(float(temporal), 3)}")
+    semantic = summary.get("semantic_cohesion")
+    if isinstance(semantic, (int, float)) and semantic < 0.72:
+        hints.append(f"low_semantic_{round(float(semantic), 3)}")
+    density = summary.get("graph_density")
+    if isinstance(density, (int, float)) and density < 0.2:
+        hints.append(f"low_density_{round(float(density), 3)}")
+    duplicate = summary.get("duplicate_ratio")
+    if isinstance(duplicate, (int, float)) and duplicate >= 0.4:
+        hints.append(f"duplicate_{round(float(duplicate), 3)}")
+    unique_titles = summary.get("unique_title_count")
+    article_count = summary.get("article_count")
+    if unique_titles is not None and article_count is not None:
+        hints.append(f"unique_titles_{unique_titles}_of_{article_count}")
+    return hints
+
+
+def _compact_evidence(items: list[dict[str, Any]], limit: int = 4) -> list[dict[str, Any]]:
+    compacted: list[dict[str, Any]] = []
+    for item in items[:limit]:
+        title = str(item.get("title") or "").strip()
+        if not title:
+            continue
+        compacted.append(
+            {
+                "date": _short_date(item.get("event_time_anchor")),
+                "title": title,
+                "source": item.get("source"),
+                "role": item.get("evidence_role"),
+            }
+        )
+    return compacted
+
+
 @dataclass(slots=True)
 class EventCard:
     """Compact event-level input passed through rules and, when needed, the LLM."""
@@ -25,28 +83,37 @@ class EventCard:
     event_time_anchor: str | None = None
     member_news_ids: list[int | str] = field(default_factory=list)
     member_titles_sample: list[str] = field(default_factory=list)
+    member_title_evidence: list[dict[str, Any]] = field(default_factory=list)
     articles: list[dict[str, Any]] = field(default_factory=list)
     semantic_override_edge_count: int = 0
     graph_edge_count: int = 0
     risk_flags: list[str] = field(default_factory=list)
+    quality_summary: dict[str, Any] = field(default_factory=dict)
+    topic_profile: dict[str, Any] = field(default_factory=dict)
 
     def to_llm_dict(self) -> dict[str, Any]:
         """Return the bounded payload intended for LLM decisions."""
-        return {
+        payload = {
             "event_id": self.event_id,
             "topic": self.topic,
-            "canonical_title": self.canonical_title,
+            "topic_profile": _compact_topic_profile(self.topic_profile),
+            "title": self.canonical_title,
             "cluster_size": self.cluster_size,
             "source_count": self.source_count,
             "confidence": self.confidence,
-            "system_is_noise": self.system_is_noise,
-            "noise_reason": self.noise_reason,
-            "event_time_start": self.event_time_start,
-            "event_time_end": self.event_time_end,
-            "event_time_anchor": self.event_time_anchor,
+            "system_noise": self.system_is_noise,
+            "time": {
+                "start": _short_date(self.event_time_start),
+                "end": _short_date(self.event_time_end),
+                "anchor": _short_date(self.event_time_anchor),
+            },
             "risk_flags": list(self.risk_flags),
-            "member_titles_sample": list(self.member_titles_sample),
+            "quality_hints": _quality_hints(self.quality_summary),
+            "evidence": _compact_evidence(self.member_title_evidence),
         }
+        if self.noise_reason:
+            payload["noise_reason"] = self.noise_reason
+        return payload
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -63,6 +130,8 @@ class EventDecision:
     final_is_noise: bool
     needs_split: bool = False
     needs_merge: bool = False
+    split_reason: str | None = None
+    merge_reason: str | None = None
     display_title: str | None = None
     resolved_time_start: str | None = None
     resolved_time_end: str | None = None
@@ -106,6 +175,8 @@ class TimelineRecord:
     final_is_noise: bool
     needs_split: bool
     needs_merge: bool
+    split_reason: str | None
+    merge_reason: str | None
     decision_confidence: float
     time_confidence: float
     decision_reason: str | None

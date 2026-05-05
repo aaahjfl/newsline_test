@@ -10,7 +10,7 @@
     <main class="app-shell" data-view="idle">
       <section class="landing-view" aria-label="NewsLine topic input">
         <div class="copy-panel">
-          <p class="eyebrow">NewsLine</p>
+          <p class="eyebrow">TIMELINE</p>
           <h1><span>新闻事件</span><span>时间线重构系统</span></h1>
           <p class="intro">
             基于 SBERT 事件发现与轻量 LLM 决断，从多语种新闻中组织候选事件，
@@ -36,7 +36,48 @@
             </select>
 
             <button id="submitButton" type="submit">生成时间线</button>
+
+            <div class="date-range-row" aria-label="时间范围">
+              <span class="date-range-label">时间范围</span>
+              <div class="date-field" aria-label="开始日期">
+                <span>开始</span>
+                <div class="date-select-group">
+                  <select id="startYearSelect" aria-label="开始年份"></select>
+                  <select id="startMonthSelect" aria-label="开始月份"></select>
+                  <select id="startDaySelect" aria-label="开始日期"></select>
+                </div>
+              </div>
+              <div class="date-field" aria-label="结束日期">
+                <span>结束</span>
+                <div class="date-select-group">
+                  <select id="endYearSelect" aria-label="结束年份"></select>
+                  <select id="endMonthSelect" aria-label="结束月份"></select>
+                  <select id="endDaySelect" aria-label="结束日期"></select>
+                </div>
+              </div>
+            </div>
+
+            <div class="run-options-row">
+              <label class="force-toggle">
+                <input id="forceRegenerateToggle" type="checkbox" />
+                <span class="toggle-track" aria-hidden="true">
+                  <span class="toggle-thumb"></span>
+                </span>
+                <span>重新生成</span>
+              </label>
+              <span class="option-hint">开启后跳过历史缓存，重新运行 SBERT 与 LLM。</span>
+            </div>
           </form>
+
+          <section class="recent-panel" id="recentPanel" aria-label="最近生成记录">
+            <div class="recent-header">
+              <span>最近生成</span>
+              <button id="refreshRecentButton" type="button">刷新</button>
+            </div>
+            <div class="recent-list" id="recentList">
+              <p class="recent-empty">正在读取最近生成记录。</p>
+            </div>
+          </section>
 
           <div class="progress-panel" aria-live="polite">
             <div class="progress-meta">
@@ -74,8 +115,10 @@
         </header>
 
         <div class="timeline-stats" id="timelineStats"></div>
+        <div class="timeline-insight" id="timelineInsight"></div>
 
         <div class="timeline-frame" id="timelineFrame">
+          <nav class="month-scrubber" id="monthScrubber" aria-label="月份导航"></nav>
           <div class="edge-zone edge-zone-left" aria-hidden="true"></div>
           <div class="edge-zone edge-zone-right" aria-hidden="true"></div>
           <div class="timeline-scroller" id="timelineScroller">
@@ -83,10 +126,18 @@
           </div>
         </div>
 
+        <aside class="node-drawer" id="nodeDrawer" role="dialog" aria-hidden="true" aria-label="时间线节点详情">
+          <div class="node-drawer-header">
+            <span>节点详情</span>
+            <button id="closeNodeDrawer" type="button">关闭</button>
+          </div>
+          <div class="node-drawer-body" id="nodeDrawerBody"></div>
+        </aside>
+
         <div class="article-popover" id="articlePopover" role="dialog" aria-hidden="true"></div>
       </section>
     </main>
 
-    <script src="/static/app.js"></script>
+    <script src="/static/app.js?v=popover-click-20260505"></script>
   </body>
 </html>

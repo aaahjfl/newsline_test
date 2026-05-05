@@ -32,6 +32,16 @@ def _to_db_datetime(value):
     return normalized[:19]
 
 
+def _column_names(cursor, table_name: str) -> set[str]:
+    cursor.execute(f"SHOW COLUMNS FROM {table_name}")
+    return {str(row["Field"]) for row in cursor.fetchall()}
+
+
+def _ensure_column(cursor, table_name: str, column_name: str, ddl: str) -> None:
+    if column_name not in _column_names(cursor, table_name):
+        cursor.execute(f"ALTER TABLE {table_name} ADD COLUMN {ddl}")
+
+
 def ensure_timeline_reasoning_schema(cursor) -> None:
     """Create timeline reasoning tables if they do not exist."""
     cursor.execute(
@@ -81,6 +91,8 @@ def ensure_timeline_reasoning_schema(cursor) -> None:
             final_is_noise BOOLEAN NOT NULL DEFAULT FALSE,
             needs_split BOOLEAN NOT NULL DEFAULT FALSE,
             needs_merge BOOLEAN NOT NULL DEFAULT FALSE,
+            split_reason TEXT NULL,
+            merge_reason TEXT NULL,
             display_title TEXT NULL,
             resolved_time_start DATETIME NULL,
             resolved_time_end DATETIME NULL,
@@ -127,6 +139,8 @@ def ensure_timeline_reasoning_schema(cursor) -> None:
             final_is_noise BOOLEAN NOT NULL DEFAULT FALSE,
             needs_split BOOLEAN NOT NULL DEFAULT FALSE,
             needs_merge BOOLEAN NOT NULL DEFAULT FALSE,
+            split_reason TEXT NULL,
+            merge_reason TEXT NULL,
             decision_confidence DECIMAL(6,4) NOT NULL DEFAULT 0.0000,
             time_confidence DECIMAL(6,4) NOT NULL DEFAULT 0.0000,
             decision_reason TEXT NULL,
@@ -140,6 +154,10 @@ def ensure_timeline_reasoning_schema(cursor) -> None:
         )
         """
     )
+    _ensure_column(cursor, DECISION_TABLE, "split_reason", "split_reason TEXT NULL AFTER needs_merge")
+    _ensure_column(cursor, DECISION_TABLE, "merge_reason", "merge_reason TEXT NULL AFTER split_reason")
+    _ensure_column(cursor, NODE_TABLE, "split_reason", "split_reason TEXT NULL AFTER needs_merge")
+    _ensure_column(cursor, NODE_TABLE, "merge_reason", "merge_reason TEXT NULL AFTER split_reason")
     cursor.execute(
         f"""
         CREATE TABLE IF NOT EXISTS {ARTICLE_TABLE} (
@@ -250,6 +268,8 @@ def persist_timeline_reasoning_result(
                             decision.final_is_noise,
                             decision.needs_split,
                             decision.needs_merge,
+                            decision.split_reason,
+                            decision.merge_reason,
                             decision.display_title,
                             _to_db_datetime(decision.resolved_time_start),
                             _to_db_datetime(decision.resolved_time_end),
@@ -283,6 +303,8 @@ def persist_timeline_reasoning_result(
                         final_is_noise,
                         needs_split,
                         needs_merge,
+                        split_reason,
+                        merge_reason,
                         display_title,
                         resolved_time_start,
                         resolved_time_end,
@@ -291,7 +313,7 @@ def persist_timeline_reasoning_result(
                         time_confidence,
                         decision_reason,
                         raw_response_json
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                     """,
                     decision_rows,
                 )
@@ -326,11 +348,13 @@ def persist_timeline_reasoning_result(
                         final_is_noise,
                         needs_split,
                         needs_merge,
+                        split_reason,
+                        merge_reason,
                         decision_confidence,
                         time_confidence,
                         decision_reason,
                         risk_flags
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                     """,
                     [
                         (
@@ -360,6 +384,8 @@ def persist_timeline_reasoning_result(
                             record.final_is_noise,
                             record.needs_split,
                             record.needs_merge,
+                            record.split_reason,
+                            record.merge_reason,
                             record.decision_confidence,
                             record.time_confidence,
                             record.decision_reason,

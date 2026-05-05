@@ -99,6 +99,8 @@ def build_timeline_records(
                 final_is_noise=decision.final_is_noise,
                 needs_split=decision.needs_split,
                 needs_merge=decision.needs_merge,
+                split_reason=decision.split_reason,
+                merge_reason=decision.merge_reason,
                 decision_confidence=decision.decision_confidence,
                 time_confidence=decision.time_confidence,
                 decision_reason=decision.decision_reason,
