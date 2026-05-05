@@ -27,6 +27,7 @@ httpcore==1.0.9
 httpx==0.28.1
 huggingface_hub==1.7.1
 idna==3.11
+iniconfig==2.3.0
 Jinja2==3.1.6
 joblib==1.5.3
 ko_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/ko_core_news_sm-3.8.0/ko_core_news_sm-3.8.0-py3-none-any.whl#sha256=15486b93a22ec8ee43f787390afdb4e2086851573eb12b69dd2c4f2a95b3e0a4
@@ -42,6 +43,7 @@ openpyxl==3.1.5
 packaging==26.0
 pandas==3.0.1
 pillow==12.1.1
+pluggy==1.6.0
 preshed==3.0.13
 protobuf==7.34.1
 py-heideltime==1.0.6
@@ -52,6 +54,7 @@ pymorphy3==2.0.6
 pymorphy3-dicts-ru==2.4.417150.4580142
 pymorphy3-dicts-uk==2.4.1.1.1663094765
 PyMySQL==1.1.2
+pytest==9.0.3
 python-dateutil==2.9.0.post0
 pytz==2026.1.post1
 PyYAML==6.0.3

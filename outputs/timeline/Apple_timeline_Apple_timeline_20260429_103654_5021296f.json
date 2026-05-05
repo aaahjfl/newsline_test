@@ -1,0 +1,2589 @@
+{
+  "topic": "Apple",
+  "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+  "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+  "model_name": "qwen3.5:9b",
+  "mode": "fast",
+  "prompt_version": "timeline_reasoning_v1",
+  "generated_at": "2026-04-29 10:48:03",
+  "status": "completed",
+  "summary": {
+    "input_event_count": 19,
+    "review_event_count": 19,
+    "accepted_event_count": 19,
+    "rejected_event_count": 0
+  },
+  "timeline": [
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_001",
+      "order_index": 1,
+      "canonical_title": "Chappell Roan Apple dance , and other Primavera moments",
+      "display_title": "Chappell Roan Apple dance , and other Primavera moments",
+      "event_time_start": "2025-06-08 00:00:00",
+      "event_time_end": "2025-06-08 00:00:00",
+      "event_time_anchor": "2025-06-08 00:00:00",
+      "resolved_time_start": "2025-06-08 00:00:00",
+      "resolved_time_end": "2025-06-08 00:00:00",
+      "resolved_time_anchor": "2025-06-08 00:00:00",
+      "display_date": "2025-06-08",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_01a2f648"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Event is concrete and relevant to the topic 'Apple' despite low confidence flags; time fields are precise.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_01a2f648",
+          "title": "Chappell Roan Apple dance , and other Primavera moments",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cn4qn8l0pd3o",
+          "event_time_anchor": "2025-06-08 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Chappell Roan Apple dance , and other Primavera moments",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_002",
+      "order_index": 2,
+      "canonical_title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
+      "display_title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
+      "event_time_start": "2025-06-09 00:00:00",
+      "event_time_end": "2025-06-09 00:00:00",
+      "event_time_anchor": "2025-06-09 00:00:00",
+      "resolved_time_start": "2025-06-09 00:00:00",
+      "resolved_time_end": "2025-06-09 00:00:00",
+      "resolved_time_anchor": "2025-06-09 00:00:00",
+      "display_date": "2025-06-09",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_378d9600"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific title and time; low confidence and source count flags noted but do not override concrete nature.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_378d9600",
+          "title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/wwdc-apple-faces-ai-regulatory-challenges-it-woos-software-developers-5171201",
+          "event_time_anchor": "2025-06-09 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_003",
+      "order_index": 3,
+      "canonical_title": "Apple hits back against  unprecedented  €500m EU fine",
+      "display_title": "Apple hits back against unprecedented €500m EU fine",
+      "event_time_start": "2025-07-07 00:00:00",
+      "event_time_end": "2025-07-07 00:00:00",
+      "event_time_anchor": "2025-07-07 00:00:00",
+      "resolved_time_start": "2025-07-07 00:00:00",
+      "resolved_time_end": "2025-07-07 00:00:00",
+      "resolved_time_anchor": "2025-07-07 00:00:00",
+      "display_date": "2025-07-07",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_0f6929fe"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific title and time; low confidence and source count flags noted but do not override concrete nature.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_0f6929fe",
+          "title": "Apple hits back against  unprecedented  €500m EU fine",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cpvjdm4mp92o",
+          "event_time_anchor": "2025-07-07 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple hits back against  unprecedented  €500m EU fine",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_004",
+      "order_index": 4,
+      "canonical_title": "Trump announces US$100 billion new investment pledge from Apple",
+      "display_title": "Trump announces US$100 billion new investment pledge from Apple",
+      "event_time_start": "2025-08-07 00:00:00",
+      "event_time_end": "2025-08-07 00:00:00",
+      "event_time_anchor": "2025-08-07 00:00:00",
+      "resolved_time_start": "2025-08-07 00:00:00",
+      "resolved_time_end": "2025-08-07 00:00:00",
+      "resolved_time_anchor": "2025-08-07 00:00:00",
+      "display_date": "2025-08-07",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_a04b8066"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific time and topic relevance; low confidence and source count flags noted but do not override concrete nature.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_a04b8066",
+          "title": "Trump announces US$100 billion new investment pledge from Apple",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/trump-announces-us100-billion-new-investment-pledge-apple-5281411",
+          "event_time_anchor": "2025-08-07 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Trump announces US$100 billion new investment pledge from Apple",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_005",
+      "order_index": 5,
+      "canonical_title": "UK agrees to drop mandate for Apple  back door , US spy chief says | Technology News",
+      "display_title": "UK agrees to drop mandate for Apple back door, US spy chief says",
+      "event_time_start": "2025-08-19 00:00:00",
+      "event_time_end": "2025-08-19 00:00:00",
+      "event_time_anchor": "2025-08-19 00:00:00",
+      "resolved_time_start": "2025-08-19 00:00:00",
+      "resolved_time_end": "2025-08-19 00:00:00",
+      "resolved_time_anchor": "2025-08-19 00:00:00",
+      "display_date": "2025-08-19",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_452c33c1"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event regarding UK/US policy on Apple backdoors; time fields provided in input are accepted as per constraints.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_452c33c1",
+          "title": "UK agrees to drop mandate for Apple  back door , US spy chief says | Technology News",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2025/8/19/uk-drops-mandate-for-apple-back-door-us-spy-chief-says",
+          "event_time_anchor": "2025-08-19 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "UK agrees to drop mandate for Apple  back door , US spy chief says | Technology News",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_006",
+      "order_index": 6,
+      "canonical_title": "US says united kingdom has withdrawn demand for Apple user encrypted data",
+      "display_title": "US says united kingdom has withdrawn demand for Apple user encrypted data",
+      "event_time_start": "2025-08-19 00:00:00",
+      "event_time_end": "2025-08-19 00:00:00",
+      "event_time_anchor": "2025-08-19 00:00:00",
+      "resolved_time_start": "2025-08-19 00:00:00",
+      "resolved_time_end": "2025-08-19 00:00:00",
+      "resolved_time_anchor": "2025-08-19 00:00:00",
+      "display_date": "2025-08-19",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_b4f73e8f"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific title and time; low confidence and source count flags noted but do not override concrete nature.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_b4f73e8f",
+          "title": "US says united kingdom has withdrawn demand for Apple user encrypted data",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cdj2m3rrk74o",
+          "event_time_anchor": "2025-08-19 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "US says united kingdom has withdrawn demand for Apple user encrypted data",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_007",
+      "order_index": 7,
+      "canonical_title": "Mahkeme Apple  ın  çevreci saat  reklamlarını durdurdu – DW – 26 . 08 . 2025",
+      "display_title": "Mahkeme Apple'ın çevreci saat reklamlarını durdurdu",
+      "event_time_start": "2025-08-26 00:00:00",
+      "event_time_end": "2025-08-26 00:00:00",
+      "event_time_anchor": "2025-08-26 00:00:00",
+      "resolved_time_start": "2025-08-26 00:00:00",
+      "resolved_time_end": "2025-08-26 00:00:00",
+      "resolved_time_anchor": "2025-08-26 00:00:00",
+      "display_date": "2025-08-26",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_00b3d875"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.85,
+      "time_confidence": 0.95,
+      "decision_reason": "Concrete legal event with specific date and source; low confidence flags do not negate event reality.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_00b3d875",
+          "title": "Mahkeme Apple  ın  çevreci saat  reklamlarını durdurdu – DW – 26 . 08 . 2025",
+          "source": "DW",
+          "url": "https://www.dw.com/tr/mahkeme-apple%C4%B1n-%C3%A7evreci-saat-reklamlar%C4%B1n%C4%B1-durdurdu/a-73769715",
+          "event_time_anchor": "2025-08-26 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Mahkeme Apple  ın  çevreci saat  reklamlarını durdurdu – DW – 26 . 08 . 2025",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_008",
+      "order_index": 8,
+      "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+      "display_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+      "event_time_start": "2025-08-12 00:00:00",
+      "event_time_end": "2025-10-12 00:00:00",
+      "event_time_anchor": "2025-08-26 00:00:00",
+      "resolved_time_start": "2025-08-12 00:00:00",
+      "resolved_time_end": "2025-10-12 00:00:00",
+      "resolved_time_anchor": "2025-08-26 00:00:00",
+      "display_date": "2025-08-26",
+      "cluster_size": 5,
+      "source_count": 3,
+      "member_news_ids": [
+        "gdelt_b03f4957",
+        "gdelt_64b42138",
+        "gdelt_fc3d4392",
+        "gdelt_a17bd04a",
+        "gdelt_a16e39b8"
+      ],
+      "confidence": 0.7312,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.7312,
+      "time_confidence": 0.85,
+      "decision_reason": "Concrete legal event with multiple sources and consistent topic relevance; time span reflects litigation duration.",
+      "risk_flags": [
+        "medium_confidence",
+        "long_time_span",
+        "semantic_override_edges"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_64b42138",
+          "title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2025/8/25/musk-sues-apple-openai-over-alleged-ai-competition-suppression",
+          "event_time_anchor": "2025-08-26 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_a16e39b8",
+          "title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-sued-over-use-copyrighted-books-train-apple-intelligence-5395431",
+          "event_time_anchor": "2025-10-12 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_a17bd04a",
+          "title": "Apple sued by authors over use of books in AI training",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-sued-authors-over-use-books-in-ai-training-5335556",
+          "event_time_anchor": "2025-09-06 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_b03f4957",
+          "title": "Musk says xAI to take legal action against Apple over App Store rankings",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/musk-says-xai-take-legal-action-against-apple-over-app-store-rankings-5289596",
+          "event_time_anchor": "2025-08-12 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_fc3d4392",
+          "title": "Musk firms sue Apple and OpenAI , alleging they hurt competition",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cly6xjg9nnyo",
+          "event_time_anchor": "2025-08-26 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_009",
+      "order_index": 9,
+      "canonical_title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+      "display_title": "Apple iPhone 17 Event",
+      "event_time_start": "2025-09-10 00:00:00",
+      "event_time_end": "2025-09-10 00:00:00",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "resolved_time_start": "2025-09-10 00:00:00",
+      "resolved_time_end": "2025-09-10 00:00:00",
+      "resolved_time_anchor": "2025-09-10 00:00:00",
+      "display_date": "2025-09-10",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_3873c872"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.85,
+      "time_confidence": 0.95,
+      "decision_reason": "Concrete product launch event with specific date; topic relevance confirmed; low confidence flags do not override concrete event nature.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "rolling_coverage_title"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_3873c872",
+          "title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/wirecutter/money/apple-iphone-17-event-20250909/",
+          "event_time_anchor": "2025-09-10 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_010",
+      "order_index": 10,
+      "canonical_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+      "display_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+      "event_time_start": "2025-09-10 00:00:00",
+      "event_time_end": "2025-09-10 00:00:00",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "resolved_time_start": "2025-09-10 00:00:00",
+      "resolved_time_end": "2025-09-10 00:00:00",
+      "resolved_time_anchor": "2025-09-10 00:00:00",
+      "display_date": "2025-09-10",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_7537ad02"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific title and timestamp; low confidence and source count flags noted but do not override concrete nature.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_7537ad02",
+          "title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-event-new-iphone-prices-trump-tariff-threat-5339971",
+          "event_time_anchor": "2025-09-10 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_011",
+      "order_index": 11,
+      "canonical_title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+      "display_title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+      "event_time_start": "2025-10-15 00:00:00",
+      "event_time_end": "2025-10-15 00:00:00",
+      "event_time_anchor": "2025-10-15 00:00:00",
+      "resolved_time_start": "2025-10-15 00:00:00",
+      "resolved_time_end": "2025-10-15 00:00:00",
+      "resolved_time_anchor": "2025-10-15 00:00:00",
+      "display_date": "2025-10-15",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_0857ec17"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete business event with specific topic match; low confidence and source count flags noted but do not override concrete nature per constraints.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_0857ec17",
+          "title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+          "source": "新华网",
+          "url": "http://french.xinhuanet.com/20251015/9acf06bc43d94c51bb65f5bfdc471d84/c.html",
+          "event_time_anchor": "2025-10-15 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_012",
+      "order_index": 12,
+      "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+      "display_title": "China urges equal dialogue with US as Apple Cook visits",
+      "event_time_start": "2025-10-17 00:00:00",
+      "event_time_end": "2025-10-17 00:00:00",
+      "event_time_anchor": "2025-10-17 00:00:00",
+      "resolved_time_start": "2025-10-17 00:00:00",
+      "resolved_time_end": "2025-10-17 00:00:00",
+      "resolved_time_anchor": "2025-10-17 00:00:00",
+      "display_date": "2025-10-17",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_4e108ff2"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event involving a specific person and diplomatic action; low confidence and source count flags are noted but do not override the concrete nature of the event.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_4e108ff2",
+          "title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/east-asia/china-urges-us-equal-dialogue-trade-war-tariffs-apple-tim-cook-5407116",
+          "event_time_anchor": "2025-10-17 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_013",
+      "order_index": 13,
+      "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+      "display_title": "平凉静宁苹果产业铸就181亿元品牌传奇",
+      "event_time_start": "2025-01-01 00:00:00",
+      "event_time_end": "2025-12-31 00:00:00",
+      "event_time_anchor": "2025-10-19 00:00:00",
+      "resolved_time_start": "2025-01-01 00:00:00",
+      "resolved_time_end": "2025-12-31 00:00:00",
+      "resolved_time_anchor": "2025-10-19 00:00:00",
+      "display_date": "2025-10-19",
+      "cluster_size": 5,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_02b48256",
+        "gdelt_234c3524",
+        "gdelt_f42af142",
+        "gdelt_dadc04e1",
+        "gdelt_c024dc57"
+      ],
+      "confidence": 0.7243,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": true,
+      "needs_merge": false,
+      "decision_confidence": 0.85,
+      "time_confidence": 0.0,
+      "decision_reason": "Cluster contains mixed events (brand value report vs. marketing conference) with conflicting dates and broad time spans; requires splitting into specific events. Time fields are generic placeholders and unsupported by specific event details.",
+      "risk_flags": [
+        "medium_confidence",
+        "long_time_span",
+        "low_source_support",
+        "semantic_override_edges"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_02b48256",
+          "title": "平凉  静宁苹果  品牌价值达181亿元 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251012/67bf8f160e9b4a61ae8055af2f8dbc0e/c.html",
+          "event_time_anchor": "2025-10-12 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_234c3524",
+          "title": "平凉市崆峒区 ： 苹果  升级记 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251013/7923d1e63d6a4657aaf93fb7a0063952/c.html",
+          "event_time_anchor": "2025-10-13 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_c024dc57",
+          "title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251123/796494fac5d7493e9f0cfc1014edb338/c.html",
+          "event_time_anchor": "2025-11-23 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_dadc04e1",
+          "title": "天水 ： 花牛苹果热销海内外市场 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251110/881d8d1bc9424db087bffdeefce17f0b/c.html",
+          "event_time_anchor": "2025-11-10 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_f42af142",
+          "title": "2025中国苹果年会暨庆阳苹果营销大会举行 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251019/9187f55f3922452ea7b98e03697bef6d/c.html",
+          "event_time_anchor": "2025-10-19 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_014",
+      "order_index": 14,
+      "canonical_title": "Apple claims  tremendou global uptake of latest iPhones",
+      "display_title": "Apple claims tremendous global uptake of latest iPhones",
+      "event_time_start": "2025-10-31 00:00:00",
+      "event_time_end": "2025-10-31 00:00:00",
+      "event_time_anchor": "2025-10-31 00:00:00",
+      "resolved_time_start": "2025-10-31 00:00:00",
+      "resolved_time_end": "2025-10-31 00:00:00",
+      "resolved_time_anchor": "2025-10-31 00:00:00",
+      "display_date": "2025-10-31",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_89208461"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event claim regarding product uptake; topic matches; time fields provided and consistent.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "rolling_coverage_title"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_89208461",
+          "title": "Apple claims  tremendou global uptake of latest iPhones",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cz6n98exv9zo",
+          "event_time_anchor": "2025-10-31 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple claims  tremendou global uptake of latest iPhones",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_015",
+      "order_index": 15,
+      "canonical_title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+      "display_title": "$230 for a cut - up sock - Apple new iPhone Pocket ridiculed online",
+      "event_time_start": "2025-11-13 00:00:00",
+      "event_time_end": "2025-11-13 00:00:00",
+      "event_time_anchor": "2025-11-13 00:00:00",
+      "resolved_time_start": "2025-11-13 00:00:00",
+      "resolved_time_end": "2025-11-13 00:00:00",
+      "resolved_time_anchor": "2025-11-13 00:00:00",
+      "display_date": "2025-11-13",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_df373439"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event regarding product ridicule; low confidence and single source flags noted but do not warrant noise classification per constraints.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_df373439",
+          "title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cn97ndgpnq7o",
+          "event_time_anchor": "2025-11-13 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_016",
+      "order_index": 16,
+      "canonical_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+      "display_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+      "event_time_start": "2025-12-05 00:00:00",
+      "event_time_end": "2025-12-05 00:00:00",
+      "event_time_anchor": "2025-12-05 00:00:00",
+      "resolved_time_start": "2025-12-05 00:00:00",
+      "resolved_time_end": "2025-12-05 00:00:00",
+      "resolved_time_anchor": "2025-12-05 00:00:00",
+      "display_date": "2025-12-05",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_053c4f00"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific topic match and provided timestamp; low confidence and source count flags noted but do not override concrete nature.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_053c4f00",
+          "title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/russia-blocks-apples-facetime-in-mounting-push-against-foreign-tech-platforms-5549056",
+          "event_time_anchor": "2025-12-05 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_017",
+      "order_index": 17,
+      "canonical_title": "Apple , Google send new round of cyber threat notifications to users around world",
+      "display_title": "Apple , Google send new round of cyber threat notifications to users around world",
+      "event_time_start": "2025-12-07 00:00:00",
+      "event_time_end": "2025-12-07 00:00:00",
+      "event_time_anchor": "2025-12-07 00:00:00",
+      "resolved_time_start": "2025-12-07 00:00:00",
+      "resolved_time_end": "2025-12-07 00:00:00",
+      "resolved_time_anchor": "2025-12-07 00:00:00",
+      "display_date": "2025-12-07",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_981cf720"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific date and topic relevance; low confidence and source count flags noted but do not warrant noise classification per constraints.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_981cf720",
+          "title": "Apple , Google send new round of cyber threat notifications to users around world",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-google-send-new-round-cyber-threat-notifications-users-around-world-5564151",
+          "event_time_anchor": "2025-12-07 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple , Google send new round of cyber threat notifications to users around world",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_018",
+      "order_index": 18,
+      "canonical_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+      "display_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств",
+      "event_time_start": "2025-12-28 00:00:00",
+      "event_time_end": "2025-12-28 00:00:00",
+      "event_time_anchor": "2025-12-28 00:00:00",
+      "resolved_time_start": "2025-12-28 00:00:00",
+      "resolved_time_end": "2025-12-28 00:00:00",
+      "resolved_time_anchor": "2025-12-28 00:00:00",
+      "display_date": "2025-12-28",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_196abd56"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 0.95,
+      "decision_reason": "Concrete event with specific date and source; low confidence flag noted but not sufficient for noise classification.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_196abd56",
+          "title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+          "source": "DW",
+          "url": "https://www.dw.com/ru/apple-po-trebovaniu-rossii-udalila-iz-appstore-prilozenie-dla-lgbtznakomstv/a-75321186",
+          "event_time_anchor": "2025-12-28 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    },
+    {
+      "reasoning_run_id": "Apple_timeline_20260429_103654_5021296f",
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_019",
+      "order_index": 19,
+      "canonical_title": "丽江宁蒗 ： 联农带农促增收 一颗苹果甜万家 _ 新华网",
+      "display_title": "丽江宁蒗：联农带农促增收 一颗苹果甜万家",
+      "event_time_start": "2026-03-23 00:00:00",
+      "event_time_end": "2026-03-23 00:00:00",
+      "event_time_anchor": "2026-03-23 00:00:00",
+      "resolved_time_start": "2026-03-23 00:00:00",
+      "resolved_time_end": "2026-03-23 00:00:00",
+      "resolved_time_anchor": "2026-03-23 00:00:00",
+      "display_date": "2026-03-23",
+      "cluster_size": 1,
+      "source_count": 1,
+      "member_news_ids": [
+        "gdelt_89e5b6fd"
+      ],
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete local news event with specific date and source; low confidence and source count flags do not warrant noise classification per constraints.",
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_89e5b6fd",
+          "title": "丽江宁蒗 ： 联农带农促增收 一颗苹果甜万家 _ 新华网",
+          "source": "新华网",
+          "url": "http://yn.xinhuanet.com/20260323/a9be15c16bc745d295fbdc93283c0fe3/c.html",
+          "event_time_anchor": "2026-03-23 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "丽江宁蒗 ： 联农带农促增收 一颗苹果甜万家 _ 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_001",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Chappell Roan Apple dance , and other Primavera moments",
+      "resolved_time_start": "2025-06-08 00:00:00",
+      "resolved_time_end": "2025-06-08 00:00:00",
+      "resolved_time_anchor": "2025-06-08 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Event is concrete and relevant to the topic 'Apple' despite low confidence flags; time fields are precise.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_001",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Chappell Roan Apple dance , and other Primavera moments",
+            "resolved_time_start": "2025-06-08 00:00:00",
+            "resolved_time_end": "2025-06-08 00:00:00",
+            "resolved_time_anchor": "2025-06-08 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Event is concrete and relevant to the topic 'Apple' despite low confidence flags; time fields are precise."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_002",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
+      "resolved_time_start": "2025-06-09 00:00:00",
+      "resolved_time_end": "2025-06-09 00:00:00",
+      "resolved_time_anchor": "2025-06-09 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific title and time; low confidence and source count flags noted but do not override concrete nature.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_002",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
+            "resolved_time_start": "2025-06-09 00:00:00",
+            "resolved_time_end": "2025-06-09 00:00:00",
+            "resolved_time_anchor": "2025-06-09 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event with specific title and time; low confidence and source count flags noted but do not override concrete nature."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_003",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Apple hits back against unprecedented €500m EU fine",
+      "resolved_time_start": "2025-07-07 00:00:00",
+      "resolved_time_end": "2025-07-07 00:00:00",
+      "resolved_time_anchor": "2025-07-07 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific title and time; low confidence and source count flags noted but do not override concrete nature.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_003",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Apple hits back against unprecedented €500m EU fine",
+            "resolved_time_start": "2025-07-07 00:00:00",
+            "resolved_time_end": "2025-07-07 00:00:00",
+            "resolved_time_anchor": "2025-07-07 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event with specific title and time; low confidence and source count flags noted but do not override concrete nature."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_004",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Trump announces US$100 billion new investment pledge from Apple",
+      "resolved_time_start": "2025-08-07 00:00:00",
+      "resolved_time_end": "2025-08-07 00:00:00",
+      "resolved_time_anchor": "2025-08-07 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific time and topic relevance; low confidence and source count flags noted but do not override concrete nature.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_004",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Trump announces US$100 billion new investment pledge from Apple",
+            "resolved_time_start": "2025-08-07 00:00:00",
+            "resolved_time_end": "2025-08-07 00:00:00",
+            "resolved_time_anchor": "2025-08-07 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event with specific time and topic relevance; low confidence and source count flags noted but do not override concrete nature."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_005",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "UK agrees to drop mandate for Apple back door, US spy chief says",
+      "resolved_time_start": "2025-08-19 00:00:00",
+      "resolved_time_end": "2025-08-19 00:00:00",
+      "resolved_time_anchor": "2025-08-19 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event regarding UK/US policy on Apple backdoors; time fields provided in input are accepted as per constraints.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_005",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "UK agrees to drop mandate for Apple back door, US spy chief says",
+            "resolved_time_start": "2025-08-19 00:00:00",
+            "resolved_time_end": "2025-08-19 00:00:00",
+            "resolved_time_anchor": "2025-08-19 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event regarding UK/US policy on Apple backdoors; time fields provided in input are accepted as per constraints."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_006",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "US says united kingdom has withdrawn demand for Apple user encrypted data",
+      "resolved_time_start": "2025-08-19 00:00:00",
+      "resolved_time_end": "2025-08-19 00:00:00",
+      "resolved_time_anchor": "2025-08-19 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific title and time; low confidence and source count flags noted but do not override concrete nature.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_006",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "US says united kingdom has withdrawn demand for Apple user encrypted data",
+            "resolved_time_start": "2025-08-19 00:00:00",
+            "resolved_time_end": "2025-08-19 00:00:00",
+            "resolved_time_anchor": "2025-08-19 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event with specific title and time; low confidence and source count flags noted but do not override concrete nature."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_007",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Mahkeme Apple'ın çevreci saat reklamlarını durdurdu",
+      "resolved_time_start": "2025-08-26 00:00:00",
+      "resolved_time_end": "2025-08-26 00:00:00",
+      "resolved_time_anchor": "2025-08-26 00:00:00",
+      "decision_confidence": 0.85,
+      "time_confidence": 0.95,
+      "decision_reason": "Concrete legal event with specific date and source; low confidence flags do not negate event reality.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_007",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Mahkeme Apple'ın çevreci saat reklamlarını durdurdu",
+            "resolved_time_start": "2025-08-26 00:00:00",
+            "resolved_time_end": "2025-08-26 00:00:00",
+            "resolved_time_anchor": "2025-08-26 00:00:00",
+            "decision_confidence": 0.85,
+            "time_confidence": 0.95,
+            "decision_reason": "Concrete legal event with specific date and source; low confidence flags do not negate event reality."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_008",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+      "resolved_time_start": "2025-08-12 00:00:00",
+      "resolved_time_end": "2025-10-12 00:00:00",
+      "resolved_time_anchor": "2025-08-26 00:00:00",
+      "decision_confidence": 0.7312,
+      "time_confidence": 0.85,
+      "decision_reason": "Concrete legal event with multiple sources and consistent topic relevance; time span reflects litigation duration.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_008",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+            "resolved_time_start": "2025-08-12 00:00:00",
+            "resolved_time_end": "2025-10-12 00:00:00",
+            "resolved_time_anchor": "2025-08-26 00:00:00",
+            "decision_confidence": 0.7312,
+            "time_confidence": 0.85,
+            "decision_reason": "Concrete legal event with multiple sources and consistent topic relevance; time span reflects litigation duration."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_009",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Apple iPhone 17 Event",
+      "resolved_time_start": "2025-09-10 00:00:00",
+      "resolved_time_end": "2025-09-10 00:00:00",
+      "resolved_time_anchor": "2025-09-10 00:00:00",
+      "decision_confidence": 0.85,
+      "time_confidence": 0.95,
+      "decision_reason": "Concrete product launch event with specific date; topic relevance confirmed; low confidence flags do not override concrete event nature.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_009",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Apple iPhone 17 Event",
+            "resolved_time_start": "2025-09-10 00:00:00",
+            "resolved_time_end": "2025-09-10 00:00:00",
+            "resolved_time_anchor": "2025-09-10 00:00:00",
+            "decision_confidence": 0.85,
+            "time_confidence": 0.95,
+            "decision_reason": "Concrete product launch event with specific date; topic relevance confirmed; low confidence flags do not override concrete event nature."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_010",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+      "resolved_time_start": "2025-09-10 00:00:00",
+      "resolved_time_end": "2025-09-10 00:00:00",
+      "resolved_time_anchor": "2025-09-10 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific title and timestamp; low confidence and source count flags noted but do not override concrete nature.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_010",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+            "resolved_time_start": "2025-09-10 00:00:00",
+            "resolved_time_end": "2025-09-10 00:00:00",
+            "resolved_time_anchor": "2025-09-10 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event with specific title and timestamp; low confidence and source count flags noted but do not override concrete nature."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_011",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+      "resolved_time_start": "2025-10-15 00:00:00",
+      "resolved_time_end": "2025-10-15 00:00:00",
+      "resolved_time_anchor": "2025-10-15 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete business event with specific topic match; low confidence and source count flags noted but do not override concrete nature per constraints.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_011",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+            "resolved_time_start": "2025-10-15 00:00:00",
+            "resolved_time_end": "2025-10-15 00:00:00",
+            "resolved_time_anchor": "2025-10-15 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete business event with specific topic match; low confidence and source count flags noted but do not override concrete nature per constraints."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_012",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "China urges equal dialogue with US as Apple Cook visits",
+      "resolved_time_start": "2025-10-17 00:00:00",
+      "resolved_time_end": "2025-10-17 00:00:00",
+      "resolved_time_anchor": "2025-10-17 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event involving a specific person and diplomatic action; low confidence and source count flags are noted but do not override the concrete nature of the event.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_012",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "China urges equal dialogue with US as Apple Cook visits",
+            "resolved_time_start": "2025-10-17 00:00:00",
+            "resolved_time_end": "2025-10-17 00:00:00",
+            "resolved_time_anchor": "2025-10-17 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event involving a specific person and diplomatic action; low confidence and source count flags are noted but do not override the concrete nature of the event."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_013",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": true,
+      "needs_merge": false,
+      "display_title": "平凉静宁苹果产业铸就181亿元品牌传奇",
+      "resolved_time_start": "2025-01-01 00:00:00",
+      "resolved_time_end": "2025-12-31 00:00:00",
+      "resolved_time_anchor": "2025-10-19 00:00:00",
+      "decision_confidence": 0.85,
+      "time_confidence": 0.0,
+      "decision_reason": "Cluster contains mixed events (brand value report vs. marketing conference) with conflicting dates and broad time spans; requires splitting into specific events. Time fields are generic placeholders and unsupported by specific event details.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_013",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": true,
+            "needs_merge": false,
+            "display_title": "平凉静宁苹果产业铸就181亿元品牌传奇",
+            "resolved_time_start": null,
+            "resolved_time_end": null,
+            "resolved_time_anchor": null,
+            "decision_confidence": 0.85,
+            "time_confidence": 0.0,
+            "decision_reason": "Cluster contains mixed events (brand value report vs. marketing conference) with conflicting dates and broad time spans; requires splitting into specific events. Time fields are generic placeholders and unsupported by specific event details."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_014",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Apple claims tremendous global uptake of latest iPhones",
+      "resolved_time_start": "2025-10-31 00:00:00",
+      "resolved_time_end": "2025-10-31 00:00:00",
+      "resolved_time_anchor": "2025-10-31 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event claim regarding product uptake; topic matches; time fields provided and consistent.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_014",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Apple claims tremendous global uptake of latest iPhones",
+            "resolved_time_start": "2025-10-31 00:00:00",
+            "resolved_time_end": "2025-10-31 00:00:00",
+            "resolved_time_anchor": "2025-10-31 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event claim regarding product uptake; topic matches; time fields provided and consistent."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_015",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "$230 for a cut - up sock - Apple new iPhone Pocket ridiculed online",
+      "resolved_time_start": "2025-11-13 00:00:00",
+      "resolved_time_end": "2025-11-13 00:00:00",
+      "resolved_time_anchor": "2025-11-13 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event regarding product ridicule; low confidence and single source flags noted but do not warrant noise classification per constraints.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_015",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "$230 for a cut - up sock - Apple new iPhone Pocket ridiculed online",
+            "resolved_time_start": "2025-11-13 00:00:00",
+            "resolved_time_end": "2025-11-13 00:00:00",
+            "resolved_time_anchor": "2025-11-13 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event regarding product ridicule; low confidence and single source flags noted but do not warrant noise classification per constraints."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_016",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+      "resolved_time_start": "2025-12-05 00:00:00",
+      "resolved_time_end": "2025-12-05 00:00:00",
+      "resolved_time_anchor": "2025-12-05 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific topic match and provided timestamp; low confidence and source count flags noted but do not override concrete nature.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_016",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+            "resolved_time_start": "2025-12-05 00:00:00",
+            "resolved_time_end": "2025-12-05 00:00:00",
+            "resolved_time_anchor": "2025-12-05 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event with specific topic match and provided timestamp; low confidence and source count flags noted but do not override concrete nature."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_017",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Apple , Google send new round of cyber threat notifications to users around world",
+      "resolved_time_start": "2025-12-07 00:00:00",
+      "resolved_time_end": "2025-12-07 00:00:00",
+      "resolved_time_anchor": "2025-12-07 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete event with specific date and topic relevance; low confidence and source count flags noted but do not warrant noise classification per constraints.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_017",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Apple , Google send new round of cyber threat notifications to users around world",
+            "resolved_time_start": "2025-12-07 00:00:00",
+            "resolved_time_end": "2025-12-07 00:00:00",
+            "resolved_time_anchor": "2025-12-07 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete event with specific date and topic relevance; low confidence and source count flags noted but do not warrant noise classification per constraints."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_018",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств",
+      "resolved_time_start": "2025-12-28 00:00:00",
+      "resolved_time_end": "2025-12-28 00:00:00",
+      "resolved_time_anchor": "2025-12-28 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 0.95,
+      "decision_reason": "Concrete event with specific date and source; low confidence flag noted but not sufficient for noise classification.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_018",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств",
+            "resolved_time_start": "2025-12-28 00:00:00",
+            "resolved_time_end": "2025-12-28 00:00:00",
+            "resolved_time_anchor": "2025-12-28 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 0.95,
+            "decision_reason": "Concrete event with specific date and source; low confidence flag noted but not sufficient for noise classification."
+          }
+        ]
+      }
+    },
+    {
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_019",
+      "decision_source": "llm",
+      "keep_event": true,
+      "is_topic_relevant": true,
+      "final_is_noise": false,
+      "needs_split": false,
+      "needs_merge": false,
+      "display_title": "丽江宁蒗：联农带农促增收 一颗苹果甜万家",
+      "resolved_time_start": "2026-03-23 00:00:00",
+      "resolved_time_end": "2026-03-23 00:00:00",
+      "resolved_time_anchor": "2026-03-23 00:00:00",
+      "decision_confidence": 0.6317,
+      "time_confidence": 1.0,
+      "decision_reason": "Concrete local news event with specific date and source; low confidence and source count flags do not warrant noise classification per constraints.",
+      "raw_response_json": {
+        "decisions": [
+          {
+            "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_019",
+            "keep_event": true,
+            "is_topic_relevant": true,
+            "final_is_noise": false,
+            "needs_split": false,
+            "needs_merge": false,
+            "display_title": "丽江宁蒗：联农带农促增收 一颗苹果甜万家",
+            "resolved_time_start": "2026-03-23 00:00:00",
+            "resolved_time_end": "2026-03-23 00:00:00",
+            "resolved_time_anchor": "2026-03-23 00:00:00",
+            "decision_confidence": 0.6317,
+            "time_confidence": 1.0,
+            "decision_reason": "Concrete local news event with specific date and source; low confidence and source count flags do not warrant noise classification per constraints."
+          }
+        ]
+      }
+    }
+  ],
+  "decision_contexts": {
+    "Apple_20260429_103626_9d1d49dd:Apple_event_001": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_001",
+      "canonical_title": "Chappell Roan Apple dance , and other Primavera moments",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-06-08 00:00:00",
+      "event_time_end": "2025-06-08 00:00:00",
+      "event_time_anchor": "2025-06-08 00:00:00",
+      "member_news_ids": [
+        "gdelt_01a2f648"
+      ],
+      "member_titles_sample": [
+        "Chappell Roan Apple dance , and other Primavera moments"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_01a2f648",
+          "title": "Chappell Roan Apple dance , and other Primavera moments",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cn4qn8l0pd3o",
+          "event_time_anchor": "2025-06-08 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Chappell Roan Apple dance , and other Primavera moments",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_002": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_002",
+      "canonical_title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-06-09 00:00:00",
+      "event_time_end": "2025-06-09 00:00:00",
+      "event_time_anchor": "2025-06-09 00:00:00",
+      "member_news_ids": [
+        "gdelt_378d9600"
+      ],
+      "member_titles_sample": [
+        "WWDC : Apple faces AI , regulatory challenges as it woos software developers"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_378d9600",
+          "title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/wwdc-apple-faces-ai-regulatory-challenges-it-woos-software-developers-5171201",
+          "event_time_anchor": "2025-06-09 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "WWDC : Apple faces AI , regulatory challenges as it woos software developers",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_003": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_003",
+      "canonical_title": "Apple hits back against  unprecedented  €500m EU fine",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-07-07 00:00:00",
+      "event_time_end": "2025-07-07 00:00:00",
+      "event_time_anchor": "2025-07-07 00:00:00",
+      "member_news_ids": [
+        "gdelt_0f6929fe"
+      ],
+      "member_titles_sample": [
+        "Apple hits back against  unprecedented  €500m EU fine"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_0f6929fe",
+          "title": "Apple hits back against  unprecedented  €500m EU fine",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cpvjdm4mp92o",
+          "event_time_anchor": "2025-07-07 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple hits back against  unprecedented  €500m EU fine",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_004": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_004",
+      "canonical_title": "Trump announces US$100 billion new investment pledge from Apple",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-08-07 00:00:00",
+      "event_time_end": "2025-08-07 00:00:00",
+      "event_time_anchor": "2025-08-07 00:00:00",
+      "member_news_ids": [
+        "gdelt_a04b8066"
+      ],
+      "member_titles_sample": [
+        "Trump announces US$100 billion new investment pledge from Apple"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_a04b8066",
+          "title": "Trump announces US$100 billion new investment pledge from Apple",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/trump-announces-us100-billion-new-investment-pledge-apple-5281411",
+          "event_time_anchor": "2025-08-07 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Trump announces US$100 billion new investment pledge from Apple",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_005": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_005",
+      "canonical_title": "UK agrees to drop mandate for Apple  back door , US spy chief says | Technology News",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-08-19 00:00:00",
+      "event_time_end": "2025-08-19 00:00:00",
+      "event_time_anchor": "2025-08-19 00:00:00",
+      "member_news_ids": [
+        "gdelt_452c33c1"
+      ],
+      "member_titles_sample": [
+        "UK agrees to drop mandate for Apple  back door , US spy chief says | Technology News"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_452c33c1",
+          "title": "UK agrees to drop mandate for Apple  back door , US spy chief says | Technology News",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2025/8/19/uk-drops-mandate-for-apple-back-door-us-spy-chief-says",
+          "event_time_anchor": "2025-08-19 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "UK agrees to drop mandate for Apple  back door , US spy chief says | Technology News",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_006": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_006",
+      "canonical_title": "US says united kingdom has withdrawn demand for Apple user encrypted data",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-08-19 00:00:00",
+      "event_time_end": "2025-08-19 00:00:00",
+      "event_time_anchor": "2025-08-19 00:00:00",
+      "member_news_ids": [
+        "gdelt_b4f73e8f"
+      ],
+      "member_titles_sample": [
+        "US says united kingdom has withdrawn demand for Apple user encrypted data"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_b4f73e8f",
+          "title": "US says united kingdom has withdrawn demand for Apple user encrypted data",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cdj2m3rrk74o",
+          "event_time_anchor": "2025-08-19 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "US says united kingdom has withdrawn demand for Apple user encrypted data",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_007": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_007",
+      "canonical_title": "Mahkeme Apple  ın  çevreci saat  reklamlarını durdurdu – DW – 26 . 08 . 2025",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-08-26 00:00:00",
+      "event_time_end": "2025-08-26 00:00:00",
+      "event_time_anchor": "2025-08-26 00:00:00",
+      "member_news_ids": [
+        "gdelt_00b3d875"
+      ],
+      "member_titles_sample": [
+        "Mahkeme Apple  ın  çevreci saat  reklamlarını durdurdu – DW – 26 . 08 . 2025"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_00b3d875",
+          "title": "Mahkeme Apple  ın  çevreci saat  reklamlarını durdurdu – DW – 26 . 08 . 2025",
+          "source": "DW",
+          "url": "https://www.dw.com/tr/mahkeme-apple%C4%B1n-%C3%A7evreci-saat-reklamlar%C4%B1n%C4%B1-durdurdu/a-73769715",
+          "event_time_anchor": "2025-08-26 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Mahkeme Apple  ın  çevreci saat  reklamlarını durdurdu – DW – 26 . 08 . 2025",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_008": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_008",
+      "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+      "cluster_size": 5,
+      "source_count": 3,
+      "confidence": 0.7312,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-08-12 00:00:00",
+      "event_time_end": "2025-10-12 00:00:00",
+      "event_time_anchor": "2025-08-26 00:00:00",
+      "member_news_ids": [
+        "gdelt_b03f4957",
+        "gdelt_64b42138",
+        "gdelt_fc3d4392",
+        "gdelt_a17bd04a",
+        "gdelt_a16e39b8"
+      ],
+      "member_titles_sample": [
+        "Musk sues Apple , OpenAI over alleged AI competition suppression",
+        "Apple sued over use of copyrighted books to train Apple Intelligence",
+        "Apple sued by authors over use of books in AI training",
+        "Musk says xAI to take legal action against Apple over App Store rankings",
+        "Musk firms sue Apple and OpenAI , alleging they hurt competition"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_64b42138",
+          "title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2025/8/25/musk-sues-apple-openai-over-alleged-ai-competition-suppression",
+          "event_time_anchor": "2025-08-26 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_a16e39b8",
+          "title": "Apple sued over use of copyrighted books to train Apple Intelligence",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-sued-over-use-copyrighted-books-train-apple-intelligence-5395431",
+          "event_time_anchor": "2025-10-12 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_a17bd04a",
+          "title": "Apple sued by authors over use of books in AI training",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-sued-authors-over-use-books-in-ai-training-5335556",
+          "event_time_anchor": "2025-09-06 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_b03f4957",
+          "title": "Musk says xAI to take legal action against Apple over App Store rankings",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/musk-says-xai-take-legal-action-against-apple-over-app-store-rankings-5289596",
+          "event_time_anchor": "2025-08-12 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_fc3d4392",
+          "title": "Musk firms sue Apple and OpenAI , alleging they hurt competition",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cly6xjg9nnyo",
+          "event_time_anchor": "2025-08-26 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "Musk sues Apple , OpenAI over alleged AI competition suppression",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 2,
+      "graph_edge_count": 14,
+      "risk_flags": [
+        "medium_confidence",
+        "long_time_span",
+        "semantic_override_edges"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_009": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_009",
+      "canonical_title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-09-10 00:00:00",
+      "event_time_end": "2025-09-10 00:00:00",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "member_news_ids": [
+        "gdelt_3873c872"
+      ],
+      "member_titles_sample": [
+        "Apple iPhone 17 Event : Our Live Updates and Takeaways"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_3873c872",
+          "title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/wirecutter/money/apple-iphone-17-event-20250909/",
+          "event_time_anchor": "2025-09-10 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple iPhone 17 Event : Our Live Updates and Takeaways",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "rolling_coverage_title"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_010": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_010",
+      "canonical_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-09-10 00:00:00",
+      "event_time_end": "2025-09-10 00:00:00",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "member_news_ids": [
+        "gdelt_7537ad02"
+      ],
+      "member_titles_sample": [
+        "Apple holds down new iPhone prices amid threats of Trump tariffs"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_7537ad02",
+          "title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-event-new-iphone-prices-trump-tariff-threat-5339971",
+          "event_time_anchor": "2025-09-10 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple holds down new iPhone prices amid threats of Trump tariffs",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_011": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_011",
+      "canonical_title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-10-15 00:00:00",
+      "event_time_end": "2025-10-15 00:00:00",
+      "event_time_anchor": "2025-10-15 00:00:00",
+      "member_news_ids": [
+        "gdelt_0857ec17"
+      ],
+      "member_titles_sample": [
+        "Apple sengage à augmenter ses investissements en Chine - Xinhua"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_0857ec17",
+          "title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+          "source": "新华网",
+          "url": "http://french.xinhuanet.com/20251015/9acf06bc43d94c51bb65f5bfdc471d84/c.html",
+          "event_time_anchor": "2025-10-15 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple sengage à augmenter ses investissements en Chine - Xinhua",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_012": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_012",
+      "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-10-17 00:00:00",
+      "event_time_end": "2025-10-17 00:00:00",
+      "event_time_anchor": "2025-10-17 00:00:00",
+      "member_news_ids": [
+        "gdelt_4e108ff2"
+      ],
+      "member_titles_sample": [
+        "China urges  equal dialogue  with US as Apple Cook visits"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_4e108ff2",
+          "title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/east-asia/china-urges-us-equal-dialogue-trade-war-tariffs-apple-tim-cook-5407116",
+          "event_time_anchor": "2025-10-17 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "China urges  equal dialogue  with US as Apple Cook visits",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_013": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_013",
+      "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+      "cluster_size": 5,
+      "source_count": 1,
+      "confidence": 0.7243,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-01-01 00:00:00",
+      "event_time_end": "2025-12-31 00:00:00",
+      "event_time_anchor": "2025-10-19 00:00:00",
+      "member_news_ids": [
+        "gdelt_02b48256",
+        "gdelt_234c3524",
+        "gdelt_f42af142",
+        "gdelt_dadc04e1",
+        "gdelt_c024dc57"
+      ],
+      "member_titles_sample": [
+        "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+        "平凉  静宁苹果  品牌价值达181亿元 - 新华网",
+        "平凉市崆峒区 ： 苹果  升级记 - 新华网",
+        "天水 ： 花牛苹果热销海内外市场 - 新华网",
+        "2025中国苹果年会暨庆阳苹果营销大会举行 - 新华网"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_02b48256",
+          "title": "平凉  静宁苹果  品牌价值达181亿元 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251012/67bf8f160e9b4a61ae8055af2f8dbc0e/c.html",
+          "event_time_anchor": "2025-10-12 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_234c3524",
+          "title": "平凉市崆峒区 ： 苹果  升级记 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251013/7923d1e63d6a4657aaf93fb7a0063952/c.html",
+          "event_time_anchor": "2025-10-13 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_c024dc57",
+          "title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251123/796494fac5d7493e9f0cfc1014edb338/c.html",
+          "event_time_anchor": "2025-11-23 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_dadc04e1",
+          "title": "天水 ： 花牛苹果热销海内外市场 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251110/881d8d1bc9424db087bffdeefce17f0b/c.html",
+          "event_time_anchor": "2025-11-10 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        },
+        {
+          "news_id": "gdelt_f42af142",
+          "title": "2025中国苹果年会暨庆阳苹果营销大会举行 - 新华网",
+          "source": "新华网",
+          "url": "http://www.gs.xinhuanet.com/20251019/9187f55f3922452ea7b98e03697bef6d/c.html",
+          "event_time_anchor": "2025-10-19 00:00:00",
+          "cluster_size": 5,
+          "canonical_title": "平凉静宁苹果产业铸就181亿元品牌传奇 - 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 2,
+      "graph_edge_count": 16,
+      "risk_flags": [
+        "medium_confidence",
+        "long_time_span",
+        "low_source_support",
+        "semantic_override_edges"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_014": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_014",
+      "canonical_title": "Apple claims  tremendou global uptake of latest iPhones",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-10-31 00:00:00",
+      "event_time_end": "2025-10-31 00:00:00",
+      "event_time_anchor": "2025-10-31 00:00:00",
+      "member_news_ids": [
+        "gdelt_89208461"
+      ],
+      "member_titles_sample": [
+        "Apple claims  tremendou global uptake of latest iPhones"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_89208461",
+          "title": "Apple claims  tremendou global uptake of latest iPhones",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cz6n98exv9zo",
+          "event_time_anchor": "2025-10-31 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple claims  tremendou global uptake of latest iPhones",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support",
+        "rolling_coverage_title"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_015": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_015",
+      "canonical_title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-11-13 00:00:00",
+      "event_time_end": "2025-11-13 00:00:00",
+      "event_time_anchor": "2025-11-13 00:00:00",
+      "member_news_ids": [
+        "gdelt_df373439"
+      ],
+      "member_titles_sample": [
+        "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_df373439",
+          "title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cn97ndgpnq7o",
+          "event_time_anchor": "2025-11-13 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "$230 for a cut - up sock  - Apple new iPhone Pocket ridiculed online",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_016": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_016",
+      "canonical_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-12-05 00:00:00",
+      "event_time_end": "2025-12-05 00:00:00",
+      "event_time_anchor": "2025-12-05 00:00:00",
+      "member_news_ids": [
+        "gdelt_053c4f00"
+      ],
+      "member_titles_sample": [
+        "Russia blocks Apple FaceTime in mounting push against foreign tech platforms"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_053c4f00",
+          "title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/russia-blocks-apples-facetime-in-mounting-push-against-foreign-tech-platforms-5549056",
+          "event_time_anchor": "2025-12-05 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Russia blocks Apple FaceTime in mounting push against foreign tech platforms",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_017": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_017",
+      "canonical_title": "Apple , Google send new round of cyber threat notifications to users around world",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-12-07 00:00:00",
+      "event_time_end": "2025-12-07 00:00:00",
+      "event_time_anchor": "2025-12-07 00:00:00",
+      "member_news_ids": [
+        "gdelt_981cf720"
+      ],
+      "member_titles_sample": [
+        "Apple , Google send new round of cyber threat notifications to users around world"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_981cf720",
+          "title": "Apple , Google send new round of cyber threat notifications to users around world",
+          "source": "亚洲新闻台",
+          "url": "https://www.channelnewsasia.com/business/apple-google-send-new-round-cyber-threat-notifications-users-around-world-5564151",
+          "event_time_anchor": "2025-12-07 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple , Google send new round of cyber threat notifications to users around world",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_018": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_018",
+      "canonical_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2025-12-28 00:00:00",
+      "event_time_end": "2025-12-28 00:00:00",
+      "event_time_anchor": "2025-12-28 00:00:00",
+      "member_news_ids": [
+        "gdelt_196abd56"
+      ],
+      "member_titles_sample": [
+        "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_196abd56",
+          "title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+          "source": "DW",
+          "url": "https://www.dw.com/ru/apple-po-trebovaniu-rossii-udalila-iz-appstore-prilozenie-dla-lgbtznakomstv/a-75321186",
+          "event_time_anchor": "2025-12-28 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "Apple удалила из AppStore в РФ приложение для ЛГБТ - знакомств – DW – 28 . 12 . 2025",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    },
+    "Apple_20260429_103626_9d1d49dd:Apple_event_019": {
+      "discovery_run_id": "Apple_20260429_103626_9d1d49dd",
+      "topic": "Apple",
+      "event_id": "Apple_20260429_103626_9d1d49dd:Apple_event_019",
+      "canonical_title": "丽江宁蒗 ： 联农带农促增收 一颗苹果甜万家 _ 新华网",
+      "cluster_size": 1,
+      "source_count": 1,
+      "confidence": 0.6317,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "event_time_start": "2026-03-23 00:00:00",
+      "event_time_end": "2026-03-23 00:00:00",
+      "event_time_anchor": "2026-03-23 00:00:00",
+      "member_news_ids": [
+        "gdelt_89e5b6fd"
+      ],
+      "member_titles_sample": [
+        "丽江宁蒗 ： 联农带农促增收 一颗苹果甜万家 _ 新华网"
+      ],
+      "articles": [
+        {
+          "news_id": "gdelt_89e5b6fd",
+          "title": "丽江宁蒗 ： 联农带农促增收 一颗苹果甜万家 _ 新华网",
+          "source": "新华网",
+          "url": "http://yn.xinhuanet.com/20260323/a9be15c16bc745d295fbdc93283c0fe3/c.html",
+          "event_time_anchor": "2026-03-23 00:00:00",
+          "cluster_size": 1,
+          "canonical_title": "丽江宁蒗 ： 联农带农促增收 一颗苹果甜万家 _ 新华网",
+          "system_is_noise": false,
+          "noise_reason": null
+        }
+      ],
+      "semantic_override_edge_count": 0,
+      "graph_edge_count": 0,
+      "risk_flags": [
+        "low_confidence",
+        "low_source_support"
+      ]
+    }
+  },
+  "output_paths": {}
+}

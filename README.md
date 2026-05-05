@@ -1,125 +1,184 @@
 # NewsLine
 
-NewsLine 是一个面向多语种新闻的事件时间线重构研究原型。项目目标是从数据库中的新闻标题和时间字段出发，围绕用户给定的 topic 自动发现候选事件、判断事件有效性，并生成可追溯的结构化时间线。
+NewsLine 是一个面向多语种新闻标题的事件时间线重构系统，对应毕业设计《基于 SBERT 与轻量大模型的新闻时序重构技术研究》的工程实现。系统以 MySQL 中的新闻标题、来源、链接和标准化时间字段为输入，围绕用户给定 topic 完成候选新闻召回、事件发现、事件裁判、时间线持久化和 Web 可视化展示。
 
-当前系统采用分层设计：
+系统采用分层流水线：
 
 ```text
-news data
--> preprocessing / time parsing
--> SBERT event discovery
--> LLM timeline reasoning
--> MySQL timeline storage
--> interactive web display layer
+MySQL news data
+-> spaCy preprocessing and event-time parsing
+-> multilingual topic alias expansion
+-> Qwen embedding title encoding
+-> graph-link event discovery
+-> lightweight LLM timeline reasoning
+-> MySQL timeline persistence
+-> FastAPI static web display
 ```
 
-核心思想是将“候选事件发现”和“最终时间线决断”分开处理。SBERT / embedding 层负责高召回、可解释的候选事件组织；LLM 层负责轻量语义裁判、噪声过滤和时间线节点决断。系统不依赖大模型直接生成完整时间线，而是保留规则、图结构和数据库记录，便于调试、复现实验和后续评测。
+该架构将候选事件发现、事件语义裁判和最终展示解耦。embedding 层负责将语义相近的新闻标题组织为候选事件簇；LLM 层负责处理低置信度、长时间跨度、滚动报道和 topic 相关性不确定的事件；数据库层保存事件簇、图边、模型决策、最终时间线节点和文章溯源信息。
 
 ## Current Status
 
-目前项目已经完成后端主流程的初步闭环：
+当前项目已完成端到端原型：
 
-- 多语种 topic alias 扩展与标题召回
-- 基于 `Qwen/Qwen3-Embedding-4B` 的标题向量化
-- 基于图链接的候选事件聚类
-- 大簇二次切分与无监督诊断
-- 基于本地 Ollama `qwen3.5:9b` 的 LLM 事件决断
-- 最终时间线 JSON 输出与 MySQL 落库
-- FastAPI + 静态前端展示层
-- 基于 MySQL 的历史时间线复用与交互式时间线查看
-- SBERT 层与 LLM 层的 handoff 文档和测试用例
-
-当前展示层支持用户在网页中输入一次 topic 和 LLM mode，后端自动串联 SBERT 事件发现层与 LLM 时间线决断层，并从 MySQL 读取正式时间线结果进行展示。
+- 使用 spaCy 处理新闻文本与事件时间字段。
+- 使用 MySQL 存储解析后新闻、事件发现结果和最终时间线结果。
+- 使用 `Qwen/Qwen3-Embedding-4B` 生成新闻标题向量。
+- 使用 topic alias 扩展提升多语种标题召回能力。
+- 使用 embedding 相似度图链接方法生成候选事件簇，并记录图边、时间约束和聚类质量指标。
+- 使用 `risk_flags` 和 `quality_metrics` 标记事件簇质量、时间一致性、重复率和潜在噪声。
+- 使用本地 Ollama `qwen3.5:9b` 对不确定事件进行结构化裁判。
+- 使用 FastAPI 提供任务创建、状态轮询、结果读取、历史结果复用和静态页面服务。
+- 使用原生 HTML/CSS/JavaScript 实现 topic 输入、模式选择、日期筛选、生成进度、横向时间线和节点详情展示。
+- 使用 `pytest` 覆盖事件发现、时间线推理和模块导入等核心逻辑。
 
 ## Repository Layout
 
 ```text
 newsline/
 ├── configs/                  # model, database, path and pipeline configuration
-├── database/                 # database connection and persistence utilities
-├── data_pipeline/            # scraping, normalization and time parsing components
+├── database/                 # MySQL connection helpers and schema notes
+├── data_pipeline/            # scraping, normalization and spaCy processing entry points
 ├── core/
-│   ├── event_discovery/      # SBERT / embedding event discovery layer
-│   ├── llm/                  # local LLM client abstraction
-│   └── timeline_reasoning/   # LLM-assisted timeline reasoning layer
-├── code/script/              # runnable experiment and pipeline scripts
-├── services/                 # FastAPI display API and service facade
-├── frontend/
-│   └── static/               # static HTML/CSS/JS web display layer
-├── outputs/                  # clustered events, reports, timelines and metadata
-├── tests/                    # unit tests and experimental scripts
-├── archive_mvp/              # archived MVP experiments
+│   ├── event_discovery/      # embedding encoding and graph-link event discovery
+│   ├── llm/                  # local Ollama client abstraction
+│   └── timeline_reasoning/   # rule routing, LLM judging and timeline persistence
+├── code/script/              # CLI scripts, evaluation scripts and web job runner
+├── services/                 # FastAPI timeline API
+├── frontend/static/          # static HTML/CSS/JS frontend
+├── outputs/                  # local generated outputs
+├── tests/                    # unit tests and experiments
+├── TECHNICAL_REPORT.md       # project technical report
 └── README.md
 ```
 
+## Technology Stack
+
+### Languages
+
+- Python 3.14.x: backend service, NLP processing, event discovery, LLM orchestration and persistence.
+- JavaScript: frontend interaction, polling and timeline rendering.
+- HTML / CSS: frontend page structure and visual style.
+- SQL: MySQL schema, query and persistence logic.
+
+### Backend and Data
+
+- FastAPI: HTTP API and static frontend service.
+- Pydantic: request validation.
+- PyMySQL: MySQL access.
+- MySQL: persistent storage for parsed news, event discovery outputs and timeline outputs.
+- NumPy / scikit-learn: vector matrix and similarity processing.
+- sentence-transformers / Transformers: embedding model loading and inference.
+- Ollama HTTP API: local lightweight LLM inference.
+
+### NLP and Models
+
+- spaCy: text processing and event-time parsing entry point.
+- `Qwen/Qwen3-Embedding-4B`: title embedding model.
+- `qwen3.5:9b`: topic alias generation and event reasoning model.
+- `facebook/nllb-200-distilled-600M`: topic translation support.
+
+## Data Model
+
+The active pipeline reads parsed news records from MySQL. The expected news fields include:
+
+- `id`
+- `title`
+- `source`
+- `url`
+- `standard_timestamp`
+- `event_timestamp`
+- `event_time_start`
+- `event_time_end`
+- `time_granularity`
+- `is_noise`
+
+Core result tables include:
+
+- `event_discovery_events`
+- `event_discovery_assignments`
+- `event_discovery_graph`
+- `timeline_reasoning_runs`
+- `timeline_event_decisions`
+- `timeline_nodes`
+- `timeline_node_articles`
+
+`database/schema.sql` records the main schema definitions. The persistence modules also contain runtime schema checks for result tables.
+
 ## Method Overview
 
-### 1. Event Discovery Layer
+### 1. Preprocessing and Time Parsing
 
-The event discovery layer receives a user topic and retrieves candidate news titles from MySQL. It first expands the topic into multilingual aliases, then filters candidate titles and encodes them with an embedding model. Candidate articles are represented as a similarity graph:
+The preprocessing layer normalizes news data and extracts event-time fields. The active formal entry point is:
 
-- nodes are news titles;
-- edges connect semantically similar titles;
-- temporal constraints suppress links between distant events;
-- extremely high semantic similarity can override the time window;
-- connected components are converted into candidate event clusters.
+```text
+data_pipeline/processors/spacy_pipeline.py
+```
 
-This design replaces the earlier DBSCAN-based prototype. It preserves singleton events, exposes graph edges for diagnosis, and is easier to inspect when large topics produce ambiguous or rolling-coverage clusters.
+This layer provides language-aware processing, base-time normalization and title-level event-time extraction for downstream event discovery.
+
+### 2. Event Discovery
+
+The event discovery layer receives a topic and executes the following steps:
+
+1. Generate multilingual topic aliases.
+2. Retrieve candidate news titles from MySQL.
+3. Apply title-level relevance filtering.
+4. Normalize and deduplicate titles.
+5. Encode titles with `Qwen/Qwen3-Embedding-4B`.
+6. Compute title similarity matrix.
+7. Construct a graph using semantic similarity and event-time constraints.
+8. Convert connected components into candidate event clusters.
+9. Refine low-cohesion or oversized components.
+10. Persist event nodes, article assignments and graph edges.
 
 Main files:
 
 - `core/event_discovery/pipeline.py`
 - `core/event_discovery/topic_expansion.py`
 - `core/event_discovery/encoder.py`
+- `core/event_discovery/clustering.py`
 - `core/event_discovery/event_builder.py`
+- `core/event_discovery/title_features.py`
 
-### 2. Timeline Reasoning Layer
+### 3. Timeline Reasoning
 
-The timeline reasoning layer reads candidate events from the event discovery output. It does not send all article content to the LLM. Instead, it builds a compact `EventCard` for each candidate event, containing representative titles, confidence scores, risk flags and event time fields.
+The timeline reasoning layer transforms candidate event clusters into compact `EventCard` objects. Each card contains representative title, article evidence, event time fields, cluster statistics, confidence score, `risk_flags` and `quality_metrics`.
 
-Events are first divided by rules into:
+Rule routing divides events into three categories:
 
-- `auto_accept`
-- `llm_review`
-- `rule_reject`
+- `auto_accept`: low-risk events accepted by deterministic rules.
+- `llm_review`: uncertain events reviewed by the local LLM.
+- `rule_reject`: structurally invalid events rejected by deterministic rules.
 
-The LLM is used as a lightweight judge for uncertain cases. It decides whether an event should be kept, whether it is topic-relevant, whether it is final noise, whether it likely needs splitting or merging, and which time anchor should be used for display. Final ordering is deterministic and implemented in code rather than generated by the model.
+The LLM returns structured decisions, including topic relevance, final noise status, display title, time anchor, split / merge hint and confidence. Final timeline ordering is computed deterministically by code.
 
 Main files:
 
+- `core/timeline_reasoning/models.py`
 - `core/timeline_reasoning/event_cards.py`
 - `core/timeline_reasoning/filters.py`
 - `core/timeline_reasoning/llm_judge.py`
 - `core/timeline_reasoning/ordering.py`
 - `core/timeline_reasoning/persistence.py`
 - `core/timeline_reasoning/pipeline.py`
+- `core/timeline_reasoning/topic_profile.py`
 
-### 3. Web Display Layer
+### 4. Web Display
 
-The display layer is implemented as a FastAPI-served static web application. It is intentionally lightweight: there is no Node build step, and the frontend is plain HTML, CSS and JavaScript.
+The display layer is served by FastAPI and implemented with static HTML/CSS/JavaScript.
 
-The user enters a `topic` and selects one LLM reasoning mode:
+Frontend capabilities:
 
-- `fast`
-- `standard`
-- `full`
-
-The backend creates a web job, optionally reuses a completed MySQL timeline for the same `topic + mode`, or runs the full pipeline:
-
-```text
-topic + mode
--> run_event_discovery(topic)
--> persist event_discovery_* tables
--> run_timeline_reasoning_pipeline(topic, mode, dry_run=False)
--> persist timeline_* tables
--> query timeline_nodes and timeline_node_articles for display
-```
-
-The frontend has three states:
-
-- `idle`: landing page with topic input, mode selector and a restrained canvas globe.
-- `running`: progress panel with stage text, smoothed percentage, elapsed time, estimated total time and cancel button.
-- `result`: horizontal interactive timeline with hover popovers for clustered news articles.
+- topic input;
+- `fast` / `standard` / `full` reasoning mode;
+- dataset date range selector;
+- force-regenerate switch;
+- recent timeline result list;
+- job progress and cancellation;
+- horizontal interactive timeline;
+- article hover preview;
+- node detail drawer with source articles and model decision metadata.
 
 Main files:
 
@@ -128,56 +187,71 @@ Main files:
 - `frontend/static/index.html`
 - `frontend/static/styles.css`
 - `frontend/static/app.js`
-- `frontend_display_layer_handoff.md`
 
-## Data Assumptions
+## Environment Setup
 
-The current pipeline reads from a MySQL table such as `parser_newsdata`. The expected fields include:
+Install dependencies:
 
-- `id`
-- `title`
-- `source`
-- `url`
-- `event_timestamp`
-- `event_time_start`
-- `event_time_end`
-- `time_granularity`
-- `is_noise`
+```bash
+cd /Users/hjfl/newsline
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
-The project assumes that an earlier parsing layer has already populated normalized event time fields. Missing time values are tolerated, but they reduce confidence and may trigger LLM review.
+Configure MySQL connection:
+
+```text
+configs/db_config.py
+```
+
+Prepare the local LLM service:
+
+```bash
+ollama pull qwen3.5:9b
+ollama serve
+```
 
 ## Running the Pipeline
 
-Run event discovery for a topic:
+Run event discovery:
 
 ```bash
 .venv/bin/python code/script/run_event_discovery.py --topic "Trump"
 ```
 
-Run timeline reasoning on the latest event discovery result:
+Run event discovery with a date range:
 
 ```bash
-.venv/bin/python code/script/run_timeline_reasoning.py \
+.venv/bin/python code/script/run_event_discovery.py \
   --topic "Apple" \
-  --mode fast \
-  --limit-events 20 \
-  --llm-batch-size 4 \
-  --llm-timeout-seconds 60
+  --start-date 2025-06-01 \
+  --end-date 2026-04-01
 ```
 
-For dry-run debugging:
+Run timeline reasoning:
 
 ```bash
 .venv/bin/python code/script/run_timeline_reasoning.py \
   --topic "Apple" \
-  --mode fast \
-  --limit-events 20 \
-  --dry-run
+  --mode standard \
+  --llm-batch-size 4 \
+  --llm-timeout-seconds 300
+```
+
+Run the web-facing full job:
+
+```bash
+.venv/bin/python code/script/run_timeline_web_job.py \
+  --topic "Trump" \
+  --mode standard \
+  --start-date 2025-06-01 \
+  --end-date 2026-04-01
 ```
 
 ## Running the Web Frontend
 
-Start the web display service:
+Start the FastAPI service:
 
 ```bash
 cd /Users/hjfl/newsline
@@ -191,13 +265,7 @@ Open:
 http://127.0.0.1:8000
 ```
 
-During development, use reload mode:
-
-```bash
-uvicorn services.timeline_api:app --host 127.0.0.1 --port 8000 --reload
-```
-
-The web API exposes:
+Important API routes:
 
 ```text
 GET  /api/health
@@ -206,13 +274,12 @@ GET  /api/timeline/jobs/{job_id}/status
 POST /api/timeline/jobs/{job_id}/cancel
 GET  /api/timeline/jobs/{job_id}/result
 GET  /api/timeline/results/{reasoning_run_id}
+GET  /api/timeline/recent?limit=6
 ```
-
-The frontend expects MySQL, Ollama and the local embedding / LLM model environment to be available. If a matching completed timeline already exists in MySQL for the same `topic` and `mode`, the API reuses that result instead of recomputing the pipeline.
 
 ## Outputs
 
-Event discovery outputs are written to:
+Event discovery JSON outputs:
 
 ```text
 outputs/clustered/{topic}_events.json
@@ -220,15 +287,13 @@ outputs/clustered/{topic}_assignments.json
 outputs/clustered/{topic}_graph.json
 ```
 
-Timeline reasoning outputs are written to:
+Timeline reasoning JSON outputs:
 
 ```text
 outputs/timeline/
 ```
 
-When not running in dry-run mode, timeline reasoning also writes to MySQL tables for runs, event decisions, timeline nodes and node-level article mappings.
-
-The web display layer reads formal results from:
+The Web frontend reads formal results from MySQL:
 
 ```text
 timeline_reasoning_runs
@@ -236,34 +301,22 @@ timeline_nodes
 timeline_node_articles
 ```
 
-It does not use timeline JSON files as its primary data source.
+## Tests
 
-The large title embedding index under `outputs/embeddings/` is an experimental artifact. The metadata file can be versioned normally, while the `.npz` index is too large for ordinary GitHub storage and should be handled through Git LFS or regenerated locally.
-
-## Evaluation and Diagnostics
-
-The repository includes unit tests and diagnostic scripts. A basic test run is:
+Run the current test suite:
 
 ```bash
-.venv/bin/python -m unittest tests.test_imports tests.test_event_discovery tests.test_timeline_reasoning
+.venv/bin/python -m pytest
 ```
 
-Event discovery diagnostics can be run with:
+## Project Documents
 
-```bash
-.venv/bin/python code/script/eval_event_discovery.py --topic "Trump" --top-k 15
-```
+- `TECHNICAL_REPORT.md`
+- `sbert_layer_v3_handoff.md`
+- `llm_layer_v3_handoff.md`
+- `frontend_display_layer_v2_handoff.md`
+- `cross_language_retrieval_schemes.md`
 
-Current diagnostics focus on unsupervised indicators such as event count, singleton ratio, large clusters, graph edges, long time spans and low-confidence components. A manually annotated benchmark is still needed for rigorous evaluation of clustering quality, topic relevance and noise detection.
+## Final Result
 
-## Research Notes
-
-The current implementation is intentionally conservative. It favors traceability and stable intermediate representations over fully generative timeline construction. This makes the system easier to analyze in an academic setting:
-
-- event clusters retain article assignments;
-- graph edges preserve local similarity evidence;
-- LLM decisions are stored separately from upstream event discovery;
-- final ordering is deterministic;
-- suspicious events are marked rather than automatically rewritten.
-
-Planned work includes improving large-topic cluster splitting, strengthening topic disambiguation, refining LLM input sampling, adding human-review reports, adding a timeline node detail panel and exposing more fine-grained backend progress callbacks for the web display layer.
+The current repository contains a runnable end-to-end prototype. It can read parsed news records from MySQL, discover topic-related candidate events through multilingual recall and embedding graph linkage, apply lightweight LLM reasoning to uncertain events, persist traceable timeline results, and provide a browser interface for timeline generation and inspection.
