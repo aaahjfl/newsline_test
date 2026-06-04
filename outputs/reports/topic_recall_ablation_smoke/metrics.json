@@ -1,0 +1,72 @@
+[
+  {
+    "topic": "Fed",
+    "strategy": "raw_topic",
+    "strategy_label": "原始 topic 直接召回",
+    "run_id": "Fed_raw_topic_20260510_093939",
+    "aliases": [
+      "Fed"
+    ],
+    "sql_candidate_count": 10,
+    "filtered_count": 3,
+    "filter_retention_rate": 0.3,
+    "event_cluster_count": 2,
+    "final_timeline_node_count": null,
+    "timeline_review_event_count": null,
+    "timeline_rejected_event_count": null,
+    "output_detail_path": "outputs/reports/topic_recall_ablation_smoke/Fed_raw_topic_details.json"
+  },
+  {
+    "topic": "Fed",
+    "strategy": "topic_alias",
+    "strategy_label": "topic + alias 扩展",
+    "run_id": "Fed_topic_alias_20260510_093954",
+    "aliases": [
+      "Fed",
+      "Federal Reserve",
+      "Federal Reserve System"
+    ],
+    "sql_candidate_count": 10,
+    "filtered_count": 3,
+    "filter_retention_rate": 0.3,
+    "event_cluster_count": 1,
+    "final_timeline_node_count": null,
+    "timeline_review_event_count": null,
+    "timeline_rejected_event_count": null,
+    "output_detail_path": "outputs/reports/topic_recall_ablation_smoke/Fed_topic_alias_details.json"
+  },
+  {
+    "topic": "Fed",
+    "strategy": "topic_alias_multilingual",
+    "strategy_label": "topic + alias + 多语种扩展",
+    "run_id": "Fed_topic_alias_multilingual_20260510_093954",
+    "aliases": [
+      "Fed",
+      "Federal Reserve",
+      "Federal Reserve System",
+      "美联储",
+      "联邦储备系统",
+      "美联准",
+      "联邦储备",
+      "Reserva Federal",
+      "Sistema de Reserva Federal",
+      "연방준비제도",
+      "연준",
+      "Réserve fédérale",
+      "Système de réserve fédérale",
+      "Федеральная резервная система",
+      "ФРС",
+      "Фед",
+      "Федеральна резервна система",
+      "Kiwanda cha Fed"
+    ],
+    "sql_candidate_count": 10,
+    "filtered_count": 3,
+    "filter_retention_rate": 0.3,
+    "event_cluster_count": 1,
+    "final_timeline_node_count": null,
+    "timeline_review_event_count": null,
+    "timeline_rejected_event_count": null,
+    "output_detail_path": "outputs/reports/topic_recall_ablation_smoke/Fed_topic_alias_multilingual_details.json"
+  }
+]

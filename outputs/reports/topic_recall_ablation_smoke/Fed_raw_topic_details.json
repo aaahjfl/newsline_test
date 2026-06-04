@@ -1,0 +1,196 @@
+{
+  "topic": "Fed",
+  "strategy": "raw_topic",
+  "strategy_label": "原始 topic 直接召回",
+  "run_id": "Fed_raw_topic_20260510_093939",
+  "aliases": [
+    "Fed"
+  ],
+  "sql_candidate_count": 10,
+  "filtered_count": 3,
+  "filter_retention_rate": 0.3,
+  "event_cluster_count": 2,
+  "final_timeline_node_count": null,
+  "timeline_review_event_count": null,
+  "timeline_rejected_event_count": null,
+  "filtered_news": [
+    {
+      "news_id": "gdelt_823c18ac",
+      "title": "Trump says Fed Powell must lower interest rate",
+      "source": "亚洲新闻台",
+      "url": "https://www.channelnewsasia.com/world/trump-fed-chair-jerome-powell-lower-interest-rate-5166026",
+      "publish_time": "2025-06-04 22:15:00",
+      "event_time_anchor": "2025-06-04 00:00:00",
+      "event_time_start": "2025-06-04 00:00:00",
+      "event_time_end": "2025-06-04 00:00:00",
+      "time_granularity": "day",
+      "is_noise": false,
+      "metadata": {
+        "normalized_title": "trump says fed powell must lower interest rate",
+        "title_risk_flags": [],
+        "duplicate_members": [
+          "gdelt_823c18ac"
+        ],
+        "duplicate_count": 1
+      }
+    },
+    {
+      "news_id": "gdelt_15b3697d",
+      "title": "US dollar set for worst week since July as Fed rate cut looms",
+      "source": "亚洲新闻台",
+      "url": "https://www.channelnewsasia.com/business/us-dollar-set-worst-week-july-fed-rate-cut-looms-5494906",
+      "publish_time": "2025-11-29 00:45:00",
+      "event_time_anchor": "2025-07-01 00:00:00",
+      "event_time_start": "2025-07-01 00:00:00",
+      "event_time_end": "2025-07-01 00:00:00",
+      "time_granularity": "day",
+      "is_noise": false,
+      "metadata": {
+        "normalized_title": "us dollar set for worst week since july as fed rate cut looms",
+        "title_risk_flags": [],
+        "duplicate_members": [
+          "gdelt_15b3697d"
+        ],
+        "duplicate_count": 1
+      }
+    },
+    {
+      "news_id": "gdelt_cb985c5a",
+      "title": "Fed governor Waller wants July interest rate cut amid rising growth , job market risks",
+      "source": "亚洲新闻台",
+      "url": "https://www.channelnewsasia.com/world/us-federal-reserve-waller-july-interest-rate-cut-5244946",
+      "publish_time": "2025-07-18 10:00:00",
+      "event_time_anchor": "2025-07-01 00:00:00",
+      "event_time_start": "2025-07-01 00:00:00",
+      "event_time_end": "2025-07-01 00:00:00",
+      "time_granularity": "day",
+      "is_noise": false,
+      "metadata": {
+        "normalized_title": "fed governor waller wants july interest rate cut amid rising growth job market risks",
+        "title_risk_flags": [],
+        "duplicate_members": [
+          "gdelt_cb985c5a"
+        ],
+        "duplicate_count": 1
+      }
+    }
+  ],
+  "events": [
+    {
+      "event_id": "Fed_event_001",
+      "topic": "Fed",
+      "member_news_ids": [
+        "gdelt_823c18ac",
+        "gdelt_15b3697d"
+      ],
+      "cluster_size": 2,
+      "canonical_title": "Trump says Fed Powell must lower interest rate",
+      "representative_news_id": "gdelt_823c18ac",
+      "event_time_start": "2025-06-04 00:00:00",
+      "event_time_end": "2025-07-01 00:00:00",
+      "event_time_anchor": "2025-07-01 00:00:00",
+      "source_count": 1,
+      "confidence": 0.6339,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [
+        "low_temporal_coherence"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8155,
+        "temporal_coherence": 0.1,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 27.0,
+        "clustered_title_count": 2
+      }
+    },
+    {
+      "event_id": "Fed_event_002",
+      "topic": "Fed",
+      "member_news_ids": [
+        "gdelt_cb985c5a"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Fed governor Waller wants July interest rate cut amid rising growth , job market risks",
+      "representative_news_id": "gdelt_cb985c5a",
+      "event_time_start": "2025-07-01 00:00:00",
+      "event_time_end": "2025-07-01 00:00:00",
+      "event_time_anchor": "2025-07-01 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    }
+  ],
+  "assignments": [
+    {
+      "news_id": "gdelt_15b3697d",
+      "event_id": "Fed_event_001",
+      "title": "US dollar set for worst week since July as Fed rate cut looms",
+      "source": "亚洲新闻台",
+      "url": "https://www.channelnewsasia.com/business/us-dollar-set-worst-week-july-fed-rate-cut-looms-5494906",
+      "event_time_anchor": "2025-07-01 00:00:00",
+      "normalized_title": "us dollar set for worst week since july as fed rate cut looms",
+      "title_risk_flags": [],
+      "system_is_noise": false,
+      "noise_reason": null,
+      "cluster_size": 2,
+      "canonical_title": "Trump says Fed Powell must lower interest rate"
+    },
+    {
+      "news_id": "gdelt_823c18ac",
+      "event_id": "Fed_event_001",
+      "title": "Trump says Fed Powell must lower interest rate",
+      "source": "亚洲新闻台",
+      "url": "https://www.channelnewsasia.com/world/trump-fed-chair-jerome-powell-lower-interest-rate-5166026",
+      "event_time_anchor": "2025-06-04 00:00:00",
+      "normalized_title": "trump says fed powell must lower interest rate",
+      "title_risk_flags": [],
+      "system_is_noise": false,
+      "noise_reason": null,
+      "cluster_size": 2,
+      "canonical_title": "Trump says Fed Powell must lower interest rate"
+    },
+    {
+      "news_id": "gdelt_cb985c5a",
+      "event_id": "Fed_event_002",
+      "title": "Fed governor Waller wants July interest rate cut amid rising growth , job market risks",
+      "source": "亚洲新闻台",
+      "url": "https://www.channelnewsasia.com/world/us-federal-reserve-waller-july-interest-rate-cut-5244946",
+      "event_time_anchor": "2025-07-01 00:00:00",
+      "normalized_title": "fed governor waller wants july interest rate cut amid rising growth job market risks",
+      "title_risk_flags": [],
+      "system_is_noise": false,
+      "noise_reason": null,
+      "cluster_size": 1,
+      "canonical_title": "Fed governor Waller wants July interest rate cut amid rising growth , job market risks"
+    }
+  ],
+  "graph_edges": [
+    {
+      "left_index": 0,
+      "right_index": 1,
+      "left_news_id": "gdelt_823c18ac",
+      "right_news_id": "gdelt_15b3697d",
+      "similarity": 0.815489,
+      "time_gap_days": 27.0,
+      "edge_reason": "semantic_and_time"
+    }
+  ]
+}

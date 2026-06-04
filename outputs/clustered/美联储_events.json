@@ -1,0 +1,2219 @@
+{
+  "topic": "美联储",
+  "run_id": "美联储_20260509_002445_1d43d9df",
+  "topic_aliases": [
+    "美联储",
+    "Federal Reserve",
+    "Fed",
+    "Federal Reserve System",
+    "联邦储备系统",
+    "联邦储备局",
+    "美联准",
+    "Reserva Federal",
+    "Sistema de Reserva Federal",
+    "연방준비제도",
+    "연준",
+    "미국 연방준비제도",
+    "Réserve fédérale",
+    "Système de réserve fédérale",
+    "Федеральная резервная система",
+    "ФРС",
+    "Федеральная резервная система США",
+    "Фед",
+    "Федеральна резервна система",
+    "Федеральна резервна система США",
+    "Sistema wa Fed"
+  ],
+  "topic_alias_details": [
+    {
+      "text": "美联储",
+      "lang": "zh-cn",
+      "priority": "strong"
+    },
+    {
+      "text": "Federal Reserve",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "Fed",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "Federal Reserve System",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "联邦储备系统",
+      "lang": "zh-cn",
+      "priority": "strong"
+    },
+    {
+      "text": "联邦储备局",
+      "lang": "zh-cn",
+      "priority": "strong"
+    },
+    {
+      "text": "美联准",
+      "lang": "zh-cn",
+      "priority": "strong"
+    },
+    {
+      "text": "Reserva Federal",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "Fed",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "Sistema de Reserva Federal",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "연방준비제도",
+      "lang": "ko",
+      "priority": "strong"
+    },
+    {
+      "text": "Fed",
+      "lang": "ko",
+      "priority": "strong"
+    },
+    {
+      "text": "연준",
+      "lang": "ko",
+      "priority": "strong",
+      "notes": [
+        "very_short_alias"
+      ]
+    },
+    {
+      "text": "미국 연방준비제도",
+      "lang": "ko",
+      "priority": "strong"
+    },
+    {
+      "text": "Réserve fédérale",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Fed",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Système de réserve fédérale",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Федеральная резервная система",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "ФРС",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "Федеральная резервная система США",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "Фед",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "Федеральна резервна система",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "ФРС",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "Федеральна резервна система США",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "Фед",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "Fed",
+      "lang": "sw",
+      "priority": "strong"
+    },
+    {
+      "text": "Federal Reserve",
+      "lang": "sw",
+      "priority": "strong"
+    },
+    {
+      "text": "Reserva Federal",
+      "lang": "sw",
+      "priority": "strong"
+    },
+    {
+      "text": "Sistema wa Fed",
+      "lang": "sw",
+      "priority": "strong"
+    }
+  ],
+  "candidate_count": 206,
+  "filtered_count": 110,
+  "events": [
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_001",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_cb985c5a"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Fed governor Waller wants July interest rate cut amid rising growth , job market risks",
+      "representative_news_id": "gdelt_cb985c5a",
+      "event_time_start": "2025-07-01 00:00:00",
+      "event_time_end": "2025-07-01 00:00:00",
+      "event_time_anchor": "2025-07-01 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_002",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_c12c1aff"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "White House slams Powell for  grossly mismanaged  Fed",
+      "representative_news_id": "gdelt_c12c1aff",
+      "event_time_start": "2025-07-11 00:00:00",
+      "event_time_end": "2025-07-11 00:00:00",
+      "event_time_anchor": "2025-07-11 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_003",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_1c100b38"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Le président de la Fed demande à linspecteur général dexaminer le projet de rénovation du siège social - Xinhua",
+      "representative_news_id": "gdelt_1c100b38",
+      "event_time_start": "2025-07-15 00:00:00",
+      "event_time_end": "2025-07-15 00:00:00",
+      "event_time_anchor": "2025-07-15 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_004",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_fba35736",
+        "gdelt_5ccb97f0"
+      ],
+      "cluster_size": 2,
+      "canonical_title": "What happens if Trump fires Fed chair Jerome Powell ?",
+      "representative_news_id": "gdelt_fba35736",
+      "event_time_start": "2025-07-17 00:00:00",
+      "event_time_end": "2025-07-18 00:00:00",
+      "event_time_anchor": "2025-07-18 00:00:00",
+      "source_count": 2,
+      "confidence": 0.9217,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.9735,
+        "temporal_coherence": 0.9667,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 1.0,
+        "clustered_title_count": 2
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_005",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_a0f0d61f"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Bessent accuses Fed of  politically biased  forecasts , Fed pushes back",
+      "representative_news_id": "gdelt_a0f0d61f",
+      "event_time_start": "2025-07-24 00:00:00",
+      "event_time_end": "2025-07-24 00:00:00",
+      "event_time_anchor": "2025-07-24 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_823c18ac",
+        "gdelt_935f0a5d",
+        "gdelt_12c6c0e3",
+        "gdelt_736c3647",
+        "gdelt_7f13506e"
+      ],
+      "cluster_size": 5,
+      "canonical_title": "Trump again slams Fed chair Powell after rates hold",
+      "representative_news_id": "gdelt_736c3647",
+      "event_time_start": "2025-06-04 00:00:00",
+      "event_time_end": "2025-08-02 00:00:00",
+      "event_time_anchor": "2025-07-31 00:00:00",
+      "source_count": 3,
+      "confidence": 0.5259,
+      "system_is_noise": true,
+      "noise_reason": "low_cluster_confidence",
+      "risk_flags": [
+        "long_time_span",
+        "low_temporal_coherence"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8909,
+        "temporal_coherence": 0.0,
+        "support_score": 1.0,
+        "graph_density": 0.5,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 5,
+        "article_count": 5,
+        "time_span_days": 59.0,
+        "clustered_title_count": 5
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_007",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_a495f56d"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Path to the Fed rate cuts Trump wants may involve higher unemployment",
+      "representative_news_id": "gdelt_a495f56d",
+      "event_time_start": "2025-08-01 00:00:00",
+      "event_time_end": "2025-08-01 00:00:00",
+      "event_time_anchor": "2025-08-01 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_008",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_97945b73"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Kugler Resigns From Fed , Opening Door to Trump Appointment",
+      "representative_news_id": "gdelt_97945b73",
+      "event_time_start": "2025-08-02 00:00:00",
+      "event_time_end": "2025-08-02 00:00:00",
+      "event_time_anchor": "2025-08-02 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_009",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_b4cf6eca"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Asian markets track Wall St rally on Fed rate cut bets",
+      "representative_news_id": "gdelt_b4cf6eca",
+      "event_time_start": "2025-08-05 00:00:00",
+      "event_time_end": "2025-08-05 00:00:00",
+      "event_time_anchor": "2025-08-05 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_010",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_0fd7331f"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Trump says four candidates in running for Fed chair , rules out Bessent",
+      "representative_news_id": "gdelt_0fd7331f",
+      "event_time_start": "2025-08-06 00:00:00",
+      "event_time_end": "2025-08-06 00:00:00",
+      "event_time_anchor": "2025-08-06 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_011",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_fb80e662"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Trump to nominate  loyalist  Stephen Miran to the Federal Reserve board | Banks News",
+      "representative_news_id": "gdelt_fb80e662",
+      "event_time_start": "2025-08-08 00:00:00",
+      "event_time_end": "2025-08-08 00:00:00",
+      "event_time_anchor": "2025-08-08 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_012",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_870afb1f",
+        "gdelt_2f300a4d"
+      ],
+      "cluster_size": 2,
+      "canonical_title": "Trump says may allow lawsuit against Fed chair over renovations",
+      "representative_news_id": "gdelt_870afb1f",
+      "event_time_start": "2025-08-12 00:00:00",
+      "event_time_end": "2025-08-13 00:00:00",
+      "event_time_anchor": "2025-08-13 00:00:00",
+      "source_count": 2,
+      "confidence": 0.8847,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8913,
+        "temporal_coherence": 0.9667,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 1.0,
+        "clustered_title_count": 2
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_013",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_f40d85a4"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Federal Reserve Cook says  no intention of being bullied to step down",
+      "representative_news_id": "gdelt_f40d85a4",
+      "event_time_start": "2025-08-21 00:00:00",
+      "event_time_end": "2025-08-21 00:00:00",
+      "event_time_anchor": "2025-08-21 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_014",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_846b7a1c"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Asian markets split as investors eye key speech by Fed chief",
+      "representative_news_id": "gdelt_846b7a1c",
+      "event_time_start": "2025-08-22 00:00:00",
+      "event_time_end": "2025-08-22 00:00:00",
+      "event_time_anchor": "2025-08-22 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_015",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_1e85ebfd",
+        "gdelt_36051acc",
+        "gdelt_a944389e"
+      ],
+      "cluster_size": 3,
+      "canonical_title": "Trump limoge la gouverneure de la Réserve fédérale Lisa Cook - Xinhua",
+      "representative_news_id": "gdelt_36051acc",
+      "event_time_start": "2025-08-26 00:00:00",
+      "event_time_end": "2025-08-26 00:00:00",
+      "event_time_anchor": "2025-08-26 00:00:00",
+      "source_count": 2,
+      "confidence": 0.8465,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [
+        "rolling_coverage"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.9122,
+        "temporal_coherence": 1.0,
+        "support_score": 0.7737,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 3,
+        "article_count": 3,
+        "time_span_days": 0.0,
+        "clustered_title_count": 3
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_016",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_446a6ed7",
+        "gdelt_ab042891"
+      ],
+      "cluster_size": 2,
+      "canonical_title": "Ông Trump ra lệnh cách chức Thống đốc Fed Lisa Cook - BBC News Tiếng Việt",
+      "representative_news_id": "gdelt_446a6ed7",
+      "event_time_start": "2025-08-26 00:00:00",
+      "event_time_end": "2025-08-26 00:00:00",
+      "event_time_anchor": "2025-08-26 00:00:00",
+      "source_count": 2,
+      "confidence": 0.8942,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8938,
+        "temporal_coherence": 1.0,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 0.0,
+        "clustered_title_count": 2
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_017",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_abc50ed5"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Trump fires Fed Cook alleging false statements on mortgage forms",
+      "representative_news_id": "gdelt_abc50ed5",
+      "event_time_start": "2025-08-26 00:00:00",
+      "event_time_end": "2025-08-26 00:00:00",
+      "event_time_anchor": "2025-08-26 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_018",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_d2bc4aeb",
+        "gdelt_1f001618",
+        "gdelt_3d40b6a1",
+        "gdelt_44dd0f04"
+      ],
+      "cluster_size": 4,
+      "canonical_title": "Will Trump latest attack on the Fed erode central bank independence ? | Donald Trump News",
+      "representative_news_id": "gdelt_d2bc4aeb",
+      "event_time_start": "2025-08-26 00:00:00",
+      "event_time_end": "2025-08-27 00:00:00",
+      "event_time_anchor": "2025-08-27 00:00:00",
+      "source_count": 3,
+      "confidence": 0.7949,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [
+        "rolling_coverage"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8856,
+        "temporal_coherence": 0.9667,
+        "support_score": 0.8982,
+        "graph_density": 0.6667,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 4,
+        "article_count": 4,
+        "time_span_days": 1.0,
+        "clustered_title_count": 4
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_019",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_a009049c"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Serious danger  if Trump interferes in Fed , says ECB chief – DW – 09 / 01 / 2025",
+      "representative_news_id": "gdelt_a009049c",
+      "event_time_start": "2025-09-01 00:00:00",
+      "event_time_end": "2025-09-01 00:00:00",
+      "event_time_anchor": "2025-09-01 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_020",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_bffaac52",
+        "gdelt_44fa6e5f"
+      ],
+      "cluster_size": 2,
+      "canonical_title": "US Justice Department launches fraud probe into Fed Gov Lisa Cook : Report",
+      "representative_news_id": "gdelt_44fa6e5f",
+      "event_time_start": "2025-08-22 00:00:00",
+      "event_time_end": "2025-09-05 00:00:00",
+      "event_time_anchor": "2025-09-05 00:00:00",
+      "source_count": 1,
+      "confidence": 0.7838,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.9079,
+        "temporal_coherence": 0.5333,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 14.0,
+        "clustered_title_count": 2
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_021",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_94b39a83",
+        "gdelt_50ca8826"
+      ],
+      "cluster_size": 2,
+      "canonical_title": "Trump Appointees Could Rule the Fed for Decades",
+      "representative_news_id": "gdelt_94b39a83",
+      "event_time_start": "2025-08-27 00:00:00",
+      "event_time_end": "2025-09-05 00:00:00",
+      "event_time_anchor": "2025-09-05 00:00:00",
+      "source_count": 2,
+      "confidence": 0.8253,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.9074,
+        "temporal_coherence": 0.7,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 9.0,
+        "clustered_title_count": 2
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_022",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_ad3ac775"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Judge Rules Fed Governor Can Remain in Role , for Now",
+      "representative_news_id": "gdelt_ad3ac775",
+      "event_time_start": "2025-09-10 00:00:00",
+      "event_time_end": "2025-09-10 00:00:00",
+      "event_time_anchor": "2025-09-10 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_023",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_eff9d502"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "US Fed expected to cut rates amid cooling labour market , surging inflation",
+      "representative_news_id": "gdelt_eff9d502",
+      "event_time_start": "2025-09-13 00:00:00",
+      "event_time_end": "2025-09-13 00:00:00",
+      "event_time_anchor": "2025-09-13 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_024",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_7976225d"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Stocks hesitate in Asia with a lot riding on the Fed",
+      "representative_news_id": "gdelt_7976225d",
+      "event_time_start": "2025-09-15 00:00:00",
+      "event_time_end": "2025-09-15 00:00:00",
+      "event_time_anchor": "2025-09-15 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_025",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_203188e7"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Stephen Miran : Senate confirms Trump pick to Fed board ahead of key interest rate vote",
+      "representative_news_id": "gdelt_203188e7",
+      "event_time_start": "2025-09-16 00:00:00",
+      "event_time_end": "2025-09-16 00:00:00",
+      "event_time_anchor": "2025-09-16 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_026",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_2f0cea48"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Trump economic adviser Miran gets Senate nod to join Fed board",
+      "representative_news_id": "gdelt_2f0cea48",
+      "event_time_start": "2025-09-16 00:00:00",
+      "event_time_end": "2025-09-16 00:00:00",
+      "event_time_anchor": "2025-09-16 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_027",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_96ddc462"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Asia stocks scale new highs , dollar weakens as investors eye Fed cut",
+      "representative_news_id": "gdelt_96ddc462",
+      "event_time_start": "2025-09-16 00:00:00",
+      "event_time_end": "2025-09-16 00:00:00",
+      "event_time_anchor": "2025-09-16 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_028",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_9a15c4de",
+        "gdelt_0eb29d29",
+        "gdelt_5f17a4fa"
+      ],
+      "cluster_size": 3,
+      "canonical_title": "US judge blocks Trump from removing Fed Governor Cook , for now",
+      "representative_news_id": "gdelt_9a15c4de",
+      "event_time_start": "2025-09-10 00:00:00",
+      "event_time_end": "2025-10-02 00:00:00",
+      "event_time_anchor": "2025-09-16 00:00:00",
+      "source_count": 2,
+      "confidence": 0.6896,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [
+        "low_temporal_coherence"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.9042,
+        "temporal_coherence": 0.2667,
+        "support_score": 0.7737,
+        "graph_density": 0.6667,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 3,
+        "article_count": 3,
+        "time_span_days": 22.0,
+        "clustered_title_count": 3
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_029",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_365e4ca8"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Trump pressure on Fed may steepen US yield curve , fund managers say",
+      "representative_news_id": "gdelt_365e4ca8",
+      "event_time_start": "2025-09-17 00:00:00",
+      "event_time_end": "2025-09-17 00:00:00",
+      "event_time_anchor": "2025-09-17 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_030",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_424fd58a"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Dollar choppy after Fed decision ; pound steady after BoE keeps rates steady",
+      "representative_news_id": "gdelt_424fd58a",
+      "event_time_start": "2025-09-18 00:00:00",
+      "event_time_end": "2025-09-18 00:00:00",
+      "event_time_anchor": "2025-09-18 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_031",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_9955c11e"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Stocks rise on Nvidia - Intel deal , Fed rate cut",
+      "representative_news_id": "gdelt_9955c11e",
+      "event_time_start": "2025-09-19 00:00:00",
+      "event_time_end": "2025-09-19 00:00:00",
+      "event_time_anchor": "2025-09-19 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_032",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_b515b1e4"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "US government shutdown , expected Fed cuts among reasons behind gold record - breaking rally : Analysts",
+      "representative_news_id": "gdelt_b515b1e4",
+      "event_time_start": "2025-10-09 00:00:00",
+      "event_time_end": "2025-10-09 00:00:00",
+      "event_time_anchor": "2025-10-09 00:00:00",
+      "source_count": 1,
+      "confidence": 0.563,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [
+        "rolling_coverage"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_033",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_ef08b975"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Dollar struggles deepen as traders focus on Fed cut bets",
+      "representative_news_id": "gdelt_ef08b975",
+      "event_time_start": "2025-10-15 00:00:00",
+      "event_time_end": "2025-10-15 00:00:00",
+      "event_time_anchor": "2025-10-15 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_034",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_f706b92f"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "US consumer prices rise less than expected before Fed decision",
+      "representative_news_id": "gdelt_f706b92f",
+      "event_time_start": "2025-10-25 00:00:00",
+      "event_time_end": "2025-10-25 00:00:00",
+      "event_time_anchor": "2025-10-25 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_035",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_0a1b6dec"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Asian markets up on hopes over US shutdown deal , Fed rate cut",
+      "representative_news_id": "gdelt_0a1b6dec",
+      "event_time_start": "2025-11-12 00:00:00",
+      "event_time_end": "2025-11-12 00:00:00",
+      "event_time_anchor": "2025-11-12 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_036",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_b4e467c0"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Dollar rises against euro amid Fed rate cut speculation",
+      "representative_news_id": "gdelt_b4e467c0",
+      "event_time_start": "2025-11-15 00:00:00",
+      "event_time_end": "2025-11-15 00:00:00",
+      "event_time_anchor": "2025-11-15 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_037",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_8dc51d93"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Former US Fed governor quit after repeated violations of trading rules",
+      "representative_news_id": "gdelt_8dc51d93",
+      "event_time_start": "2025-11-16 00:00:00",
+      "event_time_end": "2025-11-16 00:00:00",
+      "event_time_anchor": "2025-11-16 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_038",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_e446d06e"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "US Fed Governor Cook offers detailed defence in mortgage fraud case",
+      "representative_news_id": "gdelt_e446d06e",
+      "event_time_start": "2025-11-18 00:00:00",
+      "event_time_end": "2025-11-18 00:00:00",
+      "event_time_anchor": "2025-11-18 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_039",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_abaf0577"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Stocks rally as bumper Nvidia report offsets Fed rate concern",
+      "representative_news_id": "gdelt_abaf0577",
+      "event_time_start": "2025-11-20 00:00:00",
+      "event_time_end": "2025-11-20 00:00:00",
+      "event_time_anchor": "2025-11-20 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_040",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_669b61e8"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Trump amenaza con demandar a Powell por renovación de sede de Reserva Federal",
+      "representative_news_id": "gdelt_669b61e8",
+      "event_time_start": "2025-12-01 00:00:00",
+      "event_time_end": "2025-12-01 00:00:00",
+      "event_time_anchor": "2025-12-01 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_041",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_30cf2484",
+        "gdelt_8b46a656",
+        "gdelt_fca1ae0d"
+      ],
+      "cluster_size": 3,
+      "canonical_title": "US Federal Reserve cuts interest rates for the first time since December",
+      "representative_news_id": "gdelt_fca1ae0d",
+      "event_time_start": "2025-10-30 00:00:00",
+      "event_time_end": "2025-12-01 00:00:00",
+      "event_time_anchor": "2025-12-01 00:00:00",
+      "source_count": 2,
+      "confidence": 0.6913,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [
+        "low_temporal_coherence"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.9449,
+        "temporal_coherence": 0.0,
+        "support_score": 0.7737,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 3,
+        "article_count": 3,
+        "time_span_days": 32.0,
+        "clustered_title_count": 3
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_042",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_772ed7ec"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Euro / dollar hits 5 - week high , Bitcoin rebounds as Fed outlook dominates",
+      "representative_news_id": "gdelt_772ed7ec",
+      "event_time_start": "2025-12-03 00:00:00",
+      "event_time_end": "2025-12-03 00:00:00",
+      "event_time_anchor": "2025-12-03 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_043",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_89dd4d51"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Bessent to push residency requirement for regional US Fed bank presidents",
+      "representative_news_id": "gdelt_89dd4d51",
+      "event_time_start": "2025-12-04 00:00:00",
+      "event_time_end": "2025-12-04 00:00:00",
+      "event_time_anchor": "2025-12-04 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_044",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_89e7dd7d"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Who is Kevin Hassett , Trump expected pick to lead the Federal Reserve ? | Business and Economy News",
+      "representative_news_id": "gdelt_89e7dd7d",
+      "event_time_start": "2025-12-04 00:00:00",
+      "event_time_end": "2025-12-04 00:00:00",
+      "event_time_anchor": "2025-12-04 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_045",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_15b3697d",
+        "gdelt_530280b1",
+        "gdelt_805dc35e",
+        "gdelt_447815e6"
+      ],
+      "cluster_size": 4,
+      "canonical_title": "Fed rate cut bets send dollar to near five - week low",
+      "representative_news_id": "gdelt_805dc35e",
+      "event_time_start": "2025-07-01 00:00:00",
+      "event_time_end": "2025-12-11 00:00:00",
+      "event_time_anchor": "2025-12-05 00:00:00",
+      "source_count": 1,
+      "confidence": 0.5226,
+      "system_is_noise": true,
+      "noise_reason": "low_cluster_confidence",
+      "risk_flags": [
+        "long_time_span",
+        "low_temporal_coherence"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.9175,
+        "temporal_coherence": 0.0,
+        "support_score": 0.8982,
+        "graph_density": 0.5,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 4,
+        "article_count": 4,
+        "time_span_days": 163.0,
+        "clustered_title_count": 4
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_046",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_8122ac76"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Asian markets mixed ahead of US data , expected Fed rate cut",
+      "representative_news_id": "gdelt_8122ac76",
+      "event_time_start": "2025-12-05 00:00:00",
+      "event_time_end": "2025-12-05 00:00:00",
+      "event_time_anchor": "2025-12-05 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_047",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_57f9bedb"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Most Asia markets track Wall St losses as jitters set in ahead of Fed",
+      "representative_news_id": "gdelt_57f9bedb",
+      "event_time_start": "2025-12-09 00:00:00",
+      "event_time_end": "2025-12-09 00:00:00",
+      "event_time_anchor": "2025-12-09 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_048",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_350f228d"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Oracle knocks stocks as Fed message drags on dollar",
+      "representative_news_id": "gdelt_350f228d",
+      "event_time_start": "2025-12-11 00:00:00",
+      "event_time_end": "2025-12-11 00:00:00",
+      "event_time_anchor": "2025-12-11 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_049",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_ea362def"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Dollar slips as traders eye next week Fed meeting",
+      "representative_news_id": "gdelt_ea362def",
+      "event_time_start": "2025-12-14 00:00:00",
+      "event_time_end": "2025-12-14 00:00:00",
+      "event_time_anchor": "2025-12-14 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_050",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_69af4784",
+        "gdelt_ce349f4f"
+      ],
+      "cluster_size": 2,
+      "canonical_title": "Глава ФРС США заявил о начатой в отношении него проверке – DW – 12 . 01 . 2026",
+      "representative_news_id": "gdelt_69af4784",
+      "event_time_start": "2026-01-12 00:00:00",
+      "event_time_end": "2026-01-12 00:00:00",
+      "event_time_anchor": "2026-01-12 00:00:00",
+      "source_count": 1,
+      "confidence": 0.8938,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8929,
+        "temporal_coherence": 1.0,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 0.0,
+        "clustered_title_count": 2
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_051",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_73b6922f"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Fed Başkanı Powelldan Trumpa  siyasi baskı  suçlaması – DW – 12 . 01 . 2026",
+      "representative_news_id": "gdelt_73b6922f",
+      "event_time_start": "2026-01-12 00:00:00",
+      "event_time_end": "2026-01-12 00:00:00",
+      "event_time_anchor": "2026-01-12 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_052",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_4303b8bf",
+        "gdelt_324aeed4",
+        "gdelt_70c60e04"
+      ],
+      "cluster_size": 3,
+      "canonical_title": "Investigation of Fed chief Jerome Powell : What Trump has said about him | Donald Trump News",
+      "representative_news_id": "gdelt_324aeed4",
+      "event_time_start": "2025-12-24 00:00:00",
+      "event_time_end": "2026-01-13 00:00:00",
+      "event_time_anchor": "2026-01-13 00:00:00",
+      "source_count": 2,
+      "confidence": 0.6937,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [
+        "low_temporal_coherence"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8763,
+        "temporal_coherence": 0.3333,
+        "support_score": 0.7737,
+        "graph_density": 0.6667,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 3,
+        "article_count": 3,
+        "time_span_days": 20.0,
+        "clustered_title_count": 3
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_053",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_5decb4fd",
+        "gdelt_6a71064f",
+        "gdelt_692f33f5",
+        "gdelt_a4a74bcd",
+        "gdelt_e85e1ac7"
+      ],
+      "cluster_size": 5,
+      "canonical_title": "Trump administration probe of Fed Powell sparks pushback",
+      "representative_news_id": "gdelt_e85e1ac7",
+      "event_time_start": "2026-01-07 00:00:00",
+      "event_time_end": "2026-01-13 00:00:00",
+      "event_time_anchor": "2026-01-13 00:00:00",
+      "source_count": 3,
+      "confidence": 0.8051,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8786,
+        "temporal_coherence": 0.8,
+        "support_score": 0.8982,
+        "graph_density": 0.5,
+        "duplicate_ratio": 0.2,
+        "unique_title_count": 4,
+        "article_count": 5,
+        "time_span_days": 6.0,
+        "clustered_title_count": 4
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_054",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_cdfb7080",
+        "gdelt_ef488d63"
+      ],
+      "cluster_size": 2,
+      "canonical_title": "Dollar drops as US Justice Department subpoenas Fed Powell",
+      "representative_news_id": "gdelt_ef488d63",
+      "event_time_start": "2026-01-12 00:00:00",
+      "event_time_end": "2026-01-13 00:00:00",
+      "event_time_anchor": "2026-01-13 00:00:00",
+      "source_count": 2,
+      "confidence": 0.8921,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.9076,
+        "temporal_coherence": 0.9667,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 1.0,
+        "clustered_title_count": 2
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_055",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_306ae95d"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Global central bank chiefs rally in support of Fed Chair Jerome Powell",
+      "representative_news_id": "gdelt_306ae95d",
+      "event_time_start": "2026-01-14 00:00:00",
+      "event_time_end": "2026-01-14 00:00:00",
+      "event_time_anchor": "2026-01-14 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_056",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_8e8d9b76"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Зе - щасливчик : як Михайло Федоров став найвитривалішим міністром Зеленського",
+      "representative_news_id": "gdelt_8e8d9b76",
+      "event_time_start": "2026-01-19 00:00:00",
+      "event_time_end": "2026-01-19 00:00:00",
+      "event_time_anchor": "2026-01-19 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_057",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_c218dad3"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "US Supreme Court appears reluctant to let Trump fire Fed Lisa Cook | Business and Economy News",
+      "representative_news_id": "gdelt_c218dad3",
+      "event_time_start": "2026-01-22 00:00:00",
+      "event_time_end": "2026-01-22 00:00:00",
+      "event_time_anchor": "2026-01-22 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_058",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_80e0f5d8"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Протести в Міннеаполісі : федеральні агенти США вдруге за місяць застрелили людину",
+      "representative_news_id": "gdelt_80e0f5d8",
+      "event_time_start": "2026-01-25 00:00:00",
+      "event_time_end": "2026-01-25 00:00:00",
+      "event_time_anchor": "2026-01-25 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_388ef847",
+        "gdelt_c0affc77",
+        "gdelt_83849259",
+        "gdelt_11381ec7",
+        "gdelt_5f3e3d7e",
+        "gdelt_c313f5eb"
+      ],
+      "cluster_size": 6,
+      "canonical_title": "US Fed holds interest rates steady , defying Trump pressure",
+      "representative_news_id": "gdelt_11381ec7",
+      "event_time_start": "2025-01-01 00:00:00",
+      "event_time_end": "2026-01-29 00:00:00",
+      "event_time_anchor": "2026-01-29 00:00:00",
+      "source_count": 3,
+      "confidence": 0.5151,
+      "system_is_noise": true,
+      "noise_reason": "low_cluster_confidence",
+      "risk_flags": [
+        "long_time_span",
+        "low_temporal_coherence"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.9002,
+        "temporal_coherence": 0.0,
+        "support_score": 1.0,
+        "graph_density": 0.4,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 6,
+        "article_count": 6,
+        "time_span_days": 393.0,
+        "clustered_title_count": 6
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_060",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_d2961f4e"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Fed Powell dodges questions on his future , but has advice for his successor",
+      "representative_news_id": "gdelt_d2961f4e",
+      "event_time_start": "2026-01-29 00:00:00",
+      "event_time_end": "2026-01-29 00:00:00",
+      "event_time_anchor": "2026-01-29 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_061",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_1180e2d6"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "US dollar gains as Warsh named next Fed Chair",
+      "representative_news_id": "gdelt_1180e2d6",
+      "event_time_start": "2026-01-31 00:00:00",
+      "event_time_end": "2026-01-31 00:00:00",
+      "event_time_anchor": "2026-01-31 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_062",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_180f9a31",
+        "gdelt_06587372",
+        "gdelt_92b5c6aa",
+        "gdelt_2389b3bd"
+      ],
+      "cluster_size": 4,
+      "canonical_title": "Trump names former Federal Reserve governor Warsh as the next Fed chair , to replace Powell",
+      "representative_news_id": "gdelt_180f9a31",
+      "event_time_start": "2026-01-30 00:00:00",
+      "event_time_end": "2026-02-06 00:00:00",
+      "event_time_anchor": "2026-01-31 00:00:00",
+      "source_count": 2,
+      "confidence": 0.7968,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8786,
+        "temporal_coherence": 0.7667,
+        "support_score": 0.8982,
+        "graph_density": 0.5,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 4,
+        "article_count": 4,
+        "time_span_days": 7.0,
+        "clustered_title_count": 4
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_063",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_52e89851"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Trump choice of Warsh to lead Fed could reshape the world most influential central bank",
+      "representative_news_id": "gdelt_52e89851",
+      "event_time_start": "2026-01-31 00:00:00",
+      "event_time_end": "2026-01-31 00:00:00",
+      "event_time_anchor": "2026-01-31 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_064",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_80b086cb"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Gold , silver prices tumble as investors soothed by Trump Fed pick",
+      "representative_news_id": "gdelt_80b086cb",
+      "event_time_start": "2026-01-31 00:00:00",
+      "event_time_end": "2026-01-31 00:00:00",
+      "event_time_anchor": "2026-01-31 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_065",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_34010598"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "Who is Kevin Warsh , Donald Trump Fed chair nomination , and what economic impact could his appointment bring ?",
+      "representative_news_id": "gdelt_34010598",
+      "event_time_start": "2026-02-01 00:00:00",
+      "event_time_end": "2026-02-01 00:00:00",
+      "event_time_anchor": "2026-02-01 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_066",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_54781416"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "US treasury secretary declines to rule out future Federal Reserve lawsuits",
+      "representative_news_id": "gdelt_54781416",
+      "event_time_start": "2026-02-06 00:00:00",
+      "event_time_end": "2026-02-06 00:00:00",
+      "event_time_anchor": "2026-02-06 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_e1b4ba76",
+        "gdelt_233000d5",
+        "gdelt_8c0db7ad",
+        "gdelt_a5b5a2e6",
+        "gdelt_7f301970"
+      ],
+      "cluster_size": 5,
+      "canonical_title": "US Fed raises inflation outlook over  uncertain  Iran war impact",
+      "representative_news_id": "gdelt_233000d5",
+      "event_time_start": "2026-01-01 00:00:00",
+      "event_time_end": "2026-12-31 00:00:00",
+      "event_time_anchor": "2026-03-19 00:00:00",
+      "source_count": 2,
+      "confidence": 0.5351,
+      "system_is_noise": true,
+      "noise_reason": "low_cluster_confidence",
+      "risk_flags": [
+        "long_time_span",
+        "low_temporal_coherence"
+      ],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8446,
+        "temporal_coherence": 0.0,
+        "support_score": 1.0,
+        "graph_density": 0.7,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 5,
+        "article_count": 5,
+        "time_span_days": 364.0,
+        "clustered_title_count": 5
+      }
+    },
+    {
+      "event_id": "美联储_20260509_002445_1d43d9df:美联储_event_068",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_d9f92130",
+        "gdelt_fce161ea"
+      ],
+      "cluster_size": 2,
+      "canonical_title": "US judge nixes two subpoenas against Federal Reserve chair Jerome Powell",
+      "representative_news_id": "gdelt_d9f92130",
+      "event_time_start": "2026-03-14 00:00:00",
+      "event_time_end": "2026-03-23 00:00:00",
+      "event_time_anchor": "2026-03-23 00:00:00",
+      "source_count": 2,
+      "confidence": 0.7876,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": 0.8237,
+        "temporal_coherence": 0.7,
+        "support_score": 0.6131,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 2,
+        "article_count": 2,
+        "time_span_days": 9.0,
+        "clustered_title_count": 2
+      }
+    }
+  ]
+}

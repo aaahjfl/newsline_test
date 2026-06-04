@@ -35,6 +35,7 @@ except ImportError:  # pragma: no cover - keeps imports friendly in minimal envs
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 STATIC_DIR = PROJECT_ROOT / "frontend" / "static"
+TIMELINE_OUTPUT_DIR = PROJECT_ROOT / "outputs" / "timeline"
 JOB_RUNNER = PROJECT_ROOT / "code" / "script" / "run_timeline_web_job.py"
 JOB_EVENT_PREFIX = "NEWSLINE_JOB_EVENT "
 MAX_LOG_LINES = 160
@@ -537,13 +538,66 @@ def load_timeline_result_from_db(reasoning_run_id: str) -> dict:
     }
 
 
-def list_recent_timeline_runs(limit: int = 6) -> list[dict]:
-    bounded_limit = max(1, min(int(limit or 6), 12))
-    connection = get_db_connection()
+def _load_timeline_result_from_file(reasoning_run_id: str) -> dict:
+    if not TIMELINE_OUTPUT_DIR.exists():
+        raise KeyError(reasoning_run_id)
+    for path in TIMELINE_OUTPUT_DIR.glob("*.json"):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if data.get("reasoning_run_id") == reasoning_run_id:
+            return data
+    raise KeyError(reasoning_run_id)
+
+
+def load_timeline_result(reasoning_run_id: str) -> dict:
     try:
-        with connection.cursor() as cursor:
-            cursor.execute(
-                f"""
+        return load_timeline_result_from_db(reasoning_run_id)
+    except Exception:
+        return _load_timeline_result_from_file(reasoning_run_id)
+
+
+def _recent_record_from_result(data: dict) -> dict | None:
+    if data.get("status") and data.get("status") != "completed":
+        return None
+    reasoning_run_id = data.get("reasoning_run_id")
+    if not reasoning_run_id:
+        return None
+    summary = data.get("summary") if isinstance(data.get("summary"), dict) else {}
+    timeline = data.get("timeline") if isinstance(data.get("timeline"), list) else []
+    return {
+        "topic": data.get("topic"),
+        "mode": data.get("mode"),
+        "reasoning_run_id": reasoning_run_id,
+        "generated_at": data.get("generated_at"),
+        "node_count": summary.get("accepted_event_count") or len(timeline),
+        "start_date": _date_key(data.get("start_date")),
+        "end_date": _date_key(data.get("end_date")),
+    }
+
+
+def _list_recent_timeline_runs_from_files() -> list[dict]:
+    if not TIMELINE_OUTPUT_DIR.exists():
+        return []
+    records = []
+    for path in TIMELINE_OUTPUT_DIR.glob("*.json"):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        record = _recent_record_from_result(data)
+        if record is not None:
+            records.append(record)
+    return records
+
+
+def _generated_sort_key(record: dict) -> str:
+    return str(record.get("generated_at") or "")
+
+
+def _list_recent_timeline_runs_from_db() -> list[dict]:
+    query = f"""
                 SELECT
                     runs.*,
                     COALESCE(node_counts.node_count, 0) AS node_count
@@ -556,10 +610,11 @@ def list_recent_timeline_runs(limit: int = 6) -> list[dict]:
                   ON node_counts.reasoning_run_id = runs.reasoning_run_id
                 WHERE runs.status = 'completed'
                 ORDER BY runs.generated_at DESC, runs.id DESC
-                LIMIT %s
-                """,
-                (bounded_limit,),
-            )
+                """
+    connection = get_db_connection()
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute(query)
             rows = [_normalize_row(row) for row in cursor.fetchall()]
     finally:
         connection.close()
@@ -584,6 +639,23 @@ def list_recent_timeline_runs(limit: int = 6) -> list[dict]:
                 "end_date": _date_key(config.get("end_date")),
             }
         )
+    return records
+
+
+def list_recent_timeline_runs(limit: int | None = None) -> list[dict]:
+    records_by_run_id = {}
+    try:
+        for record in _list_recent_timeline_runs_from_db():
+            records_by_run_id[record["reasoning_run_id"]] = record
+    except Exception:
+        records_by_run_id = {}
+
+    for record in _list_recent_timeline_runs_from_files():
+        records_by_run_id.setdefault(record["reasoning_run_id"], record)
+
+    records = sorted(records_by_run_id.values(), key=_generated_sort_key, reverse=True)
+    if limit is not None:
+        return records[: max(1, int(limit))]
     return records
 
 
@@ -688,9 +760,9 @@ def create_app():
             job_status = job.public_dict()
 
         try:
-            result = load_timeline_result_from_db(reasoning_run_id)
+            result = load_timeline_result(reasoning_run_id)
         except KeyError:
-            raise HTTPException(status_code=404, detail="Timeline result not found in MySQL.") from None
+            raise HTTPException(status_code=404, detail="Timeline result not found.") from None
         result["elapsed_seconds"] = job_status.get("elapsed_seconds")
         result["cache_hit"] = job_status.get("cache_hit")
         return result
@@ -698,12 +770,12 @@ def create_app():
     @api.get("/api/timeline/results/{reasoning_run_id}")
     def get_timeline_result_by_run(reasoning_run_id: str) -> dict:
         try:
-            return load_timeline_result_from_db(reasoning_run_id)
+            return load_timeline_result(reasoning_run_id)
         except KeyError:
-            raise HTTPException(status_code=404, detail="Timeline result not found in MySQL.") from None
+            raise HTTPException(status_code=404, detail="Timeline result not found.") from None
 
     @api.get("/api/timeline/recent")
-    def get_recent_timeline_runs(limit: int = 6) -> dict:
+    def get_recent_timeline_runs(limit: int | None = None) -> dict:
         try:
             return {"items": list_recent_timeline_runs(limit)}
         except Exception as exc:

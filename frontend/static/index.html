@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NewsLine</title>
-    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="stylesheet" href="/static/styles.css?v=recent-all-20260529" />
   </head>
   <body>
     <main class="app-shell" data-view="idle">
       <section class="landing-view" aria-label="NewsLine topic input">
         <div class="copy-panel">
           <p class="eyebrow">TIMELINE</p>
-          <h1><span>新闻事件</span><span>时间线重构系统</span></h1>
+          <h1><span>新闻标题</span><span>时间线重构系统</span></h1>
           <p class="intro">
             基于 SBERT 事件发现与轻量 LLM 决断，从多语种新闻中组织候选事件，
             生成可追溯的结构化时间线。
@@ -71,7 +71,7 @@
 
           <section class="recent-panel" id="recentPanel" aria-label="最近生成记录">
             <div class="recent-header">
-              <span>最近生成</span>
+              <span id="recentTitle">最近生成</span>
               <button id="refreshRecentButton" type="button">刷新</button>
             </div>
             <div class="recent-list" id="recentList">
@@ -138,6 +138,6 @@
       </section>
     </main>
 
-    <script src="/static/app.js?v=popover-click-20260505"></script>
+    <script src="/static/app.js?v=recent-all-20260529"></script>
   </body>
 </html>
