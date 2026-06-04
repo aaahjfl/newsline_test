@@ -358,7 +358,7 @@ h2 {
 .recent-list {
   display: grid;
   gap: 6px;
-  max-height: clamp(112px, 15vh, 210px);
+  max-height: clamp(220px, 28vh, 420px);
   overflow-y: auto;
   overscroll-behavior: contain;
   padding-right: 4px;
@@ -1073,7 +1073,7 @@ h2 {
   }
 
   .recent-list {
-    max-height: 132px;
+    max-height: 220px;
     gap: 4px;
   }
 

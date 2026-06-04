@@ -28,6 +28,7 @@ const timelineFrame = document.querySelector("#timelineFrame");
 const timelineScroller = document.querySelector("#timelineScroller");
 const timelineRail = document.querySelector("#timelineRail");
 const articlePopover = document.querySelector("#articlePopover");
+const recentTitle = document.querySelector("#recentTitle");
 const recentList = document.querySelector("#recentList");
 const refreshRecentButton = document.querySelector("#refreshRecentButton");
 const nodeDrawer = document.querySelector("#nodeDrawer");
@@ -298,7 +299,7 @@ async function getTimelineResultByRun(reasoningRunId) {
 }
 
 async function getRecentTimelines() {
-  return apiFetch("/api/timeline/recent?limit=6");
+  return apiFetch("/api/timeline/recent");
 }
 
 function startPolling(jobId) {
@@ -745,10 +746,12 @@ document.addEventListener("pointerup", endMonthScrubberDrag);
 document.addEventListener("pointercancel", endMonthScrubberDrag);
 
 async function loadRecentTimelines() {
+  recentTitle.textContent = "最近生成";
   recentList.innerHTML = '<p class="recent-empty">正在读取最近生成记录。</p>';
   try {
     const payload = await getRecentTimelines();
     const records = Array.isArray(payload.items) ? payload.items : [];
+    recentTitle.textContent = records.length > 0 ? `最近生成（${records.length}）` : "最近生成";
     if (records.length === 0) {
       recentList.innerHTML = '<p class="recent-empty">还没有已完成的时间线。</p>';
       return;

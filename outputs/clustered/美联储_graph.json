@@ -1,0 +1,769 @@
+{
+  "topic": "美联储",
+  "run_id": "美联储_20260509_002445_1d43d9df",
+  "topic_aliases": [
+    "美联储",
+    "Federal Reserve",
+    "Fed",
+    "Federal Reserve System",
+    "联邦储备系统",
+    "联邦储备局",
+    "美联准",
+    "Reserva Federal",
+    "Sistema de Reserva Federal",
+    "연방준비제도",
+    "연준",
+    "미국 연방준비제도",
+    "Réserve fédérale",
+    "Système de réserve fédérale",
+    "Федеральная резервная система",
+    "ФРС",
+    "Федеральная резервная система США",
+    "Фед",
+    "Федеральна резервна система",
+    "Федеральна резервна система США",
+    "Sistema wa Fed"
+  ],
+  "topic_alias_details": [
+    {
+      "text": "美联储",
+      "lang": "zh-cn",
+      "priority": "strong"
+    },
+    {
+      "text": "Federal Reserve",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "Fed",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "Federal Reserve System",
+      "lang": "en",
+      "priority": "strong"
+    },
+    {
+      "text": "联邦储备系统",
+      "lang": "zh-cn",
+      "priority": "strong"
+    },
+    {
+      "text": "联邦储备局",
+      "lang": "zh-cn",
+      "priority": "strong"
+    },
+    {
+      "text": "美联准",
+      "lang": "zh-cn",
+      "priority": "strong"
+    },
+    {
+      "text": "Reserva Federal",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "Fed",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "Sistema de Reserva Federal",
+      "lang": "es",
+      "priority": "strong"
+    },
+    {
+      "text": "연방준비제도",
+      "lang": "ko",
+      "priority": "strong"
+    },
+    {
+      "text": "Fed",
+      "lang": "ko",
+      "priority": "strong"
+    },
+    {
+      "text": "연준",
+      "lang": "ko",
+      "priority": "strong",
+      "notes": [
+        "very_short_alias"
+      ]
+    },
+    {
+      "text": "미국 연방준비제도",
+      "lang": "ko",
+      "priority": "strong"
+    },
+    {
+      "text": "Réserve fédérale",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Fed",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Système de réserve fédérale",
+      "lang": "fr",
+      "priority": "strong"
+    },
+    {
+      "text": "Федеральная резервная система",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "ФРС",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "Федеральная резервная система США",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "Фед",
+      "lang": "ru",
+      "priority": "strong"
+    },
+    {
+      "text": "Федеральна резервна система",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "ФРС",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "Федеральна резервна система США",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "Фед",
+      "lang": "uk",
+      "priority": "strong"
+    },
+    {
+      "text": "Fed",
+      "lang": "sw",
+      "priority": "strong"
+    },
+    {
+      "text": "Federal Reserve",
+      "lang": "sw",
+      "priority": "strong"
+    },
+    {
+      "text": "Reserva Federal",
+      "lang": "sw",
+      "priority": "strong"
+    },
+    {
+      "text": "Sistema wa Fed",
+      "lang": "sw",
+      "priority": "strong"
+    }
+  ],
+  "candidate_count": 206,
+  "filtered_count": 110,
+  "graph_edges": [
+    {
+      "left_index": 0,
+      "right_index": 12,
+      "left_news_id": "gdelt_823c18ac",
+      "right_news_id": "gdelt_7f13506e",
+      "similarity": 0.92291,
+      "time_gap_days": 59.0,
+      "edge_reason": "semantic_override",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006"
+    },
+    {
+      "left_index": 8,
+      "right_index": 9,
+      "left_news_id": "gdelt_935f0a5d",
+      "right_news_id": "gdelt_12c6c0e3",
+      "similarity": 0.910265,
+      "time_gap_days": 6.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006"
+    },
+    {
+      "left_index": 8,
+      "right_index": 10,
+      "left_news_id": "gdelt_935f0a5d",
+      "right_news_id": "gdelt_736c3647",
+      "similarity": 0.906714,
+      "time_gap_days": 6.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006"
+    },
+    {
+      "left_index": 9,
+      "right_index": 10,
+      "left_news_id": "gdelt_12c6c0e3",
+      "right_news_id": "gdelt_736c3647",
+      "similarity": 0.894452,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006"
+    },
+    {
+      "left_index": 10,
+      "right_index": 12,
+      "left_news_id": "gdelt_736c3647",
+      "right_news_id": "gdelt_7f13506e",
+      "similarity": 0.894861,
+      "time_gap_days": 2.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_006"
+    },
+    {
+      "left_index": 5,
+      "right_index": 6,
+      "left_news_id": "gdelt_fba35736",
+      "right_news_id": "gdelt_5ccb97f0",
+      "similarity": 0.97348,
+      "time_gap_days": 1.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_004",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_004"
+    },
+    {
+      "left_index": 17,
+      "right_index": 18,
+      "left_news_id": "gdelt_870afb1f",
+      "right_news_id": "gdelt_2f300a4d",
+      "similarity": 0.891343,
+      "time_gap_days": 1.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_012",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_012"
+    },
+    {
+      "left_index": 22,
+      "right_index": 36,
+      "left_news_id": "gdelt_bffaac52",
+      "right_news_id": "gdelt_44fa6e5f",
+      "similarity": 0.907912,
+      "time_gap_days": 14.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_020",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_020"
+    },
+    {
+      "left_index": 23,
+      "right_index": 24,
+      "left_news_id": "gdelt_1e85ebfd",
+      "right_news_id": "gdelt_36051acc",
+      "similarity": 0.901227,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_015",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_015"
+    },
+    {
+      "left_index": 23,
+      "right_index": 26,
+      "left_news_id": "gdelt_1e85ebfd",
+      "right_news_id": "gdelt_a944389e",
+      "similarity": 0.897074,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_015",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_015"
+    },
+    {
+      "left_index": 24,
+      "right_index": 26,
+      "left_news_id": "gdelt_36051acc",
+      "right_news_id": "gdelt_a944389e",
+      "similarity": 0.938392,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_015",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_015"
+    },
+    {
+      "left_index": 29,
+      "right_index": 30,
+      "left_news_id": "gdelt_d2bc4aeb",
+      "right_news_id": "gdelt_1f001618",
+      "similarity": 0.894729,
+      "time_gap_days": 1.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_018",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_018"
+    },
+    {
+      "left_index": 29,
+      "right_index": 31,
+      "left_news_id": "gdelt_d2bc4aeb",
+      "right_news_id": "gdelt_3d40b6a1",
+      "similarity": 0.914158,
+      "time_gap_days": 1.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_018",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_018"
+    },
+    {
+      "left_index": 29,
+      "right_index": 32,
+      "left_news_id": "gdelt_d2bc4aeb",
+      "right_news_id": "gdelt_44dd0f04",
+      "similarity": 0.892806,
+      "time_gap_days": 1.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_018",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_018"
+    },
+    {
+      "left_index": 30,
+      "right_index": 31,
+      "left_news_id": "gdelt_1f001618",
+      "right_news_id": "gdelt_3d40b6a1",
+      "similarity": 0.893968,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_018",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_018"
+    },
+    {
+      "left_index": 33,
+      "right_index": 37,
+      "left_news_id": "gdelt_94b39a83",
+      "right_news_id": "gdelt_50ca8826",
+      "similarity": 0.907438,
+      "time_gap_days": 9.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_021",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_021"
+    },
+    {
+      "left_index": 38,
+      "right_index": 42,
+      "left_news_id": "gdelt_9a15c4de",
+      "right_news_id": "gdelt_0eb29d29",
+      "similarity": 0.911023,
+      "time_gap_days": 6.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_028",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_028"
+    },
+    {
+      "left_index": 38,
+      "right_index": 51,
+      "left_news_id": "gdelt_9a15c4de",
+      "right_news_id": "gdelt_5f17a4fa",
+      "similarity": 0.915522,
+      "time_gap_days": 22.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_028",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_028"
+    },
+    {
+      "left_index": 1,
+      "right_index": 67,
+      "left_news_id": "gdelt_15b3697d",
+      "right_news_id": "gdelt_805dc35e",
+      "similarity": 0.939042,
+      "time_gap_days": 157.0,
+      "edge_reason": "semantic_override",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_045",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_045"
+    },
+    {
+      "left_index": 19,
+      "right_index": 67,
+      "left_news_id": "gdelt_530280b1",
+      "right_news_id": "gdelt_805dc35e",
+      "similarity": 0.926444,
+      "time_gap_days": 113.0,
+      "edge_reason": "semantic_override",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_045",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_045"
+    },
+    {
+      "left_index": 67,
+      "right_index": 71,
+      "left_news_id": "gdelt_805dc35e",
+      "right_news_id": "gdelt_447815e6",
+      "similarity": 0.925389,
+      "time_gap_days": 6.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_045",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_045"
+    },
+    {
+      "left_index": 55,
+      "right_index": 62,
+      "left_news_id": "gdelt_30cf2484",
+      "right_news_id": "gdelt_8b46a656",
+      "similarity": 0.931609,
+      "time_gap_days": 32.0,
+      "edge_reason": "semantic_override",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_041",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_041"
+    },
+    {
+      "left_index": 55,
+      "right_index": 63,
+      "left_news_id": "gdelt_30cf2484",
+      "right_news_id": "gdelt_fca1ae0d",
+      "similarity": 0.95372,
+      "time_gap_days": 32.0,
+      "edge_reason": "semantic_override",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_041",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_041"
+    },
+    {
+      "left_index": 62,
+      "right_index": 63,
+      "left_news_id": "gdelt_8b46a656",
+      "right_news_id": "gdelt_fca1ae0d",
+      "similarity": 0.949309,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_041",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_041"
+    },
+    {
+      "left_index": 34,
+      "right_index": 47,
+      "left_news_id": "gdelt_388ef847",
+      "right_news_id": "gdelt_c0affc77",
+      "similarity": 0.912553,
+      "time_gap_days": 16.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059"
+    },
+    {
+      "left_index": 34,
+      "right_index": 89,
+      "left_news_id": "gdelt_388ef847",
+      "right_news_id": "gdelt_11381ec7",
+      "similarity": 0.94594,
+      "time_gap_days": 150.0,
+      "edge_reason": "semantic_override",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059"
+    },
+    {
+      "left_index": 47,
+      "right_index": 49,
+      "left_news_id": "gdelt_c0affc77",
+      "right_news_id": "gdelt_83849259",
+      "similarity": 0.937868,
+      "time_gap_days": 1.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059"
+    },
+    {
+      "left_index": 89,
+      "right_index": 90,
+      "left_news_id": "gdelt_11381ec7",
+      "right_news_id": "gdelt_5f3e3d7e",
+      "similarity": 0.955503,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059"
+    },
+    {
+      "left_index": 89,
+      "right_index": 91,
+      "left_news_id": "gdelt_11381ec7",
+      "right_news_id": "gdelt_c313f5eb",
+      "similarity": 0.953078,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059"
+    },
+    {
+      "left_index": 90,
+      "right_index": 91,
+      "left_news_id": "gdelt_5f3e3d7e",
+      "right_news_id": "gdelt_c313f5eb",
+      "similarity": 0.960701,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_059"
+    },
+    {
+      "left_index": 73,
+      "right_index": 80,
+      "left_news_id": "gdelt_4303b8bf",
+      "right_news_id": "gdelt_324aeed4",
+      "similarity": 0.899131,
+      "time_gap_days": 20.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_052",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_052"
+    },
+    {
+      "left_index": 80,
+      "right_index": 82,
+      "left_news_id": "gdelt_324aeed4",
+      "right_news_id": "gdelt_70c60e04",
+      "similarity": 0.895988,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_052",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_052"
+    },
+    {
+      "left_index": 74,
+      "right_index": 81,
+      "left_news_id": "gdelt_5decb4fd",
+      "right_news_id": "gdelt_692f33f5",
+      "similarity": 0.895579,
+      "time_gap_days": 6.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_053",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_053"
+    },
+    {
+      "left_index": 74,
+      "right_index": 83,
+      "left_news_id": "gdelt_5decb4fd",
+      "right_news_id": "gdelt_e85e1ac7",
+      "similarity": 0.899449,
+      "time_gap_days": 6.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_053",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_053"
+    },
+    {
+      "left_index": 76,
+      "right_index": 83,
+      "left_news_id": "gdelt_6a71064f",
+      "right_news_id": "gdelt_e85e1ac7",
+      "similarity": 0.924986,
+      "time_gap_days": 1.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_053",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_053"
+    },
+    {
+      "left_index": 75,
+      "right_index": 79,
+      "left_news_id": "gdelt_69af4784",
+      "right_news_id": "gdelt_ce349f4f",
+      "similarity": 0.892894,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_050",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_050"
+    },
+    {
+      "left_index": 78,
+      "right_index": 84,
+      "left_news_id": "gdelt_cdfb7080",
+      "right_news_id": "gdelt_ef488d63",
+      "similarity": 0.90764,
+      "time_gap_days": 1.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_054",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_054"
+    },
+    {
+      "left_index": 93,
+      "right_index": 98,
+      "left_news_id": "gdelt_180f9a31",
+      "right_news_id": "gdelt_92b5c6aa",
+      "similarity": 0.933665,
+      "time_gap_days": 1.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_062",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_062"
+    },
+    {
+      "left_index": 93,
+      "right_index": 100,
+      "left_news_id": "gdelt_180f9a31",
+      "right_news_id": "gdelt_2389b3bd",
+      "similarity": 0.899534,
+      "time_gap_days": 7.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_062",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_062"
+    },
+    {
+      "left_index": 94,
+      "right_index": 100,
+      "left_news_id": "gdelt_06587372",
+      "right_news_id": "gdelt_2389b3bd",
+      "similarity": 0.891535,
+      "time_gap_days": 6.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_062",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_062"
+    },
+    {
+      "left_index": 25,
+      "right_index": 27,
+      "left_news_id": "gdelt_446a6ed7",
+      "right_news_id": "gdelt_ab042891",
+      "similarity": 0.893837,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_016",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_016"
+    },
+    {
+      "left_index": 102,
+      "right_index": 106,
+      "left_news_id": "gdelt_e1b4ba76",
+      "right_news_id": "gdelt_a5b5a2e6",
+      "similarity": 0.8354,
+      "time_gap_days": 28.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067"
+    },
+    {
+      "left_index": 104,
+      "right_index": 105,
+      "left_news_id": "gdelt_233000d5",
+      "right_news_id": "gdelt_8c0db7ad",
+      "similarity": 0.900095,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067"
+    },
+    {
+      "left_index": 104,
+      "right_index": 106,
+      "left_news_id": "gdelt_233000d5",
+      "right_news_id": "gdelt_a5b5a2e6",
+      "similarity": 0.848083,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067"
+    },
+    {
+      "left_index": 104,
+      "right_index": 108,
+      "left_news_id": "gdelt_233000d5",
+      "right_news_id": "gdelt_7f301970",
+      "similarity": 0.880983,
+      "time_gap_days": 12.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067"
+    },
+    {
+      "left_index": 105,
+      "right_index": 106,
+      "left_news_id": "gdelt_8c0db7ad",
+      "right_news_id": "gdelt_a5b5a2e6",
+      "similarity": 0.873499,
+      "time_gap_days": 0.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067"
+    },
+    {
+      "left_index": 105,
+      "right_index": 108,
+      "left_news_id": "gdelt_8c0db7ad",
+      "right_news_id": "gdelt_7f301970",
+      "similarity": 0.836558,
+      "time_gap_days": 12.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067"
+    },
+    {
+      "left_index": 106,
+      "right_index": 108,
+      "left_news_id": "gdelt_a5b5a2e6",
+      "right_news_id": "gdelt_7f301970",
+      "similarity": 0.850348,
+      "time_gap_days": 12.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_067"
+    },
+    {
+      "left_index": 103,
+      "right_index": 107,
+      "left_news_id": "gdelt_d9f92130",
+      "right_news_id": "gdelt_fce161ea",
+      "similarity": 0.823722,
+      "time_gap_days": 9.0,
+      "edge_reason": "semantic_and_time",
+      "run_id": "美联储_20260509_002445_1d43d9df",
+      "left_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_068",
+      "right_event_id": "美联储_20260509_002445_1d43d9df:美联储_event_068"
+    }
+  ]
+}

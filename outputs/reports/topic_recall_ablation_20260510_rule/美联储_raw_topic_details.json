@@ -1,0 +1,86 @@
+{
+  "topic": "美联储",
+  "strategy": "raw_topic",
+  "strategy_label": "原始 topic 直接召回",
+  "run_id": "美联储_raw_topic_20260510_094202",
+  "aliases": [
+    "美联储"
+  ],
+  "sql_candidate_count": 1,
+  "filtered_count": 1,
+  "filter_retention_rate": 1.0,
+  "event_cluster_count": 1,
+  "final_timeline_node_count": 1,
+  "timeline_review_event_count": 0,
+  "timeline_rejected_event_count": 0,
+  "filtered_news": [
+    {
+      "news_id": "gdelt_ce349f4f",
+      "title": "美国联邦司法部开始调查美联储主席鲍威尔 – DW – 2026年1月12日",
+      "source": "DW",
+      "url": "https://www.dw.com/zh/%E7%BE%8E%E5%9B%BD%E8%81%94%E9%82%A6%E5%8F%B8%E6%B3%95%E9%83%A8%E5%BC%80%E5%A7%8B%E8%B0%83%E6%9F%A5%E7%BE%8E%E8%81%94%E5%82%A8%E4%B8%BB%E5%B8%AD%E9%B2%8D%E5%A8%81%E5%B0%94/a-75472808",
+      "publish_time": "2026-01-12 19:00:00",
+      "event_time_anchor": "2026-01-12 00:00:00",
+      "event_time_start": "2026-01-12 00:00:00",
+      "event_time_end": "2026-01-12 00:00:00",
+      "time_granularity": "day",
+      "is_noise": false,
+      "metadata": {
+        "normalized_title": "美国联邦司法部开始调查美联储主席鲍威尔 dw 2026年1月12日",
+        "title_risk_flags": [],
+        "duplicate_members": [
+          "gdelt_ce349f4f"
+        ],
+        "duplicate_count": 1
+      }
+    }
+  ],
+  "events": [
+    {
+      "event_id": "美联储_event_001",
+      "topic": "美联储",
+      "member_news_ids": [
+        "gdelt_ce349f4f"
+      ],
+      "cluster_size": 1,
+      "canonical_title": "美国联邦司法部开始调查美联储主席鲍威尔 – DW – 2026年1月12日",
+      "representative_news_id": "gdelt_ce349f4f",
+      "event_time_start": "2026-01-12 00:00:00",
+      "event_time_end": "2026-01-12 00:00:00",
+      "event_time_anchor": "2026-01-12 00:00:00",
+      "source_count": 1,
+      "confidence": 0.643,
+      "system_is_noise": false,
+      "noise_reason": null,
+      "risk_flags": [],
+      "quality_metrics": {
+        "semantic_cohesion": null,
+        "temporal_coherence": null,
+        "support_score": 0.3869,
+        "graph_density": 1.0,
+        "duplicate_ratio": 0.0,
+        "unique_title_count": 1,
+        "article_count": 1,
+        "time_span_days": 0.0,
+        "clustered_title_count": 1
+      }
+    }
+  ],
+  "assignments": [
+    {
+      "news_id": "gdelt_ce349f4f",
+      "event_id": "美联储_event_001",
+      "title": "美国联邦司法部开始调查美联储主席鲍威尔 – DW – 2026年1月12日",
+      "source": "DW",
+      "url": "https://www.dw.com/zh/%E7%BE%8E%E5%9B%BD%E8%81%94%E9%82%A6%E5%8F%B8%E6%B3%95%E9%83%A8%E5%BC%80%E5%A7%8B%E8%B0%83%E6%9F%A5%E7%BE%8E%E8%81%94%E5%82%A8%E4%B8%BB%E5%B8%AD%E9%B2%8D%E5%A8%81%E5%B0%94/a-75472808",
+      "event_time_anchor": "2026-01-12 00:00:00",
+      "normalized_title": "美国联邦司法部开始调查美联储主席鲍威尔 dw 2026年1月12日",
+      "title_risk_flags": [],
+      "system_is_noise": false,
+      "noise_reason": null,
+      "cluster_size": 1,
+      "canonical_title": "美国联邦司法部开始调查美联储主席鲍威尔 – DW – 2026年1月12日"
+    }
+  ],
+  "graph_edges": []
+}

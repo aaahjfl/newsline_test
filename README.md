@@ -1,86 +1,97 @@
 # NewsLine
 
-NewsLine 是一个面向多语种新闻标题的事件时间线重构系统，对应毕业设计《基于 SBERT 与轻量大模型的新闻时序重构技术研究》的工程实现。系统以 MySQL 中的新闻标题、来源、链接和标准化时间字段为输入，围绕用户给定 topic 完成候选新闻召回、事件发现、事件裁判、时间线持久化和 Web 可视化展示。
+[English](README.en.md)
 
-系统采用分层流水线：
+NewsLine 是一个面向多语种新闻标题的事件发现与时间线重构系统。系统从 MySQL 中读取已解析的新闻标题、来源、链接和时间字段，围绕用户输入的 topic 完成候选新闻召回、事件聚类、时间线推理、结果持久化和 Web 可视化。
+
+## 核心能力
+
+- 多语种 topic alias 扩展，提升不同语言新闻标题的召回率。
+- 基于标题 embedding 的相似度图构建与事件簇发现。
+- 结合时间约束、标题风险标记和聚类质量指标过滤噪声事件。
+- 使用本地 Ollama 模型对不确定事件进行结构化推理。
+- 将事件发现结果和最终时间线写入 MySQL，同时导出 JSON 运行产物。
+- 提供 FastAPI 后端和静态前端，用于创建任务、查看进度、复用历史结果和浏览时间线。
+
+## 工作流
 
 ```text
-MySQL news data
--> spaCy preprocessing and event-time parsing
--> multilingual topic alias expansion
--> Qwen embedding title encoding
--> graph-link event discovery
--> lightweight LLM timeline reasoning
--> MySQL timeline persistence
--> FastAPI static web display
+MySQL parsed news
+-> topic alias expansion
+-> candidate recall
+-> title embedding
+-> graph-based event discovery
+-> rule routing and LLM reasoning
+-> timeline persistence
+-> FastAPI and static web UI
 ```
 
-该架构将候选事件发现、事件语义裁判和最终展示解耦。embedding 层负责将语义相近的新闻标题组织为候选事件簇；LLM 层负责处理低置信度、长时间跨度、滚动报道和 topic 相关性不确定的事件；数据库层保存事件簇、图边、模型决策、最终时间线节点和文章溯源信息。
-
-## Current Status
-
-当前项目已完成端到端原型：
-
-- 使用 spaCy 处理新闻文本与事件时间字段。
-- 使用 MySQL 存储解析后新闻、事件发现结果和最终时间线结果。
-- 使用 `Qwen/Qwen3-Embedding-4B` 生成新闻标题向量。
-- 使用 topic alias 扩展提升多语种标题召回能力。
-- 使用 embedding 相似度图链接方法生成候选事件簇，并记录图边、时间约束和聚类质量指标。
-- 使用 `risk_flags` 和 `quality_metrics` 标记事件簇质量、时间一致性、重复率和潜在噪声。
-- 使用本地 Ollama `qwen3.5:9b` 对不确定事件进行结构化裁判。
-- 使用 FastAPI 提供任务创建、状态轮询、结果读取、历史结果复用和静态页面服务。
-- 使用原生 HTML/CSS/JavaScript 实现 topic 输入、模式选择、日期筛选、生成进度、横向时间线和节点详情展示。
-- 使用 `pytest` 覆盖事件发现、时间线推理和模块导入等核心逻辑。
-
-## Repository Layout
+## 目录结构
 
 ```text
 newsline/
-├── configs/                  # model, database, path and pipeline configuration
-├── database/                 # MySQL connection helpers and schema notes
-├── data_pipeline/            # scraping, normalization and spaCy processing entry points
+├── configs/                  # 数据库、模型、路径和流水线配置
 ├── core/
-│   ├── event_discovery/      # embedding encoding and graph-link event discovery
-│   ├── llm/                  # local Ollama client abstraction
-│   └── timeline_reasoning/   # rule routing, LLM judging and timeline persistence
-├── code/script/              # CLI scripts, evaluation scripts and web job runner
-├── services/                 # FastAPI timeline API
-├── frontend/static/          # static HTML/CSS/JS frontend
-├── outputs/                  # local generated outputs
-├── tests/                    # unit tests and experiments
-├── TECHNICAL_REPORT.md       # project technical report
+│   ├── event_discovery/      # topic 扩展、embedding、图聚类和事件构建
+│   ├── llm/                  # Ollama 客户端
+│   └── timeline_reasoning/   # 规则路由、LLM 裁判、排序和持久化
+├── data_pipeline/            # 数据抓取、清洗、标准化和时间解析模块
+├── database/                 # MySQL 连接工具和 schema
+├── code/script/              # 命令行入口和运行脚本
+├── services/                 # FastAPI 服务
+├── frontend/static/          # 原生 HTML/CSS/JavaScript 前端
+├── newsdata/                 # 示例/历史新闻数据文件
+├── outputs/                  # 运行生成物目录，内容可重新生成
+├── tests/                    # 核心单元测试
+├── requirements.txt
 └── README.md
 ```
 
-## Technology Stack
+## 环境要求
 
-### Languages
+- Python 3.14
+- MySQL 8.x 或兼容版本
+- Ollama，本地提供 `qwen3.5:9b`
+- 足够的本地内存/显存用于加载 embedding 模型
 
-- Python 3.14.x: backend service, NLP processing, event discovery, LLM orchestration and persistence.
-- JavaScript: frontend interaction, polling and timeline rendering.
-- HTML / CSS: frontend page structure and visual style.
-- SQL: MySQL schema, query and persistence logic.
+主要模型配置位于 [configs/model_config.py](configs/model_config.py)：
 
-### Backend and Data
+- `Qwen/Qwen3-Embedding-4B`
+- `qwen3.5:9b`
+- `facebook/nllb-200-distilled-600M`
 
-- FastAPI: HTTP API and static frontend service.
-- Pydantic: request validation.
-- PyMySQL: MySQL access.
-- MySQL: persistent storage for parsed news, event discovery outputs and timeline outputs.
-- NumPy / scikit-learn: vector matrix and similarity processing.
-- sentence-transformers / Transformers: embedding model loading and inference.
-- Ollama HTTP API: local lightweight LLM inference.
+## 安装
 
-### NLP and Models
+```bash
+cd newsline
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
-- spaCy: text processing and event-time parsing entry point.
-- `Qwen/Qwen3-Embedding-4B`: title embedding model.
-- `qwen3.5:9b`: topic alias generation and event reasoning model.
-- `facebook/nllb-200-distilled-600M`: topic translation support.
+准备 Ollama 模型：
 
-## Data Model
+```bash
+ollama pull qwen3.5:9b
+ollama serve
+```
 
-The active pipeline reads parsed news records from MySQL. The expected news fields include:
+## 数据库配置
+
+修改 [configs/db_config.py](configs/db_config.py) 中的连接信息：
+
+```python
+DB_CONFIG = {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "123456",
+    "database": "news_db",
+    "charset": "utf8mb4",
+}
+```
+
+主流程默认从 `parser_newsdata` 表读取新闻。核心字段包括：
 
 - `id`
 - `title`
@@ -93,7 +104,7 @@ The active pipeline reads parsed news records from MySQL. The expected news fiel
 - `time_granularity`
 - `is_noise`
 
-Core result tables include:
+事件发现和时间线结果会写入以下表：
 
 - `event_discovery_events`
 - `event_discovery_assignments`
@@ -103,124 +114,17 @@ Core result tables include:
 - `timeline_nodes`
 - `timeline_node_articles`
 
-`database/schema.sql` records the main schema definitions. The persistence modules also contain runtime schema checks for result tables.
+表结构参考 [database/schema.sql](database/schema.sql)。
 
-## Method Overview
+## 命令行使用
 
-### 1. Preprocessing and Time Parsing
-
-The preprocessing layer normalizes news data and extracts event-time fields. The active formal entry point is:
-
-```text
-data_pipeline/processors/spacy_pipeline.py
-```
-
-This layer provides language-aware processing, base-time normalization and title-level event-time extraction for downstream event discovery.
-
-### 2. Event Discovery
-
-The event discovery layer receives a topic and executes the following steps:
-
-1. Generate multilingual topic aliases.
-2. Retrieve candidate news titles from MySQL.
-3. Apply title-level relevance filtering.
-4. Normalize and deduplicate titles.
-5. Encode titles with `Qwen/Qwen3-Embedding-4B`.
-6. Compute title similarity matrix.
-7. Construct a graph using semantic similarity and event-time constraints.
-8. Convert connected components into candidate event clusters.
-9. Refine low-cohesion or oversized components.
-10. Persist event nodes, article assignments and graph edges.
-
-Main files:
-
-- `core/event_discovery/pipeline.py`
-- `core/event_discovery/topic_expansion.py`
-- `core/event_discovery/encoder.py`
-- `core/event_discovery/clustering.py`
-- `core/event_discovery/event_builder.py`
-- `core/event_discovery/title_features.py`
-
-### 3. Timeline Reasoning
-
-The timeline reasoning layer transforms candidate event clusters into compact `EventCard` objects. Each card contains representative title, article evidence, event time fields, cluster statistics, confidence score, `risk_flags` and `quality_metrics`.
-
-Rule routing divides events into three categories:
-
-- `auto_accept`: low-risk events accepted by deterministic rules.
-- `llm_review`: uncertain events reviewed by the local LLM.
-- `rule_reject`: structurally invalid events rejected by deterministic rules.
-
-The LLM returns structured decisions, including topic relevance, final noise status, display title, time anchor, split / merge hint and confidence. Final timeline ordering is computed deterministically by code.
-
-Main files:
-
-- `core/timeline_reasoning/models.py`
-- `core/timeline_reasoning/event_cards.py`
-- `core/timeline_reasoning/filters.py`
-- `core/timeline_reasoning/llm_judge.py`
-- `core/timeline_reasoning/ordering.py`
-- `core/timeline_reasoning/persistence.py`
-- `core/timeline_reasoning/pipeline.py`
-- `core/timeline_reasoning/topic_profile.py`
-
-### 4. Web Display
-
-The display layer is served by FastAPI and implemented with static HTML/CSS/JavaScript.
-
-Frontend capabilities:
-
-- topic input;
-- `fast` / `standard` / `full` reasoning mode;
-- dataset date range selector;
-- force-regenerate switch;
-- recent timeline result list;
-- job progress and cancellation;
-- horizontal interactive timeline;
-- article hover preview;
-- node detail drawer with source articles and model decision metadata.
-
-Main files:
-
-- `services/timeline_api.py`
-- `code/script/run_timeline_web_job.py`
-- `frontend/static/index.html`
-- `frontend/static/styles.css`
-- `frontend/static/app.js`
-
-## Environment Setup
-
-Install dependencies:
+运行事件发现：
 
 ```bash
-cd /Users/hjfl/newsline
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+.venv/bin/python code/script/run_event_discovery.py --topic "Apple"
 ```
 
-Configure MySQL connection:
-
-```text
-configs/db_config.py
-```
-
-Prepare the local LLM service:
-
-```bash
-ollama pull qwen3.5:9b
-ollama serve
-```
-
-## Running the Pipeline
-
-Run event discovery:
-
-```bash
-.venv/bin/python code/script/run_event_discovery.py --topic "Trump"
-```
-
-Run event discovery with a date range:
+按日期范围运行事件发现：
 
 ```bash
 .venv/bin/python code/script/run_event_discovery.py \
@@ -229,7 +133,7 @@ Run event discovery with a date range:
   --end-date 2026-04-01
 ```
 
-Run timeline reasoning:
+运行时间线推理：
 
 ```bash
 .venv/bin/python code/script/run_timeline_reasoning.py \
@@ -239,33 +143,37 @@ Run timeline reasoning:
   --llm-timeout-seconds 300
 ```
 
-Run the web-facing full job:
+运行 Web 任务脚本：
 
 ```bash
 .venv/bin/python code/script/run_timeline_web_job.py \
-  --topic "Trump" \
+  --topic "Apple" \
   --mode standard \
   --start-date 2025-06-01 \
   --end-date 2026-04-01
 ```
 
-## Running the Web Frontend
+`mode` 可选值：
 
-Start the FastAPI service:
+- `fast`：更少 LLM 复核，适合快速预览。
+- `standard`：默认平衡模式。
+- `full`：更充分的 LLM 复核，耗时更长。
+
+## 启动 Web 服务
 
 ```bash
-cd /Users/hjfl/newsline
+cd newsline
 source .venv/bin/activate
 uvicorn services.timeline_api:app --host 127.0.0.1 --port 8000
 ```
 
-Open:
+打开：
 
 ```text
 http://127.0.0.1:8000
 ```
 
-Important API routes:
+主要 API：
 
 ```text
 GET  /api/health
@@ -277,46 +185,35 @@ GET  /api/timeline/results/{reasoning_run_id}
 GET  /api/timeline/recent?limit=6
 ```
 
-## Outputs
+## 输出目录
 
-Event discovery JSON outputs:
+[outputs](outputs) 是运行生成物目录。源码本身不依赖其中的历史 JSON 或报告文件。
 
-```text
-outputs/clustered/{topic}_events.json
-outputs/clustered/{topic}_assignments.json
-outputs/clustered/{topic}_graph.json
-```
+常见输出：
 
-Timeline reasoning JSON outputs:
+- `outputs/clustered/`：事件发现 JSON。
+- `outputs/timeline/`：时间线 JSON。
+- `outputs/logs/`：运行日志。
+- `outputs/parsed/`：预处理输出预留目录。
 
-```text
-outputs/timeline/
-```
+Web 前端优先从 MySQL 读取正式时间线结果；文件输出主要用于调试和离线检查。
 
-The Web frontend reads formal results from MySQL:
+## 测试
 
-```text
-timeline_reasoning_runs
-timeline_nodes
-timeline_node_articles
-```
-
-## Tests
-
-Run the current test suite:
+运行全部测试：
 
 ```bash
 .venv/bin/python -m pytest
 ```
 
-## Project Documents
+如果希望测试后不生成本地缓存：
 
-- `TECHNICAL_REPORT.md`
-- `sbert_layer_v3_handoff.md`
-- `llm_layer_v3_handoff.md`
-- `frontend_display_layer_v2_handoff.md`
-- `cross_language_retrieval_schemes.md`
+```bash
+.venv/bin/python -B -m pytest -q -p no:cacheprovider
+```
 
-## Final Result
+## 维护说明
 
-The current repository contains a runnable end-to-end prototype. It can read parsed news records from MySQL, discover topic-related candidate events through multilingual recall and embedding graph linkage, apply lightweight LLM reasoning to uncertain events, persist traceable timeline results, and provide a browser interface for timeline generation and inspection.
+- `outputs/` 中的历史结果属于运行生成物，主流程会按需重新生成。
+- 前端为静态文件，不需要单独的 Node 构建步骤。
+- 数据库连接、模型名称和流水线默认值分别在 `configs/db_config.py`、`configs/model_config.py` 和 `configs/pipeline_config.py` 中维护。

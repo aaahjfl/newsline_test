@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-05-10 09:42:31",
+  "topics": [
+    "Fed",
+    "美联储"
+  ],
+  "limit": null,
+  "start_date": null,
+  "end_date": null,
+  "timeline_mode": "rule",
+  "embedding_model": "Qwen/Qwen3-Embedding-4B",
+  "database_effect": "read-only SELECT from parser_newsdata; no MySQL writes",
+  "production_entrypoints_called": []
+}
