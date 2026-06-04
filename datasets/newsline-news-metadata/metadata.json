@@ -1,0 +1,58 @@
+{
+  "name": "NewsLine News Metadata Dataset",
+  "table": "parser_newsdata",
+  "row_count": 49130,
+  "time_range": {
+    "min": "1900-01-01 00:00:00",
+    "max": "2080-12-31 00:00:00"
+  },
+  "source_count": 6,
+  "sources": [
+    {
+      "source": "BBC",
+      "count": 10500
+    },
+    {
+      "source": "新华网",
+      "count": 10500
+    },
+    {
+      "source": "DW",
+      "count": 10499
+    },
+    {
+      "source": "亚洲新闻台",
+      "count": 8233
+    },
+    {
+      "source": "Al Jazeera",
+      "count": 6114
+    },
+    {
+      "source": "The New York Times",
+      "count": 3284
+    }
+  ],
+  "formats": [
+    "parser_newsdata.csv",
+    "parser_newsdata.jsonl",
+    "parser_newsdata.csv.gz",
+    "parser_newsdata.jsonl.gz"
+  ],
+  "fields": [
+    "id",
+    "title",
+    "source",
+    "url",
+    "raw_time",
+    "standard_timestamp",
+    "event_timestamp",
+    "event_time_start",
+    "event_time_end",
+    "time_granularity",
+    "parse_mode",
+    "true_order",
+    "is_noise",
+    "created_at"
+  ]
+}

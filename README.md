@@ -41,6 +41,7 @@ newsline/
 ├── services/                 # FastAPI 服务
 ├── frontend/static/          # 原生 HTML/CSS/JavaScript 前端
 ├── newsdata/                 # 示例/历史新闻数据文件
+├── datasets/                 # 可开源复用的数据集导出
 ├── outputs/                  # 运行生成物目录，内容可重新生成
 ├── tests/                    # 核心单元测试
 ├── requirements.txt
@@ -197,6 +198,12 @@ GET  /api/timeline/recent?limit=6
 - `outputs/parsed/`：预处理输出预留目录。
 
 Web 前端优先从 MySQL 读取正式时间线结果；文件输出主要用于调试和离线检查。
+
+## 开源数据集
+
+MySQL 中的新闻元数据已导出到 [datasets/newsline-news-metadata](datasets/newsline-news-metadata)。
+
+该数据集包含 `parser_newsdata` 表的标题、来源、URL、原始时间表达、标准化时间字段、解析模式和实验标签，不包含新闻正文。目录内提供 CSV、JSONL、压缩副本、MySQL schema、元数据摘要、SHA256 校验文件和数据复用说明。
 
 ## 测试
 

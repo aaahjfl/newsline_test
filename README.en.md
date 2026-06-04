@@ -41,6 +41,7 @@ newsline/
 ├── services/                 # FastAPI service
 ├── frontend/static/          # static HTML/CSS/JavaScript frontend
 ├── newsdata/                 # sample or historical news data files
+├── datasets/                 # open dataset exports
 ├── outputs/                  # generated runtime artifacts
 ├── tests/                    # core unit tests
 ├── requirements.txt
@@ -197,6 +198,12 @@ Common outputs:
 - `outputs/parsed/`: reserved preprocessing output directory.
 
 The web frontend prefers formal timeline results from MySQL. File outputs are mainly for debugging and offline inspection.
+
+## Open Dataset
+
+The MySQL news metadata has been exported to [datasets/newsline-news-metadata](datasets/newsline-news-metadata).
+
+The dataset contains fields from the `parser_newsdata` table, including titles, sources, URLs, raw time expressions, normalized time fields, parser modes, and experimental labels. It does not include article body text. The directory provides CSV, JSONL, compressed copies, a MySQL schema, metadata summary, SHA256 checksums, and data reuse notes.
 
 ## Tests
 
